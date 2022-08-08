@@ -4,3 +4,25 @@ body>main>section:first-child>section:nth-child(1)>article>h1 {
     font-size: 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+h1{
+    color: blue;
+    font-size: 14px;
+    font-family:"Griffy";
+}
+
+h1.second{
+    color: red ;
+    padding-left: 60px;
+
+}
