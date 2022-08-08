@@ -1,8 +1,16 @@
+/*header*/
+body>header>nav{
+    border-color: #ff4334;
+    border-radius: 8px;
+
+}
+
+
 
 body > main > section:first-child > section:nth-child(1) > article > h1 {
     color: rgb(246, 251, 13);
     font-size: 20px;
-    border-color: red;
+    text-shadow: 1px 1px red;
 }
 
 
