@@ -1,0 +1,5 @@
+
+body>main>section:first-child>section:nth-child(1)>article>h1 {
+    color: yellow;
+    font-size: 20px;
+}
