@@ -3,6 +3,10 @@ body>header>nav{
     border-color: #ff4334;
     border-radius: 8px;
 
+    position: absolute;
+    top: 8px;
+    left: 200px;
+    padding-right: 20px;
 }
 
 
@@ -17,13 +21,17 @@ body > main > section:first-child > section:nth-child(1) > article > h1 {
 /*about*/
 
 h1 {
-    color: blue;
+    color: black;
     font-size: 14px;
     font-family: "Griffy";
+
+    position: absolute;
 }
 
 h1.second {
     color: red;
-    padding-left: 60px;
+    font-family: "Griffy";
+
+    padding-left: 50px;
 
 }
