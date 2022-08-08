@@ -1,28 +1,21 @@
 
-body>main>section:first-child>section:nth-child(1)>article>h1 {
-    color: yellow;
+body > main > section:first-child > section:nth-child(1) > article > h1 {
+    color: rgb(246, 251, 13);
     font-size: 20px;
+    border-color: red;
 }
 
 
+/*about*/
 
-
-
-
-
-
-
-
-
-
-h1{
+h1 {
     color: blue;
     font-size: 14px;
-    font-family:"Griffy";
+    font-family: "Griffy";
 }
 
-h1.second{
-    color: red ;
+h1.second {
+    color: red;
     padding-left: 60px;
 
 }
