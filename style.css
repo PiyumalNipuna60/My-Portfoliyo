@@ -1,5 +1,5 @@
 /*header*/
-body>header>nav{
+body > header > nav {
     border-color: #ff4334;
     border-radius: 8px;
 
@@ -9,12 +9,16 @@ body>header>nav{
     padding-right: 20px;
 }
 
-
-
+/*Home*/
 body > main > section:first-child > section:nth-child(1) > article > h1 {
     color: rgb(246, 251, 13);
-    font-size: 20px;
-    text-shadow: 1px 1px red;
+    font-size: 22px;
+    text-shadow: 2px 2px red;
+}
+
+body>main>section:first-child>section:first-child>article>h2{
+    font-size: 18px;
+    padding-left: 30px;
 }
 
 
@@ -24,14 +28,12 @@ h1 {
     color: black;
     font-size: 14px;
     font-family: "Griffy";
-
     position: absolute;
 }
 
 h1.second {
     color: red;
     font-family: "Griffy";
-
     padding-left: 50px;
 
 }
