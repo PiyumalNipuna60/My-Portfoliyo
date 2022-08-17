@@ -56,3 +56,9 @@ body > main > section:nth-child(2) > section>section>section>article>h3{
     font-style: inherit;
     font-size: 22px;
 }
+
+body > main > section:nth-child(2) > section>section>section:nth-child(2)>h2{
+    color: black;
+    font-style: inherit;
+    font-size: 22px;
+}
