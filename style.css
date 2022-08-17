@@ -24,7 +24,7 @@ body > main > section:first-child > section:nth-child(1) > article > button {
 }
 
 
-body>main>section:first-child>section:first-child>article>h2{
+body > main > section:first-child > section:first-child > article > h2 {
     font-size: 18px;
     padding-left: 30px;
 }
@@ -44,4 +44,16 @@ h1.second {
     font-family: "Griffy";
     padding-left: 50px;
 
+}
+
+body > main > section:nth-child(2) > section{
+    /*color: chartreuse;*/
+    /*font-size: 22px;*/
+    /*border-color: #ff4334;*/
+}
+
+body > main > section:nth-child(2) > section>section>section>article>h3{
+    color: black;
+    font-style: inherit;
+    font-size: 22px;
 }
