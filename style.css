@@ -47,9 +47,8 @@ h1.second {
 }
 
 body > main > section:nth-child(2) > section{
-    /*color: chartreuse;*/
-    /*font-size: 22px;*/
-    /*border-color: #ff4334;*/
+ /*padding-bottom: 200px;*/
+
 }
 
 body > main > section:nth-child(2) > section>section>section>article>h3{
