@@ -1,4 +1,4 @@
-/*header*/
+/*========================== header ==========================*/
 body > header > nav {
     border-color: #ff4334;
     border-radius: 8px;
@@ -10,7 +10,14 @@ body > header > nav {
 
 }
 
-/*Home*/
+
+/*========================== Home =====================*/
+main>section:first-child>section>aside>img{
+    width: 45%;
+    height: 45%;
+    padding-top: 20px;
+}
+
 body > main > section:first-child > section:nth-child(1) > article > h1 {
     color: rgb(246, 251, 13);
     font-size: 42px;
@@ -30,7 +37,9 @@ body > main > section:first-child > section:first-child > article > h2 {
 }
 
 
-/*about*/
+
+
+/*========================== about ==========================*/
 
 h1 {
     color: black;
