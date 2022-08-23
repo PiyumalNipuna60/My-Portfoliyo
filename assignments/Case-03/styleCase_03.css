@@ -15,3 +15,15 @@ body {
     top: 0;
 }
 
+#crcl-02 {
+    width: 215px;
+    height: 215px;
+    border: 15px solid red;
+    position: fixed;
+    margin: auto;
+    border-radius: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+}
