@@ -42,3 +42,12 @@ body {
     top: 0;
 }
 
+section:first-child > div > pre {
+    position: absolute;
+    top: 50px;
+    bottom: 200px;
+    left: 20px;
+    right: 20px;
+    font-size: 33px;
+}
+
