@@ -51,3 +51,16 @@ section:first-child > div > pre {
     font-size: 33px;
 }
 
+#crcl-04 {
+    width: 217px;
+    height: 217px;
+    position: fixed;
+    margin: auto;
+    /*border: 15px solid #40036e;*/
+    background-color: blueviolet;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
