@@ -115,3 +115,13 @@ body>main{
 
 }
 
+body>main>section:nth-child(2){
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    border: 0;
+    display: inline-block;
+    height: 100vh;
+    width: 100vw;
+}
+
