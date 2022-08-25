@@ -119,12 +119,12 @@ main>section:nth-child(3)>div>p{
 }
 
 main>section:nth-child(3)>pre{
-    /*position: fixed;*/
-    /*font-size: 70px;*/
-    /*top: 0;*/
-    /*bottom: 0;*/
-    /*right: 0;*/
-    /*left: 0;*/
+    font-size: 150px;
+    font-weight: bold;
+    color: #222222;
+    position: absolute;
+    left: 548px;
+    top: 130px;
 }
 
 
