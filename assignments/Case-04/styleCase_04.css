@@ -102,6 +102,13 @@ body>main>section:nth-child(3){
     background-color: dimgrey;
 }
 
+main>section:nth-child(3)>div{
+    background-color: black;
+    height: 8%;
+    position: sticky;
+    top: 0;
+}
+
 main>section:nth-child(3)>pre{
     /*position: fixed;*/
     /*font-size: 70px;*/
