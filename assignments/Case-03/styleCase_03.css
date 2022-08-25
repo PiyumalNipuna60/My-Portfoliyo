@@ -1,5 +1,6 @@
 body {
-    height: 760px;
+    height: 100vh;
+    width: 100vw;
 }
 
 #crcl-01 {
@@ -13,6 +14,7 @@ body {
     bottom: 0;
     right: 0;
     top: 0;
+    z-index: 5;
 }
 
 #crcl-02 {
@@ -26,20 +28,21 @@ body {
     bottom: 0;
     right: 0;
     top: 0;
+    z-index: 5;
 }
 
 #crcl-03 {
     width: 217px;
     height: 217px;
-    position: fixed;
+    position: absolute;
     margin: auto;
-    /*border: 15px solid #40036e;*/
     background-color: cyan;
     border-radius: 50%;
     left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
+    right: 15px;
+    bottom: 20px;
+    top: 150%;
+    z-index: 2;
 }
 
 section:first-child > div > pre {
@@ -54,15 +57,15 @@ section:first-child > div > pre {
 #crcl-04 {
     width: 217px;
     height: 217px;
-    position: fixed;
+    position: absolute;
     margin: auto;
-    /*border: 15px solid #40036e;*/
     background-color: blueviolet;
     border-radius: 50%;
     left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
+    right: 17px;
+    bottom: 16px;
+    top: -200%;
+    z-index: 2;
 }
 
 section:nth-child(2) > div > p {
@@ -79,12 +82,13 @@ section:nth-child(2) > div > p {
     height: 217px;
     background-color: #ff4334;
     border-radius: 50%;
-    position: fixed;
+    position: absolute;
     margin: auto;
-    top: 0;
+    top: 16px;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 17px;
+    z-index: 2;
 }
 
 section:nth-child(3)>div>pre{
@@ -95,3 +99,12 @@ section:nth-child(3)>div>pre{
     left: 21px;
     right: 200px;
 }
+
+body>main>section:nth-child(1){
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
