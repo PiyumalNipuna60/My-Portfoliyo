@@ -61,7 +61,7 @@ body>main>section:nth-child(2){
     display: inline-block;
     height: 100vh;
     width: 100vw;
-    background-color: blue;
+    background-color: dodgerblue;
 }
 
 
@@ -89,3 +89,15 @@ main>section:nth-child(3)>pre{
 }
 
 
+/*............sec 04..........*/
+
+body>main>section:nth-child(4){
+    position: absolute;
+    top: 300%;
+    margin: 0;
+    border: 0;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: #ff4334;
+}
