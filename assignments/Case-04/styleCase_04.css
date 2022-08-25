@@ -66,4 +66,26 @@ body>main>section:nth-child(2){
 
 
 
+/*............sec 03..........*/
+
+body>main>section:nth-child(3){
+    position: absolute;
+    top: 200%;
+    margin: 0;
+    border: 0;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: dimgrey;
+}
+
+main>section:nth-child(3)>pre{
+    /*position: fixed;*/
+    /*font-size: 70px;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    /*left: 0;*/
+}
+
 
