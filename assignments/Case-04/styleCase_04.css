@@ -109,6 +109,15 @@ main>section:nth-child(3)>div{
     top: 0;
 }
 
+main>section:nth-child(3)>div>p{
+    position: sticky;
+    display: inline-block;
+    padding-bottom: 0;
+    color: white;
+    /* padding-top: 8px; */
+    padding-left: 16px;
+}
+
 main>section:nth-child(3)>pre{
     /*position: fixed;*/
     /*font-size: 70px;*/
