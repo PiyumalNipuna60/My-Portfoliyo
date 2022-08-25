@@ -40,6 +40,16 @@ main>section:nth-child(1)>div>p{
     padding-left: 16px;
 }
 
+main>section:nth-child(1)>pre{
+    font-size: 150px;
+    font-weight: bold;
+    color: #222222;
+    position: absolute;
+    left: 548px;
+    top: 130px;
+    z-index: 2;
+}
+
 
 
 
