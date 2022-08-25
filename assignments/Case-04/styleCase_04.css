@@ -64,6 +64,12 @@ body>main>section:nth-child(2){
     background-color: dodgerblue;
 }
 
+main>section:nth-child(2)>div{
+    background-color: blue;
+    height: 8%;
+    position: sticky;
+    top: 0;
+}
 
 
 /*............sec 03..........*/
