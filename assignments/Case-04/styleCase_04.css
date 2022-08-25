@@ -20,6 +20,18 @@ main{
     background-color: white;
 }
 
+body>main>section:nth-child(1)>div{
+    background-color: #ff4334;
+    height: 8%;
+    position: sticky;
+    top: 0;
+    /* padding-left: 18px; */
+    /* margin-top: 0; */
+    /* padding-top: 1px;*/
+
+}
+
+
 
 
 
