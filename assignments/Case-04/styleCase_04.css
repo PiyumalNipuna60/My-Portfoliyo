@@ -140,3 +140,10 @@ body>main>section:nth-child(4){
     width: 100%;
     background-color: #ff4334;
 }
+
+main>section:nth-child(4)>div{
+    background-color: black;
+    height: 8%;
+    position: sticky;
+    top: 0;
+}
