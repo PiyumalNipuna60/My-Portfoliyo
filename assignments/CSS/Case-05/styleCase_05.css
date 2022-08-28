@@ -1,8 +1,14 @@
-
+main{
+    width : 1200px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
 main>section{
     background-color: #40036e;
-    border: 2px solid white;
+    border: 8px solid white;
     width: 100px;
     height: 100px;
 }
