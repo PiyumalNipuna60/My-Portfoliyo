@@ -1,10 +1,10 @@
-main{
-    width : 1200px;
+main {
+    width: 1200px;
     height: 600px;
     border: 2px solid red;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 9px;
     margin: auto;
     position: absolute;
@@ -14,11 +14,15 @@ main{
     top: 0;
 }
 
-main>section{
-    margin: auto;
+main > section {
+    /*margin: auto;*/
     border: 2px solid blue;
 }
 
-main>section:nth-child(1){
-grid-column: 1/3;
+main > section:nth-child(1) {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-size:cover ;
+    background-position: center;
+    background-color: yellow;
 }
