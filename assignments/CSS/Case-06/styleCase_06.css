@@ -57,3 +57,10 @@ section > div:nth-child(6) {
     background-position: center;
     background-color: blue;
 }
+
+section > div:nth-child(7) {
+    background-size: cover;
+    background-position: center;
+    background-color: brown;
+}
+
