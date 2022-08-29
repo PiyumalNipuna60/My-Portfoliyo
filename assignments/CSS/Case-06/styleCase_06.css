@@ -1,10 +1,4 @@
-<!--
-~ /*
-  ~  * Developed by - PiyumalNipuna60
-  ~  * Contact email - nipuna315np@gmail.com
-  ~  * what's app - 076-7554903
-  ~  */
--->
+
 
 main {
     width: 1200px;
@@ -54,25 +48,25 @@ main >section:nth-child(4){
     background-color: #40036e;
 }
 
-section > div:nth-child(5) {
+main > section:nth-child(5) {
     background-size: cover;
     background-position: center;
     background-color: deeppink;
 }
 
-section > div:nth-child(6) {
+main > section:nth-child(6) {
     background-size: cover;
     background-position: center;
     background-color: blue;
 }
 
-section > div:nth-child(7) {
+main > section:nth-child(7) {
     background-size: cover;
     background-position: center;
     background-color: brown;
 }
 
-section > div:nth-child(8) {
+main > section:nth-child(8) {
     grid-column: 2/4;
     grid-row: 3/4;
     background-size: cover;
