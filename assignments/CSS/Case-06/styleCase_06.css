@@ -64,3 +64,10 @@ section > div:nth-child(7) {
     background-color: brown;
 }
 
+section > div:nth-child(8) {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-size: cover;
+    background-position: center;
+    background-color: darkviolet;
+}
