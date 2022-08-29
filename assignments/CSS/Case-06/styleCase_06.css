@@ -51,3 +51,9 @@ section > div:nth-child(5) {
     background-position: center;
     background-color: deeppink;
 }
+
+section > div:nth-child(6) {
+    background-size: cover;
+    background-position: center;
+    background-color: blue;
+}
