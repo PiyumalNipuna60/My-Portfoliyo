@@ -141,7 +141,12 @@ main>section:nth-child(3)>section>section:nth-child(1)>hr{
     padding-left: 39px;
 }
 
-
+main>section:nth-child(3)>section>section:nth-child(1)>nav{
+    margin-top: 15px;
+    margin-left: 23px;
+    font-size: 188%;
+    font-weight: bold;
+}
 
 
 
