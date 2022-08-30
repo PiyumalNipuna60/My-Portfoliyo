@@ -1,3 +1,12 @@
+/*main>section{*/
+/*    width: 97vw;*/
+/*    height: 98vh;*/
+/*    !*position: relative;*!*/
+/*    !*bottom: -173px;*!*/
+/*    border: 3px solid red;*/
+/*}*/
+
+
 /*========================== header ==========================*/
 body > header > nav {
     border-color: #ff4334;
@@ -41,33 +50,65 @@ body > main > section:first-child > section:first-child > article > h2 {
 
 /*========================== about ==========================*/
 
-h1 {
-    color: black;
-    font-size: 14px;
-    font-family: "Griffy";
-    position: absolute;
-}
+/*body>main>section:nth-child(2){*/
+/*    !* background-color: green; *!*/
+/*    !*position: relative;*!*/
+/*    !*bottom: -173px;*!*/
 
-h1.second {
-    color: red;
-    font-family: "Griffy";
-    padding-left: 50px;
+/*}*/
 
-}
+/*h1 {*/
+/*    color: black;*/
+/*    font-size: 14px;*/
+/*    font-family: "Griffy";*/
+/*    position: absolute;*/
+/*}*/
 
-body > main > section:nth-child(2) > section{
- /*padding-bottom: 200px;*/
+/*h1.second {*/
+/*    color: red;*/
+/*    font-family: "Griffy";*/
+/*    padding-left: 50px;*/
 
-}
+/*}*/
 
-body > main > section:nth-child(2) > section>section>section>article>h3{
-    color: black;
-    font-style: inherit;
-    font-size: 22px;
-}
+/*body > main > section:nth-child(2) > section{*/
+/* !*padding-bottom: 200px;*!*/
 
-body > main > section:nth-child(2) > section>section>section:nth-child(2)>h2{
-    color: black;
-    font-style: inherit;
-    font-size: 22px;
-}
+/*}*/
+
+/*body>main>section:nth-child(2)> section>section>section>article{*/
+/*    !* background-color: red; *!*/
+/*    position: relative;*/
+/*    !* left: 0; *!*/
+/*    right: 34px;*/
+/*    top: 86px;*/
+/*    width: 50vw;*/
+/*    height: 50vw;*/
+/*    margin: auto;*/
+
+/*}*/
+
+
+/*body > main > section:nth-child(2) > section>section>section>article>h3{*/
+/*    color: black;*/
+/*    font-style: inherit;*/
+/*    font-size: 20px;*/
+/*    position: absolute;*/
+/*    left: 56px;*/
+/*    top: -32px;*/
+/*}*/
+
+/*body > main > section:nth-child(2) > section>section>section:nth-child(2)>h2{*/
+/*    color: black;*/
+/*    font-style: inherit;*/
+/*    font-size: 22px;*/
+/*}*/
+
+
+/*body > main > section:nth-child(2) > section>section>section>article>p{*/
+/*    !*size: 15px;*!*/
+/*    !*margin-top: 1px;*!*/
+/*    !*margin-bottom: 5px;*!*/
+/*}*/
+
+
