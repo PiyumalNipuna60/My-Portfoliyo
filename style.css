@@ -112,3 +112,9 @@ body > main > section:first-child > section:first-child > article > h2 {
 /*}*/
 
 
+/*========================== gallery ==========================*/
+main>section:nth-child(3){
+    background-color: #40036e;
+        width: 97vw;
+        height: 98vh;
+}
