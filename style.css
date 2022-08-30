@@ -118,3 +118,10 @@ main>section:nth-child(3){
         width: 97vw;
         height: 98vh;
 }
+
+main>section:nth-child(3)>section>section:nth-child(1)>h1{
+    font-size: 108%;
+    font-weight: bold;
+    color: black;
+}
+
