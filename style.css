@@ -127,6 +127,17 @@ main>section:nth-child(3)>section>section:nth-child(1)>h1{
     padding-left: 36px;
 }
 
+main>section:nth-child(3)>section>section:nth-child(1)>h1.second{
+    /*font-size: 108%;*/
+    /*font-weight: bold;*/
+    color: red;
+    padding-left: 9px;
+
+}
+
+
+
+
 
 
 
