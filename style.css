@@ -135,6 +135,11 @@ main>section:nth-child(3)>section>section:nth-child(1)>h1.second{
 
 }
 
+main>section:nth-child(3)>section>section:nth-child(1)>hr{
+    border-bottom-color: darkred;
+    margin-left: 19px;
+    padding-left: 39px;
+}
 
 
 
