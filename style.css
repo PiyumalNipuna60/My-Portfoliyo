@@ -144,7 +144,7 @@ main>section:nth-child(3)>section>section:nth-child(1)>hr{
 main>section:nth-child(3)>section>section:nth-child(1)>nav{
     margin-top: 15px;
     margin-left: 23px;
-    font-size: 188%;
+    font-size: 123%;
     font-weight: bold;
 }
 
@@ -152,6 +152,22 @@ main>section:nth-child(3)>section>section:nth-child(1)>nav>button{
     font-weight: bold;
     width: 10vw;
     height: 5vh;
+}
+
+main>section:nth-child(3)>section>section:nth-child(1)>section{
+    width: 81vw;
+    height: 66vh;
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 14px;
+    background-color: red;
 }
 
 
