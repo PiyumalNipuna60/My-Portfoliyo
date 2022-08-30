@@ -160,7 +160,7 @@ main>section:nth-child(3)>section>section:nth-child(1)>section{
     border: 2px solid blue;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     margin: auto;
     position: relative;
     left: 0;
@@ -169,6 +169,12 @@ main>section:nth-child(3)>section>section:nth-child(1)>section{
     top: 14px;
     background-color: red;
 }
+
+main>section:nth-child(3)>section>section:nth-child(1)>section>div{
+    border: 2px solid blue;
+}
+
+
 
 
 
