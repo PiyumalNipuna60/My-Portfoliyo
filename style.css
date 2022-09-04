@@ -137,11 +137,19 @@ main>section:nth-child(1)>section:nth-child(2)>div>section>p{
 
 main>section:nth-child(1)>section:nth-child(2)>div>aside{
     right: -868px;
-    background-color: red;
     position: relative;
     top: 0px;
     width: 93px;
     height: 100%;
+}
+
+main>section:nth-child(1)>section:nth-child(2)>div>aside>a:nth-child(2){
+    background-color: green;
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 307px;
 }
 
 /*main>section:nth-child(1)>section:nth-child(1)>article>aside{*/
