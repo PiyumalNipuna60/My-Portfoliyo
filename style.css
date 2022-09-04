@@ -98,7 +98,7 @@ main>section:nth-child(1)>section:nth-child(2)>div>hr{
 
 main>section:nth-child(1)>section:nth-child(2)>div{
     position: absolute;
-    top: 520px;
+    top: 533px;
     width: 100%;
 }
 
@@ -122,7 +122,7 @@ main>section:nth-child(1)>section:nth-child(2)>div>section>p{
     width: 81%;
     color: #40036e;
 }
-}
+
 
 main>section:nth-child(1)>section:nth-child(2)>div>aside{
     right: -868px;
