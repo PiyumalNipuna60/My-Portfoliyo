@@ -59,23 +59,17 @@ body > main > section:first-child > section:nth-child(1) > article > h1 {
     top: 37px;
 }
 
-body > main > section:first-child > section:nth-child(1) > article > button {
-    color: black;
-    font-size: 22px;
-    border-color: #ff4334;
-}
-
 body > main > section:first-child > section:first-child > article > h2 {
-    font-size: 18px;
+    font-size: 28px;
     padding-left: 30px;
 }
 
-main>section:nth-child(1)>section:nth-child(1)>article>img{
-    width: 28%;
-    height: 10%;
-    position: relative;
-    left: 98px;
-}
+
+
+
+
+
+
 
 
 
