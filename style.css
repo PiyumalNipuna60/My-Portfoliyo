@@ -40,8 +40,8 @@ header>img{
     left: 7px;
 }
 
-/*========================== Home =====================*/
 
+/*========================== Home =====================*/
 main>section:first-child>section>aside>img{
     width: 42%;
     height: 42%;
@@ -65,17 +65,21 @@ body > main > section:first-child > section:nth-child(1) > article > button {
     border-color: #ff4334;
 }
 
-
 body > main > section:first-child > section:first-child > article > h2 {
     font-size: 18px;
     padding-left: 30px;
 }
 
+main>section:nth-child(1)>section:nth-child(1)>article>img{
+    width: 28%;
+    height: 10%;
+    position: relative;
+    left: 98px;
+}
 
 
 
 /*========================== about ==========================*/
-
 /*body>main>section:nth-child(2){*/
 /*    !* background-color: green; *!*/
 /*    !*position: relative;*!*/
