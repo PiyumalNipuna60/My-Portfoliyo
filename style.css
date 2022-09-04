@@ -78,7 +78,16 @@ main>section:nth-child(1)>section:nth-child(1)>article>p{
     top: -72px;
 }
 
-
+main>section:nth-child(1)>section:nth-child(1)>article>button{
+    font-size: 28px;
+    border-color: #a79897;
+    background-color: red;
+    position: relative;
+    left: 198px;
+    top: -37px;
+    color: #edebe9;
+    border-radius: 16px;
+}
 
 
 
