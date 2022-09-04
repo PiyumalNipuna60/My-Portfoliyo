@@ -255,6 +255,14 @@ body>main>section:nth-child(2)>section>section:nth-child(1)>section:nth-child(2)
     top: -17px;
 }
 
+body > main > section:nth-child(2) > section>section>section:nth-child(2)>h2{
+    color: black;
+    font-style: inherit;
+    font-size: 26px;
+    position: relative;
+    top: 13px;
+    left: 31px;
+}
 
 
 
