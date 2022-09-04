@@ -101,6 +101,11 @@ main>section:nth-child(1)>section:nth-child(2)>div{
     top: 13px;
 }
 
+main>section:nth-child(1)>section:nth-child(2)>div>hr:nth-child(1){
+    position: relative;
+    top: 80px;
+}
+
 
 /*========================== about ==========================*/
 /*body>main>section:nth-child(2){*/
