@@ -89,6 +89,11 @@ main>section:nth-child(1)>section:nth-child(1)>article>button{
     border-radius: 16px;
 }
 
+main>section:nth-child(1)>section:nth-child(2)>hr{
+    color: #0a0909;
+    height: 2px;
+    background-color: black;
+}
 
 
 
