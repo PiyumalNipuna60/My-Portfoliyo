@@ -32,11 +32,15 @@ body>header >nav> ul > li {
     display: inline-block;
 }
 
+
 /*========================== Home =====================*/
+
 main>section:first-child>section>aside>img{
-    width: 45%;
-    height: 45%;
+    width: 42%;
+    height: 42%;
     padding-top: 20px;
+    position: relative;
+    bottom: -41px;
 }
 
 body > main > section:first-child > section:nth-child(1) > article > h1 {
