@@ -180,12 +180,11 @@ main>section:nth-child(1)>section:nth-child(2)>div>aside>a:nth-child(2)>p{
 
 
 /*========================== about ==========================*/
-/*body>main>section:nth-child(2){*/
-/*    !* background-color: green; *!*/
-/*    !*position: relative;*!*/
-/*    !*bottom: -173px;*!*/
-
-/*}*/
+body>main>section:nth-child(2){
+     background-color: green;
+    position: relative;
+    bottom: 72px;
+}
 
 /*h1 {*/
 /*    color: black;*/
