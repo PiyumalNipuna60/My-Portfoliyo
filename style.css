@@ -43,11 +43,11 @@ header>img{
 
 /*========================== Home =====================*/
 main>section:first-child>section>aside>img{
-    width: 38%;
+    width: 37%;
     height: 39%;
     /* padding-top: 20px; */
     position: relative;
-    bottom: -41px;
+    bottom: -38px;
     left: -30px;
 }
 
@@ -90,6 +90,18 @@ main>section:nth-child(1)>section:nth-child(1)>article>button{
     border-radius: 16px;
 }
 
+main>section:nth-child(1)>section:nth-child(1)>article>hr{
+    background-color: #dbd3d3;
+    width: 41%;
+    /* rotate: unset; */
+    height: 12px;
+    border: inset;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 296px;
+    left: 614px;
+}
+
 main>section:nth-child(1)>section:nth-child(2)>div>hr{
     color: #0a0909;
     height: 2px;
@@ -122,7 +134,6 @@ main>section:nth-child(1)>section:nth-child(2)>div>section>p{
     width: 81%;
     color: #40036e;
 }
-
 
 main>section:nth-child(1)>section:nth-child(2)>div>aside{
     right: -868px;
