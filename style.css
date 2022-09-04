@@ -6,7 +6,6 @@ main>section{
     /*border: 3px solid red;*/
 }
 
-
 /*========================== header ==========================*/
 body>header{
     position: fixed;
@@ -27,6 +26,7 @@ body>header>nav > ul {
     list-style: none;
     color:white;
 }
+
 body>header >nav> ul > li {
     padding: 0 10px 0 10px;
     display: inline-block;
@@ -43,11 +43,12 @@ header>img{
 
 /*========================== Home =====================*/
 main>section:first-child>section>aside>img{
-    width: 42%;
-    height: 42%;
-    padding-top: 20px;
+    width: 38%;
+    height: 39%;
+    /* padding-top: 20px; */
     position: relative;
     bottom: -41px;
+    left: -30px;
 }
 
 body > main > section:first-child > section:nth-child(1) > article > h1 {
@@ -89,14 +90,16 @@ main>section:nth-child(1)>section:nth-child(1)>article>button{
     border-radius: 16px;
 }
 
-main>section:nth-child(1)>section:nth-child(2)>hr{
+main>section:nth-child(1)>section:nth-child(2)>div>hr{
     color: #0a0909;
     height: 2px;
     background-color: black;
 }
 
-
-
+main>section:nth-child(1)>section:nth-child(2)>div{
+    position: relative;
+    top: 13px;
+}
 
 
 /*========================== about ==========================*/
