@@ -205,27 +205,28 @@ h1.second {
 /* padding-bottom: 200px;*/
 /*}*/
 
-/*body>main>section:nth-child(2)> section>section>section>article{*/
-/*    !* background-color: red; *!*/
-/*    position: relative;*/
-/*    !* left: 0; *!*/
-/*    right: 34px;*/
-/*    top: 86px;*/
-/*    width: 50vw;*/
-/*    height: 50vw;*/
-/*    margin: auto;*/
+body>main>section:nth-child(2)> section>section>section>article{
+    /*background-color: red;*/
+    position: absolute;
+    /* left: 0; */
+    right: 115px;
+    top: 70px;
+    width: 50vw;
+    height: 50vw;
+    margin: auto;
+}
 
-/*}*/
+body>main>section:nth-child(2)> section>section>section>aside{
+    background-color: blue;
+    position: relative;
+    right: -12px;
+    top: 0px;
+    margin-top: 0px;
+/* width: 50vw; */
+/* height: 50vw; */
+/*!* margin: auto;*/
+}
 
-
-/*body > main > section:nth-child(2) > section>section>section>article>h3{*/
-/*    color: black;*/
-/*    font-style: inherit;*/
-/*    font-size: 20px;*/
-/*    position: absolute;*/
-/*    left: 56px;*/
-/*    top: -32px;*/
-/*}*/
 
 /*body > main > section:nth-child(2) > section>section>section:nth-child(2)>h2{*/
 /*    color: black;*/
