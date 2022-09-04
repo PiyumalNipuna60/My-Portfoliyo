@@ -10,10 +10,12 @@ main>section{
 /*========================== header ==========================*/
 body>header{
     position: fixed;
+    top: 0;
     width: 100%;
-    height: 60px;
+    height: 57px;
     box-shadow: inset 0px -2px 4px 0px #d9b7b7;
-    z-index: 100;
+    z-index: 91;
+    background-color: #40036e;
 }
 
 body>header>nav > ul {
@@ -23,35 +25,12 @@ body>header>nav > ul {
     font-size: 24px;
     font-family: 'Lobster', cursive;
     list-style: none;
-    color:black;
+    color:white;
 }
 body>header >nav> ul > li {
     padding: 0 10px 0 10px;
     display: inline-block;
 }
-
-/*body > header > nav {*/
-/*    border-color: #ff4334;*/
-/*    border-radius: 8px;*/
-
-/*    position: absolute;*/
-/*    top: 8px;*/
-/*    left: 200px;*/
-
-/*    background: white;*/
-/*    box-shadow: 0 -1px 8px 2px #1c1717e8;*/
-/*    height: 0;*/
-/*    width: 100%;*/
-/*    position: relative;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-
-/*    position: relative;*/
-/*    left: 20px;*/
-
-/*}*/
-
 
 /*========================== Home =====================*/
 main>section:first-child>section>aside>img{
