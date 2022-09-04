@@ -273,7 +273,7 @@ body > main > section:nth-child(2) > section > section:nth-child(1) > section:nt
 body > main > section:nth-child(2) > section > section:nth-child(2) {
     background-color: #464A68;
     background-image: -moz-element(ass);
-    width: 4%;
+    width: 3%;
     height: 56%;
     position: fixed;
     box-shadow: inset 0px -2px 4px 0px #d9b7b7;
@@ -286,7 +286,7 @@ body > main > section:nth-child(2) > section > section:nth-child(2) {
 main>section:nth-child(2)>section>hr {
     background-color: #0a0909;
     background-color: #0a0909;
-    border: 3px solid black;
+    border: 2px solid black;
     width: 100%;
     position: relative;
     top: 62px;
@@ -295,44 +295,22 @@ main>section:nth-child(2)>section>hr {
 
 
 
-/*body>header{*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    width: 100%;*/
-/*    height: 57px;*/
-/*    box-shadow: inset 0px -2px 4px 0px #d9b7b7;*/
-/*    z-index: 91;*/
-/*    background-color: #40036e;*/
-/*}*/
-
-/*body>header>nav > ul {*/
-/*    position: absolute;*/
-/*    right: 30px;*/
-/*    margin-top: 10px;*/
-/*    font-size: 24px;*/
-/*    font-family: 'Lobster', cursive;*/
-/*    list-style: none;*/
-/*    color:white;*/
-/*}*/
-
-/*body>header >nav> ul > li {*/
-/*    padding: 0 10px 0 10px;*/
-/*    display: inline-block;*/
-/*}*/
-
-
 /*========================== gallery ==========================*/
 
 #glrFrame {
-    height: 600px;
-    width: 600px;
+    height: 491px;
+    width: 1039px;
     border: 3px solid #40036e;
+    position: relative;
+    top: 24px;
 }
 
 main > section:nth-child(3) {
     background-color: #40036e;
-    width: 97vw;
-    height: 98vh;
+    /* width: 97vw; */
+    /* height: 98vh; */
+    position: relative;
+    top: -104px;
 }
 
 main > section:nth-child(3) > section > section:nth-child(1) > h1 {
@@ -341,6 +319,8 @@ main > section:nth-child(3) > section > section:nth-child(1) > h1 {
     color: black;
     display: initial;
     padding-left: 36px;
+    position: relative;
+    top: 12px;
 }
 
 main > section:nth-child(3) > section > section:nth-child(1) > h1.second {
@@ -351,18 +331,22 @@ main > section:nth-child(3) > section > section:nth-child(1) > h1.second {
 
 }
 
-main > section:nth-child(3) > section > section:nth-child(1) > hr {
-    border-bottom-color: darkred;
-    margin-left: 19px;
-    padding-left: 39px;
-}
+/*main > section:nth-child(3) > section > section:nth-child(1) > hr {*/
+/*    border-bottom-color: darkred;*/
+/*    margin-left: 19px;*/
+/*    padding-left: 39px;*/
+/*}*/
 
 main > section:nth-child(3) > section > section:nth-child(1) > nav {
     margin-top: 15px;
     margin-left: 23px;
     font-size: 123%;
     font-weight: bold;
+    position: relative;
+    top: 14px;
 }
+
+/*/////////////////////completr//////////////*/
 
 main > section:nth-child(3) > section > section:nth-child(1) > nav > button {
     font-weight: bold;
