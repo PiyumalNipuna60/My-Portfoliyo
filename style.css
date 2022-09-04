@@ -181,7 +181,7 @@ main>section:nth-child(1)>section:nth-child(2)>div>aside>a:nth-child(2)>p{
 
 /*========================== about ==========================*/
 body>main>section:nth-child(2){
-     background-color: green;
+     /*background-color: green;*/
     position: relative;
     bottom: 50px;
 }
@@ -210,36 +210,29 @@ body>main>section:nth-child(2)> section>section>section>article{
     position: absolute;
     /* left: 0; */
     right: 115px;
-    top: 70px;
+    top: 28px;
     width: 50vw;
     height: 50vw;
     margin: auto;
 }
 
-body>main>section:nth-child(2)> section>section>section>aside{
-    background-color: blue;
+body>main>section:nth-child(2)> section>section>section>article>pre:nth-child(4){
     position: relative;
-    right: -12px;
-    top: 0px;
-    margin-top: 0px;
-/* width: 50vw; */
-/* height: 50vw; */
-/*!* margin: auto;*/
+    right: -72px;
+    top: -23px;
+}
+
+body>main>section:nth-child(2)> section>section>section>article>button{
+    background-color: red;
+    position: relative;
+    left: 618px;
+    top: -111px;
+    border-radius: 15px;
+    font-size: 22px;
 }
 
 
-/*body > main > section:nth-child(2) > section>section>section:nth-child(2)>h2{*/
-/*    color: black;*/
-/*    font-style: inherit;*/
-/*    font-size: 22px;*/
-/*}*/
 
-
-/*body > main > section:nth-child(2) > section>section>section>article>p{*/
-/*    !*size: 15px;*!*/
-/*    !*margin-top: 1px;*!*/
-/*    !*margin-bottom: 5px;*!*/
-/*}*/
 
 
 /*========================== gallery ==========================*/
