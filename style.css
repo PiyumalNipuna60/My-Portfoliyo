@@ -264,7 +264,13 @@ body > main > section:nth-child(2) > section>section>section:nth-child(2)>h2{
     left: 31px;
 }
 
+body>main>section:nth-child(2)>section>section:nth-child(1)>section:nth-child(2)>div{
+    /*background-color: dodgerblue;*/
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
 
+}
 
 
 /*========================== gallery ==========================*/
