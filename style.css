@@ -183,26 +183,26 @@ main>section:nth-child(1)>section:nth-child(2)>div>aside>a:nth-child(2)>p{
 body>main>section:nth-child(2){
      background-color: green;
     position: relative;
-    bottom: 72px;
+    bottom: 50px;
 }
 
-/*h1 {*/
-/*    color: black;*/
-/*    font-size: 14px;*/
-/*    font-family: "Griffy";*/
-/*    position: absolute;*/
-/*}*/
+h1 {
+    color: black;
+    font-size: 25px;
+    font-family: "Griffy";
+    position: absolute;
+    left: 34px;
+    top: 6px;
+}
 
-/*h1.second {*/
-/*    color: red;*/
-/*    font-family: "Griffy";*/
-/*    padding-left: 50px;*/
-
-/*}*/
+h1.second {
+    color: red;
+    font-family: "Griffy";
+    padding-left: 78px;
+}
 
 /*body > main > section:nth-child(2) > section{*/
-/* !*padding-bottom: 200px;*!*/
-
+/* padding-bottom: 200px;*/
 /*}*/
 
 /*body>main>section:nth-child(2)> section>section>section>article{*/
