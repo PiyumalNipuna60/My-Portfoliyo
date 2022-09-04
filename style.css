@@ -272,6 +272,7 @@ body > main > section:nth-child(2) > section > section:nth-child(1) > section:nt
 
 body > main > section:nth-child(2) > section > section:nth-child(2) {
     background-color: #464A68;
+    background-image: -moz-element(ass);
     width: 4%;
     height: 56%;
     position: fixed;
@@ -280,6 +281,15 @@ body > main > section:nth-child(2) > section > section:nth-child(2) {
     top: 154px;
     bottom: 0;
     right: 0;
+}
+
+main>section:nth-child(2)>section>hr {
+    background-color: #0a0909;
+    background-color: #0a0909;
+    border: 3px solid black;
+    width: 100%;
+    position: relative;
+    top: 62px;
 }
 
 
