@@ -32,6 +32,13 @@ body>header >nav> ul > li {
     display: inline-block;
 }
 
+header>img{
+    width: 5%;
+    height: 71%;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+}
 
 /*========================== Home =====================*/
 
