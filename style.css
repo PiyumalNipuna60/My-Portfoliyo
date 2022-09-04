@@ -45,8 +45,11 @@ main>section:first-child>section>aside>img{
 
 body > main > section:first-child > section:nth-child(1) > article > h1 {
     color: rgb(246, 251, 13);
-    font-size: 42px;
+    font-size: 52px;
     text-shadow: 2px 2px red;
+    position: relative;
+    left: 12px;
+    top: 37px;
 }
 
 body > main > section:first-child > section:nth-child(1) > article > button {
