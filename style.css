@@ -144,6 +144,16 @@ main>section:nth-child(1)>section:nth-child(2)>div>aside{
     height: 100%;
 }
 
+/*main>section:nth-child(1)>section:nth-child(1)>article>aside{*/
+/*    width: 19%;*/
+/*    height: 15%;*/
+/*    transform: rotate(180deg);*/
+/*    position: absolute;*/
+/*    bottom: 87px;*/
+/*    left: 5px;*/
+/*    background-blend-mode: screen;*/
+/*}*/
+
 
 
 /*========================== about ==========================*/
