@@ -71,6 +71,12 @@ main>section:nth-child(1)>section:nth-child(1)>article>img{
     left: 98px;
 }
 
+main>section:nth-child(1)>section:nth-child(1)>article>p{
+    font-size: 22px;
+    position: relative;
+    left: 125px;
+    top: -72px;
+}
 
 
 
