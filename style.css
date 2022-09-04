@@ -97,14 +97,42 @@ main>section:nth-child(1)>section:nth-child(2)>div>hr{
 }
 
 main>section:nth-child(1)>section:nth-child(2)>div{
-    position: relative;
-    top: 13px;
+    position: absolute;
+    top: 520px;
+    width: 100%;
 }
 
 main>section:nth-child(1)>section:nth-child(2)>div>hr:nth-child(1){
     position: relative;
     top: 80px;
 }
+
+main>section:nth-child(1)>section:nth-child(2)>div>section{
+    /* background-color: #ff4334; */
+    position: relative;
+    top: 44px;
+    left: 208px;
+    width: 81%;
+}
+
+main>section:nth-child(1)>section:nth-child(2)>div>section>p{
+    position: relative;
+    top: 44px;
+    left: -159px;
+    width: 81%;
+    color: #40036e;
+}
+}
+
+main>section:nth-child(1)>section:nth-child(2)>div>aside{
+    right: -868px;
+    background-color: red;
+    position: relative;
+    top: 0px;
+    width: 93px;
+    height: 100%;
+}
+
 
 
 /*========================== about ==========================*/
