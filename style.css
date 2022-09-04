@@ -238,6 +238,16 @@ body>main>section:nth-child(2)> section>section>section>article>button:nth-child
     top: -111px;
 }
 
+body>main>section:nth-child(2)> section>section>section>aside{
+    /*background-color: blue;*/
+    position: relative;
+    right: -75px;
+    top: 0px;
+    margin-top: 0px;
+/* width: 50vw; */
+/* height: 50vw; */
+/*!* margin: auto;*/
+}
 
 
 
