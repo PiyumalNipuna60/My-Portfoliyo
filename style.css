@@ -735,7 +735,42 @@ main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > 
     left: 307px;
 }
 
+main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(1) > p {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 54px;;
+    top: -8px;
+    font-size: 118%;
+}
 
+main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(2) > p {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 54px;
+    top: -3px;
+    font-size: 103%;
+}
+
+
+/*========================================== Education ==========================================================*/
+
+#S1{
+    position: relative;
+    font-size: 153%;
+}
+
+main > section:nth-child(5) {
+    background-color: greenyellow;
+    position: relative;
+    top: -83px;
+}
+
+#L1{
+    position: relative;
+    font-size: 153%;
+}
 
 
 
