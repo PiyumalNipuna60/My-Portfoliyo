@@ -322,64 +322,6 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     background-color: black;
 }
 
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div {
-    position: absolute;
-    top: 560px;
-    width: 100%;
-}
-
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > hr:nth-child(1) {
-    position: relative;
-    top: 80px;
-}
-
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > section {
-    /* background-color: #ff4334; */
-    position: relative;
-    top: 44px;
-    left: 208px;
-    width: 81%;
-}
-
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > section > p {
-    position: relative;
-    top: 44px;
-    left: -159px;
-    width: 81%;
-    color: #40036e;
-}
-
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > aside {
-    right: -1031px;
-    position: relative;
-    top: 0px;
-    width: 93px;
-    height: 100%;
-}
-
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > aside > a:nth-child(2) {
-    width: 93px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 307px;
-}
-
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > aside > a:nth-child(1) > p {
-    width: 93px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 54px;;
-}
-
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > aside > a:nth-child(2) > p {
-    width: 93px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 54px;;
-}
 
 /*========================== gallery ==========================*/
 
