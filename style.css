@@ -637,3 +637,30 @@ main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > 
     top: -3px;
     font-size: 103%;
 }
+
+
+
+/*========================================== Education ==========================================================*/
+
+#E1{
+    position: relative;
+    font-size: 153%;
+}
+
+main > section:nth-child(4) {
+    background-color: #ff7f00;
+    position: relative;
+    top: -83px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
