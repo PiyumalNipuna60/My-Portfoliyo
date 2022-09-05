@@ -388,7 +388,7 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     background-color: #ff4334;
     border: 2px solid black;
     position: relative;
-    top: -3px;
+    top: -14px;
     left: 19px;
 }
 
@@ -415,7 +415,11 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
 }
 
 #glryImg5{
-
+    position: relative;
+    top: -107px;
+    left: 43px;
+    border: 2px solid black;
+    width: 66%;
 }
 
 #glryImg6{
