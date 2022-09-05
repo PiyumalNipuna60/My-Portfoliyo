@@ -393,7 +393,10 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
 }
 
 #glryImg2{
-
+    position: relative;
+    top: -47px;
+    left: -36px;
+    border: 2px solid black;
 }
 
 #glryImg3{
