@@ -248,6 +248,21 @@ body > main > section:nth-child(2) > section > section > section > aside {
     /*!* margin: auto;*/
 }
 
+body > main > section:nth-child(2) > section > section > section > aside>div {
+    background-color: #606077;
+    border: 2px solid;
+    position: absolute;
+    left: 1px;
+    top: -1px;
+    /* margin-top: 0px; */
+    width: 20%;
+    height: 99%;
+    transform: rotate(14deg);
+    background: border-box;
+}
+
+
+
 body > main > section:nth-child(2) > section > section:nth-child(1) > section:nth-child(2) {
     /*background-color: yellow;*/
     position: relative;
