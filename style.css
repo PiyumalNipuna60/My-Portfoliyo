@@ -559,8 +559,6 @@ main > section:nth-child(3) > section > section:nth-child(1) > nav > button {
 
 
 /*////////////////////background colour///////////////////*/
-
-
 main>section:nth-child(3)>section>section:nth-child(1)>section{
     width: 1200px;
     height: 600px;
@@ -770,6 +768,16 @@ main > section:nth-child(5) {
 #L1{
     position: relative;
     font-size: 153%;
+    top: 20px;
+}
+
+main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first-child>hr{
+    margin-left: 25px;
+    margin-top: 20px;
+    padding-left: 58px;
+    color: red;
+    border: 2px solid;
+    width: 0%;
 }
 
 
