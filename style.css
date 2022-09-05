@@ -362,8 +362,6 @@ main > section:nth-child(3) > section > section:nth-child(1) > nav {
     top: 14px;
 }
 
-/*/////////////////////completr//////////////*/
-
 main > section:nth-child(3) > section > section:nth-child(1) > nav > button {
     font-weight: bold;
     width: 10vw;
