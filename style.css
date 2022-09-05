@@ -45,7 +45,9 @@ header > img {
 }
 
 
-/*========================== Home =====================*/
+
+
+/*======================================================== Home =============================================*/
 main > section:first-child > section > aside > img {
     width: 37%;
     height: 39%;
@@ -173,19 +175,9 @@ main > section:nth-child(1) > section:nth-child(2) > div > aside > a:nth-child(2
     font-size: 103%;
 }
 
-/*///////////////*/
-/*main>section:nth-child(1)>section:nth-child(1)>article>aside{*/
-/*    width: 19%;*/
-/*    height: 15%;*/
-/*    transform: rotate(180deg);*/
-/*    position: absolute;*/
-/*    bottom: 87px;*/
-/*    left: 5px;*/
-/*    background-blend-mode: screen;*/
-/*}*/
 
 
-/*========================== about ==========================*/
+/*========================================== about ==========================================*/
 body > main > section:nth-child(2) {
     /*background-color: green;*/
     position: relative;
@@ -206,10 +198,6 @@ h1.second {
     font-family: "Griffy";
     padding-left: 78px;
 }
-
-/*body > main > section:nth-child(2) > section{*/
-/* padding-bottom: 200px;*/
-/*}*/
 
 body > main > section:nth-child(2) > section > section > section > article {
     /*background-color: red;*/
@@ -381,7 +369,10 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     font-size: 103%;
 }
 
-/*========================== gallery ==========================*/
+
+
+
+/*========================================== gallery ==========================================================*/
 
 #glrFrame {
     height: 491px;
@@ -390,6 +381,7 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     position: relative;
     top: 12px;
 }
+
 
 main > section:nth-child(3) {
     /*background-color: #ff7f00;*/
@@ -503,20 +495,6 @@ main>section:nth-child(3)>section>section:nth-child(1)>section>section>img {
     width: 77%;
     height: 29%;
 }
-
-/*/////////////////////////*/
-
-/*main > section:nth-child(3) > section:nth-child(1) > article > hr {*/
-/*    background-color: #dbd3d3;*/
-/*    width: 41%;*/
-/*    !* rotate: unset; *!*/
-/*    height: 12px;*/
-/*    border: inset;*/
-/*    transform: rotate(90deg);*/
-/*    position: absolute;*/
-/*    top: 296px;*/
-/*    left: 614px;*/
-/*}*/
 
 
 /*///////////nav css////////*/
