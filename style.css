@@ -772,14 +772,41 @@ main > section:nth-child(5) {
 }
 
 main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first-child>hr{
-    margin-left: 25px;
-    margin-top: 20px;
+    margin-left: 29px;
+    margin-top: 22px;
     padding-left: 58px;
     color: red;
     border: 2px solid;
-    width: 0%;
+    width: 4%;
 }
 
+#sDiv1{
+    display: flex;
+    justify-content: space-between;
+    height: 123px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+#sDiv1>div{
+    background-color: #40036e;
+    position: relative;
+    width: 10%;
+    height: 59%;
+    border-radius: 13px;
+}
+
+
+
+#sDiv1>div>h3{
+    font-size: 111%;
+    position: relative;
+    top: -53px;
+    left: 77px;
+}
 
 
 
