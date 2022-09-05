@@ -328,6 +328,11 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div {
     width: 100%;
 }
 
+main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > hr:nth-child(1) {
+    position: relative;
+    top: 80px;
+}
+
 
 
 /*========================== gallery ==========================*/
