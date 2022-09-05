@@ -532,7 +532,7 @@ main > section:nth-child(3) > section > section:nth-child(1) > nav > button {
 /*}*/
 
 
-/*///////////////////////////////////////*/
+/*////////////////////background colour///////////////////*/
 
 
 main>section:nth-child(3)>section>section:nth-child(1)>section{
@@ -547,7 +547,16 @@ main>section:nth-child(3)>section>section:nth-child(1)>section{
     bottom: -13px;
     /* top: 0; */
     margin: auto;
-    background-color: darkgreen;
+    /*background-color: darkgreen;*/
+    background:
+            radial-gradient(circle, transparent 10%, green 10%,
+            slategray 80%, transparent 80%, transparent),
+            radial-gradient(circle, transparent 20%, darkgreen 20%,
+            slategray 80%, transparent 80%, transparent) 50px 50px,
+            linear-gradient(darkgreen 8px, transparent 8px) 0 -4px,
+            linear-gradient(90deg, darkgreen 8px, transparent 8px) -4px 0;
+    background-color: slategray;
+    background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
 }
 
 main>section:nth-child(3)>section>section:nth-child(1)>section>section {
