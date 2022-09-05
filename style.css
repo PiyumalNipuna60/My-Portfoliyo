@@ -388,26 +388,30 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     background-color: #ff4334;
     border: 2px solid black;
     position: relative;
-    top: -8px;
-    left: 6px;
+    top: -3px;
+    left: 19px;
 }
 
 #glryImg2{
     position: relative;
-    top: -47px;
-    left: -36px;
+    top: -37px;
+    left: 12px;
     border: 2px solid black;
+    width: 95%;
 }
 
 #glryImg3{
     position: relative;
-    top: 14px;
-    left: -78px;
+    top: 21px;
+    left: 28px;
     border: 2px solid black;
 }
 
 #glryImg4{
-
+    position: relative;
+    top: -72px;
+    left: 15px;
+    border: 2px solid black;
 }
 
 #glryImg5{
@@ -536,8 +540,8 @@ main>section:nth-child(3)>section>section:nth-child(1)>section>section {
 
 main>section:nth-child(3)>section>section:nth-child(1)>section>section>img {
     margin-left: 3px;
-    width: 77%;
-    height: 29%;
+    width: 85%;
+    height: 29%
 }
 
 
