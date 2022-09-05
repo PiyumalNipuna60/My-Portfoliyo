@@ -385,7 +385,11 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
 /*///image set////*/
 
 #glryImg1{
-
+    background-color: #ff4334;
+    border: 2px solid black;
+    position: relative;
+    top: -8px;
+    left: 6px;
 }
 
 #glryImg2{
