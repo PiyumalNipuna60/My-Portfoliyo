@@ -394,7 +394,7 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
 
 #glryImg2{
     position: relative;
-    top: -37px;
+    top: -46px;
     left: 12px;
     border: 2px solid black;
     width: 95%;
@@ -416,14 +416,18 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
 
 #glryImg5{
     position: relative;
-    top: -107px;
+    top: -70px;
     left: 43px;
     border: 2px solid black;
     width: 66%;
 }
 
 #glryImg6{
-
+    position: relative;
+    top: -107px;
+    left: 1px;
+    border: 2px solid black;
+    width: 190px;
 }
 
 #glryImg7{
