@@ -324,7 +324,7 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
 
 main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div {
     position: absolute;
-    top: 560px;
+    top: 513px;
     width: 100%;
 }
 
@@ -341,7 +341,45 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     width: 81%;
 }
 
+main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > section > p {
+    position: relative;
+    top: 44px;
+    left: -159px;
+    width: 81%;
+    color: #40036e;
+}
 
+main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > aside {
+    right: -1031px;
+    position: relative;
+    top: 0px;
+    width: 93px;
+    height: 100%;
+}
+
+main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > aside > a:nth-child(2) {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 307px;
+}
+
+main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > aside > a:nth-child(1) > p {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 54px;;
+}
+
+main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > aside > a:nth-child(2) > p {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 54px;;
+}
 
 /*========================== gallery ==========================*/
 
@@ -358,7 +396,7 @@ main > section:nth-child(3) {
     /* width: 97vw; */
     /* height: 98vh; */
     position: relative;
-    top: -104px;
+    top: -72px;
 }
 
 main > section:nth-child(3) > section > section:nth-child(1) > h1 {
