@@ -248,18 +248,14 @@ body > main > section:nth-child(2) > section > section > section > aside >img{
     right: -107px;
     top: 5px;
     margin-top: 0px;
-    /* width: 50vw; */
-    /* height: 50vw; */
-    /*!* margin: auto;*/
-    /*rotation: 30deg;*/
-    /*display: inline-block;*/
-    transform: rotate(11deg);
+    transform: rotate(6deg);
     z-index: 1;
+    border: 4px solid black;
 }
 
 body > main > section:nth-child(2) > section > section > section > aside>div {
     background-color: red;
-    border: 2px solid;
+    border: 4px solid black;
     position: absolute;
     left: 109px;
     top: 73px;
@@ -314,8 +310,8 @@ main>section:nth-child(2)>section>hr {
     top: 62px;
 }
 
-/*///////////nav css////////*/
 
+/*///////////nav css////////*/
 main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > hr {
     color: #0a0909;
     height: 2px;
@@ -388,7 +384,7 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     width: 1120px;
     border: 3px solid #40036e;
     position: relative;
-    top: 24px;
+    top: 12px;
 }
 
 main > section:nth-child(3) {
@@ -490,7 +486,7 @@ main>section:nth-child(3)>section>section:nth-child(1)>section{
     bottom: -13px;
     /* top: 0; */
     margin: auto;
-    background-color: #ff7f00;
+    background-color: darkgreen;
 }
 
 main>section:nth-child(3)>section>section:nth-child(1)>section>section {
@@ -518,6 +514,8 @@ main>section:nth-child(3)>section>section:nth-child(1)>section>section>img {
 /*    left: 614px;*/
 /*}*/
 
+
+/*///////////nav css////////*/
 main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > hr {
     color: #0a0909;
     height: 2px;
@@ -526,7 +524,7 @@ main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > 
 
 main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div {
     position: absolute;
-    top: 560px;
+    top: 539px;
     width: 100%;
 }
 
