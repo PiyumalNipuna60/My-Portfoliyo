@@ -159,16 +159,18 @@ main > section:nth-child(1) > section:nth-child(2) > div > aside > a:nth-child(1
     width: 93px;
     height: 100%;
     position: absolute;
-    top: 0;
     left: 54px;;
+    top: -8px;
+    font-size: 118%;
 }
 
 main > section:nth-child(1) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
     width: 93px;
     height: 100%;
     position: absolute;
-    top: 0;
-    left: 54px;;
+    left: 54px;
+    top: -3px;
+    font-size: 103%;
 }
 
 /*///////////////*/
@@ -357,24 +359,26 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     width: 93px;
     height: 100%;
     position: absolute;
-    top: 0;
     left: 307px;
+    top: 0;
 }
 
 main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > aside > a:nth-child(1) > p {
     width: 93px;
     height: 100%;
     position: absolute;
-    top: 0;
-    left: 54px;;
+    left: 54px;
+    top: -8px;
+    font-size: 118%;
 }
 
 main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > aside > a:nth-child(2) > p {
     width: 93px;
     height: 100%;
     position: absolute;
-    top: 0;
-    left: 54px;;
+    left: 54px;
+    top: -4px;
+    font-size: 103%;
 }
 
 /*========================== gallery ==========================*/
@@ -561,7 +565,6 @@ main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > 
     width: 93px;
     height: 100%;
     position: absolute;
-    top: 0;
     left: 307px;
 }
 
@@ -569,14 +572,16 @@ main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > 
     width: 93px;
     height: 100%;
     position: absolute;
-    top: 0;
     left: 54px;;
+    top: -8px;
+    font-size: 118%;
 }
 
 main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > aside > a:nth-child(2) > p {
     width: 93px;
     height: 100%;
     position: absolute;
-    top: 0;
-    left: 54px;;
+    left: 54px;
+    top: -3px;
+    font-size: 103%;
 }
