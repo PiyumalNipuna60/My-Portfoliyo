@@ -400,7 +400,10 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
 }
 
 #glryImg3{
-
+    position: relative;
+    top: 14px;
+    left: -78px;
+    border: 2px solid black;
 }
 
 #glryImg4{
