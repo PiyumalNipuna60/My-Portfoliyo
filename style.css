@@ -1102,6 +1102,16 @@ main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > 
     left: 307px;
 }
 
+main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(1) > p {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 54px;;
+    top: -8px;
+    font-size: 118%;
+}
+
+
 
 
 
