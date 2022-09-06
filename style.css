@@ -1243,6 +1243,14 @@ main > section:nth-child(7) > section:nth-child(2) >section:nth-child(1)>aside:n
     right: 73px;
 }
 
+main > section:nth-child(7) > section:nth-child(2) >section:nth-child(1)>aside:nth-child(5)>button{
+    width: 118%;
+    height: 44px;
+    background-color: aqua;
+    font-size: 102%;
+}
+
+
 
 
 
