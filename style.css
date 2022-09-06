@@ -1157,5 +1157,12 @@ main>section:nth-child(7)>section:nth-child(2)>section:first-child>div{
     top: -27px;
 }
 
+main>section:nth-child(7)>section:nth-child(2)>section:first-child>div>img:nth-child(1){
+    position: relative;
+    left: 108px;
+    top: -10px;
+}
+
+
 
 
