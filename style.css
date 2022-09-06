@@ -932,8 +932,13 @@ main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > 
     color: #40036e;
 }
 
-
-
+main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > aside {
+    right: -1031px;
+    position: relative;
+    top: 0px;
+    width: 93px;
+    height: 100%;
+}
 
 
 
