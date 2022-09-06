@@ -1237,6 +1237,13 @@ main>section:nth-child(7)>section:nth-child(2)>section:first-child>div>img:nth-c
     top: -130px;
 }
 
+main > section:nth-child(7) > section:nth-child(2) >section:nth-child(1)>aside:nth-child(5){
+    position: absolute;
+    top: 616px;
+    right: 73px;
+}
+
+
 
 
 
