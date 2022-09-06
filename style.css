@@ -1095,3 +1095,16 @@ main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > 
     height: 100%;
 }
 
+main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(2) {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 307px;
+}
+
+
+
+
+
+
+
