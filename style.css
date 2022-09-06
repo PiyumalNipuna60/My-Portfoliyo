@@ -851,6 +851,15 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first
     left: 92px;
 }
 
+main>section:nth-child(5)>section:nth-child(2)>section:first-child>article>hr{
+    margin-left: 26px;
+    margin-top: 22px;
+    padding-left: 58px;
+    color: red;
+    border: 2px solid;
+    width: 0%;
+}
+
 
 
 
