@@ -972,7 +972,17 @@ main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > 
 #P1{
     position: relative;
     font-size: 153%;
-    top: -229px;
+    top: 16px;
+}
+
+main > section:nth-child(6) {
+    background-color: yellow;
+    /*background-repeat: no-repeat, repeat;*/
+    /*background-image: url("assets/image/pic/CxrL.gif");*/
+    /*background-size: 100% 100%;*/
+    position: relative;
+    top: -257px;
+    height: 99vh;
 }
 
 
