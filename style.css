@@ -799,7 +799,14 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first
     border-radius: 13px;
 }
 
-
+#sDiv1>div>img{
+    position: relative;
+    width: 33%;
+    height: 70%;
+    border-radius: 13px;
+    top: 10px;
+    left: 12px;
+}
 
 #sDiv1>div>h3{
     font-size: 111%;
