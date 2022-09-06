@@ -1467,3 +1467,12 @@ main > section:nth-child(9) {
     top: -212px;
     height: 129vh;
 }
+
+main>section:nth-child(9)>section:nth-child(2)>section:first-child>hr{
+    margin-left: 63px;
+    margin-top: -4px;
+    padding-left: 58px;
+    color: red;
+    border: 2px solid;
+    width: 4%;
+}
