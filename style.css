@@ -898,6 +898,13 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>article>hr{
     right: 0;
 }
 
+/*///////////nav css////////*/
+main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > hr {
+    color: #0a0909;
+    height: 2px;
+    background-color: black;
+}
+
 
 
 
