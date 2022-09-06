@@ -765,12 +765,6 @@ main > section:nth-child(5) {
     top: -83px;
 }
 
-#L1{
-    position: relative;
-    font-size: 153%;
-    top: 20px;
-}
-
 main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first-child>hr{
     margin-left: 29px;
     margin-top: 22px;
@@ -851,6 +845,12 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first
     left: 92px;
 }
 
+#L1{
+    position: relative;
+    font-size: 153%;
+    top: 20px;
+}
+
 main>section:nth-child(5)>section:nth-child(2)>section:first-child>article>hr{
     margin-left: 26px;
     margin-top: 22px;
@@ -859,6 +859,17 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>article>hr{
     border: 2px solid;
     width: 0%;
 }
+
+#sDiv3{
+    display: flex;
+    justify-content: space-evenly;
+    height: 123px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 
 
 
