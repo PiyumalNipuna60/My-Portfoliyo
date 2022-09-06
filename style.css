@@ -1151,4 +1151,15 @@ main>section:nth-child(7)>section:nth-child(2)>section:first-child>hr{
     width: 5%;
 }
 
+main>section:nth-child(7)>section:nth-child(2)>section:first-child>div{
+    position: relative;
+    left: 185px;
+}
+
+main>section:nth-child(7)>section:nth-child(2)>section:first-child>div>img:nth-child(2){
+    position: relative;
+    left: 68px;
+    top: -6px;
+}
+
 
