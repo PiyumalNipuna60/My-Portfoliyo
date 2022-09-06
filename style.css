@@ -768,7 +768,10 @@ main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > 
 
 main > section:nth-child(5) {
     background-color: greenyellow;
-    /*background-image: url("assets/image/pic/1_e_Loq49BI4WmN7o9ItTADg.gif");*/
+    background-repeat: no-repeat, repeat;
+    background-image: url("assets/image/pic/CxrL.gif");
+    background-size: 100% 100%;
+    /*background-size: auto;*/
     position: relative;
     top: -125px;
     height: 100vh;
