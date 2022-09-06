@@ -1213,6 +1213,13 @@ main>section:nth-child(7)>section:nth-child(2)>section:first-child>div>img:nth-c
     position: relative;
     top: -143px;
 }
+#APart03>img{
+    border: 2px solid yellow;
+    border-radius: 17px;
+    width: 15%;
+    position: relative;
+}
+
 
 
 
