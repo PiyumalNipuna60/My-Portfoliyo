@@ -976,13 +976,13 @@ main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > 
 }
 
 main > section:nth-child(6) {
-    background-color: yellow;
-    /*background-repeat: no-repeat, repeat;*/
-    /*background-image: url("assets/image/pic/CxrL.gif");*/
-    /*background-size: 100% 100%;*/
+    /*background-color: yellow;*/
+    background-repeat: no-repeat, repeat;
+    background-image: url("assets/image/pic/image_processing20220207-786-j68tnb.gif");
+    background-size: 100% 100%;
     position: relative;
     top: -257px;
-    height: 99vh;
+    height: 101vh;
 }
 
 main>section:nth-child(6)>section:nth-child(2)>section:first-child>hr{
@@ -995,7 +995,7 @@ main>section:nth-child(6)>section:nth-child(2)>section:first-child>hr{
 }
 
 main>section:nth-child(6)>section:nth-child(2)>section:first-child>article{
-    background-color: #ff7f00;
+    /*background-color: #ff7f00;*/
     position: relative;
     top: 6px;
     display: flex;
@@ -1005,7 +1005,7 @@ main>section:nth-child(6)>section:nth-child(2)>section:first-child>article{
 #Pdiv1{
     left: 175px;
     position: relative;
-    top: 56px;
+    top: 22px;
 }
 
 #Pdiv1>h3{
@@ -1018,7 +1018,7 @@ main>section:nth-child(6)>section:nth-child(2)>section:first-child>article{
 #Pdiv2{
     left: 108px;
     position: relative;
-    top: 32px;
+    top: -6px;
 }
 
 #Pdiv2>h3{
@@ -1031,7 +1031,7 @@ main>section:nth-child(6)>section:nth-child(2)>section:first-child>article{
 #Pdiv3{
     left: 37px;
     position: relative;
-    top: 56px;
+    top: 22px;
 }
 
 #Pdiv3>h3{
@@ -1044,7 +1044,7 @@ main>section:nth-child(6)>section:nth-child(2)>section:first-child>article{
 #Pdiv4{
     left: -100px;
     position: relative;
-    top: 67px;
+    top: 54px;
 }
 
 #Pdiv4>h3{
@@ -1063,7 +1063,7 @@ main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > 
 
 main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div {
     position: absolute;
-    top: 539px;
+    top: 571px;
     width: 100%;
 }
 
