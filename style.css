@@ -51,8 +51,22 @@ header > img {
 body > main > section:nth-child(1) {
     /*background-color: green;*/
     position: relative;
-    bottom: 64px;
+    bottom: 21px;
     height: 103vh;
+}
+
+main>section:first-child>section:first-child>article>aside{
+    background-color: #40036e;
+    position: relative;
+    /* border: 2px solid black; */
+    height: 288px;
+    width: 34%;
+    top: -152px;
+    left: 1px;
+    background-repeat: no-repeat, repeat;
+    background-image: url(assets/image/pic/168114-black-and-white-dot-background-image.jpg);
+    background-size: 100% 100%;
+    transform: rotate(180deg);
 }
 
 main > section:first-child > section > aside > img {
@@ -90,6 +104,7 @@ main > section:nth-child(1) > section:nth-child(1) > article > p {
     position: relative;
     left: 125px;
     top: -72px;
+    z-index: 1;
 }
 
 main > section:nth-child(1) > section:nth-child(1) > article > button {
@@ -101,6 +116,7 @@ main > section:nth-child(1) > section:nth-child(1) > article > button {
     top: -37px;
     color: #edebe9;
     border-radius: 16px;
+    z-index: 2;
 }
 
 main > section:nth-child(1) > section:nth-child(1) > article > hr {
@@ -794,7 +810,6 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first
     top: 0;
     left: 0;
     right: 0;
-
 }
 
 #sDiv1>div{
