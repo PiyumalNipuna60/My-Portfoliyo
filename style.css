@@ -4,7 +4,7 @@ body{
 
 main > section {
     width: 100vw;
-    height: 97vh;
+    height: 109vh;
     /*!*position: relative;*!*/
     /*!*bottom: -173px;*!*/
     /*border: 3px solid red;*/
@@ -48,6 +48,13 @@ header > img {
 
 
 /*======================================================== Home =============================================*/
+body > main > section:nth-child(1) {
+    /*background-color: green;*/
+    position: relative;
+    bottom: 64px;
+    height: 103vh;
+}
+
 main > section:first-child > section > aside > img {
     width: 37%;
     height: 39%;
@@ -674,7 +681,7 @@ main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > 
 main > section:nth-child(4) {
     background-color: #ff7f00;
     position: relative;
-    top: -83px;
+    top: -99px;
 }
 
 main > section:nth-child(4)>section>section>article {
@@ -761,8 +768,10 @@ main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > 
 
 main > section:nth-child(5) {
     background-color: greenyellow;
+    /*background-image: url("assets/image/pic/1_e_Loq49BI4WmN7o9ItTADg.gif");*/
     position: relative;
-    top: -83px;
+    top: -125px;
+    height: 100vh;
 }
 
 main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first-child>hr{
