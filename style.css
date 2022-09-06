@@ -994,8 +994,29 @@ main>section:nth-child(6)>section:nth-child(2)>section:first-child>hr{
     width: 2%;
 }
 
+main>section:nth-child(6)>section:nth-child(2)>section:first-child>article{
+    background-color: #ff7f00;
+    position: relative;
+    top: 6px;
+    display: flex;
+    justify-content: space-between;
+}
 
+#Pdiv1{
 
+}
+
+#Pdiv2{
+
+}
+
+#Pdiv3{
+
+}
+
+#Pdiv4{
+
+}
 
 
 
