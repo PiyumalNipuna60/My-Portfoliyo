@@ -1356,3 +1356,10 @@ main>section:nth-child(8)>section:nth-child(2)>section:first-child>hr{
     width: 4%;
 }
 
+main>section:nth-child(8)>section:nth-child(2)>section:first-child>img{
+    position: relative;
+    width: 95%;
+    height: 472px;
+    left: 40px;
+    top: -13px;
+}
