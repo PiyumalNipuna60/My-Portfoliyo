@@ -791,7 +791,7 @@ main > section:nth-child(5) {
     /*background-size: auto;*/
     position: relative;
     top: -241px;
-    height: 100vh;
+    height: 99vh;
 }
 
 main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first-child>hr{
@@ -946,4 +946,33 @@ main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > 
     position: absolute;
     left: 307px;
 }
+
+main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(1) > p {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 54px;;
+    top: -8px;
+    font-size: 118%;
+}
+
+main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(2) > p {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 54px;
+    top: -3px;
+    font-size: 103%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
