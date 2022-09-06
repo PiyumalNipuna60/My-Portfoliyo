@@ -1079,3 +1079,11 @@ main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > 
     width: 81%;
 }
 
+main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > section > p {
+    position: relative;
+    top: 44px;
+    left: -159px;
+    width: 81%;
+    color: #40036e;
+}
+
