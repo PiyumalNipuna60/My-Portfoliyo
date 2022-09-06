@@ -1003,7 +1003,7 @@ main>section:nth-child(6)>section:nth-child(2)>section:first-child>article{
 }
 
 #Pdiv1{
-    left: 96px;
+    left: 175px;
     position: relative;
     top: 56px;
 }
@@ -1015,9 +1015,9 @@ main>section:nth-child(6)>section:nth-child(2)>section:first-child>article{
 }
 
 #Pdiv2{
-    left: 27px;
+    left: 108px;
     position: relative;
-    top: 28px;
+    top: 32px;
 }
 
 #Pdiv2>h3{
@@ -1028,7 +1028,7 @@ main>section:nth-child(6)>section:nth-child(2)>section:first-child>article{
 }
 
 #Pdiv3{
-    left: -44px;
+    left: 37px;
     position: relative;
     top: 56px;
 }
@@ -1041,7 +1041,7 @@ main>section:nth-child(6)>section:nth-child(2)>section:first-child>article{
 }
 
 #Pdiv4{
-    left: -166px;
+    left: -100px;
     position: relative;
     top: 67px;
 }
