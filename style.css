@@ -357,7 +357,7 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
 
 main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div {
     position: absolute;
-    top: 513px;
+    top: 537px;
     width: 100%;
 }
 
@@ -500,7 +500,7 @@ main > section:nth-child(3) {
     /* width: 97vw; */
     /* height: 98vh; */
     position: relative;
-    top: -72px;
+    top: -134px;
 }
 
 main > section:nth-child(3) > section > section:nth-child(1) > h1 {
@@ -697,7 +697,8 @@ main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > 
 main > section:nth-child(4) {
     background-color: #ff7f00;
     position: relative;
-    top: -99px;
+    top: -223px;
+    height: 99vh;
 }
 
 main > section:nth-child(4)>section>section>article {
@@ -789,7 +790,7 @@ main > section:nth-child(5) {
     background-size: 100% 100%;
     /*background-size: auto;*/
     position: relative;
-    top: -125px;
+    top: -241px;
     height: 100vh;
 }
 
@@ -896,6 +897,8 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>article>hr{
     left: 0;
     right: 0;
 }
+
+
 
 
 
