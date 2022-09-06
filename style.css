@@ -1169,6 +1169,17 @@ main>section:nth-child(7)>section:nth-child(2)>section:first-child>div>img:nth-c
     width: 15%;
 }
 
+#APart01>div{
+    position: absolute;
+    left: 330px;
+    top: 32px;
+}
+
+#APart01>div>pre{
+    position: relative;
+    left: -279px;
+}
+
 
 
 
