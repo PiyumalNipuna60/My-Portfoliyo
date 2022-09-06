@@ -1020,6 +1020,13 @@ main>section:nth-child(6)>section:nth-child(2)>section:first-child>article{
     top: 28px;
 }
 
+#Pdiv2>h3{
+    left: 153px;
+    position: relative;
+    top: -23px;
+    font-size: 200%;
+}
+
 #Pdiv3{
     left: -44px;
     position: relative;
