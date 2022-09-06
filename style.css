@@ -1271,6 +1271,15 @@ main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div > 
     top: 80px;
 }
 
+main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div > section {
+    /* background-color: #ff4334; */
+    position: relative;
+    top: 44px;
+    left: 208px;
+    width: 81%;
+}
+
+
 
 
 
