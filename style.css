@@ -794,9 +794,10 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first
 #sDiv1>div{
     background-color: #40036e;
     position: relative;
-    width: 10%;
+    width: 12%;
     height: 59%;
     border-radius: 13px;
+    color: #edebe9;
 }
 
 #sDiv1>div>img{
@@ -811,8 +812,8 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first
 #sDiv1>div>h3{
     font-size: 111%;
     position: relative;
-    top: -53px;
-    left: 77px;
+    top: -46px;
+    left: 92px;
 }
 
 
