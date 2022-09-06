@@ -1253,6 +1253,13 @@ main > section:nth-child(7) > section:nth-child(2) >section:nth-child(1)>aside:n
 
 
 
+/*///////////nav css////////*/
+main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div > hr {
+    color: #0a0909;
+    height: 2px;
+    background-color: black;
+}
+
 
 
 
