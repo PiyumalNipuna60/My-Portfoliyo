@@ -1196,6 +1196,14 @@ main>section:nth-child(7)>section:nth-child(2)>section:first-child>div>img:nth-c
     font-size: 24px;
 }
 
+#APart02>div>hr{
+    position: relative;
+    left: 0px;
+    top: -13px;
+    font-size: 24px;
+    width: 23%;
+}
+
 
 
 
