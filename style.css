@@ -1343,8 +1343,8 @@ main > section:nth-child(8) {
     /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
     /*background-size: 100% 100%;*/
     position: relative;
-    top: -267px;
-    height: 118vh;
+    top: -197px;
+    height: 129vh;
 }
 
 main>section:nth-child(8)>section:nth-child(2)>section:first-child>hr{
@@ -1360,8 +1360,24 @@ main>section:nth-child(8)>section:nth-child(2)>section:first-child>img{
     position: relative;
     width: 95%;
     height: 472px;
-    left: 40px;
-    top: -13px;
+    left: 28px;
+    top: 22px;
+    border: 2px solid black;
+}
+
+main>section:nth-child(8)>section:nth-child(2)>section:first-child>aside:nth-child(5)>button{
+    background-color: blue;
+    font-size: 163%;
+    color: white;
+    border-radius: 19px;
+    border: 2px solid black;
+    width: 14%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* top: 23px; */
+    bottom: 104px;
 }
 
 /*///////////nav css////////*/
