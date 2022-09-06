@@ -752,7 +752,7 @@ main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > 
 }
 
 
-/*========================================== Education ==========================================================*/
+/*========================================== Skill ==========================================================*/
 
 #S1{
     position: relative;
@@ -782,7 +782,7 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first
 
 #sDiv1{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 123px;
     position: relative;
     top: 0;
@@ -810,6 +810,41 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first
 }
 
 #sDiv1>div>h3{
+    font-size: 111%;
+    position: relative;
+    top: -46px;
+    left: 92px;
+}
+
+#sDiv2{
+    display: flex;
+    justify-content: space-evenly;
+    height: 123px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#sDiv2>div{
+    background-color: #40036e;
+    position: relative;
+    width: 12%;
+    height: 59%;
+    border-radius: 13px;
+    color: #edebe9;
+}
+
+#sDiv2>div>img{
+    position: relative;
+    width: 33%;
+    height: 70%;
+    border-radius: 13px;
+    top: 10px;
+    left: 12px;
+}
+
+#sDiv2>div>h3{
     font-size: 111%;
     position: relative;
     top: -46px;
