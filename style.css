@@ -1132,4 +1132,14 @@ main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > 
     left: 56px;
 }
 
+main > section:nth-child(7) {
+    /*background-color: #d9b7b7;*/
+    background-repeat: no-repeat, repeat;
+    background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");
+    background-size: 100% 100%;
+    position: relative;
+    top: -257px;
+    height: 118vh;
+}
+
 
