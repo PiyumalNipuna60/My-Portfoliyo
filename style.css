@@ -967,7 +967,7 @@ main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > 
 
 
 
-/*========================================== Skill ==========================================================*/
+/*========================================== Project ==========================================================*/
 
 #P1{
     position: relative;
@@ -1007,6 +1007,7 @@ main>section:nth-child(6)>section:nth-child(2)>section:first-child>article{
     position: relative;
     top: 56px;
 }
+
 #Pdiv1>h3{
     left: 124px;
     position: relative;
@@ -1111,7 +1112,14 @@ main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > 
     font-size: 118%;
 }
 
-
+main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(2) > p {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 54px;
+    top: -3px;
+    font-size: 103%;
+}
 
 
 
