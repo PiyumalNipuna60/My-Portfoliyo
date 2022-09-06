@@ -1189,6 +1189,13 @@ main>section:nth-child(7)>section:nth-child(2)>section:first-child>div>img:nth-c
     left: -48px;
 }
 
+#APart02>div{
+    position: relative;
+    left: 394px;
+    top: -241px;
+    font-size: 24px;
+}
+
 
 
 
