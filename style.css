@@ -905,6 +905,11 @@ main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > 
     background-color: black;
 }
 
+main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div {
+    position: absolute;
+    top: 539px;
+    width: 100%;
+}
 
 
 
