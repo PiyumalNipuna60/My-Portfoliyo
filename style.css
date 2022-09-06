@@ -1347,5 +1347,12 @@ main > section:nth-child(8) {
     height: 118vh;
 }
 
-
+main>section:nth-child(8)>section:nth-child(2)>section:first-child>hr{
+    margin-left: 57px;
+    margin-top: -31px;
+    padding-left: 58px;
+    color: red;
+    border: 2px solid;
+    width: 4%;
+}
 
