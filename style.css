@@ -1220,6 +1220,12 @@ main>section:nth-child(7)>section:nth-child(2)>section:first-child>div>img:nth-c
     position: relative;
 }
 
+#APart03>div{
+    position: absolute;
+    left: 330px;
+    top: 15px;
+}
+
 
 
 
