@@ -1363,3 +1363,70 @@ main>section:nth-child(8)>section:nth-child(2)>section:first-child>img{
     left: 40px;
     top: -13px;
 }
+
+/*///////////nav css////////*/
+main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > hr {
+    color: #0a0909;
+    height: 2px;
+    background-color: black;
+}
+
+main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div {
+    position: absolute;
+    top: 682px;
+    width: 100%;
+}
+
+main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > hr:nth-child(1) {
+    position: relative;
+    top: 80px;
+}
+
+main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > section {
+    /* background-color: #ff4334; */
+    position: relative;
+    top: 44px;
+    left: 208px;
+    width: 81%;
+}
+
+main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > section > p {
+    position: relative;
+    top: 44px;
+    left: -159px;
+    width: 81%;
+    color: #40036e;
+}
+
+main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > aside {
+    right: -1031px;
+    position: relative;
+    top: 0px;
+    width: 93px;
+    height: 100%;
+}
+
+main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(2) {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 307px;
+}
+
+main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(1) > p {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 54px;;
+    top: -8px;
+    font-size: 118%;
+}
+
+main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(2) > p {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 54px;
+    top: -3px;
+    font-size: 103%;
+}
