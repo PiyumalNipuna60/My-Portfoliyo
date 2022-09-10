@@ -16,14 +16,14 @@ main > section {
 body > main > section:nth-child(1) {
     /*background-color: green;*/
     position: relative;
-    bottom: 21px;
-    height: 103vh;
+    bottom: 25px;
+    height: 99vh;
 }
 
 body > main > section:nth-child(2) {
-    /*background-color: green;*/
+    /*background-color: red;*/
     position: relative;
-    bottom: 50px;
+    bottom: 22px;
 }
 
 main > section:nth-child(3) {
