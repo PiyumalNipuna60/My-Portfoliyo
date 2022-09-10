@@ -1,5 +1,7 @@
-body{
-    overflow-x: hidden ;
+body {
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 
 main > section {
@@ -22,10 +24,11 @@ body > header {
 }
 
 body > header > nav > ul {
+    right: 1%;
     position: absolute;
-    right: 30px;
+    /* right: 30px; */
     margin-top: 10px;
-    font-size: 24px;
+    font-size: 161%;
     font-family: 'Lobster', cursive;
     list-style: none;
     color: white;
@@ -34,6 +37,18 @@ body > header > nav > ul {
 body > header > nav > ul > li {
     padding: 0 10px 0 10px;
     display: inline-block;
+    cursor: pointer;
+}
+
+body > header > nav > ul > li>i{
+    padding-right: 15px;
+    font-size: 20px;
+    color: #ccffcd;
+}
+
+body > header > nav > ul > li >a{
+    color: #ccffcd;
+    text-decoration: none;
 }
 
 header > img {
@@ -45,8 +60,6 @@ header > img {
 }
 
 
-
-
 /*======================================================== Home =============================================*/
 body > main > section:nth-child(1) {
     /*background-color: green;*/
@@ -55,7 +68,7 @@ body > main > section:nth-child(1) {
     height: 103vh;
 }
 
-main>section:first-child>section:first-child>article>aside{
+main > section:first-child > section:first-child > article > aside {
     background-color: #40036e;
     position: relative;
     /* border: 2px solid black; */
@@ -199,7 +212,6 @@ main > section:nth-child(1) > section:nth-child(2) > div > aside > a:nth-child(2
 }
 
 
-
 /*========================================== about ==========================================*/
 body > main > section:nth-child(2) {
     /*background-color: green;*/
@@ -207,7 +219,7 @@ body > main > section:nth-child(2) {
     bottom: 50px;
 }
 
-main>section:nth-child(2)>section:nth-child(2)>section:first-child>section:first-child>hr{
+main > section:nth-child(2) > section:nth-child(2) > section:first-child > section:first-child > hr {
     box-sizing: content-box;
     height: 0px;
     overflow: visible;
@@ -219,7 +231,7 @@ main>section:nth-child(2)>section:nth-child(2)>section:first-child>section:first
     border: 1px solid;
 }
 
-main>section:nth-child(2)>section:nth-child(2)>section:first-child>section:last-child>hr{
+main > section:nth-child(2) > section:nth-child(2) > section:first-child > section:last-child > hr {
     box-sizing: content-box;
     height: 0px;
     overflow: visible;
@@ -279,7 +291,7 @@ body > main > section:nth-child(2) > section > section > section > article > but
     top: -111px;
 }
 
-body > main > section:nth-child(2) > section > section > section > aside >img{
+body > main > section:nth-child(2) > section > section > section > aside > img {
     /*background-color: blue;*/
     position: relative;
     right: -107px;
@@ -290,7 +302,7 @@ body > main > section:nth-child(2) > section > section > section > aside >img{
     border: 4px solid black;
 }
 
-body > main > section:nth-child(2) > section > section > section > aside>div {
+body > main > section:nth-child(2) > section > section > section > aside > div {
     background-color: red;
     border: 4px solid black;
     position: absolute;
@@ -338,7 +350,7 @@ body > main > section:nth-child(2) > section > section:nth-child(2) {
     right: 0;
 }
 
-main>section:nth-child(2)>section>hr {
+main > section:nth-child(2) > section > hr {
     background-color: #0a0909;
     background-color: #0a0909;
     border: 2px solid black;
@@ -349,24 +361,24 @@ main>section:nth-child(2)>section>hr {
 
 
 /*///////////nav css////////*/
-main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > hr {
+main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div > hr {
     color: #0a0909;
     height: 2px;
     background-color: black;
 }
 
-main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div {
+main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div {
     position: absolute;
     top: 537px;
     width: 100%;
 }
 
-main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > hr:nth-child(1) {
+main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div > hr:nth-child(1) {
     position: relative;
     top: 80px;
 }
 
-main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > section {
+main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div > section {
     /* background-color: #ff4334; */
     position: relative;
     top: 44px;
@@ -374,7 +386,7 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     width: 81%;
 }
 
-main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > section > p {
+main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div > section > p {
     position: relative;
     top: 44px;
     left: -159px;
@@ -382,7 +394,7 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     color: #40036e;
 }
 
-main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > aside {
+main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div > aside {
     right: -1031px;
     position: relative;
     top: 0px;
@@ -390,7 +402,7 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     height: 100%;
 }
 
-main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > aside > a:nth-child(2) {
+main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div > aside > a:nth-child(2) {
     width: 93px;
     height: 100%;
     position: absolute;
@@ -398,7 +410,7 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     top: 0;
 }
 
-main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > aside > a:nth-child(1) > p {
+main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div > aside > a:nth-child(1) > p {
     width: 93px;
     height: 100%;
     position: absolute;
@@ -407,7 +419,7 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     font-size: 118%;
 }
 
-main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > aside > a:nth-child(2) > p {
+main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div > aside > a:nth-child(2) > p {
     width: 93px;
     height: 100%;
     position: absolute;
@@ -415,8 +427,6 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     top: -4px;
     font-size: 103%;
 }
-
-
 
 
 /*========================================== gallery ==========================================================*/
@@ -431,7 +441,7 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
 
 /*///image set////*/
 
-#glryImg1{
+#glryImg1 {
     background-color: #ff4334;
     border: 2px solid black;
     position: relative;
@@ -439,7 +449,7 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     left: 19px;
 }
 
-#glryImg2{
+#glryImg2 {
     position: relative;
     top: -46px;
     left: 12px;
@@ -447,14 +457,14 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     width: 95%;
 }
 
-#glryImg3{
+#glryImg3 {
     position: relative;
     top: 15px;
     left: 13px;
     border: 2px solid black;
 }
 
-#glryImg4{
+#glryImg4 {
     position: relative;
     top: -66px;
     left: -14px;
@@ -462,7 +472,7 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     width: 98%;
 }
 
-#glryImg5{
+#glryImg5 {
     position: relative;
     top: -70px;
     left: 43px;
@@ -470,7 +480,7 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     width: 66%;
 }
 
-#glryImg6{
+#glryImg6 {
     position: relative;
     top: -107px;
     left: 1px;
@@ -478,7 +488,7 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     width: 190px;
 }
 
-#glryImg7{
+#glryImg7 {
     position: relative;
     top: -46px;
     left: -7px;
@@ -486,13 +496,14 @@ main > section:nth-child(2) > section:nth-child(2) >section:nth-child(3)> div > 
     width: 206px;
 }
 
-#glryImg8{
+#glryImg8 {
     position: relative;
     top: -126px;
     left: -7px;
     border: 2px solid black;
     width: 97%;
 }
+
 /*///////*/
 
 main > section:nth-child(3) {
@@ -582,7 +593,7 @@ main > section:nth-child(3) > section > section:nth-child(1) > nav > button {
 
 
 /*////////////////////background colour///////////////////*/
-main>section:nth-child(3)>section>section:nth-child(1)>section{
+main > section:nth-child(3) > section > section:nth-child(1) > section {
     width: 1200px;
     height: 600px;
     display: grid;
@@ -595,23 +606,22 @@ main>section:nth-child(3)>section>section:nth-child(1)>section{
     /* top: 0; */
     margin: auto;
     /*background-color: darkgreen;*/
-    background:
-            radial-gradient(circle, transparent 10%, green 10%,
-            slategray 80%, transparent 80%, transparent),
-            radial-gradient(circle, transparent 20%, darkgreen 20%,
+    background: radial-gradient(circle, transparent 10%, green 10%,
+    slategray 80%, transparent 80%, transparent),
+    radial-gradient(circle, transparent 20%, darkgreen 20%,
             slategray 80%, transparent 80%, transparent) 50px 50px,
-            linear-gradient(darkgreen 8px, transparent 8px) 0 -4px,
-            linear-gradient(90deg, darkgreen 8px, transparent 8px) -4px 0;
+    linear-gradient(darkgreen 8px, transparent 8px) 0 -4px,
+    linear-gradient(90deg, darkgreen 8px, transparent 8px) -4px 0;
     background-color: slategray;
     background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
 }
 
-main>section:nth-child(3)>section>section:nth-child(1)>section>section {
+main > section:nth-child(3) > section > section:nth-child(1) > section > section {
     border: 2px white;
     margin: auto;
 }
 
-main>section:nth-child(3)>section>section:nth-child(1)>section>section>img {
+main > section:nth-child(3) > section > section:nth-child(1) > section > section > img {
     margin-left: 3px;
     width: 85%;
     height: 29%
@@ -619,24 +629,24 @@ main>section:nth-child(3)>section>section:nth-child(1)>section>section>img {
 
 
 /*///////////nav css////////*/
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > hr {
+main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div > hr {
     color: #0a0909;
     height: 2px;
     background-color: black;
 }
 
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div {
+main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div {
     position: absolute;
     top: 539px;
     width: 100%;
 }
 
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > hr:nth-child(1) {
+main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div > hr:nth-child(1) {
     position: relative;
     top: 80px;
 }
 
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > section {
+main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div > section {
     /* background-color: #ff4334; */
     position: relative;
     top: 44px;
@@ -644,7 +654,7 @@ main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > 
     width: 81%;
 }
 
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > section > p {
+main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div > section > p {
     position: relative;
     top: 44px;
     left: -159px;
@@ -652,7 +662,7 @@ main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > 
     color: #40036e;
 }
 
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > aside {
+main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div > aside {
     right: -1031px;
     position: relative;
     top: 0px;
@@ -660,14 +670,14 @@ main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > 
     height: 100%;
 }
 
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > aside > a:nth-child(2) {
+main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div > aside > a:nth-child(2) {
     width: 93px;
     height: 100%;
     position: absolute;
     left: 307px;
 }
 
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > aside > a:nth-child(1) > p {
+main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div > aside > a:nth-child(1) > p {
     width: 93px;
     height: 100%;
     position: absolute;
@@ -676,7 +686,7 @@ main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > 
     font-size: 118%;
 }
 
-main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > aside > a:nth-child(2) > p {
+main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div > aside > a:nth-child(2) > p {
     width: 93px;
     height: 100%;
     position: absolute;
@@ -686,10 +696,9 @@ main > section:nth-child(3) > section:nth-child(2) >section:nth-child(3)> div > 
 }
 
 
-
 /*========================================== Education ==========================================================*/
 
-#E1{
+#E1 {
     position: relative;
     font-size: 153%;
 }
@@ -701,7 +710,7 @@ main > section:nth-child(4) {
     height: 99vh;
 }
 
-main > section:nth-child(4)>section>section>article {
+main > section:nth-child(4) > section > section > article {
     background-color: green;
 
 
@@ -709,24 +718,24 @@ main > section:nth-child(4)>section>section>article {
 
 
 /*///////////nav css////////*/
-main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > hr {
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > hr {
     color: #0a0909;
     height: 2px;
     background-color: black;
 }
 
-main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div {
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div {
     position: absolute;
     top: 539px;
     width: 100%;
 }
 
-main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > hr:nth-child(1) {
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
     position: relative;
     top: 80px;
 }
 
-main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > section {
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > section {
     /* background-color: #ff4334; */
     position: relative;
     top: 44px;
@@ -734,7 +743,7 @@ main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > 
     width: 81%;
 }
 
-main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > section > p {
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > section > p {
     position: relative;
     top: 44px;
     left: -159px;
@@ -742,7 +751,7 @@ main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > 
     color: #40036e;
 }
 
-main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > aside {
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside {
     right: -1031px;
     position: relative;
     top: 0px;
@@ -750,14 +759,14 @@ main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > 
     height: 100%;
 }
 
-main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(2) {
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
     width: 93px;
     height: 100%;
     position: absolute;
     left: 307px;
 }
 
-main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(1) > p {
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
     width: 93px;
     height: 100%;
     position: absolute;
@@ -766,7 +775,7 @@ main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > 
     font-size: 118%;
 }
 
-main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(2) > p {
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
     width: 93px;
     height: 100%;
     position: absolute;
@@ -778,7 +787,7 @@ main > section:nth-child(4) > section:nth-child(2) >section:nth-child(2)> div > 
 
 /*========================================== Skill ==========================================================*/
 
-#S1{
+#S1 {
     position: relative;
     font-size: 153%;
 }
@@ -794,7 +803,7 @@ main > section:nth-child(5) {
     height: 99vh;
 }
 
-main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first-child>hr{
+main > section:nth-child(5) > section:nth-child(2) > section:first-child > section:first-child > hr {
     margin-left: 29px;
     margin-top: 22px;
     padding-left: 58px;
@@ -803,7 +812,7 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first
     width: 4%;
 }
 
-#sDiv1{
+#sDiv1 {
     display: flex;
     justify-content: space-evenly;
     height: 123px;
@@ -813,7 +822,7 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first
     right: 0;
 }
 
-#sDiv1>div{
+#sDiv1 > div {
     background-color: #40036e;
     position: relative;
     width: 12%;
@@ -822,7 +831,7 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first
     color: #edebe9;
 }
 
-#sDiv1>div>img{
+#sDiv1 > div > img {
     position: relative;
     width: 33%;
     height: 70%;
@@ -831,14 +840,14 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first
     left: 12px;
 }
 
-#sDiv1>div>h3{
+#sDiv1 > div > h3 {
     font-size: 111%;
     position: relative;
     top: -46px;
     left: 92px;
 }
 
-#sDiv2{
+#sDiv2 {
     display: flex;
     justify-content: space-evenly;
     height: 123px;
@@ -848,7 +857,7 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first
     right: 0;
 }
 
-#sDiv2>div{
+#sDiv2 > div {
     background-color: #40036e;
     position: relative;
     width: 12%;
@@ -857,7 +866,7 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first
     color: #edebe9;
 }
 
-#sDiv2>div>img{
+#sDiv2 > div > img {
     position: relative;
     width: 33%;
     height: 70%;
@@ -866,20 +875,20 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>section:first
     left: 12px;
 }
 
-#sDiv2>div>h3{
+#sDiv2 > div > h3 {
     font-size: 111%;
     position: relative;
     top: -46px;
     left: 92px;
 }
 
-#L1{
+#L1 {
     position: relative;
     font-size: 153%;
     top: 20px;
 }
 
-main>section:nth-child(5)>section:nth-child(2)>section:first-child>article>hr{
+main > section:nth-child(5) > section:nth-child(2) > section:first-child > article > hr {
     margin-left: 26px;
     margin-top: 22px;
     padding-left: 58px;
@@ -888,7 +897,7 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>article>hr{
     width: 0%;
 }
 
-#sDiv3{
+#sDiv3 {
     display: flex;
     justify-content: space-evenly;
     height: 123px;
@@ -899,24 +908,24 @@ main>section:nth-child(5)>section:nth-child(2)>section:first-child>article>hr{
 }
 
 /*///////////nav css////////*/
-main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > hr {
+main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div > hr {
     color: #0a0909;
     height: 2px;
     background-color: black;
 }
 
-main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div {
+main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div {
     position: absolute;
     top: 539px;
     width: 100%;
 }
 
-main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > hr:nth-child(1) {
+main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
     position: relative;
     top: 80px;
 }
 
-main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > section {
+main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div > section {
     /* background-color: #ff4334; */
     position: relative;
     top: 44px;
@@ -924,7 +933,7 @@ main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > 
     width: 81%;
 }
 
-main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > section > p {
+main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div > section > p {
     position: relative;
     top: 44px;
     left: -159px;
@@ -932,7 +941,7 @@ main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > 
     color: #40036e;
 }
 
-main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > aside {
+main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div > aside {
     right: -1031px;
     position: relative;
     top: 0px;
@@ -940,14 +949,14 @@ main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > 
     height: 100%;
 }
 
-main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(2) {
+main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
     width: 93px;
     height: 100%;
     position: absolute;
     left: 307px;
 }
 
-main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(1) > p {
+main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
     width: 93px;
     height: 100%;
     position: absolute;
@@ -956,7 +965,7 @@ main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > 
     font-size: 118%;
 }
 
-main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(2) > p {
+main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
     width: 93px;
     height: 100%;
     position: absolute;
@@ -966,10 +975,9 @@ main > section:nth-child(5) > section:nth-child(2) >section:nth-child(2)> div > 
 }
 
 
-
 /*========================================== Project ==========================================================*/
 
-#P1{
+#P1 {
     position: relative;
     font-size: 153%;
     top: 16px;
@@ -985,7 +993,7 @@ main > section:nth-child(6) {
     height: 101vh;
 }
 
-main>section:nth-child(6)>section:nth-child(2)>section:first-child>hr{
+main > section:nth-child(6) > section:nth-child(2) > section:first-child > hr {
     margin-left: 26px;
     margin-top: 22px;
     padding-left: 58px;
@@ -994,7 +1002,7 @@ main>section:nth-child(6)>section:nth-child(2)>section:first-child>hr{
     width: 2%;
 }
 
-main>section:nth-child(6)>section:nth-child(2)>section:first-child>article{
+main > section:nth-child(6) > section:nth-child(2) > section:first-child > article {
     /*background-color: #ff7f00;*/
     position: relative;
     top: 6px;
@@ -1002,52 +1010,52 @@ main>section:nth-child(6)>section:nth-child(2)>section:first-child>article{
     justify-content: space-between;
 }
 
-#Pdiv1{
+#Pdiv1 {
     left: 175px;
     position: relative;
     top: 22px;
 }
 
-#Pdiv1>h3{
+#Pdiv1 > h3 {
     left: 124px;
     position: relative;
     top: -9px;
     font-size: 129%;
 }
 
-#Pdiv2{
+#Pdiv2 {
     left: 108px;
     position: relative;
     top: -6px;
 }
 
-#Pdiv2>h3{
+#Pdiv2 > h3 {
     left: 153px;
     position: relative;
     top: -23px;
     font-size: 200%;
 }
 
-#Pdiv3{
+#Pdiv3 {
     left: 37px;
     position: relative;
     top: 22px;
 }
 
-#Pdiv3>h3{
+#Pdiv3 > h3 {
     left: 124px;
     position: relative;
     top: -11px;
     font-size: 129%;
 }
 
-#Pdiv4{
+#Pdiv4 {
     left: -100px;
     position: relative;
     top: 54px;
 }
 
-#Pdiv4>h3{
+#Pdiv4 > h3 {
     left: 83px;
     position: relative;
     top: -48px;
@@ -1055,24 +1063,24 @@ main>section:nth-child(6)>section:nth-child(2)>section:first-child>article{
 }
 
 /*///////////nav css////////*/
-main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > hr {
+main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > hr {
     color: #0a0909;
     height: 2px;
     background-color: black;
 }
 
-main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div {
+main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div {
     position: absolute;
     top: 571px;
     width: 100%;
 }
 
-main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > hr:nth-child(1) {
+main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
     position: relative;
     top: 80px;
 }
 
-main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > section {
+main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > section {
     /* background-color: #ff4334; */
     position: relative;
     top: 44px;
@@ -1080,7 +1088,7 @@ main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > 
     width: 81%;
 }
 
-main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > section > p {
+main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > section > p {
     position: relative;
     top: 44px;
     left: -159px;
@@ -1088,7 +1096,7 @@ main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > 
     color: #40036e;
 }
 
-main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > aside {
+main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > aside {
     right: -1031px;
     position: relative;
     top: 0px;
@@ -1096,14 +1104,14 @@ main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > 
     height: 100%;
 }
 
-main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(2) {
+main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
     width: 93px;
     height: 100%;
     position: absolute;
     left: 307px;
 }
 
-main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(1) > p {
+main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
     width: 93px;
     height: 100%;
     position: absolute;
@@ -1112,7 +1120,7 @@ main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > 
     font-size: 118%;
 }
 
-main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(2) > p {
+main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
     width: 93px;
     height: 100%;
     position: absolute;
@@ -1122,10 +1130,9 @@ main > section:nth-child(6) > section:nth-child(2) >section:nth-child(2)> div > 
 }
 
 
-
 /*========================================== All Project ==========================================================*/
 
-#AP1{
+#AP1 {
     position: relative;
     font-size: 153%;
     top: 10px;
@@ -1142,7 +1149,7 @@ main > section:nth-child(7) {
     height: 118vh;
 }
 
-main>section:nth-child(7)>section:nth-child(2)>section:first-child>hr{
+main > section:nth-child(7) > section:nth-child(2) > section:first-child > hr {
     margin-left: 41px;
     margin-top: 22px;
     padding-left: 58px;
@@ -1151,36 +1158,36 @@ main>section:nth-child(7)>section:nth-child(2)>section:first-child>hr{
     width: 5%;
 }
 
-main>section:nth-child(7)>section:nth-child(2)>section:first-child>div{
+main > section:nth-child(7) > section:nth-child(2) > section:first-child > div {
     position: relative;
     left: 200px;
     top: -27px;
 }
 
-main>section:nth-child(7)>section:nth-child(2)>section:first-child>div>img:nth-child(1){
+main > section:nth-child(7) > section:nth-child(2) > section:first-child > div > img:nth-child(1) {
     position: relative;
     left: 108px;
     top: -10px;
 }
 
-#APart01>img{
+#APart01 > img {
     border: 2px solid yellow;
     border-radius: 17px;
     width: 15%;
 }
 
-#APart01>div{
+#APart01 > div {
     position: absolute;
     left: 330px;
     top: 32px;
 }
 
-#APart01>div>pre{
+#APart01 > div > pre {
     position: relative;
     left: -279px;
 }
 
-#APart02>img{
+#APart02 > img {
     border: 2px solid yellow;
     border-radius: 17px;
     width: 23%;
@@ -1189,14 +1196,14 @@ main>section:nth-child(7)>section:nth-child(2)>section:first-child>div>img:nth-c
     left: -48px;
 }
 
-#APart02>div{
+#APart02 > div {
     position: relative;
     left: 394px;
     top: -241px;
     font-size: 24px;
 }
 
-#APart02>div>hr{
+#APart02 > div > hr {
     position: relative;
     left: 0px;
     top: -13px;
@@ -1204,46 +1211,47 @@ main>section:nth-child(7)>section:nth-child(2)>section:first-child>div>img:nth-c
     width: 23%;
 }
 
-#APart02>div>p{
+#APart02 > div > p {
     position: relative;
     top: -13px;
 }
 
-#APart03{
+#APart03 {
     position: relative;
     top: -143px;
 }
-#APart03>img{
+
+#APart03 > img {
     border: 2px solid yellow;
     border-radius: 17px;
     width: 15%;
     position: relative;
 }
 
-#APart03>div{
+#APart03 > div {
     position: absolute;
     left: 330px;
     top: 15px;
 }
 
-#APart03>div>pre{
+#APart03 > div > pre {
     position: relative;
     left: -279px;
 }
 
-main>section:nth-child(7)>section:nth-child(2)>section:first-child>div>img:nth-child(5){
+main > section:nth-child(7) > section:nth-child(2) > section:first-child > div > img:nth-child(5) {
     position: relative;
     left: 108px;
     top: -130px;
 }
 
-main > section:nth-child(7) > section:nth-child(2) >section:nth-child(1)>aside:nth-child(5){
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(1) > aside:nth-child(5) {
     position: absolute;
     top: 616px;
     right: 73px;
 }
 
-main > section:nth-child(7) > section:nth-child(2) >section:nth-child(1)>aside:nth-child(5)>button{
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(1) > aside:nth-child(5) > button {
     width: 118%;
     height: 44px;
     background-color: aqua;
@@ -1251,27 +1259,25 @@ main > section:nth-child(7) > section:nth-child(2) >section:nth-child(1)>aside:n
 }
 
 
-
-
 /*///////////nav css////////*/
-main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div > hr {
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div > hr {
     color: #0a0909;
     height: 2px;
     background-color: black;
 }
 
-main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div {
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div {
     position: absolute;
     top: 682px;
     width: 100%;
 }
 
-main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div > hr:nth-child(1) {
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
     position: relative;
     top: 80px;
 }
 
-main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div > section {
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div > section {
     /* background-color: #ff4334; */
     position: relative;
     top: 44px;
@@ -1279,7 +1285,7 @@ main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div > 
     width: 81%;
 }
 
-main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div > section > p {
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div > section > p {
     position: relative;
     top: 44px;
     left: -159px;
@@ -1287,7 +1293,7 @@ main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div > 
     color: #40036e;
 }
 
-main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div > aside {
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div > aside {
     right: -1031px;
     position: relative;
     top: 0px;
@@ -1295,14 +1301,14 @@ main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div > 
     height: 100%;
 }
 
-main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(2) {
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
     width: 93px;
     height: 100%;
     position: absolute;
     left: 307px;
 }
 
-main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(1) > p {
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
     width: 93px;
     height: 100%;
     position: absolute;
@@ -1311,7 +1317,7 @@ main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div > 
     font-size: 118%;
 }
 
-main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(2) > p {
+main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
     width: 93px;
     height: 100%;
     position: absolute;
@@ -1323,14 +1329,14 @@ main > section:nth-child(7) > section:nth-child(2) >section:nth-child(2)> div > 
 
 /*========================================== My Game ==========================================================*/
 
-#G1{
+#G1 {
     position: relative;
     font-size: 153%;
     top: 19px;
     left: 65px;
 }
 
-main > section:nth-child(8) .second{
+main > section:nth-child(8) .second {
     position: relative;
     font-size: 153%;
     top: -25px;
@@ -1343,11 +1349,11 @@ main > section:nth-child(8) {
     /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
     /*background-size: 100% 100%;*/
     position: relative;
-    top: -197px;
-    height: 129vh;
+    top: -269px;
+    height: 119vh;
 }
 
-main>section:nth-child(8)>section:nth-child(2)>section:first-child>hr{
+main > section:nth-child(8) > section:nth-child(2) > section:first-child > hr {
     margin-left: 57px;
     margin-top: -31px;
     padding-left: 58px;
@@ -1356,7 +1362,7 @@ main>section:nth-child(8)>section:nth-child(2)>section:first-child>hr{
     width: 4%;
 }
 
-main>section:nth-child(8)>section:nth-child(2)>section:first-child>img{
+main > section:nth-child(8) > section:nth-child(2) > section:first-child > img {
     position: relative;
     width: 95%;
     height: 472px;
@@ -1365,7 +1371,7 @@ main>section:nth-child(8)>section:nth-child(2)>section:first-child>img{
     border: 2px solid black;
 }
 
-main>section:nth-child(8)>section:nth-child(2)>section:first-child>aside:nth-child(5)>button{
+main > section:nth-child(8) > section:nth-child(2) > section:first-child > aside:nth-child(5) > button {
     background-color: blue;
     font-size: 163%;
     color: white;
@@ -1377,28 +1383,28 @@ main>section:nth-child(8)>section:nth-child(2)>section:first-child>aside:nth-chi
     right: 0;
     margin: auto;
     /* top: 23px; */
-    bottom: 104px;
+    bottom: 190px;
 }
 
 /*///////////nav css////////*/
-main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > hr {
+main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div > hr {
     color: #0a0909;
     height: 2px;
     background-color: black;
 }
 
-main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div {
+main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div {
     position: absolute;
     top: 682px;
     width: 100%;
 }
 
-main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > hr:nth-child(1) {
+main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
     position: relative;
     top: 80px;
 }
 
-main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > section {
+main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div > section {
     /* background-color: #ff4334; */
     position: relative;
     top: 44px;
@@ -1406,7 +1412,7 @@ main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > 
     width: 81%;
 }
 
-main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > section > p {
+main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div > section > p {
     position: relative;
     top: 44px;
     left: -159px;
@@ -1414,7 +1420,7 @@ main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > 
     color: #40036e;
 }
 
-main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > aside {
+main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div > aside {
     right: -1031px;
     position: relative;
     top: 0px;
@@ -1422,14 +1428,14 @@ main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > 
     height: 100%;
 }
 
-main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(2) {
+main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
     width: 93px;
     height: 100%;
     position: absolute;
     left: 307px;
 }
 
-main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(1) > p {
+main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
     width: 93px;
     height: 100%;
     position: absolute;
@@ -1438,7 +1444,7 @@ main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > 
     font-size: 118%;
 }
 
-main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > aside > a:nth-child(2) > p {
+main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
     width: 93px;
     height: 100%;
     position: absolute;
@@ -1448,10 +1454,9 @@ main > section:nth-child(8) > section:nth-child(2) >section:nth-child(2)> div > 
 }
 
 
+/*========================================== Assignment ==========================================================*/
 
-/*========================================== My Game ==========================================================*/
-
-#Asign1{
+#Asign1 {
     position: relative;
     font-size: 153%;
     top: 10px;
@@ -1464,11 +1469,11 @@ main > section:nth-child(9) {
     /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
     /*background-size: 100% 100%;*/
     position: relative;
-    top: -212px;
-    height: 129vh;
+    top: -288px;
+    height: 94vh;
 }
 
-main>section:nth-child(9)>section:nth-child(2)>section:first-child>hr{
+main > section:nth-child(9) > section:nth-child(2) > section:first-child > hr {
     margin-left: 63px;
     margin-top: -4px;
     padding-left: 58px;
@@ -1477,3 +1482,492 @@ main>section:nth-child(9)>section:nth-child(2)>section:first-child>hr{
     width: 4%;
 }
 
+main > section:nth-child(9) > section:nth-child(2) > section:first-child > article {
+    background-color: #ff4334;
+    display: flex;
+    height: 535px;
+    position: relative;
+    top: 6px;
+}
+
+#Asgn1 {
+    position: absolute;
+    top: 136px;
+    left: 166px;
+}
+
+#Asgn1 > img {
+    width: 200px;
+    height: 250px;
+}
+
+#Asgn1 > h3 {
+    position: relative;
+    left: 32px;
+}
+
+
+#Asgn2 {
+    position: absolute;
+    top: 69px;
+    left: 500px;
+}
+
+#Asgn2 > img {
+    width: 294px;
+    height: 382px;
+}
+
+#Asgn2 > h3 {
+    position: relative;
+    left: 87px;
+}
+
+
+#Asgn3 {
+    position: absolute;
+    top: 136px;
+    right: 407px;
+}
+
+#Asgn3 > img {
+    height: 250px;
+    width: 200px;
+}
+
+#Asgn3 > h3 {
+    position: relative;
+    left: 35px;
+}
+
+
+#Asgn4 {
+    position: absolute;
+    top: 172px;
+    right: 144px;
+}
+
+#Asgn4 > img {
+    height: 190px;
+    width: 150px;
+}
+
+#Asgn4 > h3 {
+    position: relative;
+    left: 13px;
+}
+
+
+/*///////////nav css////////*/
+main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > hr {
+    color: #0a0909;
+    height: 2px;
+    background-color: black;
+}
+
+main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div {
+    position: absolute;
+    top: 502px;
+    width: 100%;
+}
+
+main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
+    position: relative;
+    top: 80px;
+}
+
+main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > section {
+    /* background-color: #ff4334; */
+    position: relative;
+    top: 44px;
+    left: 208px;
+    width: 81%;
+}
+
+main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > section > p {
+    position: relative;
+    top: 44px;
+    left: -159px;
+    width: 81%;
+    color: #40036e;
+}
+
+main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside {
+    right: -1031px;
+    position: relative;
+    top: 0px;
+    width: 93px;
+    height: 100%;
+}
+
+main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 307px;
+}
+
+main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 54px;;
+    top: -8px;
+    font-size: 118%;
+}
+
+main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 54px;
+    top: -3px;
+    font-size: 103%;
+}
+
+
+/*========================================== Service ==========================================================*/
+
+#Service {
+    position: relative;
+    font-size: 153%;
+    top: 15px;
+    left: 65px;
+}
+
+main > section:nth-child(10) {
+    background-color: teal;
+    /*background-repeat: no-repeat, repeat;*/
+    /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
+    /*background-size: 100% 100%;*/
+    position: relative;
+    top: -306px;
+    height: 94vh;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:first-child > hr {
+    margin-left: 63px;
+    margin-top: -2px;
+    padding-left: 58px;
+    color: red;
+    border: 2px solid;
+    width: 2%;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:first-child > section {
+    background-color: red;
+    height: 535px;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div {
+    position: relative;
+    top: 70px;
+    display: flex;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(1) {
+    position: relative;
+    width: 77%;
+    height: 454px;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(2) {
+    position: relative;
+    width: 77%;
+    height: 454px;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(3) {
+    position: relative;
+    width: 77%;
+    height: 454px;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > img {
+    height: 82%;
+    width: 93%;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(2) > img {
+    height: 82%;
+    width: 93%;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(3) > img {
+    height: 82%;
+    width: 93%;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > h3 {
+    position: relative;
+    left: 172px;
+    font-size: 127%;
+}
+
+
+/*///////////nav css////////*/
+main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div > hr {
+    color: #0a0909;
+    height: 2px;
+    background-color: black;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div {
+    position: absolute;
+    top: 502px;
+    width: 100%;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
+    position: relative;
+    top: 80px;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div > section {
+    /* background-color: #ff4334; */
+    position: relative;
+    top: 44px;
+    left: 208px;
+    width: 81%;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div > section > p {
+    position: relative;
+    top: 44px;
+    left: -159px;
+    width: 81%;
+    color: #40036e;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div > aside {
+    right: -1031px;
+    position: relative;
+    top: 0px;
+    width: 93px;
+    height: 100%;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 307px;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 54px;;
+    top: -8px;
+    font-size: 118%;
+}
+
+main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 54px;
+    top: -3px;
+    font-size: 103%;
+}
+
+
+/*========================================== Contact ==========================================================*/
+
+#Contact1 {
+    position: relative;
+    font-size: 153%;
+    top: 25px;
+    left: 65px;
+}
+
+main > section:nth-child(11) {
+    background-color: #d9b7b7;
+    /*background-repeat: no-repeat, repeat;*/
+    /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
+    /*background-size: 100% 100%;*/
+    position: relative;
+    top: -321px;
+    height: 94vh;
+}
+
+main > section:nth-child(11) > section:nth-child(2) > section:first-child > hr {
+    margin-left: 59px;
+    margin-top: 24px;
+    padding-left: 58px;
+    position: relative;
+    color: red;
+    border: 2px solid;
+    width: 2%;
+}
+
+#Contact2 {
+    position: relative;
+    font-size: 153%;
+    top: 33px;
+    left: 70px;
+}
+
+main > section:nth-child(11) > section:nth-child(2) > section:first-child > section:nth-child(3) > hr {
+    margin-left: 71px;
+    margin-top: 31px;
+    padding-left: 58px;
+    position: relative;
+    /* color: red; */
+    border: 1px solid;
+    width: 4%;
+}
+
+main > section:nth-child(11) > section:nth-child(2) > section:first-child > section:nth-child(3) > div {
+    /*background-color: greenyellow;*/
+    position: relative;
+    left: 59px;
+}
+
+main > section:nth-child(11) > section:nth-child(2) > section:first-child > section:nth-child(4) {
+    /*background-color: red;*/
+    position: absolute;
+    right: 9%;
+    top: 8%;
+    width: 42%;
+}
+
+#Location {
+    border: 2px solid black;
+    position: relative;
+    top: 31px;
+    height: 29vh;
+    width: 95%;
+    left: 31px;
+    /* right: 0;*/
+}
+
+#txtName{
+    width: 59%;
+    border-radius: 6px;
+    position: relative;
+    left: 22px;
+}
+
+#txtEmail{
+    width: 59%;
+    border-radius: 6px;
+    position: relative;
+    left: 22px;
+}
+
+#txtSubject{
+    width: 59%;
+    border-radius: 6px;
+    position: relative;
+    left: 14px;
+}
+
+#txtMassage{
+    width: 59%;
+    border-radius: 6px;
+    position: relative;
+    left: 9px;
+    border: 2px solid;
+}
+
+
+
+/*========================================== Contact ==========================================================*/
+
+body>footer{
+    background-color: blue;
+    /* background-color: #d9b7b7; */
+    /* background-repeat: no-repeat, repeat; */
+    /* background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif); */
+    /* background-size: 100% 100%; */
+    position: relative;
+    top: -321px;
+    height: 45%;
+}
+
+footer>fieldset>aside>img{
+    width: 19%;
+    height: 274px;
+    border-radius: 53%;
+    padding-left: 15px;
+    padding-top: 9px;
+}
+
+footer>fieldset>article>pre{
+    font-size: 452%;
+    position: absolute;
+    top: 7%;
+    left: 27%;
+    font-style: oblique;
+    font-family: revert;
+}
+
+footer>fieldset>article>p{
+    font-size: 230%;
+    position: absolute;
+    top: 62%;
+    left: 27%;
+    font-style: italic;
+    font-family: emoji;
+}
+
+
+/*///////////nav css////////*/
+
+body > footer >  fieldset> section> div {
+    position: absolute;
+    top: -10%;
+    width: 100%;
+    left: 68%;
+}
+
+body > footer >  fieldset> section>div > section {
+    /* background-color: #ff4334; */
+    position: relative;
+    top: 44px;
+    left: 208px;
+    width: 81%;
+}
+
+body > footer >  fieldset> section> div > section > p {
+    position: relative;
+    top: 44px;
+    left: -159px;
+    width: 81%;
+    color: #40036e;
+}
+
+body > footer >  fieldset> section> div > aside {
+    right: -1031px;
+    position: relative;
+    top: 0px;
+    width: 93px;
+    height: 100%;
+}
+
+body > footer >  fieldset> section> div > aside > a:nth-child(2) {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 307px;
+}
+
+body > footer >  fieldset> section> div > aside > a:nth-child(1) > p {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 54px;;
+    top: -8px;
+    font-size: 118%;
+}
+
+body > footer >  fieldset> section> div > aside > a:nth-child(2) > p {
+    width: 93px;
+    height: 100%;
+    position: absolute;
+    left: 54px;
+    top: -3px;
+    font-size: 103%;
+}
