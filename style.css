@@ -27,11 +27,11 @@ body > main > section:nth-child(2) {
 }
 
 main > section:nth-child(3) {
-    /*background-color: #ff7f00;*/
+    /*background-color: #6900ff;*/
     /* width: 97vw; */
-    /* height: 98vh; */
+    height: 109vh;
     position: relative;
-    top: -134px;
+    top: -88px;
 }
 
 main > section:nth-child(4) {
