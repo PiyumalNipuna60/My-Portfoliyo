@@ -50,6 +50,7 @@ main > section:nth-child(5) {
     position: relative;
     top: -122px;
     height: 99vh;
+    /*////*/
 }
 
 main > section:nth-child(6) {
