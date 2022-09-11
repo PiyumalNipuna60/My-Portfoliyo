@@ -140,6 +140,11 @@ body > header > nav > ul > li {
     padding: 0 10px 0 10px;
     display: inline-block;
     cursor: pointer;
+    border-right: 2px solid black;
+}
+
+body > header > nav > ul > li:first-child {
+    border-left: 2px solid black;
 }
 
 body > header > nav > ul > li>i{
@@ -154,6 +159,11 @@ body > header > nav > ul > li >a{
 }
 
 body > header > nav > ul > li:hover a{
+    color: red;
+    text-decoration: none;
+}
+
+body > header > nav > ul > li:hover i{
     color: red;
     text-decoration: none;
 }
