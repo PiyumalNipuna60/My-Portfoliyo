@@ -29,6 +29,10 @@ body > main > section:nth-child(2) {
 main > section:nth-child(3) {
     /* background-color: #6900ff; */
     /* width: 97vw; */
+    background-repeat: no-repeat, repeat;
+    background-image: url(assets/image/pic/pngtree-background-pattern-with-icon-symbol-picture-image_1154242.jpg);
+    background-size: 100% 100%;
+    background-size: auto;
     height: 100vh;
     position: relative;
     top: -88px;
@@ -54,33 +58,33 @@ main > section:nth-child(5) {
 }
 
 main > section:nth-child(6) {
-    background-color: yellow;
-    /*background-repeat: no-repeat, repeat;*/
-    /*background-image: url("assets/image/pic/image_processing20220207-786-j68tnb.gif");*/
-    /*background-size: 100% 100%;*/
+    /*background-color: yellow;*/
+    background-repeat: no-repeat, repeat;
+    background-image: url("assets/image/pic/image_processing20220207-786-j68tnb.gif");
+    background-size: 100% 100%;
     position: relative;
     top: -143px;
     height: 104vh;
 }
 
 main > section:nth-child(7) {
-    background-color: #d9b7b7;
-    /*background-repeat: no-repeat, repeat;*/
-    /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
-    /*background-size: 100% 100%;*/
+    /*background-color: #d9b7b7;*/
+    background-repeat: no-repeat, repeat;
+    background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");
+    background-size: 100% 100%;
     position: relative;
     top: -168px;
     height: 119vh;
 }
 
 main > section:nth-child(8) {
-    /*background-color: #d9b7b7;*/
-    background-repeat: no-repeat, repeat;
-    background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");
-    background-size: 100% 100%;
+    background-color: #eed3d3;
+    /*background-repeat: no-repeat, repeat;*/
+    /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
+    /*background-size: 100% 100%;*/
     position: relative;
     top: -184px;
-    height: 100vh;
+    height: 118vh;
 }
 
 main > section:nth-child(9) {
@@ -89,7 +93,7 @@ main > section:nth-child(9) {
     /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
     /*background-size: 100% 100%;*/
     position: relative;
-    top: -66px;
+    top: -196px;
     height: 94vh;
 }
 
@@ -99,7 +103,7 @@ main > section:nth-child(10) {
     /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
     /*background-size: 100% 100%;*/
     position: relative;
-    top: -83px;
+    top: -213px;
     height: 94vh;
 }
 
@@ -109,11 +113,9 @@ main > section:nth-child(11) {
     /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
     /*background-size: 100% 100%;*/
     position: relative;
-    top: -101px;
-    height: 94vh;
+    top: -230px;
+    height: 94vh
 }
-
-
 
 
 /*========================== header ==========================*/
@@ -149,23 +151,23 @@ body > header > nav > ul > li:first-child {
     border-left: 2px solid black;
 }
 
-body > header > nav > ul > li>i{
+body > header > nav > ul > li > i {
     padding-right: 15px;
     font-size: 20px;
     color: #ccffcd;
 }
 
-body > header > nav > ul > li >a{
+body > header > nav > ul > li > a {
     color: #ccffcd;
     text-decoration: none;
 }
 
-body > header > nav > ul > li:hover a{
+body > header > nav > ul > li:hover a {
     color: red;
     text-decoration: none;
 }
 
-body > header > nav > ul > li:hover i{
+body > header > nav > ul > li:hover i {
     color: red;
     text-decoration: none;
 }
@@ -1866,28 +1868,28 @@ main > section:nth-child(11) > section:nth-child(2) > section:first-child > sect
     /* right: 0;*/
 }
 
-#txtName{
+#txtName {
     width: 59%;
     border-radius: 6px;
     position: relative;
     left: 22px;
 }
 
-#txtEmail{
+#txtEmail {
     width: 59%;
     border-radius: 6px;
     position: relative;
     left: 22px;
 }
 
-#txtSubject{
+#txtSubject {
     width: 59%;
     border-radius: 6px;
     position: relative;
     left: 14px;
 }
 
-#txtMassage{
+#txtMassage {
     width: 59%;
     border-radius: 6px;
     position: relative;
@@ -1896,10 +1898,9 @@ main > section:nth-child(11) > section:nth-child(2) > section:first-child > sect
 }
 
 
-
 /*========================================== Contact ==========================================================*/
 
-body>footer{
+body > footer {
     background-color: blue;
     /* background-color: #d9b7b7; */
     /* background-repeat: no-repeat, repeat; */
@@ -1907,10 +1908,10 @@ body>footer{
     /* background-size: 100% 100%; */
     position: relative;
     height: 45%;
-    top: -127px;
+    top: -229px;
 }
 
-footer>fieldset>aside>img{
+footer > fieldset > aside > img {
     width: 19%;
     height: 274px;
     border-radius: 53%;
@@ -1918,7 +1919,7 @@ footer>fieldset>aside>img{
     padding-top: 9px;
 }
 
-footer>fieldset>article>pre{
+footer > fieldset > article > pre {
     font-size: 452%;
     position: absolute;
     top: 7%;
@@ -1927,7 +1928,7 @@ footer>fieldset>article>pre{
     font-family: revert;
 }
 
-footer>fieldset>article>p{
+footer > fieldset > article > p {
     font-size: 230%;
     position: absolute;
     top: 62%;
@@ -1939,14 +1940,14 @@ footer>fieldset>article>p{
 
 /*///////////nav css////////*/
 
-body > footer >  fieldset> section> div {
+body > footer > fieldset > section > div {
     position: absolute;
     top: -10%;
     width: 100%;
     left: 68%;
 }
 
-body > footer >  fieldset> section>div > section {
+body > footer > fieldset > section > div > section {
     /* background-color: #ff4334; */
     position: relative;
     top: 44px;
@@ -1954,7 +1955,7 @@ body > footer >  fieldset> section>div > section {
     width: 81%;
 }
 
-body > footer >  fieldset> section> div > section > p {
+body > footer > fieldset > section > div > section > p {
     position: relative;
     top: 44px;
     left: -159px;
@@ -1962,7 +1963,7 @@ body > footer >  fieldset> section> div > section > p {
     color: #40036e;
 }
 
-body > footer >  fieldset> section> div > aside {
+body > footer > fieldset > section > div > aside {
     right: -1031px;
     position: relative;
     top: 0px;
@@ -1970,14 +1971,14 @@ body > footer >  fieldset> section> div > aside {
     height: 100%;
 }
 
-body > footer >  fieldset> section> div > aside > a:nth-child(2) {
+body > footer > fieldset > section > div > aside > a:nth-child(2) {
     width: 93px;
     height: 100%;
     position: absolute;
     left: 307px;
 }
 
-body > footer >  fieldset> section> div > aside > a:nth-child(1) > p {
+body > footer > fieldset > section > div > aside > a:nth-child(1) > p {
     width: 93px;
     height: 100%;
     position: absolute;
@@ -1986,7 +1987,7 @@ body > footer >  fieldset> section> div > aside > a:nth-child(1) > p {
     font-size: 118%;
 }
 
-body > footer >  fieldset> section> div > aside > a:nth-child(2) > p {
+body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     width: 93px;
     height: 100%;
     position: absolute;
