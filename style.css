@@ -153,6 +153,11 @@ body > header > nav > ul > li >a{
     text-decoration: none;
 }
 
+body > header > nav > ul > li:hover a{
+    color: red;
+    text-decoration: none;
+}
+
 header > img {
     width: 5%;
     height: 71%;
