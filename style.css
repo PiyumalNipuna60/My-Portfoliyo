@@ -3945,7 +3945,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
 /*=============================================================================================================*/
 /*=============================================================================================================*/
-@media all and (max-width: 1440px) {
+@media all and (max-width: 1024px) {
     body {
         overflow-x: hidden;
         width: 100vw;
@@ -3987,9 +3987,9 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-image: url(assets/image/pic/pngtree-background-pattern-with-icon-symbol-picture-image_1154242.jpg);
         background-size: 100% 100%;
         /* background-size: auto; */
-        height: 86vh;
+        height: 91vh;
         position: relative;
-        top: -96px;
+        top: -67px;
     }
 
     main > section:nth-child(4) {
@@ -4014,13 +4014,13 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     main > section:nth-child(6) {
-        /*background-color: yellow;*/
+        /* background-color: yellow; */
         background-repeat: no-repeat, repeat;
-        background-image: url("assets/image/pic/image_processing20220207-786-j68tnb.gif");
+        background-image: url(assets/image/pic/image_processing20220207-786-j68tnb.gif);
         background-size: 100% 100%;
         position: relative;
         top: -143px;
-        height: 88vh;
+        height: 95vh;
     }
 
     main > section:nth-child(7) {
@@ -4030,7 +4030,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-size: 100% 100%;
         position: relative;
         top: -168px;
-        height: 86vh;
+        height: 93vh;
     }
 
     main > section:nth-child(8) {
@@ -4734,7 +4734,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div {
         position: absolute;
-        top: 491px;
+        top: 423px;
         width: 100%;
     }
 
@@ -4821,7 +4821,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     #sDiv1 > div {
         background-color: #40036e;
         position: relative;
-        width: 12%;
+        width: 20%;
         height: 59%;
         border-radius: 13px;
         color: #edebe9;
@@ -4856,7 +4856,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     #sDiv2 > div {
         background-color: #40036e;
         position: relative;
-        width: 12%;
+        width: 20%;
         height: 59%;
         border-radius: 13px;
         color: #edebe9;
@@ -4912,7 +4912,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div {
         position: absolute;
-        top: 539px;
+        top: 419px;
         width: 100%;
     }
 
@@ -4996,55 +4996,77 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     #Pdiv1 {
-        left: 175px;
+        left: 44px;
         position: relative;
-        top: 22px;
+        top: 73px;
     }
 
     #Pdiv1 > h3 {
-        left: 124px;
+        left: 76px;
         position: relative;
         top: -9px;
-        font-size: 129%;
+        font-size: 140%;
+
+    }
+
+    #Pdiv1 > img{
+        width: 79%;
+        height: 42vh;
     }
 
     #Pdiv2 {
-        left: 108px;
+        left: 17px;
         position: relative;
-        top: -6px;
+        top: 27px;
     }
 
     #Pdiv2 > h3 {
-        left: 153px;
+        left: 104px;
         position: relative;
         top: -23px;
-        font-size: 200%;
+        font-size: 238%;
     }
+
+    #Pdiv2 > img{
+        width: 98%;
+        height: 57vh;
+    }
+
 
     #Pdiv3 {
         left: 37px;
         position: relative;
-        top: 22px;
+        top: 72px;
     }
 
     #Pdiv3 > h3 {
-        left: 124px;
+        left: 71px;
         position: relative;
         top: -11px;
-        font-size: 129%;
+        font-size: 140%;
+    }
+
+    #Pdiv3 > img{
+        width: 71%;
+        height: 43vh;
     }
 
     #Pdiv4 {
-        left: -100px;
+        left: -56px;
         position: relative;
-        top: 54px;
+        top: 79px;
     }
 
     #Pdiv4 > h3 {
-        left: 83px;
+        left: 41px;
         position: relative;
         top: -48px;
         font-size: 120%;
+    }
+
+    #Pdiv4 > img {
+        width: 110%;
+        height: 38vh;
     }
 
     /*///////////nav css////////*/
@@ -5056,7 +5078,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div {
         position: absolute;
-        top: 571px;
+        top: 487px;
         width: 100%;
     }
 
@@ -5242,7 +5264,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div {
         position: absolute;
-        top: 682px;
+        top: 470px;
         width: 100%;
     }
 
