@@ -21,7 +21,12 @@ body > main > section:nth-child(1) {
 }
 
 body > main > section:nth-child(2) {
-    /*background-color: red;*/
+    /* background-color: red; */
+    background-repeat: no-repeat, repeat;
+    background-image: url(assets/image/pic/light-blue-color-gradient-web-icon-template-round-circle-shape-background-light-blue-color-gradient-web-icon-template-round-circle-170460407.jpg);
+    background-size: 127% 115%;
+    background-position: 95px;
+    /* background-size: auto; */
     position: relative;
     bottom: 22px;
 }
@@ -32,10 +37,10 @@ main > section:nth-child(3) {
     background-repeat: no-repeat, repeat;
     background-image: url(assets/image/pic/pngtree-background-pattern-with-icon-symbol-picture-image_1154242.jpg);
     background-size: 100% 100%;
-    background-size: auto;
+    /*background-size: auto;*/
     height: 100vh;
     position: relative;
-    top: -88px;
+    top: -96px;
 }
 
 main > section:nth-child(4) {
