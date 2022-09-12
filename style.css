@@ -3962,7 +3962,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
 
     body > main > section:nth-child(1) {
-        background-color: green;
+        /*background-color: green;*/
         position: relative;
         bottom: 25px;
         height: 92vh;
@@ -4145,9 +4145,9 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-color: #40036e;
         position: relative;
         /* border: 2px solid black; */
-        height: 288px;
-        width: 34%;
-        top: -152px;
+        height: 256px;
+        width: 36%;
+        top: -169px;
         left: 1px;
         background-repeat: no-repeat, repeat;
         background-image: url(assets/image/pic/168114-black-and-white-dot-background-image.jpg);
@@ -4174,7 +4174,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     body > main > section:first-child > section:first-child > article > h2 {
-        font-size: 28px;
+        font-size: 170%;
         padding-left: 30px;
     }
 
@@ -4207,13 +4207,13 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(1) > section:nth-child(1) > article > hr {
         background-color: #dbd3d3;
-        width: 41%;
+        width: 36%;
         /* rotate: unset; */
-        height: 12px;
+        height: 2%;
         border: inset;
         transform: rotate(90deg);
         position: absolute;
-        top: 296px;
+        top: 285px;
         left: 614px;
     }
 
@@ -4225,7 +4225,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(1) > section:nth-child(2) > div {
         position: absolute;
-        top: 533px;
+        top: 471px;
         width: 100%;
     }
 
@@ -4326,14 +4326,15 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     body > main > section:nth-child(2) > section > section > section > article {
-        /*background-color: red;*/
+        /* background-color: red; */
         position: absolute;
         /* left: 0; */
         right: 115px;
         top: 28px;
-        width: 50vw;
-        height: 50vw;
+        width: 54%;
+        height: 27%;
         margin: auto;
+        font-size: 89%;
     }
 
     body > main > section:nth-child(2) > section > section > section > article > pre:nth-child(4) {
@@ -4359,9 +4360,10 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     body > main > section:nth-child(2) > section > section > section > aside > img {
-        /*background-color: blue;*/
+        /* background-color: blue; */
         position: relative;
         right: -107px;
+        width: 17%;
         top: 5px;
         margin-top: 0px;
         transform: rotate(6deg);
@@ -4373,19 +4375,12 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-color: red;
         border: 4px solid black;
         position: absolute;
-        left: 109px;
-        top: 73px;
+        left: 102px;
+        top: 74px;
         /* margin-top: 0px; */
-        width: 20%;
-        height: 47%;
+        width: 17%;
+        height: 40%;
         transform: rotate(347deg);
-        /* background: border-box;*/
-    }
-
-    body > main > section:nth-child(2) > section > section:nth-child(1) > section:nth-child(2) {
-        /*background-color: yellow;*/
-        position: relative;
-        top: -17px;
     }
 
     body > main > section:nth-child(2) > section > section > section:nth-child(2) > h2 {
@@ -4436,7 +4431,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div {
         position: absolute;
-        top: 537px;
+        top: 453px;
         width: 100%;
     }
 
