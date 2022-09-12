@@ -3986,8 +3986,8 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-repeat: no-repeat, repeat;
         background-image: url(assets/image/pic/pngtree-background-pattern-with-icon-symbol-picture-image_1154242.jpg);
         background-size: 100% 100%;
-        /*background-size: auto;*/
-        height: 100vh;
+        /* background-size: auto; */
+        height: 86vh;
         position: relative;
         top: -96px;
     }
@@ -3996,7 +3996,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-color: #ff7f00;
         position: relative;
         top: -113px;
-        height: 92vh;
+        height: 85vh;
         background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif);
         background-size: 100% 100%;
         background-size: auto;
@@ -4004,14 +4004,13 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(5) {
         background-color: greenyellow;
-        /*background-repeat: no-repeat, repeat;*/
-        /*background-image: url(assets/image/pic/CxrL.gif);*/
-        /*background-size: 100% 100%;*/
+         background-repeat: no-repeat, repeat;
+         background-image: url(assets/image/pic/CxrL.gif);
+         background-size: 100% 100%;
         /* background-size: auto; */
         position: relative;
         top: -126px;
-        height: 99vh;
-        /*////*/
+        height: 85vh;
     }
 
     main > section:nth-child(6) {
@@ -4021,7 +4020,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-size: 100% 100%;
         position: relative;
         top: -143px;
-        height: 104vh;
+        height: 88vh;
     }
 
     main > section:nth-child(7) {
@@ -4031,7 +4030,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-size: 100% 100%;
         position: relative;
         top: -168px;
-        height: 119vh;
+        height: 86vh;
     }
 
     main > section:nth-child(8) {
@@ -4041,7 +4040,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         /*background-size: 100% 100%;*/
         position: relative;
         top: -184px;
-        height: 118vh;
+        height: 88vh;
     }
 
     main > section:nth-child(9) {
@@ -4051,7 +4050,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         /*background-size: 100% 100%;*/
         position: relative;
         top: -196px;
-        height: 94vh;
+        height: 85vh;
     }
 
     main > section:nth-child(10) {
@@ -4061,7 +4060,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         /*background-size: 100% 100%;*/
         position: relative;
         top: -213px;
-        height: 94vh;
+        height: 86vh;
     }
 
     main > section:nth-child(11) {
@@ -4071,7 +4070,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         /*background-size: 100% 100%;*/
         position: relative;
         top: -230px;
-        height: 94vh
+        height: 44vh
     }
 
 
