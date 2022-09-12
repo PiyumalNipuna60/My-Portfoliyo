@@ -3962,10 +3962,10 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
 
     body > main > section:nth-child(1) {
-        /*background-color: green;*/
+        background-color: green;
         position: relative;
         bottom: 25px;
-        height: 92vh;
+        height: 86vh;
     }
 
     body > main > section:nth-child(2) {
