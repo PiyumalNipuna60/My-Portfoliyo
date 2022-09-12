@@ -5157,25 +5157,33 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(7) > section:nth-child(2) > section:first-child > div {
         position: relative;
         left: 200px;
-        top: -27px;
+        top: 14px;
     }
 
     main > section:nth-child(7) > section:nth-child(2) > section:first-child > div > img:nth-child(1) {
         position: relative;
-        left: 108px;
-        top: -10px;
+        left: 66px;
+        top: -28px;
+        width: 5%;
+    }
+
+    #APart01 {
+        position: relative;
+        left: -39px;
+        top: -22px;
     }
 
     #APart01 > img {
         border: 2px solid yellow;
         border-radius: 17px;
-        width: 15%;
+        width: 24%;
+        height: 18vh;
     }
 
     #APart01 > div {
         position: absolute;
-        left: 330px;
-        top: 32px;
+        left: 294px;
+        top: -7px;
     }
 
     #APart01 > div > pre {
@@ -5183,20 +5191,28 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         left: -279px;
     }
 
+    #APart02 {
+        position: relative;
+        left: -39px;
+        top: -34px;
+    }
+
     #APart02 > img {
         border: 2px solid yellow;
         border-radius: 17px;
-        width: 23%;
+        width: 35%;
         height: 0%;
         position: relative;
         left: -48px;
+        height: 24vh;
+        top: -7px;
     }
 
     #APart02 > div {
         position: relative;
-        left: 394px;
-        top: -241px;
-        font-size: 24px;
+        left: 321px;
+        top: -179px;
+        font-size: 23px;
     }
 
     #APart02 > div > hr {
@@ -5214,20 +5230,23 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     #APart03 {
         position: relative;
-        top: -143px;
+        top: -245px;
+        left: -39px;
     }
 
     #APart03 > img {
+        position: relative;
         border: 2px solid yellow;
         border-radius: 17px;
-        width: 15%;
-        position: relative;
+        width: 24%;
+        height: 16vh;
+        top: 48px;
     }
 
     #APart03 > div {
         position: absolute;
-        left: 330px;
-        top: 15px;
+        left: 308px;
+        top: 39px;
     }
 
     #APart03 > div > pre {
@@ -5237,21 +5256,22 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(7) > section:nth-child(2) > section:first-child > div > img:nth-child(5) {
         position: relative;
-        left: 108px;
-        top: -130px;
+        left: 66px;
+        top: -192px;
+        width: 5%;
     }
 
     main > section:nth-child(7) > section:nth-child(2) > section:nth-child(1) > aside:nth-child(5) {
         position: absolute;
-        top: 616px;
-        right: 73px;
+        top: 456px;
+        right: 81px;
     }
 
     main > section:nth-child(7) > section:nth-child(2) > section:nth-child(1) > aside:nth-child(5) > button {
-        width: 118%;
-        height: 44px;
+        width: 116%;
+        height: 56px;
         background-color: aqua;
-        font-size: 102%;
+        font-size: 138%;
     }
 
 
@@ -5349,8 +5369,8 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(8) > section:nth-child(2) > section:first-child > img {
         position: relative;
-        width: 95%;
-        height: 472px;
+        width: 93%;
+        height: 396px;
         left: 28px;
         top: 22px;
         border: 2px solid black;
@@ -5380,7 +5400,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div {
         position: absolute;
-        top: 682px;
+        top: 447px;
         width: 100%;
     }
 
