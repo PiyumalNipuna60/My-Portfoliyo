@@ -3962,7 +3962,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
 
     body > main > section:nth-child(1) {
-        background-color: green;
+        /*background-color: green;*/
         position: relative;
         bottom: 25px;
         height: 86vh;
@@ -4044,23 +4044,23 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     main > section:nth-child(9) {
-        background-color: #eed3d3;
-        /*background-repeat: no-repeat, repeat;*/
-        /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
-        /*background-size: 100% 100%;*/
+        /*background-color: #eed3d3;*/
+        /* background-repeat: no-repeat, repeat; */
+        /* background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif); */
+        /* background-size: 100% 100%; */
         position: relative;
         top: -196px;
-        height: 85vh;
+        height: 97vh;
     }
 
     main > section:nth-child(10) {
-        /*background-color: #eed3d3;*/
-        /*background-repeat: no-repeat, repeat;*/
-        /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
-        /*background-size: 100% 100%;*/
+        /* background-color: #e3eed3; */
+        /* background-repeat: no-repeat, repeat; */
+        /* background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif); */
+        /* background-size: 100% 100%; */
         position: relative;
         top: -213px;
-        height: 86vh;
+        height: 96vh;
     }
 
     main > section:nth-child(11) {
@@ -4070,7 +4070,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         /*background-size: 100% 100%;*/
         position: relative;
         top: -230px;
-        height: 44vh
+        height: 94vh
     }
 
 
@@ -5481,13 +5481,13 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         display: flex;
         height: 535px;
         position: relative;
-        top: 6px;
+        top: -12px;
     }
 
     #Asgn1 {
         position: absolute;
-        top: 136px;
-        left: 166px;
+        top: 110px;
+        left: 53px;
     }
 
     #Asgn1 > img {
@@ -5503,8 +5503,8 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     #Asgn2 {
         position: absolute;
-        top: 69px;
-        left: 500px;
+        top: 57px;
+        left: 274px;
     }
 
     #Asgn2 > img {
@@ -5520,8 +5520,8 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     #Asgn3 {
         position: absolute;
-        top: 136px;
-        right: 407px;
+        top: 105px;
+        right: 234px;
     }
 
     #Asgn3 > img {
@@ -5537,8 +5537,8 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     #Asgn4 {
         position: absolute;
-        top: 172px;
-        right: 144px;
+        top: 135px;
+        right: 65px;
     }
 
     #Asgn4 > img {
