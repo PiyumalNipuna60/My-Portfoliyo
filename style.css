@@ -543,8 +543,8 @@ main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div 
 /*========================================== gallery ==========================================================*/
 
 #glrFrame {
-    height: 491px;
-    width: 1120px;
+    height: 69vh;
+    width: 74vw;
     border: 3px solid #40036e;
     position: relative;
     top: 12px;
@@ -659,43 +659,6 @@ main > section:nth-child(3) > section > section:nth-child(1) > nav > button {
     height: 5vh;
 }
 
-/*main > section:nth-child(3) > section > section:nth-child(1) > section {*/
-/*    width: 81vw;*/
-/*    height: 66vh;*/
-/*    border: 2px solid blue;*/
-/*    display: grid;*/
-/*    grid-template-columns: repeat(4, 1fr);*/
-/*    grid-template-rows: repeat(2, 1fr);*/
-/*    margin: auto;*/
-/*    position: relative;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    bottom: 0;*/
-/*    top: 14px;*/
-/*    background-color: red;*/
-/*}*/
-
-/*main > section:nth-child(3) > section > section:nth-child(1) > section > img {*/
-/*    border: 2px solid blue;*/
-/*}*/
-
-/*main > section:nth-child(3) > section > section:nth-child(1) > section > img:nth-child(1) {*/
-/*    !*background-size:cover ;*!*/
-/*    !*background-position: center;*!*/
-/*    !*background-color: red;*!*/
-/*    width: 12%;*/
-/*    height: 12%;*/
-/*}*/
-
-/*main > section:nth-child(3) > section > section:nth-child(1) > section > img:nth-child(2) {*/
-/*    !*background-size:cover ;*!*/
-/*    !*background-position: center;*!*/
-/*    !*background-color: red;*!*/
-/*    width: 12%;*/
-/*    height: 12%;*/
-/*}*/
-
-
 /*////////////////////background colour///////////////////*/
 main > section:nth-child(3) > section > section:nth-child(1) > section {
     width: 1200px;
@@ -720,16 +683,20 @@ main > section:nth-child(3) > section > section:nth-child(1) > section {
     background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
 }
 
-main > section:nth-child(3) > section > section:nth-child(1) > section > section {
-    border: 2px white;
+main > section:nth-child(3) > section > section:nth-child(1) > section  > section {
     margin: auto;
+    background-size: cover;
+    background-position: center;
 }
 
 main > section:nth-child(3) > section > section:nth-child(1) > section > section > img {
     margin-left: 3px;
     width: 85%;
-    height: 29%
+    height: 29%;
+    background-size: cover;
+    background-position: center;
 }
+
 
 
 /*///////////nav css////////*/
