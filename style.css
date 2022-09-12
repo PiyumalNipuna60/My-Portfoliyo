@@ -4493,7 +4493,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     /*========================================== gallery ==========================================================*/
     #glrFrame {
-        height: 69vh;
+        height: 56vh;
         width: 74vw;
         border: 3px solid #40036e;
         position: relative;
@@ -4505,60 +4505,61 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-color: #ff4334;
         border: 2px solid black;
         position: relative;
-        top: -14px;
+        top: -46px;
         left: 19px;
+        width: 61%;
     }
 
     #glryImg2 {
         position: relative;
-        top: -46px;
+        top: -55px;
         left: 12px;
         border: 2px solid black;
-        width: 95%;
+        width: 79%
     }
 
     #glryImg3 {
         position: relative;
-        top: 15px;
+        top: 7px;
         left: 13px;
         border: 2px solid black;
     }
 
     #glryImg4 {
         position: relative;
-        top: -66px;
-        left: -14px;
+        top: -15px;
+        left: -10px;
         border: 2px solid black;
         width: 98%;
     }
 
     #glryImg5 {
         position: relative;
-        top: -70px;
-        left: 43px;
+        top: -112px;
+        left: 16px;
         border: 2px solid black;
-        width: 66%;
+        width: 85%;
     }
 
     #glryImg6 {
         position: relative;
-        top: -107px;
+        top: -117px;
         left: 1px;
         border: 2px solid black;
-        width: 190px;
+        width: 179px;
     }
 
     #glryImg7 {
         position: relative;
-        top: -46px;
+        top: -53px;
         left: -7px;
         border: 2px solid black;
-        width: 206px;
+        width: 200px;
     }
 
     #glryImg8 {
         position: relative;
-        top: -126px;
+        top: -91px;
         left: -7px;
         border: 2px solid black;
         width: 97%;
