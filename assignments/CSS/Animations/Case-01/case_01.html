@@ -11,8 +11,8 @@
           position: absolute;
           background-color: black;
           border-radius: 10%;
-          width: 200px;
-          height: 100px;
+          width: 18%;
+          height: 18%;
           animation-name: assignment;
           animation-duration: 5s;
           animation-iteration-count: infinite;
@@ -30,8 +30,22 @@
 
           25%{
               top: 0;
-              right: 0;
+              left: 1300px;
               background-color: blue;
+              transform: rotate(180deg);
+          }
+
+          50%{
+              top: 650px;
+              left: 1300px;
+              background-color: orange;
+              transform: rotate(360deg);
+          }
+
+          75% {
+              top: 650px;
+              left: 0;
+              background-color: red;
               transform: rotate(180deg);
           }
       }
