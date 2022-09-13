@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Case 1 | Animations</title>
     <link href="/assets/lib/normalize.css" rel="stylesheet">
-
+    <meta content="width=device-width initial-scale=1" name="viewport">
   <style>
 
       section{
@@ -18,12 +18,14 @@
           animation-iteration-count: infinite;
           animation-direction: alternate;
           border: 2px solid black;
+          margin: 0;
+          animation-timing-function: linear;
       }
 
       @keyframes assignment {
           0%{
-              top: 0;
-              left: 0;
+              top: 5%;
+              left: 5%;
               background-color: yellow;
               transform: rotate(0deg);
           }
