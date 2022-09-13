@@ -28,7 +28,7 @@
             z-index: 100;
             margin-top: 412px;
             position: absolute;
-            margin-left: 606px;
+            margin-left: 599px;
             animation-name: wheel1;
             animation: wheel1 1ms infinite;
         }
@@ -51,15 +51,15 @@
         }
 
         main > section:nth-child(1) > img:nth-child(1) {
-         padding-left:10%;
+            padding-left: 10%;
             z-index: 25;
-            width: 450px;
+            width: 465px;
             height: 200px;
             left: 0;
             right: 0;
             position: absolute;
-            margin-left: 27%;
-            margin-top:20% ;
+            margin-left: 25%;
+            margin-top: 19%;
         }
 
         main>section:nth-child(2){
@@ -70,6 +70,22 @@
             animation-duration: 10s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
+
+        }
+
+        @keyframes carDrive {
+            0% {
+                transform: translate(0)
+            }
+            25% {
+                transform: translate(-25%)
+            }
+            75% {
+                transform: translate(-50%)
+            }
+            100% {
+                transform: translate(-75%)
+            }
         }
 
 
