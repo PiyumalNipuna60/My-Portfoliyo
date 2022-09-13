@@ -21,7 +21,7 @@
             top: 0;
             bottom: 0;
             margin: auto;
-            background-color: gray;
+            background-color: grey;
         }
 
         section>h2{
@@ -46,9 +46,20 @@
             top: 0;
             bottom: 0;
             margin: auto;
-            border: 2px solid white;
+            border: 20px solid white;
             border-top: 20px solid red;
             border-radius: 100%;
+
+        }
+
+        section:hover::after{
+            transform: rotate(360deg);
+            cursor: pointer;
+            transition: all 2s;
+        }
+
+        section:hover{
+            cursor: pointer;
         }
 
 
