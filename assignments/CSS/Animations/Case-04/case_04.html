@@ -30,13 +30,24 @@
             position: absolute;
             margin-left: 606px;
             animation-name: wheel1;
-            animation: rotating 1ms infinite;
+            animation: wheel1 1ms infinite;
         }
 
         @keyframes wheel1 {
             100% {
                 transform: rotate(360deg);
             }
+        }
+
+        main > section:nth-child(1) > img:nth-child(2) {
+            width: 86px;
+            height: 86px;
+            z-index: 100;
+            margin-top: 412px;
+            position: absolute;
+            margin-left: 882px;
+            animation-name: wheel1;
+            animation: wheel1 1ms infinite;
         }
     </style>
 
@@ -45,7 +56,7 @@
 
 <main>
     <section id="car">
-        <img alt="" src="assets/car.png">
+<!--        <img alt="" src="assets/car.png">-->
         <img alt="" src="assets/wheel.png">
         <img alt="" src="assets/wheel.png">
     </section>
