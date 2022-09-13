@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <title>animation/case-03</title>
     <style>
-main{
-    width: 900px;
-    height: 480px;
-    box-shadow: 1px 3px 5px 1px #736060;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    overflow: hidden;
-}
+        main {
+            width: 900px;
+            height: 480px;
+            box-shadow: 1px 3px 5px 1px #736060;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        main>section{
+            height: 100%;
+            width: 500%;
+            display: flex;
+            animation-name: animation;
+            animation-duration: 20s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+
     </style>
 </head>
 
