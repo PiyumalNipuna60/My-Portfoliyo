@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/My-Portfoliyo.iml" filepath="$PROJECT_DIR$/My-Portfoliyo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boostrap module/boostrap module.iml" filepath="$PROJECT_DIR$/boostrap module/boostrap module.iml" />
     </modules>
   </component>
 </project>
