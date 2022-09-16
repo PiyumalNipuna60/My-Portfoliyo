@@ -7541,8 +7541,10 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     #Asgn1 > img {
-        width: 200px;
-        height: 250px;
+        width: 126%;
+        height: 411%;
+        position: absolute;
+        left: 10%;
     }
 
     #Asgn1 > h3 {
