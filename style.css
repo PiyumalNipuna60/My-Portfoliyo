@@ -7536,8 +7536,8 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     #Asgn1 {
         position: absolute;
-        top: 110px;
-        left: 53px;
+        top: 22%;
+        left: 5%;
     }
 
     #Asgn1 > img {
@@ -7549,7 +7549,8 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     #Asgn1 > h3 {
         position: relative;
-        left: 32px;
+        left: 21%;
+        top: 235px;
     }
 
 
