@@ -5982,6 +5982,2000 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
 /*=============================================================================================================*/
 /*=============================================================================================================*/
-@media all and (max-width: 768px){
+@media all and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        width: 100vw;
+        height: 100vh;
+    }
 
+    main > section {
+        width: 100vw;
+        height: 109vh;
+        /*!*position: relative;*!*/
+        /*!*bottom: -173px;*!*/
+        /*border: 3px solid red;*/
+    }
+
+
+    body > main > section:nth-child(1) {
+        background-color: green;
+        position: relative;
+        bottom: 4px;
+        height: 71vh;
+    }
+
+    body > main > section:nth-child(2) {
+        background-color: red;
+        background-repeat: no-repeat, repeat;
+        background-image: url(assets/image/pic/light-blue-color-gradient-web-icon-template-round-circle-shape-background-light-blue-color-gradient-web-icon-template-round-circle-170460407.jpg);
+        background-size: 129% 120%;
+        background-position: 0px;
+        /* background-size: auto; */
+        position: relative;
+        bottom: 22px;
+        height: 96vh;
+    }
+
+    main > section:nth-child(3) {
+        /* background-color: #6900ff; */
+        /* width: 97vw; */
+        background-repeat: no-repeat, repeat;
+        background-image: url(assets/image/pic/pngtree-background-pattern-with-icon-symbol-picture-image_1154242.jpg);
+        background-size: 100% 100%;
+        /* background-size: auto; */
+        height: 91vh;
+        position: relative;
+        top: -67px;
+    }
+
+    main > section:nth-child(4) {
+        background-color: #ff7f00;
+        position: relative;
+        top: -113px;
+        height: 85vh;
+        background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif);
+        background-size: 100% 100%;
+        background-size: auto;
+    }
+
+    main > section:nth-child(5) {
+        background-color: greenyellow;
+        background-repeat: no-repeat, repeat;
+        background-image: url(assets/image/pic/CxrL.gif);
+        background-size: 100% 100%;
+        /* background-size: auto; */
+        position: relative;
+        top: -126px;
+        height: 85vh;
+    }
+
+    main > section:nth-child(6) {
+        /* background-color: yellow; */
+        background-repeat: no-repeat, repeat;
+        background-image: url(assets/image/pic/image_processing20220207-786-j68tnb.gif);
+        background-size: 100% 100%;
+        position: relative;
+        top: -143px;
+        height: 95vh;
+    }
+
+    main > section:nth-child(7) {
+        /*background-color: #d9b7b7;*/
+        background-repeat: no-repeat, repeat;
+        background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");
+        background-size: 100% 100%;
+        position: relative;
+        top: -168px;
+        height: 93vh;
+    }
+
+    main > section:nth-child(8) {
+        /*background-color: #d0c3ab;*/
+        /*background-repeat: no-repeat, repeat;*/
+        /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
+        /*background-size: 100% 100%;*/
+        position: relative;
+        top: -184px;
+        height: 88vh;
+    }
+
+    main > section:nth-child(9) {
+        /*background-color: #eed3d3;*/
+        /* background-repeat: no-repeat, repeat; */
+        /* background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif); */
+        /* background-size: 100% 100%; */
+        position: relative;
+        top: -196px;
+        height: 97vh;
+    }
+
+    main > section:nth-child(10) {
+        /* background-color: #e3eed3; */
+        /* background-repeat: no-repeat, repeat; */
+        /* background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif); */
+        /* background-size: 100% 100%; */
+        position: relative;
+        top: -213px;
+        height: 96vh;
+    }
+
+    main > section:nth-child(11) {
+        /*background-color: #d9b7b7;*/
+        /*background-repeat: no-repeat, repeat;*/
+        /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
+        /*background-size: 100% 100%;*/
+        position: relative;
+        top: -230px;
+        height: 94vh
+    }
+
+
+    /*========================== header ==========================*/
+    body > header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 55px;
+        box-shadow: inset 0px -2px 4px 0px #d9b7b7;
+        z-index: 91;
+        /* background-color: #40036e; */
+        background-repeat: no-repeat, repeat;
+        background-image: url(assets/image/pic/44.jpg);
+        background-size: 134% 99%;
+    }
+
+    body > header > nav > ul {
+        right: 1%;
+        position: absolute;
+        /* right: 30px; */
+        margin-top: 10px;
+        font-size: 161%;
+        font-family: 'Lobster', cursive;
+        list-style: none;
+        color: white;
+    }
+
+    body > header > nav > ul > li {
+        padding: 0 10px 0 10px;
+        display: inline-block;
+        cursor: pointer;
+        border-right: 2px solid black;
+    }
+
+    body > header > nav > ul > li:first-child {
+        border-left: 2px solid black;
+    }
+
+    body > header > nav > ul > li > i {
+        padding-right: 15px;
+        font-size: 20px;
+        color: #ccffcd;
+    }
+
+    body > header > nav > ul > li > a {
+        color: #ccffcd;
+        text-decoration: none;
+    }
+
+    body > header > nav > ul > li:hover a {
+        color: red;
+        text-decoration: none;
+    }
+
+    body > header > nav > ul > li:hover i {
+        color: red;
+        text-decoration: none;
+    }
+
+    header > img {
+        width: 5%;
+        height: 71%;
+        position: absolute;
+        top: 5px;
+        left: 7px;
+    }
+
+
+    /*======================================================== Home =============================================*/
+    main > section:first-child > section:first-child > article > aside {
+        background-color: #40036e;
+        position: relative;
+        /* border: 2px solid black; */
+        height: 227px;
+        width: 40%;
+        top: -146px;
+        left: 1px;
+        background-repeat: no-repeat, repeat;
+        background-image: url(assets/image/pic/168114-black-and-white-dot-background-image.jpg);
+        background-size: 100% 100%;
+        transform: rotate(180deg);
+    }
+
+    main > section:first-child > section > aside > img {
+        width: 48%;
+        height: 39%;
+        /* padding-top: 20px; */
+        position: relative;
+        bottom: -24px;
+        left: -30px;
+    }
+
+    body > main > section:first-child > section:nth-child(1) > article > h1 {
+        color: rgb(246, 251, 13);
+        font-size: 52px;
+        text-shadow: 2px 2px red;
+        position: relative;
+        left: 12px;
+        top: 37px;
+    }
+
+    body > main > section:first-child > section:first-child > article > h2 {
+        font-size: 170%;
+        padding-left: 30px;
+    }
+
+    main > section:nth-child(1) > section:nth-child(1) > article > img {
+        width: 28%;
+        height: 10%;
+        position: relative;
+        left: 98px;
+    }
+
+    main > section:nth-child(1) > section:nth-child(1) > article > p {
+        font-size: 22px;
+        position: relative;
+        left: 125px;
+        top: -59px;
+        z-index: 1;
+    }
+
+    main > section:nth-child(1) > section:nth-child(1) > article > button {
+        font-size: 28px;
+        border-color: #a79897;
+        background-color: red;
+        position: relative;
+        left: 198px;
+        top: -37px;
+        color: #edebe9;
+        border-radius: 16px;
+        z-index: 2;
+    }
+
+    main > section:nth-child(1) > section:nth-child(1) > article > hr {
+        background-color: #dbd3d3;
+        width: 46%;
+        /* rotate: unset; */
+        height: 2%;
+        border: inset;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 262px;
+        left: 271px;
+    }
+
+    main > section:nth-child(1) > section:nth-child(2) > div > hr {
+        color: #0a0909;
+        height: 2px;
+        background-color: black;
+    }
+
+    main > section:nth-child(1) > section:nth-child(2) > div {
+        position: absolute;
+        top: 428px;
+        width: 100%;
+    }
+
+    main > section:nth-child(1) > section:nth-child(2) > div > hr:nth-child(1) {
+        position: relative;
+        top: 80px;
+    }
+
+    main > section:nth-child(1) > section:nth-child(2) > div > section {
+        /* background-color: #ff4334; */
+        position: relative;
+        top: 44px;
+        left: 208px;
+        width: 81%;
+    }
+
+    main > section:nth-child(1) > section:nth-child(2) > div > section > p {
+        position: relative;
+        top: 44px;
+        left: -159px;
+        width: 81%;
+        color: #40036e;
+    }
+
+    main > section:nth-child(1) > section:nth-child(2) > div > aside {
+        right: -1031px;
+        position: relative;
+        top: 0px;
+        width: 93px;
+        height: 100%;
+    }
+
+    main > section:nth-child(1) > section:nth-child(2) > div > aside > a:nth-child(2) {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 307px;
+    }
+
+    main > section:nth-child(1) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;;
+        top: -8px;
+        font-size: 118%;
+    }
+
+    main > section:nth-child(1) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;
+        top: -3px;
+        font-size: 103%;
+    }
+
+
+    /*========================================== about ==========================================*/
+    main > section:nth-child(2) > section:nth-child(2) > section:first-child > section:first-child > hr {
+        box-sizing: content-box;
+        height: 0px;
+        overflow: visible;
+        width: 120px;
+        position: relative;
+        top: 4px;
+        left: 30px;
+        color: red;
+        border: 1px solid;
+    }
+
+    main > section:nth-child(2) > section:nth-child(2) > section:first-child > section:last-child > hr {
+        box-sizing: content-box;
+        height: 0px;
+        overflow: visible;
+        width: 208px;
+        position: relative;
+        top: 4px;
+        left: 30px;
+        color: red;
+        border: 1px solid;
+    }
+
+    h1 {
+        color: black;
+        font-size: 25px;
+        font-family: "Griffy";
+        position: absolute;
+        left: 34px;
+        top: 6px;
+    }
+
+    h1.second {
+        color: red;
+        font-family: "Griffy";
+        padding-left: 78px;
+    }
+
+    body > main > section:nth-child(2) > section > section > section > article {
+        /* background-color: red; */
+        position: absolute;
+        /* left: 0; */
+        right: 115px;
+        top: 28px;
+        width: 54%;
+        height: 27%;
+        margin: auto;
+        font-size: 89%;
+    }
+
+    body > main > section:nth-child(2) > section > section > section > article > pre:nth-child(4) {
+        position: relative;
+        right: -72px;
+        top: -23px;
+    }
+
+    body > main > section:nth-child(2) > section > section > section > article > button {
+        background-color: red;
+        position: relative;
+        left: 618px;
+        top: -111px;
+        border-radius: 15px;
+        font-size: 22px;
+    }
+
+    body > main > section:nth-child(2) > section > section > section > article > button:nth-child(6) {
+        background-color: darkgreen;
+        position: relative;
+        left: 630px;
+        top: -111px;
+    }
+
+    body > main > section:nth-child(2) > section > section > section > aside > img {
+        /* background-color: blue; */
+        position: relative;
+        right: -107px;
+        width: 17%;
+        top: 5px;
+        margin-top: 0px;
+        transform: rotate(6deg);
+        z-index: 1;
+        border: 4px solid black;
+    }
+
+    body > main > section:nth-child(2) > section > section > section > aside > div {
+        background-color: red;
+        border: 4px solid black;
+        position: absolute;
+        left: 102px;
+        top: 74px;
+        /* margin-top: 0px; */
+        width: 17%;
+        height: 40%;
+        transform: rotate(347deg);
+    }
+
+    body > main > section:nth-child(2) > section > section > section:nth-child(2) > h2 {
+        color: black;
+        font-style: inherit;
+        font-size: 26px;
+        position: relative;
+        top: 13px;
+        left: 31px;
+    }
+
+    body > main > section:nth-child(2) > section > section:nth-child(1) > section:nth-child(2) > div {
+        /*background-color: dodgerblue;*/
+        display: flex;
+        justify-content: space-between;
+        height: 75px;
+    }
+
+    body > main > section:nth-child(2) > section > section:nth-child(2) {
+        background-color: #464A68;
+        background-image: -moz-element(ass);
+        width: 3%;
+        height: 56%;
+        position: fixed;
+        box-shadow: inset 0px -2px 4px 0px #d9b7b7;
+        z-index: 91;
+        top: 154px;
+        bottom: 0;
+        right: 0;
+    }
+
+    main > section:nth-child(2) > section > hr {
+        background-color: #0a0909;
+        background-color: #0a0909;
+        border: 2px solid black;
+        width: 100%;
+        position: relative;
+        top: 62px;
+    }
+
+
+    /*///////////nav css////////*/
+    main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div > hr {
+        color: #0a0909;
+        height: 2px;
+        background-color: black;
+    }
+
+    main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div {
+        position: absolute;
+        top: 453px;
+        width: 100%;
+    }
+
+    main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div > hr:nth-child(1) {
+        position: relative;
+        top: 80px;
+    }
+
+    main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div > section {
+        /* background-color: #ff4334; */
+        position: relative;
+        top: 44px;
+        left: 208px;
+        width: 81%;
+    }
+
+    main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div > section > p {
+        position: relative;
+        top: 44px;
+        left: -159px;
+        width: 81%;
+        color: #40036e;
+    }
+
+    main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div > aside {
+        right: -1031px;
+        position: relative;
+        top: 0px;
+        width: 93px;
+        height: 100%;
+    }
+
+    main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div > aside > a:nth-child(2) {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 307px;
+        top: 0;
+    }
+
+    main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div > aside > a:nth-child(1) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;
+        top: -8px;
+        font-size: 118%;
+    }
+
+    main > section:nth-child(2) > section:nth-child(2) > section:nth-child(3) > div > aside > a:nth-child(2) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;
+        top: -4px;
+        font-size: 103%;
+    }
+
+
+    /*========================================== gallery ==========================================================*/
+    #glrFrame {
+        height: 56vh;
+        width: 74vw;
+        border: 3px solid #40036e;
+        position: relative;
+        top: 12px;
+    }
+
+    /*///image set////*/
+    #glryImg1 {
+        background-color: #ff4334;
+        border: 2px solid black;
+        position: relative;
+        top: -46px;
+        left: 19px;
+        width: 61%;
+    }
+
+    #glryImg2 {
+        position: relative;
+        top: -55px;
+        left: 12px;
+        border: 2px solid black;
+        width: 79%
+    }
+
+    #glryImg3 {
+        position: relative;
+        top: 7px;
+        left: 13px;
+        border: 2px solid black;
+    }
+
+    #glryImg4 {
+        position: relative;
+        top: -15px;
+        left: -10px;
+        border: 2px solid black;
+        width: 98%;
+    }
+
+    #glryImg5 {
+        position: relative;
+        top: -112px;
+        left: 16px;
+        border: 2px solid black;
+        width: 85%;
+    }
+
+    #glryImg6 {
+        position: relative;
+        top: -117px;
+        left: 1px;
+        border: 2px solid black;
+        width: 179px;
+    }
+
+    #glryImg7 {
+        position: relative;
+        top: -53px;
+        left: -7px;
+        border: 2px solid black;
+        width: 200px;
+    }
+
+    #glryImg8 {
+        position: relative;
+        top: -91px;
+        left: -7px;
+        border: 2px solid black;
+        width: 97%;
+    }
+
+    /*///////*/
+    main > section:nth-child(3) > section > section:nth-child(1) > h1 {
+        font-size: 164%;
+        font-weight: bold;
+        color: black;
+        display: initial;
+        padding-left: 36px;
+        position: relative;
+        top: 12px;
+    }
+
+    main > section:nth-child(3) > section > section:nth-child(1) > h1.second {
+        /*font-size: 108%;*/
+        /*font-weight: bold;*/
+        color: red;
+        padding-left: 9px;
+    }
+
+    main > section:nth-child(3) > section > section:nth-child(1) > hr {
+        /*border-bottom-color: darkred;*/
+        margin-left: 47px;
+        margin-top: 20px;
+        padding-left: 58px;
+        color: red;
+        border: 2px solid;
+    }
+
+    main > section:nth-child(3) > section > section:nth-child(1) > nav {
+        margin-top: 15px;
+        margin-left: 23px;
+        font-size: 123%;
+        font-weight: bold;
+        position: relative;
+        top: 0px;
+    }
+
+    main > section:nth-child(3) > section > section:nth-child(1) > nav > button {
+        font-weight: bold;
+        width: 10vw;
+        height: 5vh;
+    }
+
+    /*////////////////////background colour///////////////////*/
+    main > section:nth-child(3) > section > section:nth-child(1) > section {
+        width: 1200px;
+        height: 600px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom: -13px;
+        /* top: 0; */
+        margin: auto;
+        /*background-color: darkgreen;*/
+        background: radial-gradient(circle, transparent 10%, green 10%,
+        slategray 80%, transparent 80%, transparent),
+        radial-gradient(circle, transparent 20%, darkgreen 20%,
+                slategray 80%, transparent 80%, transparent) 50px 50px,
+        linear-gradient(darkgreen 8px, transparent 8px) 0 -4px,
+        linear-gradient(90deg, darkgreen 8px, transparent 8px) -4px 0;
+        background-color: slategray;
+        background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+    }
+
+    main > section:nth-child(3) > section > section:nth-child(1) > section > section {
+        margin: auto;
+        background-size: cover;
+        background-position: center;
+    }
+
+    main > section:nth-child(3) > section > section:nth-child(1) > section > section > img {
+        margin-left: 3px;
+        width: 85%;
+        height: 29%;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    /*///////////nav css////////*/
+    main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div > hr {
+        color: #0a0909;
+        height: 2px;
+        background-color: black;
+    }
+
+    main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div {
+        position: absolute;
+        top: 428px;
+        width: 100%;
+    }
+
+    main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div > hr:nth-child(1) {
+        position: relative;
+        top: 80px;
+    }
+
+    main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div > section {
+        /* background-color: #ff4334; */
+        position: relative;
+        top: 44px;
+        left: 208px;
+        width: 81%;
+    }
+
+    main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div > section > p {
+        position: relative;
+        top: 44px;
+        left: -159px;
+        width: 81%;
+        color: #40036e;
+    }
+
+    main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div > aside {
+        right: -1031px;
+        position: relative;
+        top: 0px;
+        width: 93px;
+        height: 100%;
+    }
+
+    main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div > aside > a:nth-child(2) {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 307px;
+    }
+
+    main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div > aside > a:nth-child(1) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;;
+        top: -8px;
+        font-size: 118%;
+    }
+
+    main > section:nth-child(3) > section:nth-child(2) > section:nth-child(3) > div > aside > a:nth-child(2) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;
+        top: -3px;
+        font-size: 103%;
+    }
+
+
+    /*========================================== Education ==========================================================*/
+    #E1 {
+        position: relative;
+        font-size: 153%;
+    }
+
+    main > section:nth-child(4) > section > section > article {
+        background-color: green;
+    }
+
+
+    /*///////////nav css////////*/
+    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > hr {
+        color: #0a0909;
+        height: 2px;
+        background-color: black;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div {
+        position: absolute;
+        top: 423px;
+        width: 100%;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
+        position: relative;
+        top: 80px;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > section {
+        /* background-color: #ff4334; */
+        position: relative;
+        top: 44px;
+        left: 208px;
+        width: 81%;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > section > p {
+        position: relative;
+        top: 44px;
+        left: -159px;
+        width: 81%;
+        color: #40036e;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside {
+        right: -1031px;
+        position: relative;
+        top: 0px;
+        width: 93px;
+        height: 100%;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 307px;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;;
+        top: -8px;
+        font-size: 118%;
+    }
+
+    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;
+        top: -3px;
+        font-size: 103%;
+    }
+
+
+    /*========================================== Skill ==========================================================*/
+    #S1 {
+        position: relative;
+        font-size: 153%;
+    }
+
+    main > section:nth-child(5) > section:nth-child(2) > section:first-child > section:first-child > hr {
+        margin-left: 29px;
+        margin-top: 22px;
+        padding-left: 58px;
+        color: red;
+        border: 2px solid;
+        width: 4%;
+    }
+
+    #sDiv1 {
+        display: flex;
+        justify-content: space-evenly;
+        height: 123px;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #sDiv1 > div {
+        background-color: #40036e;
+        position: relative;
+        width: 20%;
+        height: 59%;
+        border-radius: 13px;
+        color: #edebe9;
+    }
+
+    #sDiv1 > div > img {
+        position: relative;
+        width: 33%;
+        height: 70%;
+        border-radius: 13px;
+        top: 10px;
+        left: 12px;
+    }
+
+    #sDiv1 > div > h3 {
+        font-size: 111%;
+        position: relative;
+        top: -46px;
+        left: 92px;
+    }
+
+    #sDiv2 {
+        display: flex;
+        justify-content: space-evenly;
+        height: 123px;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #sDiv2 > div {
+        background-color: #40036e;
+        position: relative;
+        width: 20%;
+        height: 59%;
+        border-radius: 13px;
+        color: #edebe9;
+    }
+
+    #sDiv2 > div > img {
+        position: relative;
+        width: 33%;
+        height: 70%;
+        border-radius: 13px;
+        top: 10px;
+        left: 12px;
+    }
+
+    #sDiv2 > div > h3 {
+        font-size: 111%;
+        position: relative;
+        top: -46px;
+        left: 92px;
+    }
+
+    #L1 {
+        position: relative;
+        font-size: 153%;
+        top: 20px;
+    }
+
+    main > section:nth-child(5) > section:nth-child(2) > section:first-child > article > hr {
+        margin-left: 26px;
+        margin-top: 22px;
+        padding-left: 58px;
+        color: red;
+        border: 2px solid;
+        width: 0%;
+    }
+
+    #sDiv3 {
+        display: flex;
+        justify-content: space-evenly;
+        height: 123px;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    /*///////////nav css////////*/
+    main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div > hr {
+        color: #0a0909;
+        height: 2px;
+        background-color: black;
+    }
+
+    main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div {
+        position: absolute;
+        top: 419px;
+        width: 100%;
+    }
+
+    main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
+        position: relative;
+        top: 80px;
+    }
+
+    main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div > section {
+        /* background-color: #ff4334; */
+        position: relative;
+        top: 44px;
+        left: 208px;
+        width: 81%;
+    }
+
+    main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div > section > p {
+        position: relative;
+        top: 44px;
+        left: -159px;
+        width: 81%;
+        color: #40036e;
+    }
+
+    main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div > aside {
+        right: -1031px;
+        position: relative;
+        top: 0px;
+        width: 93px;
+        height: 100%;
+    }
+
+    main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 307px;
+    }
+
+    main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;;
+        top: -8px;
+        font-size: 118%;
+    }
+
+    main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;
+        top: -3px;
+        font-size: 103%;
+    }
+
+
+    /*========================================== Project ==========================================================*/
+    #P1 {
+        position: relative;
+        font-size: 153%;
+        top: 16px;
+    }
+
+    main > section:nth-child(6) > section:nth-child(2) > section:first-child > hr {
+        margin-left: 26px;
+        margin-top: 22px;
+        padding-left: 58px;
+        color: red;
+        border: 2px solid;
+        width: 2%;
+    }
+
+    main > section:nth-child(6) > section:nth-child(2) > section:first-child > article {
+        /*background-color: #ff7f00;*/
+        position: relative;
+        top: 6px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #Pdiv1 {
+        left: 44px;
+        position: relative;
+        top: 73px;
+    }
+
+    #Pdiv1 > h3 {
+        left: 76px;
+        position: relative;
+        top: -9px;
+        font-size: 140%;
+
+    }
+
+    #Pdiv1 > img{
+        width: 79%;
+        height: 42vh;
+    }
+
+    #Pdiv2 {
+        left: 17px;
+        position: relative;
+        top: 27px;
+    }
+
+    #Pdiv2 > h3 {
+        left: 104px;
+        position: relative;
+        top: -23px;
+        font-size: 238%;
+    }
+
+    #Pdiv2 > img{
+        width: 98%;
+        height: 57vh;
+    }
+
+
+    #Pdiv3 {
+        left: 37px;
+        position: relative;
+        top: 72px;
+    }
+
+    #Pdiv3 > h3 {
+        left: 71px;
+        position: relative;
+        top: -11px;
+        font-size: 140%;
+    }
+
+    #Pdiv3 > img{
+        width: 71%;
+        height: 43vh;
+    }
+
+    #Pdiv4 {
+        left: -56px;
+        position: relative;
+        top: 79px;
+    }
+
+    #Pdiv4 > h3 {
+        left: 41px;
+        position: relative;
+        top: -48px;
+        font-size: 120%;
+    }
+
+    #Pdiv4 > img {
+        width: 110%;
+        height: 38vh;
+    }
+
+    /*///////////nav css////////*/
+    main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > hr {
+        color: #0a0909;
+        height: 2px;
+        background-color: black;
+    }
+
+    main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div {
+        position: absolute;
+        top: 487px;
+        width: 100%;
+    }
+
+    main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
+        position: relative;
+        top: 80px;
+    }
+
+    main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > section {
+        /* background-color: #ff4334; */
+        position: relative;
+        top: 44px;
+        left: 208px;
+        width: 81%;
+    }
+
+    main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > section > p {
+        position: relative;
+        top: 44px;
+        left: -159px;
+        width: 81%;
+        color: #40036e;
+    }
+
+    main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > aside {
+        right: -1031px;
+        position: relative;
+        top: 0px;
+        width: 93px;
+        height: 100%;
+    }
+
+    main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 307px;
+    }
+
+    main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;;
+        top: -8px;
+        font-size: 118%;
+    }
+
+    main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;
+        top: -3px;
+        font-size: 103%;
+    }
+
+
+    /*========================================== All Project ==========================================================*/
+    #AP1 {
+        position: relative;
+        font-size: 153%;
+        top: 10px;
+        left: 56px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:first-child > hr {
+        margin-left: 41px;
+        margin-top: 22px;
+        padding-left: 58px;
+        color: red;
+        border: 2px solid;
+        width: 5%;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:first-child > div {
+        position: relative;
+        left: 200px;
+        top: 14px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:first-child > div > img:nth-child(1) {
+        position: relative;
+        left: 66px;
+        top: -28px;
+        width: 5%;
+    }
+
+    #APart01 {
+        position: relative;
+        left: -39px;
+        top: -22px;
+    }
+
+    #APart01 > img {
+        border: 2px solid yellow;
+        border-radius: 17px;
+        width: 24%;
+        height: 18vh;
+    }
+
+    #APart01 > div {
+        position: absolute;
+        left: 294px;
+        top: -7px;
+    }
+
+    #APart01 > div > pre {
+        position: relative;
+        left: -279px;
+    }
+
+    #APart02 {
+        position: relative;
+        left: -39px;
+        top: -34px;
+    }
+
+    #APart02 > img {
+        border: 2px solid yellow;
+        border-radius: 17px;
+        width: 35%;
+        height: 0%;
+        position: relative;
+        left: -48px;
+        height: 24vh;
+        top: -7px;
+    }
+
+    #APart02 > div {
+        position: relative;
+        left: 321px;
+        top: -179px;
+        font-size: 23px;
+    }
+
+    #APart02 > div > hr {
+        position: relative;
+        left: 0px;
+        top: -13px;
+        font-size: 24px;
+        width: 23%;
+    }
+
+    #APart02 > div > p {
+        position: relative;
+        top: -13px;
+    }
+
+    #APart03 {
+        position: relative;
+        top: -245px;
+        left: -39px;
+    }
+
+    #APart03 > img {
+        position: relative;
+        border: 2px solid yellow;
+        border-radius: 17px;
+        width: 24%;
+        height: 16vh;
+        top: 48px;
+    }
+
+    #APart03 > div {
+        position: absolute;
+        left: 308px;
+        top: 39px;
+    }
+
+    #APart03 > div > pre {
+        position: relative;
+        left: -279px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:first-child > div > img:nth-child(5) {
+        position: relative;
+        left: 66px;
+        top: -192px;
+        width: 5%;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(1) > aside:nth-child(5) {
+        position: absolute;
+        top: 456px;
+        right: 81px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(1) > aside:nth-child(5) > button {
+        width: 116%;
+        height: 56px;
+        background-color: aqua;
+        font-size: 138%;
+    }
+
+
+    /*///////////nav css////////*/
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div > hr {
+        color: #0a0909;
+        height: 2px;
+        background-color: black;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div {
+        position: absolute;
+        top: 470px;
+        width: 100%;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
+        position: relative;
+        top: 80px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div > section {
+        /* background-color: #ff4334; */
+        position: relative;
+        top: 44px;
+        left: 208px;
+        width: 81%;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div > section > p {
+        position: relative;
+        top: 44px;
+        left: -159px;
+        width: 81%;
+        color: #40036e;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div > aside {
+        right: -1031px;
+        position: relative;
+        top: 0px;
+        width: 93px;
+        height: 100%;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 307px;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;;
+        top: -8px;
+        font-size: 118%;
+    }
+
+    main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;
+        top: -3px;
+        font-size: 103%;
+    }
+
+
+    /*========================================== My Game ==========================================================*/
+    #G1 {
+        position: relative;
+        font-size: 153%;
+        top: 19px;
+        left: 65px;
+    }
+
+    main > section:nth-child(8) .second {
+        position: relative;
+        font-size: 153%;
+        top: -25px;
+        left: 43px;
+    }
+
+    main > section:nth-child(8) > section:nth-child(2) > section:first-child > hr {
+        margin-left: 57px;
+        margin-top: -31px;
+        padding-left: 58px;
+        color: red;
+        border: 2px solid;
+        width: 4%;
+    }
+
+    main > section:nth-child(8) > section:nth-child(2) > section:first-child > img {
+        position: relative;
+        width: 93%;
+        height: 366px;
+        left: 28px;
+        top: 22px;
+        border: 2px solid black;
+    }
+
+    main > section:nth-child(8) > section:nth-child(2) > section:first-child > aside:nth-child(5) > button {
+        background-color: blue;
+        font-size: 182%;
+        color: white;
+        border-radius: 19px;
+        border: 2px solid black;
+        width: 17%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        /* top: 23px; */
+        bottom: 104px;
+    }
+
+    /*///////////nav css////////*/
+    main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div > hr {
+        color: #0a0909;
+        height: 2px;
+        background-color: black;
+    }
+
+    main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div {
+        position: absolute;
+        top: 447px;
+        width: 100%;
+    }
+
+    main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
+        position: relative;
+        top: 80px;
+    }
+
+    main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div > section {
+        /* background-color: #ff4334; */
+        position: relative;
+        top: 44px;
+        left: 208px;
+        width: 81%;
+    }
+
+    main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div > section > p {
+        position: relative;
+        top: 44px;
+        left: -159px;
+        width: 81%;
+        color: #40036e;
+    }
+
+    main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div > aside {
+        right: -1031px;
+        position: relative;
+        top: 0px;
+        width: 93px;
+        height: 100%;
+    }
+
+    main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 307px;
+    }
+
+    main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;;
+        top: -8px;
+        font-size: 118%;
+    }
+
+    main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;
+        top: -3px;
+        font-size: 103%;
+    }
+
+
+    /*========================================== Assignment ==========================================================*/
+    #Asign1 {
+        position: relative;
+        font-size: 153%;
+        top: 10px;
+        left: 65px;
+    }
+
+    main > section:nth-child(9) > section:nth-child(2) > section:first-child > hr {
+        margin-left: 63px;
+        margin-top: -4px;
+        padding-left: 58px;
+        color: red;
+        border: 2px solid;
+        width: 4%;
+    }
+
+    main > section:nth-child(9) > section:nth-child(2) > section:first-child > article {
+        /*background-color: #ff4334;*/
+        display: flex;
+        height: 535px;
+        position: relative;
+        top: -12px;
+    }
+
+    #Asgn1 {
+        position: absolute;
+        top: 110px;
+        left: 53px;
+    }
+
+    #Asgn1 > img {
+        width: 200px;
+        height: 250px;
+    }
+
+    #Asgn1 > h3 {
+        position: relative;
+        left: 32px;
+    }
+
+
+    #Asgn2 {
+        position: absolute;
+        top: 57px;
+        left: 274px;
+    }
+
+    #Asgn2 > img {
+        width: 294px;
+        height: 382px;
+    }
+
+    #Asgn2 > h3 {
+        position: relative;
+        left: 87px;
+    }
+
+
+    #Asgn3 {
+        position: absolute;
+        top: 105px;
+        right: 234px;
+    }
+
+    #Asgn3 > img {
+        height: 250px;
+        width: 200px;
+    }
+
+    #Asgn3 > h3 {
+        position: relative;
+        left: 35px;
+    }
+
+
+    #Asgn4 {
+        position: absolute;
+        top: 135px;
+        right: 65px;
+    }
+
+    #Asgn4 > img {
+        height: 190px;
+        width: 150px;
+    }
+
+    #Asgn4 > h3 {
+        position: relative;
+        left: 13px;
+    }
+
+
+    /*///////////nav css////////*/
+    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > hr {
+        color: #0a0909;
+        height: 2px;
+        background-color: black;
+    }
+
+    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div {
+        position: absolute;
+        top: 502px;
+        width: 100%;
+    }
+
+    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
+        position: relative;
+        top: 80px;
+    }
+
+    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > section {
+        /* background-color: #ff4334; */
+        position: relative;
+        top: 44px;
+        left: 208px;
+        width: 81%;
+    }
+
+    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > section > p {
+        position: relative;
+        top: 44px;
+        left: -159px;
+        width: 81%;
+        color: #40036e;
+    }
+
+    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside {
+        right: -1031px;
+        position: relative;
+        top: 0px;
+        width: 93px;
+        height: 100%;
+    }
+
+    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 307px;
+    }
+
+    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;;
+        top: -8px;
+        font-size: 118%;
+    }
+
+    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;
+        top: -3px;
+        font-size: 103%;
+    }
+
+
+    /*========================================== Service ==========================================================*/
+    #Service {
+        position: relative;
+        font-size: 153%;
+        top: 15px;
+        left: 65px;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:first-child > hr {
+        margin-left: 63px;
+        margin-top: -2px;
+        padding-left: 58px;
+        color: red;
+        border: 2px solid;
+        width: 2%;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section {
+        /*background-color: red;*/
+        height: 535px;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div {
+        position: relative;
+        top: 70px;
+        display: flex;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(1) {
+        position: relative;
+        width: 77%;
+        height: 454px;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(2) {
+        position: relative;
+        width: 77%;
+        height: 454px;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(3) {
+        position: relative;
+        width: 77%;
+        height: 454px;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > img {
+        height: 82%;
+        width: 93%;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(2) > img {
+        height: 82%;
+        width: 93%;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(3) > img {
+        height: 82%;
+        width: 93%;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > h3 {
+        position: relative;
+        left: 172px;
+        font-size: 127%;
+    }
+
+
+    /*///////////nav css////////*/
+    main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div > hr {
+        color: #0a0909;
+        height: 2px;
+        background-color: black;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div {
+        position: absolute;
+        top: 502px;
+        width: 100%;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
+        position: relative;
+        top: 80px;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div > section {
+        /* background-color: #ff4334; */
+        position: relative;
+        top: 44px;
+        left: 208px;
+        width: 81%;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div > section > p {
+        position: relative;
+        top: 44px;
+        left: -159px;
+        width: 81%;
+        color: #40036e;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div > aside {
+        right: -1031px;
+        position: relative;
+        top: 0px;
+        width: 93px;
+        height: 100%;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 307px;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;;
+        top: -8px;
+        font-size: 118%;
+    }
+
+    main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;
+        top: -3px;
+        font-size: 103%;
+    }
+
+
+    /*========================================== Contact ==========================================================*/
+    #Contact1 {
+        position: relative;
+        font-size: 153%;
+        top: 25px;
+        left: 65px;
+    }
+
+
+    main > section:nth-child(11) > section:nth-child(2) > section:first-child > hr {
+        margin-left: 59px;
+        margin-top: 24px;
+        padding-left: 58px;
+        position: relative;
+        color: red;
+        border: 2px solid;
+        width: 2%;
+    }
+
+    #Contact2 {
+        position: relative;
+        font-size: 153%;
+        top: 33px;
+        left: 70px;
+    }
+
+    main > section:nth-child(11) > section:nth-child(2) > section:first-child > section:nth-child(3) > hr {
+        margin-left: 71px;
+        margin-top: 31px;
+        padding-left: 58px;
+        position: relative;
+        /* color: red; */
+        border: 1px solid;
+        width: 4%;
+    }
+
+    main > section:nth-child(11) > section:nth-child(2) > section:first-child > section:nth-child(3) > div {
+        /*background-color: greenyellow;*/
+        position: relative;
+        left: 59px;
+    }
+
+    main > section:nth-child(11) > section:nth-child(2) > section:first-child > section:nth-child(4) {
+        /*background-color: red;*/
+        position: absolute;
+        right: 9%;
+        top: 8%;
+        width: 42%;
+    }
+
+    #Location {
+        border: 2px solid black;
+        position: relative;
+        top: 31px;
+        height: 29vh;
+        width: 95%;
+        left: 31px;
+        /* right: 0;*/
+    }
+
+    #txtName {
+        width: 59%;
+        border-radius: 6px;
+        position: relative;
+        left: 22px;
+    }
+
+    #txtEmail {
+        width: 59%;
+        border-radius: 6px;
+        position: relative;
+        left: 22px;
+    }
+
+    #txtSubject {
+        width: 59%;
+        border-radius: 6px;
+        position: relative;
+        left: 14px;
+    }
+
+    #txtMassage {
+        width: 59%;
+        border-radius: 6px;
+        position: relative;
+        left: 9px;
+        border: 2px solid;
+    }
+
+
+    /*========================================== Contact ==========================================================*/
+    body > footer {
+        background-color: blue;
+        /* background-color: #d9b7b7; */
+        /* background-repeat: no-repeat, repeat; */
+        /* background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif); */
+        /* background-size: 100% 100%; */
+        position: relative;
+        height: 45%;
+        top: -229px;
+    }
+
+    footer > fieldset > aside > img {
+        width: 19%;
+        height: 274px;
+        border-radius: 53%;
+        padding-left: 15px;
+        padding-top: 9px;
+    }
+
+    footer > fieldset > article > pre {
+        font-size: 452%;
+        position: absolute;
+        top: 7%;
+        left: 27%;
+        font-style: oblique;
+        font-family: revert;
+    }
+
+    footer > fieldset > article > p {
+        font-size: 230%;
+        position: absolute;
+        top: 62%;
+        left: 27%;
+        font-style: italic;
+        font-family: emoji;
+    }
+
+
+    /*///////////nav css////////*/
+    body > footer > fieldset > section > div {
+        position: absolute;
+        top: -10%;
+        width: 100%;
+        left: 68%;
+    }
+
+    body > footer > fieldset > section > div > section {
+        /* background-color: #ff4334; */
+        position: relative;
+        top: 44px;
+        left: 208px;
+        width: 81%;
+    }
+
+    body > footer > fieldset > section > div > section > p {
+        position: relative;
+        top: 44px;
+        left: -159px;
+        width: 81%;
+        color: #40036e;
+    }
+
+    body > footer > fieldset > section > div > aside {
+        right: -1031px;
+        position: relative;
+        top: 0px;
+        width: 93px;
+        height: 100%;
+    }
+
+    body > footer > fieldset > section > div > aside > a:nth-child(2) {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 307px;
+    }
+
+    body > footer > fieldset > section > div > aside > a:nth-child(1) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;;
+        top: -8px;
+        font-size: 118%;
+    }
+
+    body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
+        width: 93px;
+        height: 100%;
+        position: absolute;
+        left: 54px;
+        top: -3px;
+        font-size: 103%;
+    }
 }
