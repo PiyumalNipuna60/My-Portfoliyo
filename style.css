@@ -5999,7 +5999,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
 
     body > main > section:nth-child(1) {
-        background-color: green;
+        /*background-color: green;*/
         position: relative;
         bottom: 4px;
         height: 71vh;
@@ -6230,10 +6230,10 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     main > section:nth-child(1) > section:nth-child(1) > article > p {
-        font-size: 120%;
-        position: relative;
-        left: 10%;
-        top: 7%;
+        font-size: 113%;
+        position: absolute;
+        left: 14%;
+        top: 37%;
         z-index: 1;
     }
 
@@ -6241,9 +6241,9 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         font-size: 116%;
         border-color: #a79897;
         background-color: red;
-        position: relative;
+        position: absolute;
         left: 23%;
-        top: 9%;
+        top: 47%;
         color: #edebe9;
         border-radius: 16px;
         z-index: 2;
@@ -6402,13 +6402,19 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         left: 630px;
         top: -111px;
     }
+    body > main > section:nth-child(2) > section > section:nth-child(1) > section:nth-child(2) {
+        /* background-color: yellow; */
+        position: absolute;
+        top: 50%;
+        width: 97%;
+    }
 
     body > main > section:nth-child(2) > section > section > section > aside > img {
-        /* background-color: blue; */
+        /*background-color: blue; *!*/
         position: relative;
-        right: -107px;
-        width: 17%;
-        top: 5px;
+        right: -6%;
+        width: 20%;
+        top: 24px;
         margin-top: 0px;
         transform: rotate(6deg);
         z-index: 1;
