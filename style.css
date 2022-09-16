@@ -6245,14 +6245,14 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(1) > section:nth-child(1) > article > hr {
         background-color: #dbd3d3;
-        width: 46%;
+        width: 49%;
         /* rotate: unset; */
         height: 2%;
         border: inset;
         transform: rotate(90deg);
         position: absolute;
-        top: 262px;
-        left: 271px;
+        top: 38%;
+        left: 26%;
     }
 
     main > section:nth-child(1) > section:nth-child(2) > div > hr {
