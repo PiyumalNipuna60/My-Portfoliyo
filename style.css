@@ -2182,7 +2182,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         /* border: 2px solid black; */
         height: 288px;
         width: 34%;
-        top: -152px;
+        top: -206px;
         left: 1px;
         background-repeat: no-repeat, repeat;
         background-image: url(assets/image/pic/168114-black-and-white-dot-background-image.jpg);
@@ -2191,12 +2191,12 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     main > section:first-child > section > aside > img {
-        width: 37%;
-        height: 39%;
+        width: 38%;
+        height: 41%;
         /* padding-top: 20px; */
         position: relative;
-        bottom: -24px;
-        left: -30px;
+        bottom: -9px;
+        left: -17px;
     }
 
     body > main > section:first-child > section:nth-child(1) > article > h1 {
@@ -2260,7 +2260,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(1) > section:nth-child(2) > div {
         position: absolute;
-        top: 533px;
+        top: 469px;
         width: 100%;
     }
 
