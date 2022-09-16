@@ -3047,55 +3047,77 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     #Pdiv1 {
-        left: 175px;
+        left: 44px;
         position: relative;
-        top: 22px;
+        top: 73px;
     }
 
     #Pdiv1 > h3 {
-        left: 124px;
+        left: 76px;
         position: relative;
         top: -9px;
-        font-size: 129%;
+        font-size: 140%;
+
+    }
+
+    #Pdiv1 > img{
+        width: 79%;
+        height: 42vh;
     }
 
     #Pdiv2 {
-        left: 108px;
+        left: 17px;
         position: relative;
-        top: -6px;
+        top: 27px;
     }
 
     #Pdiv2 > h3 {
-        left: 153px;
+        left: 104px;
         position: relative;
         top: -23px;
-        font-size: 200%;
+        font-size: 238%;
     }
+
+    #Pdiv2 > img{
+        width: 98%;
+        height: 57vh;
+    }
+
 
     #Pdiv3 {
         left: 37px;
         position: relative;
-        top: 22px;
+        top: 72px;
     }
 
     #Pdiv3 > h3 {
-        left: 124px;
+        left: 71px;
         position: relative;
         top: -11px;
-        font-size: 129%;
+        font-size: 140%;
+    }
+
+    #Pdiv3 > img{
+        width: 71%;
+        height: 43vh;
     }
 
     #Pdiv4 {
-        left: -100px;
+        left: -56px;
         position: relative;
-        top: 54px;
+        top: 79px;
     }
 
     #Pdiv4 > h3 {
-        left: 83px;
+        left: 41px;
         position: relative;
         top: -48px;
         font-size: 120%;
+    }
+
+    #Pdiv4 > img {
+        width: 110%;
+        height: 38vh;
     }
 
     /*///////////nav css////////*/
