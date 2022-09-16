@@ -6229,10 +6229,10 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     main > section:nth-child(1) > section:nth-child(1) > article > p {
-        font-size: 22px;
+        font-size: 120%;
         position: relative;
-        left: 125px;
-        top: -59px;
+        left: 10%;
+        top: 7%;
         z-index: 1;
     }
 
