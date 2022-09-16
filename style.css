@@ -2081,13 +2081,13 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     main > section:nth-child(8) {
-        /*background-color: #d0c3ab;*/
-        /*background-repeat: no-repeat, repeat;*/
-        /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
-        /*background-size: 100% 100%;*/
+        /* background-color: #d0c3ab; */
+        /* background-repeat: no-repeat, repeat; */
+        /* background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif); */
+        /* background-size: 100% 100%; */
         position: relative;
         top: -184px;
-        height: 118vh;
+        height: 96vh;
     }
 
     main > section:nth-child(9) {
@@ -3315,7 +3315,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(7) > section:nth-child(2) > section:nth-child(2) > div {
         position: absolute;
-        top: 682px;
+        top: 502px;
         width: 100%;
     }
 
