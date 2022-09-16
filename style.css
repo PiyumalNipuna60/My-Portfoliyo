@@ -6204,11 +6204,11 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     body > main > section:first-child > section:nth-child(1) > article > h1 {
         color: rgb(246, 251, 13);
-        font-size: 52px;
+        font-size: 238%;
         text-shadow: 2px 2px red;
         position: relative;
-        left: 12px;
-        top: 37px;
+        left: 13px;
+        top: 40px;
     }
 
     body > main > section:first-child > section:first-child > article > h2 {
