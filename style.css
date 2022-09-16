@@ -6224,8 +6224,9 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(1) > section:nth-child(1) > article > img {
         width: 28%;
         height: 10%;
-        position: relative;
-        left: 98px;
+        position: absolute;
+        left: 12%;
+        top: 30%;
     }
 
     main > section:nth-child(1) > section:nth-child(1) > article > p {
