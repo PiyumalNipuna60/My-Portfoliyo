@@ -2071,13 +2071,13 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     main > section:nth-child(7) {
-        /*background-color: #d9b7b7;*/
+        /* background-color: #d9b7b7; */
         background-repeat: no-repeat, repeat;
-        background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");
+        background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif);
         background-size: 100% 100%;
         position: relative;
         top: -168px;
-        height: 119vh;
+        height: 122vh;
     }
 
     main > section:nth-child(8) {
@@ -3400,8 +3400,8 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(8) > section:nth-child(2) > section:first-child > img {
         position: relative;
-        width: 95%;
-        height: 472px;
+        width: 93%;
+        height: 366px;
         left: 28px;
         top: 22px;
         border: 2px solid black;
@@ -3409,17 +3409,17 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(8) > section:nth-child(2) > section:first-child > aside:nth-child(5) > button {
         background-color: blue;
-        font-size: 163%;
+        font-size: 182%;
         color: white;
         border-radius: 19px;
         border: 2px solid black;
-        width: 14%;
+        width: 17%;
         position: absolute;
         left: 0;
         right: 0;
         margin: auto;
         /* top: 23px; */
-        bottom: 190px;
+        bottom: 104px;
     }
 
     /*///////////nav css////////*/
