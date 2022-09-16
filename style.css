@@ -6237,12 +6237,12 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     main > section:nth-child(1) > section:nth-child(1) > article > button {
-        font-size: 28px;
+        font-size: 116%;
         border-color: #a79897;
         background-color: red;
         position: relative;
-        left: 198px;
-        top: -37px;
+        left: 23%;
+        top: 9%;
         color: #edebe9;
         border-radius: 16px;
         z-index: 2;
