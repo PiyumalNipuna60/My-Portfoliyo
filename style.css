@@ -2011,25 +2011,25 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-position: 95px;
         /* background-size: auto; */
         position: relative;
-        bottom: 22px;
+        bottom: 74px;
     }
 
     main > section:nth-child(3) {
-        /* background-color: #6900ff; */
+        /*background-color: #6900ff; */
         /* width: 97vw; */
-        background-repeat: no-repeat, repeat;
+    background-repeat: no-repeat, repeat;
         background-image: url(assets/image/pic/pngtree-background-pattern-with-icon-symbol-picture-image_1154242.jpg);
         background-size: 100% 100%;
-        /*background-size: auto;*/
+        /* background-size: auto; */
         height: 100vh;
         position: relative;
-        top: -96px;
+        top: -125px;
     }
 
     main > section:nth-child(4) {
         background-color: #ff7f00;
         position: relative;
-        top: -113px;
+        top: -127px;
         height: 92vh;
         background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif);
         background-size: 100% 100%;
