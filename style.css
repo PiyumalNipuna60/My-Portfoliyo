@@ -6198,7 +6198,8 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         /* padding-top: 20px; */
         position: relative;
         bottom: -24px;
-        left: -30px;
+        left: -2%;
+        margin: auto;
     }
 
     body > main > section:first-child > section:nth-child(1) > article > h1 {
@@ -6262,7 +6263,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(1) > section:nth-child(2) > div {
         position: absolute;
-        top: 428px;
+        top: 61%;
         width: 100%;
     }
 
