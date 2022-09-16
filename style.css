@@ -6180,11 +6180,11 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     /*======================================================== Home =============================================*/
     main > section:first-child > section:first-child > article > aside {
         background-color: #40036e;
-        position: relative;
+        position: absolute;
         /* border: 2px solid black; */
-        height: 227px;
-        width: 40%;
-        top: -146px;
+        height: 32%;
+        width: 31%;
+        top: 47%;
         left: 1px;
         background-repeat: no-repeat, repeat;
         background-image: url(assets/image/pic/168114-black-and-white-dot-background-image.jpg);
