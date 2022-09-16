@@ -6213,7 +6213,12 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     body > main > section:first-child > section:first-child > article > h2 {
         font-size: 170%;
-        padding-left: 30px;
+        /* padding-left: 30px; */
+        padding-top: -22px;
+        position: absolute;
+        top: 18%;
+        left: 1%;
+        bottom: 22%;
     }
 
     main > section:nth-child(1) > section:nth-child(1) > article > img {
