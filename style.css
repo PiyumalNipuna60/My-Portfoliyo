@@ -1977,6 +1977,19 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*=============================================================================================================*/
 /*=============================================================================================================*/
 
@@ -2038,14 +2051,13 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(5) {
         background-color: greenyellow;
-        /*background-repeat: no-repeat, repeat;*/
-        /*background-image: url(assets/image/pic/CxrL.gif);*/
-        /*background-size: 100% 100%;*/
+        /* background-repeat: no-repeat, repeat; */
+        /* background-image: url(assets/image/pic/CxrL.gif); */
+        /* background-size: 100% 100%; */
         /* background-size: auto; */
         position: relative;
         top: -126px;
-        height: 99vh;
-        /*////*/
+        height: 88vh;
     }
 
     main > section:nth-child(6) {
@@ -2773,7 +2785,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div {
         position: absolute;
-        top: 491px;
+        top: 487px;
         width: 100%;
     }
 
@@ -2951,7 +2963,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(5) > section:nth-child(2) > section:nth-child(2) > div {
         position: absolute;
-        top: 539px;
+        top: 442px;
         width: 100%;
     }
 
