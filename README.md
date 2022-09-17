@@ -13,6 +13,8 @@ GitHub Page URL :- https://piyumalnipuna60.github.io/My-Portfoliyo/ <br>
 GitHub URL :- https://github.com/PiyumalNipuna60 <br>
 
 
-================================================================================================================================================================================
+=======================================================================================================================================================
 
 Site Map URL :- https://www.gloomaps.com/Kp7m3vkhgb
+
+Wire-frame URL:- https://drive.google.com/file/d/1niPR7IKUiX2D7qRt5cy6Hyh2CtenK9Al/view?usp=sharing
