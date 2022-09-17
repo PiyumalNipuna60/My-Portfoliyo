@@ -6091,13 +6091,13 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     main > section:nth-child(10) {
-        /* background-color: #e3eed3; */
+        /*background-color: #e3eed3;*/
         /* background-repeat: no-repeat, repeat; */
         /* background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif); */
         /* background-size: 100% 100%; */
         position: relative;
         top: -213px;
-        height: 96vh;
+        height: 85vh;
     }
 
     main > section:nth-child(11) {
@@ -7537,7 +7537,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     #Asgn1 {
         position: absolute;
         top: 22%;
-        left: 5%;
+        left: 1%;
     }
 
     #Asgn1 > img {
@@ -7556,52 +7556,55 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     #Asgn2 {
         position: absolute;
-        top: 57px;
-        left: 274px;
+        top: 16%;
+        left: 24%;
     }
 
     #Asgn2 > img {
-        width: 294px;
-        height: 382px;
+        height: 300px;
+        width: 211px;
     }
 
     #Asgn2 > h3 {
         position: relative;
-        left: 87px;
+        left: 21%;
+
     }
 
 
     #Asgn3 {
         position: absolute;
-        top: 105px;
-        right: 234px;
+        top: 21%;
+        right: 25%;
     }
 
     #Asgn3 > img {
-        height: 250px;
-        width: 200px;
+        height: 247px;
+        width: 174px;
     }
 
     #Asgn3 > h3 {
         position: relative;
-        left: 35px;
+        left: 32px;
+        font-size: 86%;
     }
 
 
     #Asgn4 {
         position: absolute;
-        top: 135px;
-        right: 65px;
+        top: 28%;
+        right: 6%;
     }
 
     #Asgn4 > img {
         height: 190px;
-        width: 150px;
+        width: 142px;
     }
 
     #Asgn4 > h3 {
         position: relative;
-        left: 13px;
+        left: 20%;
+        font-size: 65%;
     }
 
 
@@ -7692,7 +7695,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(10) > section:nth-child(2) > section:first-child > section {
         /*background-color: red;*/
-        height: 535px;
+        height: 29em;
     }
 
     main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div {
@@ -7750,7 +7753,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(10) > section:nth-child(2) > section:nth-child(2) > div {
         position: absolute;
-        top: 502px;
+        top: 71%;
         width: 100%;
     }
 
