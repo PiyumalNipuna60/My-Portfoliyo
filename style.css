@@ -7741,8 +7741,9 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > h3 {
         position: relative;
-        left: 172px;
+        left: 12%;
         font-size: 127%;
+        top: -2%;
     }
 
 
