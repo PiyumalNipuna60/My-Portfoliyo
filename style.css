@@ -7700,8 +7700,10 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div {
         position: relative;
-        top: 70px;
+        top: 4%;
         display: flex;
+        width: 96%;
+        left: 2%;
     }
 
     main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(1) {
