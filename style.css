@@ -7955,9 +7955,9 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     body > footer > fieldset > section > div > section {
         /* background-color: #ff4334; */
-        position: relative;
-        top: 44px;
-        left: 208px;
+        position: absolute;
+        top: 3em;
+        left: -1em;
         width: 81%;
     }
 
