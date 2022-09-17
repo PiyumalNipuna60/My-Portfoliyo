@@ -7872,7 +7872,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         height: 29vh;
         width: 90%;
         left: 4%;
-    /* right: 0;
+    /* right: 0;*/
     }
 
     #txtName {
@@ -7905,46 +7905,47 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
 
-    /*========================================== Contact ==========================================================*/
+    /*========================================== footer ==========================================================*/
     body > footer {
         background-color: blue;
         /* background-color: #d9b7b7; */
         /* background-repeat: no-repeat, repeat; */
         /* background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif); */
         /* background-size: 100% 100%; */
-        position: relative;
+        position: absolute;
         height: 45%;
-        top: -229px;
-    }
+        top: 969%;
+        width: 100%;
+        }
 
-    footer > fieldset > aside > img {
-        width: 19%;
-        height: 274px;
-        border-radius: 53%;
-        padding-left: 15px;
-        padding-top: 9px;
-    }
+        footer > fieldset > aside > img {
+            width: 19%;
+            height: 274px;
+            border-radius: 53%;
+            padding-left: 15px;
+            padding-top: 9px;
+        }
 
-    footer > fieldset > article > pre {
-        font-size: 452%;
-        position: absolute;
-        top: 7%;
-        left: 27%;
-        font-style: oblique;
-        font-family: revert;
-    }
+        footer > fieldset > article > pre {
+            font-size: 452%;
+            position: absolute;
+            top: 7%;
+            left: 27%;
+            font-style: oblique;
+            font-family: revert;
+        }
 
-    footer > fieldset > article > p {
-        font-size: 230%;
-        position: absolute;
-        top: 62%;
-        left: 27%;
-        font-style: italic;
-        font-family: emoji;
-    }
+        footer > fieldset > article > p {
+            font-size: 230%;
+            position: absolute;
+            top: 62%;
+            left: 27%;
+            font-style: italic;
+            font-family: emoji;
+        }
 
 
-    /*///////////nav css////////*/
+        /*///////////nav css////////*/
     body > footer > fieldset > section > div {
         position: absolute;
         top: -10%;
