@@ -7868,11 +7868,11 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     #Location {
         border: 2px solid black;
         position: relative;
-        top: 31px;
+        /* top: -8%; */
         height: 29vh;
-        width: 95%;
-        left: 31px;
-        /* right: 0;*/
+        width: 90%;
+        left: 4%;
+    /* right: 0;
     }
 
     #txtName {
