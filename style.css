@@ -6454,7 +6454,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-image: -moz-element(ass);
         width: 3%;
         height: 56%;
-        position: fixed;
+        position: absolute;
         box-shadow: inset 0px -2px 4px 0px #d9b7b7;
         z-index: 91;
         top: 154px;
