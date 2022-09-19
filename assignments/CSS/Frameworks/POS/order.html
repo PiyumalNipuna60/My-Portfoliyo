@@ -53,7 +53,7 @@
 </header>
 
 <main>
-    <section class="row" style="margin-left: 3rem;">
+    <section class="row" style="margin-left: 3rem; width: 95vw;">
         <section class="position-relative col-4" style="padding-left: 3rem;  padding-top: 1rem;">
             <div class="col border rounded border-dark ">
                 <nav class="border rounded bg-info">
@@ -114,7 +114,7 @@
         </section>
 
 
-        <section class="col-4"style="padding-left: 1rem;padding-top: 1rem;">
+        <section class="col-4" style="padding-left: 1rem;padding-top: 1rem;">
             <div class="col border rounded border-dark ">
                 <nav class="border rounded bg-info">
                     <h1 class="text-white fs-3">Item Selector</h1>
@@ -176,30 +176,41 @@
         </section>
 
 
-        <section class="col-3"style="padding-left: 1rem;padding-top: 1rem;">
+        <section class="col-3" style="padding-left: 1rem;padding-top: 1rem;">
             <div class="col border rounded border-dark ">
                 <div class="row" style="margin-left: 3%">
-                    <h1 class="text-primary fs-3 col">Total :</h1>
-                    <h1 class="text-primary  fs-3 col-8">000.00Rs/=</h1>
+                    <h1 class="text-primary  col" style="font-size: 200%">Total :</h1>
+                    <h1 class="text-primary   col" style="width: 60%;font-size: 200%">000.00Rs/=</h1>
                 </div>
                 <div class="row" style="margin-left: 3%">
-                    <h1 class="text-primary fs-3 col">SubTotal :</h1>
-                    <h1 class="text-danger  fs-3 col-6">000.00Rs/=</h1>
+                    <h1 class="text-danger col" style="font-size: 1rem">SubTotal :</h1>
+                    <h1 class="text-danger  col" style="width: 60%;font-size: 200%">000.00Rs/=</h1>
                 </div>
-                <div style="margin-left: 6%">
-                    <label for="OrderCash" class=" fw-bold">Cash :</label>
-                    <div class="col-5" style="margin-left: 0%;">
-                        <input type="email" class="form-control rounded-pill"placeholder="000.00" id="OrderCash" style="width: 155%;">
+                <hr style="border: 2px solid black; background-color: black; width: 80%; margin-left: 2rem">
+                <div class="row">
+                    <div class="col" style="margin-left: 5%;">
+                        <label for="OrderCash" class=" fw-bold">Cash :</label>
+                        <div class="col" style=" width: 60%;">
+                            <input type="email" class="form-control rounded-pill" placeholder="000.00" id="OrderCash"
+                                   style="width: 155%;">
+                        </div>
                     </div>
 
-                    <label for="OrderDiscount" class=" fw-bold">Discount :</label>
-                    <div class="col-5" style="margin-left: 0%;">
-                        <input type="email" class="form-control rounded-pill" placeholder="00"  id="OrderDiscount" style="width: 155%;">
+                    <div class="col" style="margin-left: 5%;">
+                        <label for="OrderDiscount" class=" fw-bold">Discount :</label>
+                        <div class="col" style="margin-left: 0%; width: 60%;">
+                            <input type="email" class="form-control rounded-pill" placeholder="00" id="OrderDiscount"
+                                   style="width: 155%;">
+                        </div>
                     </div>
+
+                </div>
+                <div style="margin-left: 6%">
 
                     <label for="OrderBalance" class=" fw-bold">Balance :</label>
                     <div class="col-5" style="margin-left: 0%;">
-                        <input type="email" class="form-control rounded-pill" placeholder="000.00Rs/="  id="OrderBalance" style="width: 155%;">
+                        <input type="email" class="form-control rounded-pill" placeholder="000.00Rs/=" id="OrderBalance"
+                               style="width: 155%;">
                     </div>
                 </div>
 
@@ -208,7 +219,7 @@
         </section>
     </section>
 
-    <hr style="border: 2px solid;" >
+    <hr style="border: 2px solid;">
     <section class="pt-4">
         <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
             <thead class="bg-danger text-white">
