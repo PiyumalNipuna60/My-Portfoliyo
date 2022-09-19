@@ -53,9 +53,9 @@
 </header>
 
 <main>
-    <section>
-        <section class="position-relative" style="padding-left: 1rem; width: 100%; padding-top: 1rem;">
-            <div class="col-4 border rounded border-dark ">
+    <section class="row" style="margin-left: 3rem;">
+        <section class="position-relative col-4" style="padding-left: 3rem;  padding-top: 1rem;">
+            <div class="col border rounded border-dark ">
                 <nav class="border rounded bg-info">
                     <h1 class="text-white fs-3">Invoice Details</h1>
                 </nav>
@@ -114,8 +114,8 @@
         </section>
 
 
-        <section class=""style="padding-left: 1rem;width: 100%;padding-top: 1rem;position: absolute;top: 9%;left: 34%;">
-            <div class="col-4 border rounded border-dark ">
+        <section class="col-4"style="padding-left: 1rem;padding-top: 1rem;">
+            <div class="col border rounded border-dark ">
                 <nav class="border rounded bg-info">
                     <h1 class="text-white fs-3">Item Selector</h1>
                 </nav>
@@ -176,8 +176,8 @@
         </section>
 
 
-        <section class=""style="padding-left: 1rem;width: 100%;padding-top: 1rem;position: absolute;top: 9%;left: 70%;">
-            <div class="col-3 border rounded border-dark ">
+        <section class="col-3"style="padding-left: 1rem;padding-top: 1rem;">
+            <div class="col border rounded border-dark ">
                 <div class="row" style="margin-left: 3%">
                     <h1 class="text-primary fs-3 col">Total :</h1>
                     <h1 class="text-primary  fs-3 col-8">000.00Rs/=</h1>
@@ -196,12 +196,18 @@
                     <div class="col-5" style="margin-left: 0%;">
                         <input type="email" class="form-control rounded-pill" placeholder="00"  id="OrderDiscount" style="width: 155%;">
                     </div>
+
+                    <label for="OrderBalance" class=" fw-bold">Balance :</label>
+                    <div class="col-5" style="margin-left: 0%;">
+                        <input type="email" class="form-control rounded-pill" placeholder="000.00Rs/="  id="OrderBalance" style="width: 155%;">
+                    </div>
                 </div>
 
             </div>
 
         </section>
     </section>
+
     <hr style="border: 2px solid;" >
     <section class="pt-4">
         <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
