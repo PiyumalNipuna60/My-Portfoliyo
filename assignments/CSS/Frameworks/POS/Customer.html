@@ -93,7 +93,7 @@
         <section class="" style="width: 37%;position: absolute;right: 0;top: 19%;">
             <div class="mb-2">
                 <button type="button" class="btn" style="width: 75%; background-color: #06B618;"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal">Add Item
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">Add Customer
                 </button>
                 <!--///////////////-->
 
@@ -105,7 +105,7 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header bg-info">
-                                <h5 class="modal-title " id="exampleModalLabel">Add Item</h5>
+                                <h5 class="modal-title " id="exampleModalLabel">Add Customer</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                             </div>
@@ -113,35 +113,35 @@
 
                                 <form class="mx-auto m-lg-2">
                                     <div class="row mb-2 mt-2">
-                                        <label for="inputItemCode" class="col-sm-3 col-form-label fw-bold">Code
+                                        <label for="inputCusId" class="col-sm-3 col-form-label fw-bold">Cus: ID
                                             :</label>
                                         <div class="col-sm-9">
-                                            <input type="email" class="form-control" id="inputItemCode"
-                                                   placeholder="I001">
+                                            <input type="email" class="form-control" id="inputCusId"
+                                                   placeholder="C001">
                                         </div>
                                     </div>
                                     <div class="row mb-2">
-                                        <label for="inputItemName"
+                                        <label for="inputCusName"
                                                class="col-sm-3 col-form-label fw-bold">Name:</label>
                                         <div class="col-sm-9">
-                                            <input type="email" class="form-control" id="inputItemName"
-                                                   placeholder="Soya">
+                                            <input type="email" class="form-control" id="inputCusName"
+                                                   placeholder="ex: Piyumal">
                                         </div>
                                     </div>
                                     <div class="row mb-2">
-                                        <label for="inputItemQts" class="col-sm-3 col-form-label fw-bold">Qts
+                                        <label for="inputCusAddress" class="col-sm-3 col-form-label fw-bold">Address
                                             :</label>
                                         <div class="col-sm-9">
-                                            <input type="email" class="form-control" id="inputItemQts"
-                                                   placeholder="0">
+                                            <input type="email" class="form-control" id="inputCusAddress"
+                                                   placeholder="ex: galle">
                                         </div>
                                     </div>
                                     <div class="row mb-3">
-                                        <label for="inputItemPrice" class="col-sm-3 col-form-label fw-bold">Price
+                                        <label for="inputCusContact" class="col-sm-3 col-form-label fw-bold">Contact
                                             :</label>
                                         <div class="col-sm-9">
-                                            <input type="email" class="form-control" id="inputItemPrice"
-                                                   placeholder="0.0">
+                                            <input type="email" class="form-control" id="inputCusContact"
+                                                   placeholder="ex: 0767554903">
                                         </div>
                                     </div>
                                 </form>
@@ -157,6 +157,75 @@
                 </div>
 
                 <!-- //////////////-->
+            </div>
+
+            <div class="mb-2">
+                <button type="button" class="btn" style="width: 75%; background-color: #06B618;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal2">Modify Customer
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                     aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-info">
+                                <h5 class="modal-title " id="exampleModalLabel2">Modify Customer</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class=" modal-body">
+
+                                <form class="mx-auto m-lg-2">
+                                    <div class="row mb-2 mt-2">
+                                        <label for="inputCusId2" class="col-sm-3 col-form-label fw-bold">Cus: ID
+                                            :</label>
+                                        <div class="col-sm-9">
+                                            <input type="email" class="form-control" id="inputCusId2"
+                                                   placeholder="ex: C001">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <label for="inputCusName2"
+                                               class="col-sm-3 col-form-label fw-bold">Name:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="inputCusName2"
+                                                   placeholder="ex: Piyumal">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <label for="inputCusAddress2" class="col-sm-3 col-form-label fw-bold">Address
+                                            :</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="inputCusAddress2"
+                                                   placeholder="ex: galle">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label for="inputCusContact2" class="col-sm-3 col-form-label fw-bold">Contact
+                                            :</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="inputCusContact2"
+                                                   placeholder="ex: 0767554903">
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-secondary bg-danger" id="btnSearch2"
+                                        style="margin-left: 2rem;margin-bottom: 1rem;">Search
+                                </button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose2">Close
+                                </button>
+                                <button type="button" class="btn btn-primary" id="btnSave2">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//////////////&ndash;&gt;-->
             </div>
 
             </div>
