@@ -247,7 +247,8 @@
             </div>
 
             <div class="mb-2">
-                <button type="button" class="btn" style="width: 75%; background-color: #06B618;">Load All Customer
+                <button type="button" class="btn" style="width: 75%; background-color: #06B618;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal3">Load All Customer
                 </button>
 
                 <!-- Modal -->
@@ -256,46 +257,61 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header bg-info">
-                                <h5 class="modal-title " id="exampleModalLabel3">All Customer</h5>
+                                <h5 class="modal-title " id="exampleModalLabel3">Modify Customer</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                             </div>
                             <div class=" modal-body">
 
-                                <form class="mx-auto m-lg-2">
-                                    <div class="row mb-2 mt-2">
-                                        <label for="inputCusId2" class="col-sm-3 col-form-label fw-bold">Cus: ID
-                                            :</label>
-                                        <div class="col-sm-9">
-                                            <input type="email" class="form-control" id="inputCusId2"
-                                                   placeholder="ex: C001">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-2">
-                                        <label for="inputCusName2"
-                                               class="col-sm-3 col-form-label fw-bold">Name:</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputCusName2"
-                                                   placeholder="ex: Piyumal">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-2">
-                                        <label for="inputCusAddress2" class="col-sm-3 col-form-label fw-bold">Address
-                                            :</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputCusAddress2"
-                                                   placeholder="ex: galle">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <label for="inputCusContact2" class="col-sm-3 col-form-label fw-bold">Contact
-                                            :</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputCusContact2"
-                                                   placeholder="ex: 0767554903">
-                                        </div>
-                                    </div>
-                                </form>
+                                <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
+                                    <thead class="bg-danger text-white">
+                                    <tr>
+                                        <th>Customer ID</th>
+                                        <th>Customer Name</th>
+                                        <th>Customer Contact</th>
+                                        <th>Customer Salary</th>
+                                    </tr>
+                                    </thead>
+                                    <tbdoy>
+                                        <tr>
+                                            <td>C001</td>
+                                            <td>Dasun</td>
+                                            <td>0754585658</td>
+                                            <td>200000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C002</td>
+                                            <td>piyumal</td>
+                                            <td>0745845785</td>
+                                            <td>100000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C003</td>
+                                            <td>Niuna</td>
+                                            <td>0767554309</td>
+                                            <td>30000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C004</td>
+                                            <td>sadun</td>
+                                            <td>0710425254</td>
+                                            <td>200000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C005</td>
+                                            <td>tharaka</td>
+                                            <td>0714525458</td>
+                                            <td>100000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C006</td>
+                                            <td>Malith</td>
+                                            <td>0742545854</td>
+                                            <td>30000</td>
+                                        </tr>
+
+                                    </tbdoy>
+                                </table>
 
                             </div>
                             <div class="modal-footer">
