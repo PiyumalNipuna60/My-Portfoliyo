@@ -133,8 +133,7 @@ body > header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 57px;
-    box-shadow: inset 0px -2px 4px 0px #d9b7b7;
+    height: 70px;
     z-index: 91;
     /*background-color: #40036e;*/
     background-repeat: no-repeat, repeat;
@@ -264,7 +263,7 @@ main > section:nth-child(1) > section:nth-child(1) > article > hr {
     background-color: #dbd3d3;
     width: 41%;
     /* rotate: unset; */
-    height: 12px;
+    height: 1px;
     border: inset;
     transform: rotate(90deg);
     position: absolute;
@@ -1847,33 +1846,44 @@ main > section:nth-child(11) > section:nth-child(2) > section:first-child > sect
     /* right: 0;*/
 }
 
-#txtName {
-    width: 59%;
-    border-radius: 6px;
+.location{
+    width: 100%;
     position: relative;
-    left: 22px;
+    top: -9%;
+}
+
+.location > iframe {
+width: 100%;
+height: 29vh;
+}
+
+#txtName {
+width: 59%;
+border-radius: 6px;
+position: relative;
+left: 22px;
 }
 
 #txtEmail {
-    width: 59%;
-    border-radius: 6px;
-    position: relative;
-    left: 22px;
+width: 59%;
+border-radius: 6px;
+position: relative;
+left: 22px;
 }
 
 #txtSubject {
-    width: 59%;
-    border-radius: 6px;
-    position: relative;
-    left: 14px;
+width: 59%;
+border-radius: 6px;
+position: relative;
+left: 14px;
 }
 
 #txtMassage {
-    width: 59%;
-    border-radius: 6px;
-    position: relative;
-    left: 9px;
-    border: 2px solid;
+width: 59%;
+border-radius: 6px;
+position: relative;
+left: 9px;
+border: 2px solid;
 }
 
 
@@ -1993,7 +2003,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 /*=============================================================================================================*/
 /*=============================================================================================================*/
 
-@media all and (max-width: 1440px) {
+@media all and (min-width: 1024px) and (max-width: 1440px) {
     body {
         overflow-x: hidden;
         width: 100vw;
@@ -2126,12 +2136,12 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         position: fixed;
         top: 0;
         width: 100%;
-        height: 57px;
-        box-shadow: inset 0px -2px 4px 0px #d9b7b7;
+        height: 70px;
+        /* box-shadow: inset 0px -2px 4px 0px #d9b7b7; */
         z-index: 91;
-        /*background-color: #40036e;*/
+        /* background-color: #40036e; */
         background-repeat: no-repeat, repeat;
-        background-image: url("assets/image/pic/44.jpg");
+        background-image: url(assets/image/pic/44.jpg);
         background-size: 112% 81%;
     }
 
@@ -2256,11 +2266,11 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-color: #dbd3d3;
         width: 37%;
         /* rotate: unset; */
-        height: 12px;
+        height: 1px;
         border: inset;
         transform: rotate(90deg);
         position: absolute;
-        top: 277px;
+        top: 284px;
         left: 602px;
     }
 
@@ -3979,7 +3989,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
 /*=============================================================================================================*/
 /*=============================================================================================================*/
-@media all and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
     body {
         overflow-x: hidden;
         width: 100vw;
@@ -4241,14 +4251,14 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(1) > section:nth-child(1) > article > hr {
         background-color: #dbd3d3;
-        width: 46%;
+        width: 47%;
         /* rotate: unset; */
-        height: 2%;
+        height: 0%;
         border: inset;
         transform: rotate(90deg);
         position: absolute;
         top: 262px;
-        left: 271px;
+        left: 264px;
     }
 
     main > section:nth-child(1) > section:nth-child(2) > div > hr {
@@ -5982,7 +5992,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
 /*=============================================================================================================*/
 /*=============================================================================================================*/
-@media all and (max-width: 768px) {
+@media all and (min-width: 425px) and (max-width: 768px) {
     body {
         overflow-x: hidden;
         width: 100vw;
@@ -6116,8 +6126,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         position: fixed;
         top: 0;
         width: 100%;
-        height: 55px;
-        box-shadow: inset 0px -2px 4px 0px #d9b7b7;
+        height: 58px;
         z-index: 91;
         /* background-color: #40036e; */
         background-repeat: no-repeat, repeat;
@@ -6253,12 +6262,12 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-color: #dbd3d3;
         width: 49%;
         /* rotate: unset; */
-        height: 2%;
+        height: 0%;
         border: inset;
         transform: rotate(90deg);
         position: absolute;
         top: 38%;
-        left: 26%;
+        left: 25%;
     }
 
     main > section:nth-child(1) > section:nth-child(2) > div > hr {
