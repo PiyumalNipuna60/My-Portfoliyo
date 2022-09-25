@@ -163,19 +163,19 @@
                         <div class="row mb-2 mt-2">
                             <label class="col-sm-3 col-form-label fw-bold" for="inputId">Id :</label>
                             <div class="col-sm-9">
-                                <input class="form-control" id="inputId" placeholder="ex: C001" type="email">
+                                <input class="form-control" id="inputIdCus" placeholder="ex: C001" type="email">
                             </div>
                         </div>
                         <div class="row mb-2">
                             <label class="col-sm-3 col-form-label fw-bold" for="inputName">Name :</label>
                             <div class="col-sm-9">
-                                <input class="form-control" id="inputName" placeholder="ex: Piyumal" type="email">
+                                <input class="form-control" id="inputNameCus" placeholder="ex: Piyumal" type="email">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label class="col-sm-3 col-form-label fw-bold" for="inputContact">Contact :</label>
                             <div class="col-sm-9">
-                                <input class="form-control" id="inputContact" placeholder="ex: 0767554903" type="email">
+                                <input class="form-control" id="inputContactCus" placeholder="ex: 0767554903" type="email">
                             </div>
                         </div>
 
@@ -200,12 +200,12 @@
                     <!-- Button trigger modal -->
 
                     <!-- Modal -->
-                    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal"
+                    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal1"
                          tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header bg-info">
-                                    <h5 class="modal-title " id="exampleModalLabel">Add Customer</h5>
+                                    <h5 class="modal-title " id="exampleModalLabel1">Add Customer</h5>
                                     <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
                                             type="button"></button>
                                 </div>
@@ -247,10 +247,10 @@
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose"
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnCloseCus"
                                             type="button">Close
                                     </button>
-                                    <button class="btn btn-primary" id="btnSave" type="button">Save changes</button>
+                                    <button class="btn btn-primary" id="btnSaveCus" type="button">Save changes</button>
                                 </div>
                             </div>
                         </div>
@@ -265,12 +265,12 @@
                     </button>
 
                     <!-- Modal -->
-                    <div aria-hidden="true" aria-labelledby="exampleModalLabel2" class="modal fade" id="exampleModal2"
+                    <div aria-hidden="true" aria-labelledby="exampleModalLabelCus" class="modal fade" id="exampleModalCus"
                          tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header bg-info">
-                                    <h5 class="modal-title " id="exampleModalLabel2">Modify Customer</h5>
+                                    <h5 class="modal-title " id="exampleModalLabelCus">Modify Customer</h5>
                                     <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
                                             type="button"></button>
                                 </div>
@@ -330,17 +330,17 @@
                 </div>
 
                 <div class="mb-2">
-                    <button class="btn" data-bs-target="#exampleModal3" data-bs-toggle="modal"
+                    <button class="btn" data-bs-target="#exampleModalCus3" data-bs-toggle="modal"
                             style="width: 75%; background-color: #06B618;" type="button">Load All Customer
                     </button>
 
                     <!-- Modal -->
-                    <div aria-hidden="true" aria-labelledby="exampleModalLabel3" class="modal fade" id="exampleModal3"
+                    <div aria-hidden="true" aria-labelledby="exampleModalLabelCus3" class="modal fade" id="exampleModalCus3"
                          tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header bg-info">
-                                    <h5 class="modal-title " id="exampleModalLabel3">Modify Customer</h5>
+                                    <h5 class="modal-title " id="exampleModalLabelCus3">Modify Customer</h5>
                                     <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
                                             type="button"></button>
                                 </div>
@@ -398,7 +398,7 @@
 
                                 </div>
                                 <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose3"
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnCloseCus3"
                                             type="button">Close
                                     </button>
                                 </div>
@@ -465,6 +465,318 @@
             </table>
         </section>
 
+    </section>
+    <section id="Item">
+        <br>
+        <section class="row justify-content-center">
+            <section class="col-11 col-sm-11 col-md-7 col-lg-7 col-xl-7 col-xxl-7 mx-auto" style="">
+                <div class=" border rounded border-dark ">
+                    <nav class="border rounded bg-info">
+                        <h1 class="text-white fs-3">Search Item</h1>
+                    </nav>
+
+                    <form class="mx-auto m-lg-2 ">
+                        <div class="row mb-2 mt-2">
+                            <label for="inputId" class="col-sm-3 col-form-label fw-bold" >Code :</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="inputId" placeholder="Ex: I001">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <label for="inputName" class="col-sm-3 col-form-label fw-bold">Name :</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="inputName" placeholder="ex: nipuna">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputContact" class="col-sm-3 col-form-label fw-bold">Price :</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="inputContact" placeholder="Ex:0.00">
+                            </div>
+                        </div>
+
+                        <div class="position-relative">
+                            <button type="button" class="btn btn-primary mb-2" style="margin-left: 64%; width: 32%">Search
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+                <div></div>
+            </section>
+
+            <section class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4 col-xxl-4 pt-4 mb-3 mx-auto" style="">
+                <div class="">
+                    <div class="mb-2">
+                        <button type="button" class="btn" style="width: 75%; background-color: #06B618;"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">Add Item
+                        </button>
+                        <!--///////////////-->
+
+                        <!-- Button trigger modal -->
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-info">
+                                        <h5 class="modal-title " id="exampleModalLabel">Add Item</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <form class="mx-auto m-lg-2">
+                                            <div class="row mb-2 mt-2">
+                                                <label for="inputItemCode" class="col-sm-3 col-form-label fw-bold">Code
+                                                    :</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="inputItemCode"
+                                                           placeholder="I001">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <label for="inputItemName"
+                                                       class="col-sm-3 col-form-label fw-bold">Name:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="inputItemName"
+                                                           placeholder="Soya">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <label for="inputItemQts" class="col-sm-3 col-form-label fw-bold">Qts
+                                                    :</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="inputItemQts"
+                                                           placeholder="0">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputItemPrice" class="col-sm-3 col-form-label fw-bold">Price
+                                                    :</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="inputItemPrice"
+                                                           placeholder="0.0">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" id="btnClose"
+                                                data-bs-dismiss="modal">Close
+                                        </button>
+                                        <button type="button" class="btn btn-primary" id="btnSave">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- //////////////-->
+                    </div>
+
+                    <div class="mb-2">
+                        <button type="button" class="btn" style="width: 75%; background-color: #06B618;"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal2">Modify Item
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-info">
+                                        <h5 class="modal-title " id="exampleModalLabel2">Add Item</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class=" modal-body">
+
+                                        <form class="mx-auto m-lg-2">
+                                            <div class="row mb-2 mt-2">
+                                                <label for="inputItemCode2" class="col-sm-3 col-form-label fw-bold">Code
+                                                    :</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="inputItemCode2"
+                                                           placeholder="I001">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <label for="inputItemName2"
+                                                       class="col-sm-3 col-form-label fw-bold">Name:</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="inputItemName2"
+                                                           placeholder="Soya">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <label for="inputItemQts2" class="col-sm-3 col-form-label fw-bold">Qts
+                                                    :</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="inputItemQts2"
+                                                           placeholder="0">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputItemPrice2" class="col-sm-3 col-form-label fw-bold">Price
+                                                    :</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" id="inputItemPrice2"
+                                                           placeholder="0.0">
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-secondary bg-danger" id="btnSearch"
+                                                style="margin-left: 2rem;margin-bottom: 1rem;">Search
+                                        </button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                                        </button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//////////////&ndash;&gt;-->
+                    </div>
+
+                    <div class="mb-2">
+                        <button type="button" class="btn" style="width: 75%; background-color: #06B618;"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal3">Modify Item
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+                             aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-info">
+                                        <h5 class="modal-title " id="exampleModalLabel3">All Item</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class=" modal-body">
+
+                                        <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
+                                            <thead class="bg-danger text-white">
+                                            <tr>
+                                                <th>Item Code</th>
+                                                <th>Item Name</th>
+                                                <th>QTS</th>
+                                                <th>Price</th>
+                                            </tr>
+                                            </thead>
+                                            <tbdoy>
+                                                <tr>
+                                                    <td>I001</td>
+                                                    <td>Parippu</td>
+                                                    <td>1</td>
+                                                    <td>300</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>I002</td>
+                                                    <td>Soya</td>
+                                                    <td>1</td>
+                                                    <td>200</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>I003</td>
+                                                    <td>Nooldes</td>
+                                                    <td>1</td>
+                                                    <td>400</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>I004</td>
+                                                    <td>Milk</td>
+                                                    <td>1</td>
+                                                    <td>100</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>I005</td>
+                                                    <td>Soda</td>
+                                                    <td>1</td>
+                                                    <td>250</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>I006</td>
+                                                    <td>Rice</td>
+                                                    <td>1</td>
+                                                    <td>200</td>
+                                                </tr>
+
+                                            </tbdoy>
+                                        </table>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose3">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//////////////&ndash;&gt;-->
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="pt-4 col-11 mx-auto">
+
+            <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
+                <thead class="bg-danger text-white">
+                <tr>
+                    <th>Item Code</th>
+                    <th>Item Name</th>
+                    <th>QTS</th>
+                    <th>Price</th>
+                </tr>
+                </thead>
+                <tbdoy>
+                    <tr>
+                        <td>I001</td>
+                        <td>Parippu</td>
+                        <td>1</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <td>I002</td>
+                        <td>Soya</td>
+                        <td>1</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>I003</td>
+                        <td>Nooldes</td>
+                        <td>1</td>
+                        <td>400</td>
+                    </tr>
+                    <tr>
+                        <td>I004</td>
+                        <td>Milk</td>
+                        <td>1</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>I005</td>
+                        <td>Soda</td>
+                        <td>1</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <td>I006</td>
+                        <td>Rice</td>
+                        <td>1</td>
+                        <td>200</td>
+                    </tr>
+
+                </tbdoy>
+            </table>
+        </section>
     </section>
 </main>
 
