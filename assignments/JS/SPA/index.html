@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>pos-system-Frameworks/home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="bootstraps/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../../assets/fonts/css/all.min.css">
+    <link href="../../../assets/fonts/css/all.min.css" rel="stylesheet">
 </head>
 <body class="text-white-50 bg-dark">
 
@@ -29,7 +29,9 @@
 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item" id="lstHome">
-                        <a aria-current="page" class="nav-link active text-danger border-end border-start border-dark border-opacity-50" href="">Home</a>
+                        <a aria-current="page"
+                           class="nav-link active text-danger border-end border-start border-dark border-opacity-50"
+                           href="">Home</a>
                     </li>
 
                     <li class="nav-item" id="lstCustomer">
@@ -66,87 +68,408 @@
 
 </header>
 
-<main >
-<section id="Home">
-    <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-bs-ride="true" style="width: 87vw;">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+<main>
+    <section id="Home">
+        <div class="carousel slide mx-auto" data-bs-ride="true" id="carouselExampleIndicators" style="width: 87vw;">
+            <div class="carousel-indicators">
+                <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                        data-bs-target="#carouselExampleIndicators" type="button"></button>
+                <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators"
+                        type="button"></button>
+                <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators"
+                        type="button"></button>
+                <button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#carouselExampleIndicators"
+                        type="button"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img alt="..." class="d-block w-100" src="asset/1.jpg" style="height: 91vh;">
+                </div>
+                <div class="carousel-item">
+                    <img alt="..." class="d-block w-100" src="asset/2.jpg" style="height: 91vh;">
+                </div>
+                <div class="carousel-item">
+                    <img alt="..." class="d-block w-100" src="asset/3.jpg" style="height: 91vh;">
+                </div>
+                <div class="carousel-item">
+                    <img alt="..." class="d-block w-100" src="asset/4.jpg" style="height: 91vh;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators"
+                    type="button">
+                <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators"
+                    type="button">
+                <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="asset/1.jpg" class="d-block w-100" style="height: 91vh;" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="asset/2.jpg" class="d-block w-100" style="height: 91vh;" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="asset/3.jpg" class="d-block w-100" style="height: 91vh;" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="asset/4.jpg" class="d-block w-100" style="height: 91vh;" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-    <div class="row ">
-        <div class="col-lg-6 col-xl-3 mb-2">
-            <div class="card">
-                <div class="card-header bg-danger font-weight-bolder">Customers</div>
-                <div class="card-body">
-                    <div class="dash-tile-icon"><i class="fa-solid fa-users"></i></div>
-                    <div class="dash-tile-text text-right text-black-50"><h2>93</h2></div>
+        <div class="row ">
+            <div class="col-lg-6 col-xl-3 mb-2">
+                <div class="card">
+                    <div class="card-header bg-danger font-weight-bolder">Customers</div>
+                    <div class="card-body">
+                        <div class="dash-tile-icon"><i class="fa-solid fa-users"></i></div>
+                        <div class="dash-tile-text text-right text-black-50"><h2>93</h2></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-6 col-xl-3 mb-2">
-            <div class="card">
-                <div class="card-header bg-danger font-weight-bolder">Items</div>
-                <div class="card-body">
-                    <div class="dash-tile-icon"><i class="fas fa-cubes"></i></div>
-                    <div class="dash-tile-text text-right text-black-50"><h2>101</h2></div>
+            <div class="col-lg-6 col-xl-3 mb-2">
+                <div class="card">
+                    <div class="card-header bg-danger font-weight-bolder">Items</div>
+                    <div class="card-body">
+                        <div class="dash-tile-icon"><i class="fas fa-cubes"></i></div>
+                        <div class="dash-tile-text text-right text-black-50"><h2>101</h2></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-6 col-xl-3 mb-2">
-            <div class="card">
-                <div class="card-header bg-danger font-weight-bolder">My Orders</div>
-                <div class="card-body">
-                    <div class="dash-tile-icon"><i class="fas fa-shopping-cart"></i></div>
-                    <div class="dash-tile-text text-right text-black-50"><h2>999</h2></div>
+            <div class="col-lg-6 col-xl-3 mb-2">
+                <div class="card">
+                    <div class="card-header bg-danger font-weight-bolder">My Orders</div>
+                    <div class="card-body">
+                        <div class="dash-tile-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="dash-tile-text text-right text-black-50"><h2>999</h2></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-6 col-xl-3 mb-2">
-            <div class="card">
-                <div class="card-header bg-danger font-weight-bolder">Settings</div>
-                <div class="card-body">
-                    <div class="dash-tile-icon" style=""><i class="fas fa-cogs"></i></div>
-                    <div class="dash-tile-text text-right text-black-50">
-                        <h2>
-                            <button class="btn btn-danger">new</button>
-                        </h2>
+            <div class="col-lg-6 col-xl-3 mb-2">
+                <div class="card">
+                    <div class="card-header bg-danger font-weight-bolder">Settings</div>
+                    <div class="card-body">
+                        <div class="dash-tile-icon" style=""><i class="fas fa-cogs"></i></div>
+                        <div class="dash-tile-text text-right text-black-50">
+                            <h2>
+                                <button class="btn btn-danger">new</button>
+                            </h2>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <section id="Customer">
+        <br>
+        <section class="row justify-content-center">
+            <section class="col-11 col-sm-11 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto" style="">
+                <div class=" border rounded border-dark ">
+                    <nav class="border rounded bg-info">
+                        <h1 class="text-white fs-3">Search Customer</h1>
+                    </nav>
 
+                    <form class="mx-auto m-lg-2">
+                        <div class="row mb-2 mt-2">
+                            <label class="col-sm-3 col-form-label fw-bold" for="inputId">Id :</label>
+                            <div class="col-sm-9">
+                                <input class="form-control" id="inputId" placeholder="ex: C001" type="email">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <label class="col-sm-3 col-form-label fw-bold" for="inputName">Name :</label>
+                            <div class="col-sm-9">
+                                <input class="form-control" id="inputName" placeholder="ex: Piyumal" type="email">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label fw-bold" for="inputContact">Contact :</label>
+                            <div class="col-sm-9">
+                                <input class="form-control" id="inputContact" placeholder="ex: 0767554903" type="email">
+                            </div>
+                        </div>
+
+                        <div class="position-relative">
+                            <button class="btn btn-primary mb-2" style="margin-left: 64%; width: 32%" type="button">
+                                Search
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </section>
+
+            <section class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4 col-xxl-4 pt-4 mb-3 mx-auto">
+
+                <div class="mb-2">
+                    <button class="btn" data-bs-target="#exampleModal" data-bs-toggle="modal"
+                            style="width: 75%; background-color: #06B618;" type="button">Add Customer
+                    </button>
+                    <!--///////////////-->
+
+                    <!-- Button trigger modal -->
+
+                    <!-- Modal -->
+                    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal"
+                         tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-info">
+                                    <h5 class="modal-title " id="exampleModalLabel">Add Customer</h5>
+                                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                            type="button"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <form class="mx-auto m-lg-2">
+                                        <div class="row mb-2 mt-2">
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusId">Cus: ID
+                                                :</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="inputCusId" placeholder="C001"
+                                                       type="email">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <label class="col-sm-3 col-form-label fw-bold"
+                                                   for="inputCusName">Name:</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="inputCusName" placeholder="ex: Piyumal"
+                                                       type="email">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusAddress">Address
+                                                :</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="inputCusAddress" placeholder="ex: galle"
+                                                       type="email">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusContact">Contact
+                                                :</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="inputCusContact" placeholder="ex: 0767554903"
+                                                       type="email">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose"
+                                            type="button">Close
+                                    </button>
+                                    <button class="btn btn-primary" id="btnSave" type="button">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- //////////////-->
+                </div>
+
+                <div class="mb-2">
+                    <button class="btn" data-bs-target="#exampleModal2" data-bs-toggle="modal"
+                            style="width: 75%; background-color: #06B618;" type="button">Modify Customer
+                    </button>
+
+                    <!-- Modal -->
+                    <div aria-hidden="true" aria-labelledby="exampleModalLabel2" class="modal fade" id="exampleModal2"
+                         tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-info">
+                                    <h5 class="modal-title " id="exampleModalLabel2">Modify Customer</h5>
+                                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                            type="button"></button>
+                                </div>
+                                <div class=" modal-body">
+
+                                    <form class="mx-auto m-lg-2">
+                                        <div class="row mb-2 mt-2">
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusId2">Cus: ID
+                                                :</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="inputCusId2" placeholder="ex: C001"
+                                                       type="email">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <label class="col-sm-3 col-form-label fw-bold"
+                                                   for="inputCusName2">Name:</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="inputCusName2" placeholder="ex: Piyumal"
+                                                       type="text">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusAddress2">Address
+                                                :</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="inputCusAddress2" placeholder="ex: galle"
+                                                       type="text">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusContact2">Contact
+                                                :</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="inputCusContact2" placeholder="ex: 0767554903"
+                                                       type="text">
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <div>
+                                    <button class="btn btn-secondary bg-danger" id="btnSearch2" style="margin-left: 2rem;margin-bottom: 1rem;"
+                                            type="button">Search
+                                    </button>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose2"
+                                            type="button">Close
+                                    </button>
+                                    <button class="btn btn-primary" id="btnSave2" type="button">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//////////////&ndash;&gt;-->
+                </div>
+
+                <div class="mb-2">
+                    <button class="btn" data-bs-target="#exampleModal3" data-bs-toggle="modal"
+                            style="width: 75%; background-color: #06B618;" type="button">Load All Customer
+                    </button>
+
+                    <!-- Modal -->
+                    <div aria-hidden="true" aria-labelledby="exampleModalLabel3" class="modal fade" id="exampleModal3"
+                         tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-info">
+                                    <h5 class="modal-title " id="exampleModalLabel3">Modify Customer</h5>
+                                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                            type="button"></button>
+                                </div>
+                                <div class=" modal-body">
+
+                                    <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
+                                        <thead class="bg-danger text-white">
+                                        <tr>
+                                            <th>Customer ID</th>
+                                            <th>Customer Name</th>
+                                            <th>Customer Contact</th>
+                                            <th>Customer Salary</th>
+                                        </tr>
+                                        </thead>
+                                        <tbdoy>
+                                            <tr>
+                                                <td>C001</td>
+                                                <td>Dasun</td>
+                                                <td>0754585658</td>
+                                                <td>200000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>C002</td>
+                                                <td>piyumal</td>
+                                                <td>0745845785</td>
+                                                <td>100000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>C003</td>
+                                                <td>Niuna</td>
+                                                <td>0767554309</td>
+                                                <td>30000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>C004</td>
+                                                <td>sadun</td>
+                                                <td>0710425254</td>
+                                                <td>200000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>C005</td>
+                                                <td>tharaka</td>
+                                                <td>0714525458</td>
+                                                <td>100000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>C006</td>
+                                                <td>Malith</td>
+                                                <td>0742545854</td>
+                                                <td>30000</td>
+                                            </tr>
+
+                                        </tbdoy>
+                                    </table>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose3"
+                                            type="button">Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//////////////&ndash;&gt;-->
+                </div>
+
+                </div>
+            </section>
+        </section>
+
+        <section class="pt-4 col-11 mx-auto">
+
+            <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
+                <thead class="bg-danger text-white">
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Customer Contact</th>
+                    <th>Customer Salary</th>
+                </tr>
+                </thead>
+                <tbdoy>
+                    <tr>
+                        <td>C001</td>
+                        <td>Dasun</td>
+                        <td>0754585658</td>
+                        <td>200000</td>
+                    </tr>
+                    <tr>
+                        <td>C002</td>
+                        <td>piyumal</td>
+                        <td>0745845785</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>C003</td>
+                        <td>Niuna</td>
+                        <td>0767554309</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>C004</td>
+                        <td>sadun</td>
+                        <td>0710425254</td>
+                        <td>200000</td>
+                    </tr>
+                    <tr>
+                        <td>C005</td>
+                        <td>tharaka</td>
+                        <td>0714525458</td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td>C006</td>
+                        <td>Malith</td>
+                        <td>0742545854</td>
+                        <td>30000</td>
+                    </tr>
+
+                </tbdoy>
+            </table>
+        </section>
+
+    </section>
 </main>
 
 
-<script src="bootstraps/js/bootstrap.min.js" ></script>
+<script src="bootstraps/js/bootstrap.min.js"></script>
 </body>
 </body>
 </html>
