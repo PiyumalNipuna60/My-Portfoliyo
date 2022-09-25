@@ -31,21 +31,21 @@
                     <li class="nav-item" id="lstHome">
                         <a aria-current="page"
                            class="nav-link active text-danger border-end border-start border-dark border-opacity-50"
-                           href=""
+                           href="#"
                            id="aHome">Home</a>
                     </li>
 
                     <li class="nav-item" id="lstCustomer">
-                        <a class="nav-link border-end border-dark border-opacity-50" href=""
+                        <a class="nav-link border-end border-dark border-opacity-50" href="#"
                            id="aCustomer">Customers</a>
                     </li>
 
                     <li class="nav-item" id="lstItem">
-                        <a class="nav-link border-end border-dark border-opacity-50" href="" id="aItem">Items</a>
+                        <a class="nav-link border-end border-dark border-opacity-50" href="#" id="aItem">Items</a>
                     </li>
 
                     <li class="nav-item" id="lstOrder">
-                        <a class="nav-link border-end border-dark border-opacity-50" href="" id="aOrder">Orders</a>
+                        <a class="nav-link border-end border-dark border-opacity-50" href="#" id="aOrder">Orders</a>
                     </li>
 
                 </ul>
@@ -1078,9 +1078,37 @@
     });
 
 
-    $("#lstCustomer").click(function () {
-
+    $("#lstHome").click(function () {
+        $("#Home").css("display", "block");
+        $("#Customer").css("display", "none");
+        $("#Item").css("display", "none");
+        $("#Order").css("display", "none");
     });
+
+
+    $("#lstCustomer").click(function () {
+        $("#Home").css("display", "none");
+        $("#Customer").css("display", "block");
+        $("#Item").css("display", "none");
+        $("#Order").css("display", "none");
+    });
+
+
+    $("#lstItem").click(function () {
+        $("#Home").css("display", "none");
+        $("#Customer").css("display", "none");
+        $("#Item").css("display", "block");
+        $("#Order").css("display", "none");
+    });
+
+
+    $("#lstOrder").click(function () {
+        $("#Home").css("display", "none");
+        $("#Customer").css("display", "none");
+        $("#Item").css("display", "none");
+        $("#Order").css("display", "block");
+    });
+
 </script>
 </body>
 </body>
