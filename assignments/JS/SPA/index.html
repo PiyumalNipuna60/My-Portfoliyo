@@ -30,20 +30,20 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item" id="lstHome">
                         <a aria-current="page"
-                           class="nav-link active text-danger border-end border-start border-dark border-opacity-50"
+                           class="nav-link active text-danger border-end border-start border-dark border-opacity-50" id="aHome"
                            href="">Home</a>
                     </li>
 
                     <li class="nav-item" id="lstCustomer">
-                        <a class="nav-link border-end border-dark border-opacity-50" href="">Customers</a>
+                        <a class="nav-link border-end border-dark border-opacity-50" id="aCustomer" href="">Customers</a>
                     </li>
 
                     <li class="nav-item" id="lstItem">
-                        <a class="nav-link border-end border-dark border-opacity-50" href="">Items</a>
+                        <a class="nav-link border-end border-dark border-opacity-50" id="aItem" href="">Items</a>
                     </li>
 
                     <li class="nav-item" id="lstOrder">
-                        <a class="nav-link border-end border-dark border-opacity-50" href="">Orders</a>
+                        <a class="nav-link border-end border-dark border-opacity-50" id="aOrder" href="">Orders</a>
                     </li>
 
                 </ul>
@@ -1016,10 +1016,16 @@
 </main>
 
 
-<script src="bootstraps/js/bootstrap.min.js"></script>
 <script src="asset/js/jquery-3.6.1.min.js"></script>
 <script>
+        $("#Customer").css("display", "none");
+        $("#Item").css("display", "none");
+        $("#Order").css("display", "none");
 
+
+    $("#lstCustomer").click(function () {
+
+    });
 </script>
 </body>
 </body>
