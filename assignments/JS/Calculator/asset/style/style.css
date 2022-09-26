@@ -1,0 +1,156 @@
+body {
+    min-height: 100vh;
+    background: white;
+    /* items getting on center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 300px;
+    height: 500px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+    /* giving background colour and hidden overflows */
+    border-radius: 12px;
+    background: #22252D;
+    overflow: hidden;
+}
+
+#calculator{
+    align-items: center;
+    position: relative;
+    top: 30px;
+    left: 7px;
+}
+
+form input {
+    border: none;
+    border-radius: 12px;
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    background: #2c3e50;
+
+    /* text starting direction changed */
+    text-align: center;
+
+    /* disabling calculator display click and and typing option */
+    pointer-events: none;
+}
+
+#calculatorBlock {
+    width:300px;
+}
+div#contentBlock div.BlockMinWidth {
+    width:300px;
+    overflow:hidden;
+}
+
+#calculatorWrap {
+    background-color: #fafafa;
+}
+
+input.button:focus,
+input.window:focus {
+    /* outline: none; */
+    outline: 1px solid #000;
+}
+
+.btn {
+    display: none;
+}
+
+input.memory {
+    line-height: 2.3em;
+    border: 1px solid #999;
+    font-size: 100%;
+    margin-top: 4px;
+    width: 1em;
+}
+
+/*
+input.window {
+    line-height: 2.3em;
+    border: 1px solid #999;
+    font-size: 110%;
+    margin-top: 4px;
+    width: 16.5em;
+    text-align: right;
+}
+
+input.button {
+    width: 4.0em;
+    line-height: 2.667em;
+    text-align: center;
+    color: #000;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    font-size: 110%;
+    margin-top: 4px;
+}
+
+input.number {
+    background-color: #f6f6f6;
+    font-weight: bold;
+}
+
+input.operator {
+    background-color: #F1C9C7;
+    color: #000;
+    font-weight: normal;
+}
+*/
+input.window {
+    width: 286px;
+    height: 40px;
+    border: 1px solid #999;
+    font-size: 1.75em;
+    margin: 10px 0 10px 0;
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+input.button {
+    width: 2.85em;
+    line-height: 2.196em;
+    text-align: center;
+    color: #444444;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.5em;
+    margin-top: 4px;
+    padding: 2px;
+}
+
+input.number {
+    background-color: #fafafa;
+    color: #000000;
+    font-weight: bold;
+}
+
+input.operator {
+    /* background-color: #F1C9C7; */
+    background-color: #FFCC00;
+    color: #000000;
+    font-weight: bold;
+}
+
+input.button:hover {
+    border: 1px solid #999; /*cursor:pointer;*/
+}
+
+input.button:active {
+    /*background-color: #ccc; /*cursor:pointer;*/
+}
+
+#calculatorBlock {
+    text-align: center;
+}
+
+.button {
+    touch-action: manipulation;
+}
+
