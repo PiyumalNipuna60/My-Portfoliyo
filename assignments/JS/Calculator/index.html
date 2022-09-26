@@ -10,12 +10,49 @@
 <body>
 
 <div class="calculator">
-    <form>
-        <label>
-            <!-- calculator display -->
-            <input class="screen" type="text">
-        </label>
+
+    <form action="/" id="calculator" name="calculator">
+        <div>
+            <input type="text" class="window" name="display" id="display" value=" " aria-label="answer display">
+        </div>
+        <div>
+            <input type="button" class="button" name="memory_clearButton" value="mc">
+            <input type="button" class="button" name="memory_recallButton" value="mr">
+            <input type="button" class="button" name="memory_minusButton" value="m-">
+            <input type="button" class="button" name="memory_plusButton" value="m+">
+        </div>
+        <div>
+            <input type="button" class="button" name="clearButton" value="CE">
+            <input type="button" class="button" name="root2" value="√x">
+            <input type="button" class="button" name="percentButton" value="%">
+            <input type="button" class="button operator" name="divide" value="÷">
+        </div>
+        <div>
+            <input type="button" class="button number" name="seven" value="7">
+            <input type="button" class="button number" name="eight" value="8">
+            <input type="button" class="button number" name="nine" value="9">
+            <input type="button" class="button operator" name="multiply" value="×">
+        </div>
+        <div>
+            <input type="button" class="button number" name="four" value="4">
+            <input type="button" class="button number" name="five" value="5">
+            <input type="button" class="button number" name="six" value="6">
+            <input type="button" class="button operator" name="subtract" value="−">
+        </div>
+        <div>
+            <input type="button" class="button number" name="one" value="1">
+            <input type="button" class="button number" name="two" value="2">
+            <input type="button" class="button number" name="three" value="3">
+            <input type="button" class="button " name="add" value="+">
+        </div>
+        <div>
+            <input type="button" class="button number" name="zero" value="0">
+            <input type="button" class="button number" name="decimal" value=".">
+            <input type="button" class="button number" name="negateButton" value="+/-">
+            <input type="button" class="button operator" name="calculate" value="=">
+        </div>
     </form>
+
 </div>
 
 <script src="bootstraps/js/bootstrap.min.js"></script>
