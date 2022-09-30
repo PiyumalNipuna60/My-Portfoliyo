@@ -14,6 +14,17 @@ body>section:first-child{
     box-shadow: 2px 1px 23px rgb(82 142 169);
 }
 
+body>section>aside:nth-child(1){
+    position: absolute;
+}
+
+body>section>aside:nth-child(2){
+    position: absolute;
+    right: 7rem;
+    bottom: 4rem;
+    margin: auto;
+}
+
 .calculator {
     width: 300px;
     height: 500px;
