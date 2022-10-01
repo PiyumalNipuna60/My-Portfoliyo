@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>pos-system-Frameworks/order</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="../bootstraps/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -76,48 +76,60 @@
                 <form class=" row mx-auto m-lg-2 ">
                     <div class="col">
                         <div class="row mb-2 mt-2">
-                            <label for="OederOID" class="col-6 col-form-label fw-bold">Oeder ID :</label>
+                            <label class="col-6 col-form-label fw-bold" for="OederOID">Oeder ID :</label>
                             <div class="col-5" style="margin-left: -8%;">
-                                <input type="Id" class="form-control" id="OederOID" style="width: 168%;" placeholder="ex:O001">
+                                <input class="form-control" id="OederOID" placeholder="ex:O001" style="width: 168%;"
+                                       type="Id">
                             </div>
                         </div>
                         <div class="row mb-2">
-                            <label for="OrderCustomer" class="col-6 col-form-label fw-bold">Customer :</label>
+                            <label class="col-6 col-form-label fw-bold" for="OrderCustomer">Customer :</label>
                             <div class="col-5" style="margin-left: -8%;">
-                                <input type="email" class="form-control" id="OrderCustomer" style="width: 168%;" placeholder="ex:type">
+                                <input class="form-control" id="OrderCustomer" placeholder="ex:type"
+                                       style="width: 168%;"
+                                       type="email">
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="OrderCusName" class="col-6 col-form-label fw-bold">Cus: Name :</label>
+                            <label class="col-6 col-form-label fw-bold" for="OrderCusName">Cus: Name :</label>
                             <div class="col-5" style="margin-left: -8%;">
-                                <input type="email" class="form-control" id="OrderCusName" style="width: 168%;" placeholder="ex:Piyumal">
+                                <input class="form-control" id="OrderCusName" placeholder="ex:Piyumal"
+                                       style="width: 168%;"
+                                       type="email">
                             </div>
                         </div>
                     </div>
                     <div class="col ">
                         <div class="row mb-2 mt-2">
-                            <label for="OrderDate" class="col-5 col-form-label fw-bold">Date :</label>
+                            <label class="col-5 col-form-label fw-bold" for="OrderDate">Date :</label>
                             <div class="col-5" style="margin-left: -8%;">
-                                <input type="Id" class="form-control" id="OrderDate" style="width: 175%;" placeholder="ex:0000/00/00">
+                                <input class="form-control" id="OrderDate" placeholder="ex:0000/00/00"
+                                       style="width: 175%;"
+                                       type="Id">
                             </div>
                         </div>
                         <div class="row mb-2">
-                            <label for="OrderCusID" class="col-5 col-form-label fw-bold">Cus: ID :</label>
+                            <label class="col-5 col-form-label fw-bold" for="OrderCusID">Cus: ID :</label>
                             <div class="col-5" style="margin-left: -8%;">
-                                <input type="email" class="form-control" id="OrderCusID" style="width: 175%;" placeholder="ex:C001">
+                                <input class="form-control" id="OrderCusID" placeholder="ex:C001" style="width: 175%;"
+                                       type="email">
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="OrderCusSalary" class="col-5 col-form-label fw-bold">Salary :</label>
+                            <label class="col-5 col-form-label fw-bold" for="OrderCusSalary">Salary :</label>
                             <div class="col-5" style="margin-left: -8%;">
-                                <input type="email" class="form-control" id="OrderCusSalary" style="width: 175%;" placeholder="ex:0.00">
+                                <input class="form-control" id="OrderCusSalary" placeholder="ex:0.00"
+                                       style="width: 175%;"
+                                       type="email">
                             </div>
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="OrderCusAddress" class="col-3 col-form-label fw-bold">Address :</label>
+                        <label class="col-3 col-form-label fw-bold" for="OrderCusAddress">Address :</label>
                         <div class="col-5" style="margin-left: -2%;">
-                            <input type="email" class="form-control" id="OrderCusAddress" style="width: 175%;" placeholder="ex: Galle">
+                            <input class="form-control" id="OrderCusAddress" placeholder="ex: Galle"
+                                   style="width: 175%;"
+                                   type="email">
                         </div>
                     </div>
 
@@ -136,48 +148,55 @@
                 <form class=" row mx-auto m-lg-2 ">
                     <div class="col">
                         <div class="row mb-2 mt-2">
-                            <label for="OrderItem" class="col-6 col-form-label fw-bold">Item :</label>
+                            <label class="col-6 col-form-label fw-bold" for="OrderItem">Item :</label>
                             <div class="col-5" style="margin-left: -8%;">
-                                <input type="Id" class="form-control" id="OrderItem" style="width: 168%;" placeholder="ex: type">
+                                <input class="form-control" id="OrderItem" placeholder="ex: type" style="width: 168%;"
+                                       type="Id">
                             </div>
                         </div>
                         <div class="row mb-2">
-                            <label for="OrderIName" class="col-6 col-form-label fw-bold">Item Name :</label>
+                            <label class="col-6 col-form-label fw-bold" for="OrderIName">Item Name :</label>
                             <div class="col-5" style="margin-left: -8%;">
-                                <input type="email" class="form-control" id="OrderIName" style="width: 168%;" placeholder="ex: soya">
+                                <input class="form-control" id="OrderIName" placeholder="ex: soya" style="width: 168%;"
+                                       type="email">
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="OrderIQty" class="col-6 col-form-label fw-bold">Qty :</label>
+                            <label class="col-6 col-form-label fw-bold" for="OrderIQty">Qty :</label>
                             <div class="col-5" style="margin-left: -8%;">
-                                <input type="email" class="form-control" id="OrderIQty" style="width: 168%;" placeholder="ex: 0">
+                                <input class="form-control" id="OrderIQty" placeholder="ex: 0" style="width: 168%;"
+                                       type="email">
                             </div>
                         </div>
                     </div>
                     <div class="col ">
                         <div class="row mb-2 mt-2">
-                            <label for="OrderICode" class="col-6 col-form-label fw-bold">Item Code :</label>
+                            <label class="col-6 col-form-label fw-bold" for="OrderICode">Item Code :</label>
                             <div class="col-5" style="margin-left: -8%;">
-                                <input type="Id" class="form-control" id="OrderICode" style="width: 155%;" placeholder="ex: I001">
+                                <input class="form-control" id="OrderICode" placeholder="ex: I001" style="width: 155%;"
+                                       type="Id">
                             </div>
                         </div>
                         <div class="row mb-2">
-                            <label for="OrderIPrice" class="col-5 col-form-label fw-bold">Price :</label>
+                            <label class="col-5 col-form-label fw-bold" for="OrderIPrice">Price :</label>
                             <div class="col-6" style="margin-left: -8%;">
-                                <input type="email" class="form-control" id="OrderIPrice" style="width: 155%;" placeholder="ex: 0.00">
+                                <input class="form-control" id="OrderIPrice" placeholder="ex: 0.00" style="width: 155%;"
+                                       type="email">
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="OrderIOQty" class="col-5 col-form-label fw-bold">Ord: Qty :</label>
+                            <label class="col-5 col-form-label fw-bold" for="OrderIOQty">Ord: Qty :</label>
                             <div class="col-6" style="margin-left: -8%;">
-                                <input type="email" class="form-control" id="OrderIOQty" style="width: 155%;" placeholder="ex:0">
+                                <input class="form-control" id="OrderIOQty" placeholder="ex:0" style="width: 155%;"
+                                       type="email">
                             </div>
                         </div>
                     </div>
 
 
                     <div class="position-relative">
-                        <button type="button" class="btn btn-danger mb-2" style="margin-left: 64%; width: 32%">Add
+                        <button class="btn btn-danger mb-2" id="btnAddOrder" style="margin-left: 64%; width: 32%"
+                                type="button">Add
                             Item
                         </button>
                     </div>
@@ -202,33 +221,37 @@
                 <hr style="border: 2px solid black; background-color: black; width: 80%; margin-left: 2rem">
                 <div class="row">
                     <div class="col" style="margin-left: 5%;">
-                        <label for="OrderCash" class=" fw-bold">Cash :</label>
+                        <label class=" fw-bold" for="OrderCash">Cash :</label>
                         <div class="col" style=" width: 60%;">
-                            <input type="email" class="form-control rounded-pill" placeholder="000.00" id="OrderCash"
-                                   style="width: 155%;">
+                            <input class="form-control rounded-pill" id="OrderCash" placeholder="000.00"
+                                   style="width: 155%;"
+                                   type="email">
                         </div>
                     </div>
 
                     <div class="col" style="margin-left: 5%;">
-                        <label for="OrderDiscount" class=" fw-bold">Discount :</label>
+                        <label class=" fw-bold" for="OrderDiscount">Discount :</label>
                         <div class="col" style="margin-left: 0%; width: 60%;">
-                            <input type="email" class="form-control rounded-pill" placeholder="00" id="OrderDiscount"
-                                   style="width: 155%;">
+                            <input class="form-control rounded-pill" id="OrderDiscount" placeholder="00"
+                                   style="width: 155%;"
+                                   type="email">
                         </div>
                     </div>
 
                 </div>
                 <div style="margin-left: 6%">
 
-                    <label for="OrderBalance" class=" fw-bold">Balance :</label>
+                    <label class=" fw-bold" for="OrderBalance">Balance :</label>
                     <div class="col-5" style="margin-left: 0%;">
-                        <input type="email" class="form-control rounded-pill" placeholder="000.00Rs/=" id="OrderBalance"
-                               style="width: 155%;">
+                        <input class="form-control rounded-pill" id="OrderBalance" placeholder="000.00Rs/="
+                               style="width: 155%;"
+                               type="email">
                     </div>
                 </div>
 
                 <div class="position-relative">
-                    <button type="button" class="btn btn-danger mb-2 rounded-pill" style="margin-left: 64%; width: 32%">Purchase
+                    <button class="btn btn-danger mb-2 rounded-pill" style="margin-left: 64%; width: 32%" type="button">
+                        Purchase
                     </button>
                 </div>
 
@@ -304,5 +327,28 @@
 <footer></footer>
 
 <script src="../bootstraps/js/bootstrap.min.js"></script>
+<script src="../bootstraps/js/jquery-3.6.1.min.js"></script>
+<script>
+    var order = [];
+    $("#btnAddOrder").click(function () {
+        let orderCode = $("#OrderICode").val();
+        let orderName = $("#OrderIName").val();
+        let orderQty = $("#OrderIQty").val();
+        let orderPrice = $("#OrderIPrice").val();
+        let orderOnQty = $("#OrderIOQty").val();
+
+        var orderObject = {
+            code: orderCode,
+            name: orderName,
+            qty: orderQty,
+            price: orderPrice,
+            orderQty: orderOnQty,
+            total: (itemPrice * orderOnQty)
+        }
+
+        order.push(orderObject);
+
+    });
+</script>
 </body>
 </html>
