@@ -272,7 +272,7 @@
                 <th>Total</th>
             </tr>
             </thead>
-            <tbdoy>
+            <tbody id="orderTable">
                 <tr>
                     <td>I001</td>
                     <td>Parippu</td>
@@ -318,7 +318,7 @@
                     <td>200</td>
                 </tr>
 
-            </tbdoy>
+            </tbody>
         </table>
     </section>
 
@@ -343,12 +343,21 @@
             qty: orderQty,
             price: orderPrice,
             orderQty: orderOnQty,
-            total: (itemPrice * orderOnQty)
+            total: (orderPrice * orderOnQty)
         }
 
         order.push(orderObject);
-
+        getLoadOrder();
     });
+
+    function getLoadOrder() {
+        for (var orders of order) {
+            console.log(order);
+
+            var row = `<tr><td>${orders.code}</td><td>${orders.name}</td><td>${orders.price}</td><td>${orders.orderQty}</td><td>${orders.total}</td></tr>`;
+            $("#orderTable").append(row);
+        }
+    }
 </script>
 </body>
 </html>
