@@ -386,7 +386,23 @@
 <script src="../bootstraps/js/bootstrap.min.js"></script>
 <script src="../bootstraps/js/jquery-3.6.1.min.js"></script>
 <script>
+    var item=[];
+    $("#btnSave").click(function () {
+        let itemCode = $("#inputItemCode").val();
+        let itemName = $("#inputItemName").val();
+        let itemQty = $("#inputItemQts").val();
+        let itemPrice = $("#inputItemPrice").val();
 
+        var itemObject = {
+            code: itemCode,
+            name: itemName,
+            qty: itemQty,
+            price: itemPrice
+        }
+
+        item.push(itemObject);
+
+    });
 </script>
 </body>
 </html>
