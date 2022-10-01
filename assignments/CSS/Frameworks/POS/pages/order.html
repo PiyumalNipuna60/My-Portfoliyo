@@ -331,6 +331,14 @@
 <script>
     var order = [];
     $("#btnAddOrder").click(function () {
+        let OId=$("#OederOID").val();
+        let date=$("#OrderDate").val();
+
+        let customerID = $("#OrderCusID").val();
+        let customerName = $("#OrderCusName").val();
+        let customerAddress = $("#OrderCusAddress").val();
+        let customerSalary = $("#OrderCusSalary").val();
+
         let orderCode = $("#OrderICode").val();
         let orderName = $("#OrderIName").val();
         let orderQty = $("#OrderIQty").val();
@@ -338,6 +346,15 @@
         let orderOnQty = $("#OrderIOQty").val();
 
         var orderObject = {
+
+            Oid:OId,
+            date:date,
+
+            id: customerID,
+            name: customerName,
+            address: customerAddress,
+            contact: customerSalary,
+
             code: orderCode,
             name: orderName,
             qty: orderQty,
