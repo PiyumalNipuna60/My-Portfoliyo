@@ -18,6 +18,16 @@ body>section>aside:nth-child(1){
     position: absolute;
 }
 
+@media all and (max-width: 947px) {
+    section>aside:nth-child(1){
+        display: none;
+    }
+    section>aside:nth-child(2){
+        display: none;
+    }
+}
+
+
 body>section>aside:nth-child(2){
     position: absolute;
     right: 7rem;
@@ -26,10 +36,9 @@ body>section>aside:nth-child(2){
 }
 
 .calculator {
-    width: 300px;
-    height: 500px;
+    width: 19rem;
+    height: 31rem;
     box-shadow: -1px 1px 23px rgb(0 0 0);
-    /* giving background colour and hidden overflows */
     border-radius: 12px;
     background: #22252D;
     overflow: hidden;
