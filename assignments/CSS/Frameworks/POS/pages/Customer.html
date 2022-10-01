@@ -156,7 +156,8 @@
                                         <label class="col-sm-3 col-form-label fw-bold" for="inputCusContact">Contact
                                             :</label>
                                         <div class="col-sm-9">
-                                            <input class="form-control" id="inputCusContact" placeholder="ex: 0767554903"
+                                            <input class="form-control" id="inputCusContact"
+                                                   placeholder="ex: 0767554903"
                                                    type="email">
                                         </div>
                                     </div>
@@ -221,7 +222,8 @@
                                         <label class="col-sm-3 col-form-label fw-bold" for="inputCusContact2">Contact
                                             :</label>
                                         <div class="col-sm-9">
-                                            <input class="form-control" id="inputCusContact2" placeholder="ex: 0767554903"
+                                            <input class="form-control" id="inputCusContact2"
+                                                   placeholder="ex: 0767554903"
                                                    type="text">
                                         </div>
                                     </div>
@@ -229,7 +231,8 @@
 
                             </div>
                             <div>
-                                <button class="btn btn-secondary bg-danger" id="btnSearch2" style="margin-left: 2rem;margin-bottom: 1rem;"
+                                <button class="btn btn-secondary bg-danger" id="btnSearch2"
+                                        style="margin-left: 2rem;margin-bottom: 1rem;"
                                         type="button">Search
                                 </button>
                             </div>
@@ -331,52 +334,53 @@
     <section class="pt-4 col-11 mx-auto">
         <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
             <thead class="bg-danger text-white">
+
+            <thead class="bg-danger text-white">
             <tr>
                 <th>Customer ID</th>
                 <th>Customer Name</th>
+                <th>Customer Address</th>
                 <th>Customer Contact</th>
-                <th>Customer Salary</th>
             </tr>
             </thead>
-            <tbdoy>
-                <tr>
-                    <td>C001</td>
-                    <td>Dasun</td>
-                    <td>0754585658</td>
-                    <td>200000</td>
-                </tr>
-                <tr>
-                    <td>C002</td>
-                    <td>piyumal</td>
-                    <td>0745845785</td>
-                    <td>100000</td>
-                </tr>
-                <tr>
-                    <td>C003</td>
-                    <td>Niuna</td>
-                    <td>0767554309</td>
-                    <td>30000</td>
-                </tr>
-                <tr>
-                    <td>C004</td>
-                    <td>sadun</td>
-                    <td>0710425254</td>
-                    <td>200000</td>
-                </tr>
-                <tr>
-                    <td>C005</td>
-                    <td>tharaka</td>
-                    <td>0714525458</td>
-                    <td>100000</td>
-                </tr>
-                <tr>
-                    <td>C006</td>
-                    <td>Malith</td>
-                    <td>0742545854</td>
-                    <td>30000</td>
-                </tr>
-
-            </tbdoy>
+            <tbody id="tblCustomer">
+            <tr>
+                <td>C001</td>
+                <td>Dasun</td>
+                <td>0754585658</td>
+                <td>200000</td>
+            </tr>
+            <tr>
+                <td>C002</td>
+                <td>piyumal</td>
+                <td>0745845785</td>
+                <td>100000</td>
+            </tr>
+            <tr>
+                <td>C003</td>
+                <td>Niuna</td>
+                <td>0767554309</td>
+                <td>30000</td>
+            </tr>
+            <tr>
+                <td>C004</td>
+                <td>sadun</td>
+                <td>0710425254</td>
+                <td>200000</td>
+            </tr>
+            <tr>
+                <td>C005</td>
+                <td>tharaka</td>
+                <td>0714525458</td>
+                <td>100000</td>
+            </tr>
+            <tr>
+                <td>C006</td>
+                <td>Malith</td>
+                <td>0742545854</td>
+                <td>30000</td>
+            </tr>
+            </tbody>
         </table>
     </section>
 
@@ -388,14 +392,14 @@
 <script src="../bootstraps/js/jquery-3.6.1.min.js"></script>
 
 <script>
-    var customer=[];
+    var customer = [];
     $("#btnSave").click(function () {
         let customerID = $("#inputCusId").val();
         let customerName = $("#inputCusName").val();
         let customerAddress = $("#inputCusAddress").val();
         let customerContact = $("#inputCusContact").val();
 
-        var customerObject={
+        var customerObject = {
             id: customerID,
             name: customerName,
             address: customerAddress,
@@ -403,7 +407,21 @@
         }
         customer.push(customerObject);
         console.log(customer);
+        getAllCustomer();
     });
+
+
+    function getAllCustomer() {
+        $("#tblCustomer").empty();
+
+        for (var customers of customer) {
+            console.log(customers);
+
+            var row = `<tr><td>${customers.id}</td><td>${customers.name}</td><td>${customers.address}</td><td>${customers.contact}</td></tr>`;
+
+            $("#tblCustomer").append(row);
+        }
+    }
 
 </script>
 
