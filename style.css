@@ -99,10 +99,11 @@ main > section:nth-child(8) {
 
 main > section:nth-child(9) {
     background-color: #eed3d3;
-    /*background-repeat: no-repeat, repeat;*/
-    /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
-    /*background-size: 100% 100%;*/
+    background-repeat: no-repeat, repeat;
+    background-image: url(assets/image/pic/istockphoto-1321114918-612x612.jpg);
+    background-size: 100% 100%;
     position: relative;
+    background-blend-mode: soft-light;
     top: -196px;
     height: 94vh;
 }
@@ -1974,11 +1975,11 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     main > section:nth-child(9) {
-        background-color: #eed3d3;
-        /*background-repeat: no-repeat, repeat;*/
-        /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
-        /*background-size: 100% 100%;*/
+        background-repeat: no-repeat, repeat;
+        background-image: url(assets/image/pic/istockphoto-1321114918-612x612.jpg);
+        background-size: 100% 100%;
         position: relative;
+        background-blend-mode: soft-light;
         top: -196px;
         height: 96vh;
     }
@@ -3835,10 +3836,11 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     main > section:nth-child(9) {
-        /*background-color: #eed3d3;*/
-        /* background-repeat: no-repeat, repeat; */
-        /* background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif); */
-        /* background-size: 100% 100%; */
+        background-repeat: no-repeat, repeat;
+        background-image: url(assets/image/pic/istockphoto-1321114918-612x612.jpg);
+        background-size: 100% 100%;
+        position: relative;
+        background-blend-mode: soft-light;
         position: relative;
         top: -196px;
         height: 97vh;
@@ -5720,10 +5722,11 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(9) {
         /*background-color: #eed3d3;*/
-        /* background-repeat: no-repeat, repeat; */
-        /* background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif); */
-        /* background-size: 100% 100%; */
+         background-repeat: no-repeat, repeat;
+         background-image: url(assets/image/pic/istockphoto-1321114918-612x612.jpg);
+         background-size: 100% 100%;
         position: relative;
+        background-blend-mode: soft-light;
         top: -196px;
         height: 97vh;
     }

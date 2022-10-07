@@ -101,38 +101,6 @@ input.memory {
     width: 1em;
 }
 
-/*
-input.window {
-    line-height: 2.3em;
-    border: 1px solid #999;
-    font-size: 110%;
-    margin-top: 4px;
-    width: 16.5em;
-    text-align: right;
-}
-
-input.button {
-    width: 4.0em;
-    line-height: 2.667em;
-    text-align: center;
-    color: #000;
-    background-color: #ddd;
-    border: 1px solid #ccc;
-    font-size: 110%;
-    margin-top: 4px;
-}
-
-input.number {
-    background-color: #f6f6f6;
-    font-weight: bold;
-}
-
-input.operator {
-    background-color: #F1C9C7;
-    color: #000;
-    font-weight: normal;
-}
-*/
 input.window {
     width: 286px;
     height: 40px;

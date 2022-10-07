@@ -11,6 +11,13 @@
     height: 20rem;
 }
 
+.swiper-slide:hover {
+    background-position: center;
+    background-size: cover;
+    width: 27rem;
+    height: 23rem;
+}
+
 .info h5 {
     margin: 0;
     padding-top: 10px;
