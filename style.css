@@ -1502,9 +1502,9 @@ main > section:nth-child(9) > article{
 }
 
 body > main > section#Achievements > article>hr {
-    margin-left: 63px;
-    margin-top: -4px;
-    padding-left: 58px;
+    margin-left: -59px;
+    margin-top: 28px;
+    padding-left: 56px;
     color: red;
     border: 2px solid;
     width: 4%;
@@ -3375,163 +3375,36 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
 
     /*========================================== Assignment ==========================================================*/
+    main > section:nth-child(9) > article{
+        margin-left: 63px;
+        margin-top: -61px;
+        padding-left: 58px;
+    }
+
     #Asign1 {
         position: relative;
         font-size: 153%;
-        top: 10px;
-        left: 65px;
+        top: 28px;
+        left: -62px;
     }
 
-    main > section:nth-child(9) > section:nth-child(2) > section:first-child > hr {
-        margin-left: 63px;
-        margin-top: -4px;
+    body > main > section#Achievements > article>hr {
+        margin-left: -59px;
+        margin-top: 28px;
         padding-left: 58px;
         color: red;
         border: 2px solid;
         width: 4%;
     }
 
-    main > section:nth-child(9) > section:nth-child(2) > section:first-child > article {
-        /*background-color: #ff4334;*/
-        display: flex;
-        height: 535px;
+    #Achievements {
+        /*width: 100%;*/
+        /*height: 800px;*/
         position: relative;
-        top: 6px;
     }
 
-    #Asgn1 {
-        position: absolute;
-        top: 136px;
-        left: 166px;
-    }
-
-    #Asgn1 > img {
-        width: 200px;
-        height: 250px;
-    }
-
-    #Asgn1 > h3 {
+    section#Achievements {
         position: relative;
-        left: 32px;
-    }
-
-
-    #Asgn2 {
-        position: absolute;
-        top: 69px;
-        left: 500px;
-    }
-
-    #Asgn2 > img {
-        width: 294px;
-        height: 382px;
-    }
-
-    #Asgn2 > h3 {
-        position: relative;
-        left: 87px;
-    }
-
-
-    #Asgn3 {
-        position: absolute;
-        top: 136px;
-        right: 407px;
-    }
-
-    #Asgn3 > img {
-        height: 250px;
-        width: 200px;
-    }
-
-    #Asgn3 > h3 {
-        position: relative;
-        left: 35px;
-    }
-
-
-    #Asgn4 {
-        position: absolute;
-        top: 172px;
-        right: 144px;
-    }
-
-    #Asgn4 > img {
-        height: 190px;
-        width: 150px;
-    }
-
-    #Asgn4 > h3 {
-        position: relative;
-        left: 13px;
-    }
-
-
-    /*///////////nav css////////*/
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > hr {
-        color: #0a0909;
-        height: 2px;
-        background-color: black;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div {
-        position: absolute;
-        top: 502px;
-        width: 100%;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
-        position: relative;
-        top: 80px;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > section {
-        /* background-color: #ff4334; */
-        position: relative;
-        top: 44px;
-        left: 208px;
-        width: 81%;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > section > p {
-        position: relative;
-        top: 44px;
-        left: -159px;
-        width: 81%;
-        color: #40036e;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside {
-        right: -1031px;
-        position: relative;
-        top: 0px;
-        width: 93px;
-        height: 100%;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
-        width: 93px;
-        height: 100%;
-        position: absolute;
-        left: 307px;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
-        width: 93px;
-        height: 100%;
-        position: absolute;
-        left: 54px;;
-        top: -8px;
-        font-size: 118%;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
-        width: 93px;
-        height: 100%;
-        position: absolute;
-        left: 54px;
-        top: -3px;
-        font-size: 103%;
     }
 
 
@@ -5380,163 +5253,36 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
 
     /*========================================== Assignment ==========================================================*/
+    main > section:nth-child(9) > article{
+        margin-left: 63px;
+        margin-top: -61px;
+        padding-left: 58px;
+    }
+
     #Asign1 {
         position: relative;
         font-size: 153%;
-        top: 10px;
-        left: 65px;
+        top: 28px;
+        left: -62px;
     }
 
-    main > section:nth-child(9) > section:nth-child(2) > section:first-child > hr {
-        margin-left: 63px;
-        margin-top: -4px;
+    body > main > section#Achievements > article>hr {
+        margin-left: -59px;
+        margin-top: 28px;
         padding-left: 58px;
         color: red;
         border: 2px solid;
         width: 4%;
     }
 
-    main > section:nth-child(9) > section:nth-child(2) > section:first-child > article {
-        /*background-color: #ff4334;*/
-        display: flex;
-        height: 535px;
+    #Achievements {
+        /*width: 100%;*/
+        /*height: 800px;*/
         position: relative;
-        top: -12px;
     }
 
-    #Asgn1 {
-        position: absolute;
-        top: 110px;
-        left: 53px;
-    }
-
-    #Asgn1 > img {
-        width: 200px;
-        height: 250px;
-    }
-
-    #Asgn1 > h3 {
+    section#Achievements {
         position: relative;
-        left: 32px;
-    }
-
-
-    #Asgn2 {
-        position: absolute;
-        top: 57px;
-        left: 274px;
-    }
-
-    #Asgn2 > img {
-        width: 294px;
-        height: 382px;
-    }
-
-    #Asgn2 > h3 {
-        position: relative;
-        left: 87px;
-    }
-
-
-    #Asgn3 {
-        position: absolute;
-        top: 105px;
-        right: 234px;
-    }
-
-    #Asgn3 > img {
-        height: 250px;
-        width: 200px;
-    }
-
-    #Asgn3 > h3 {
-        position: relative;
-        left: 35px;
-    }
-
-
-    #Asgn4 {
-        position: absolute;
-        top: 135px;
-        right: 65px;
-    }
-
-    #Asgn4 > img {
-        height: 190px;
-        width: 150px;
-    }
-
-    #Asgn4 > h3 {
-        position: relative;
-        left: 13px;
-    }
-
-
-    /*///////////nav css////////*/
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > hr {
-        color: #0a0909;
-        height: 2px;
-        background-color: black;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div {
-        position: absolute;
-        top: 502px;
-        width: 100%;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
-        position: relative;
-        top: 80px;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > section {
-        /* background-color: #ff4334; */
-        position: relative;
-        top: 44px;
-        left: 208px;
-        width: 81%;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > section > p {
-        position: relative;
-        top: 44px;
-        left: -159px;
-        width: 81%;
-        color: #40036e;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside {
-        right: -1031px;
-        position: relative;
-        top: 0px;
-        width: 93px;
-        height: 100%;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
-        width: 93px;
-        height: 100%;
-        position: absolute;
-        left: 307px;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
-        width: 93px;
-        height: 100%;
-        position: absolute;
-        left: 54px;;
-        top: -8px;
-        font-size: 118%;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
-        width: 93px;
-        height: 100%;
-        position: absolute;
-        left: 54px;
-        top: -3px;
-        font-size: 103%;
     }
 
 
