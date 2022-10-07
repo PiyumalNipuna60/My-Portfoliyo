@@ -1582,6 +1582,7 @@ main > section:nth-child(9) > section:nth-child(2) > section:first-child > artic
 
 
 /*///////////nav css////////*/
+
 main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > hr {
     color: #0a0909;
     height: 2px;
