@@ -186,3 +186,12 @@ input.button:active {
     touch-action: manipulation;
 }
 
+div>button{
+    width: 23%;
+    height: 4rem;
+}
+
+div>button:hover{
+    background-color: #ff4334;
+}
+
