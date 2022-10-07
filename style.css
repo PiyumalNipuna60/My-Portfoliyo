@@ -1570,83 +1570,97 @@ main > section:nth-child(9) > section:nth-child(2) > section:first-child > artic
     right: 144px;
 }
 
-#Asgn4 > img {
-    height: 190px;
-    width: 150px;
-}
-
-#Asgn4 > h3 {
-    position: relative;
-    left: 13px;
-}
-
 
 /*///////////nav css////////*/
-
-main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > hr {
-    color: #0a0909;
-    height: 2px;
-    background-color: black;
-}
-
-main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div {
-    position: absolute;
-    top: 502px;
+#Achievements {
     width: 100%;
-}
-
-main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
+    height: 800px;
     position: relative;
-    top: 80px;
 }
 
-main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > section {
-    /* background-color: #ff4334; */
+section#Achievements {
     position: relative;
-    top: 44px;
-    left: 208px;
-    width: 81%;
 }
 
-main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > section > p {
-    position: relative;
-    top: 44px;
-    left: -159px;
-    width: 81%;
-    color: #40036e;
-}
-
-main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside {
-    right: -1031px;
-    position: relative;
-    top: 0px;
-    width: 93px;
-    height: 100%;
-}
-
-main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
-    width: 93px;
-    height: 100%;
+/** Main - Achievements About Header */
+body > main > section#Achievements > article h4 {
     position: absolute;
-    left: 307px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
 }
 
-main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
-    width: 93px;
-    height: 100%;
+body > main > section#Achievements > article > h1 {
     position: absolute;
-    left: 54px;;
-    top: -8px;
-    font-size: 118%;
+    top: 140px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
 }
 
-main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
-    width: 93px;
-    height: 100%;
+/** Main - Achievements Header Underline */
+body > main > section#Achievements > article > div:nth-child(3) {
+    width: 135px;
+    height: 7px;
+    background: #2ED573;
+    position: relative;
+    left: 41%;
+    top: 195px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+body > main > section#Achievements > article > div:nth-child(4) {
+    width: 100px;
+    height: 7px;
+    position: relative;
+    background: #2ED573;
+    margin-top: 0.5em;
+    left: 41%;
+    top: 195px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+/** Main - Achievements Main Image */
+body > main > section#Achievements > section div#images > img:nth-child(1) {
     position: absolute;
-    left: 54px;
-    top: -3px;
-    font-size: 103%;
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    top: 0;
+    opacity: 30%;
+}
+
+/** Main - Achievements Main Vector */
+body > main > section#Achievements > section div#images > img:nth-child(2) {
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    left: 0;
+    right: 65px;
+    margin: auto;
+}
+
+/** Main - Achievements Star Vector 1 */
+body > main > section#Achievements > section div#images > img:nth-child(3) {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    margin: auto;
+}
+
+/** Main - Achievements Star Vector 2 */
+body > main > section#Achievements > section div#images > img:nth-child(4) {
+    position: absolute;
+    bottom: 70px;
+    right: 100px;
+    margin: auto;
 }
 
 
