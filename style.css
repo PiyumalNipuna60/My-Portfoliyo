@@ -7149,169 +7149,36 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
 
     /*========================================== Assignment ==========================================================*/
+    main > section:nth-child(9) > article{
+        margin-left: 63px;
+        margin-top: -61px;
+        padding-left: 58px;
+    }
+
     #Asign1 {
         position: relative;
         font-size: 153%;
-        top: 10px;
-        left: 65px;
+        top: 28px;
+        left: -62px;
     }
 
-    main > section:nth-child(9) > section:nth-child(2) > section:first-child > hr {
-        margin-left: 63px;
-        margin-top: -4px;
+    body > main > section#Achievements > article>hr {
+        margin-left: -59px;
+        margin-top: 28px;
         padding-left: 58px;
         color: red;
         border: 2px solid;
         width: 4%;
     }
 
-    main > section:nth-child(9) > section:nth-child(2) > section:first-child > article {
-        /*background-color: #ff4334;*/
-        display: flex;
-        height: 535px;
+    #Achievements {
+        /*width: 100%;*/
+        /*height: 800px;*/
         position: relative;
-        top: -12px;
     }
 
-    #Asgn1 {
-        position: absolute;
-        top: 22%;
-        left: 1%;
-    }
-
-    #Asgn1 > img {
-        width: 126%;
-        height: 411%;
-        position: absolute;
-        left: 10%;
-    }
-
-    #Asgn1 > h3 {
+    section#Achievements {
         position: relative;
-        left: 21%;
-        top: 235px;
-    }
-
-
-    #Asgn2 {
-        position: absolute;
-        top: 16%;
-        left: 24%;
-    }
-
-    #Asgn2 > img {
-        height: 300px;
-        width: 211px;
-    }
-
-    #Asgn2 > h3 {
-        position: relative;
-        left: 21%;
-
-    }
-
-
-    #Asgn3 {
-        position: absolute;
-        top: 21%;
-        right: 25%;
-    }
-
-    #Asgn3 > img {
-        height: 247px;
-        width: 174px;
-    }
-
-    #Asgn3 > h3 {
-        position: relative;
-        left: 32px;
-        font-size: 86%;
-    }
-
-
-    #Asgn4 {
-        position: absolute;
-        top: 28%;
-        right: 6%;
-    }
-
-    #Asgn4 > img {
-        height: 190px;
-        width: 142px;
-    }
-
-    #Asgn4 > h3 {
-        position: relative;
-        left: 20%;
-        font-size: 65%;
-    }
-
-
-    /*///////////nav css////////*/
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > hr {
-        color: #0a0909;
-        height: 2px;
-        background-color: black;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div {
-        position: absolute;
-        top: 502px;
-        width: 100%;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
-        position: relative;
-        top: 80px;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > section {
-        /* background-color: #ff4334; */
-        position: relative;
-        top: 44px;
-        left: 208px;
-        width: 81%;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > section > p {
-        position: relative;
-        top: 44px;
-        left: -159px;
-        width: 81%;
-        color: #40036e;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside {
-        right: -1031px;
-        position: relative;
-        top: 0px;
-        width: 93px;
-        height: 100%;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
-        width: 93px;
-        height: 100%;
-        position: absolute;
-        left: 307px;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
-        width: 93px;
-        height: 100%;
-        position: absolute;
-        left: 54px;;
-        top: -8px;
-        font-size: 118%;
-    }
-
-    main > section:nth-child(9) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
-        width: 93px;
-        height: 100%;
-        position: absolute;
-        left: 54px;
-        top: -3px;
-        font-size: 103%;
     }
 
 

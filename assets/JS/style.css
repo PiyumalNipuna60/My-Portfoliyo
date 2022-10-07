@@ -7,8 +7,8 @@
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 500px;
-    height: 350px;
+    width: 24rem;
+    height: 20rem;
 }
 
 .info h5 {
