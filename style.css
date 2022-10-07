@@ -1496,7 +1496,7 @@ main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div 
     left: 65px;
 }
 
-main > section:nth-child(9) > section:nth-child(2) > section:first-child > hr {
+#Asign1 > hr {
     margin-left: 63px;
     margin-top: -4px;
     padding-left: 58px;
@@ -1513,65 +1513,7 @@ main > section:nth-child(9) > section:nth-child(2) > section:first-child > artic
     top: 6px;
 }
 
-#Asgn1 {
-    position: absolute;
-    top: 136px;
-    left: 166px;
-}
 
-#Asgn1 > img {
-    width: 200px;
-    height: 250px;
-}
-
-#Asgn1 > h3 {
-    position: relative;
-    left: 32px;
-}
-
-
-#Asgn2 {
-    position: absolute;
-    top: 69px;
-    left: 500px;
-}
-
-#Asgn2 > img {
-    width: 294px;
-    height: 382px;
-}
-
-#Asgn2 > h3 {
-    position: relative;
-    left: 87px;
-}
-
-
-#Asgn3 {
-    position: absolute;
-    top: 136px;
-    right: 407px;
-}
-
-#Asgn3 > img {
-    height: 250px;
-    width: 200px;
-}
-
-#Asgn3 > h3 {
-    position: relative;
-    left: 35px;
-}
-
-
-#Asgn4 {
-    position: absolute;
-    top: 172px;
-    right: 144px;
-}
-
-
-/*///////////nav css////////*/
 #Achievements {
     width: 100%;
     height: 800px;
