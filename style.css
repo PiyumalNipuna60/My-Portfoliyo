@@ -58,9 +58,9 @@ main > section:nth-child(4) {
 main > section:nth-child(5) {
     background-color: greenyellow;
     /*background-repeat: no-repeat, repeat;*/
-    /*background-image: url(assets/image/pic/CxrL.gif);*/
+    /*background-image: url(assets/image/pic/SL-043021-42650-28.jpg);*/
     /*background-size: 100% 100%;*/
-    /* background-size: auto; */
+    /* background-size: auto;*/
     position: relative;
     top: -126px;
     height: 99vh;
@@ -70,7 +70,7 @@ main > section:nth-child(5) {
 main > section:nth-child(6) {
     /*background-color: yellow;*/
     background-repeat: no-repeat, repeat;
-    background-image: url("assets/image/pic/image_processing20220207-786-j68tnb.gif");
+    background-image: url("assets/image/pic/SL_042620_30310_36.jpg");
     background-size: 100% 100%;
     position: relative;
     top: -143px;
@@ -1947,7 +1947,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(6) {
         /*background-color: yellow;*/
         background-repeat: no-repeat, repeat;
-        background-image: url("assets/image/pic/image_processing20220207-786-j68tnb.gif");
+        background-image: url("assets/image/pic/SL_042620_30310_36.jpg");
         background-size: 100% 100%;
         position: relative;
         top: -143px;
@@ -3808,7 +3808,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(6) {
         /* background-color: yellow; */
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/image_processing20220207-786-j68tnb.gif);
+        background-image: url("assets/image/pic/SL_042620_30310_36.jpg");
         background-size: 100% 100%;
         position: relative;
         top: -143px;
@@ -5692,7 +5692,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(6) {
         /* background-color: yellow; */
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/image_processing20220207-786-j68tnb.gif);
+        background-image: url("assets/image/pic/SL_042620_30310_36.jpg");
         background-size: 100% 100%;
         position: relative;
         top: -143px;
