@@ -16,6 +16,7 @@
     background-size: cover;
     width: 27rem;
     height: 23rem;
+    border: 2px solid red;
 }
 
 .info h5 {
