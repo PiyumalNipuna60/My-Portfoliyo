@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="../../../../assets/fonts/css/all.min.css">
+    <link href="../../../../assets/image/pic/NP.png" rel="icon">
 
     <style>
         * {
@@ -45,6 +46,16 @@
             color: rgba(46, 41, 41, 0.96);
         }
 
+        #header_top > nav > ul > li:hover {
+            color: red;
+        }
+
+        #header_top > nav > ul > li > a:hover {
+            color: red;
+            font-weight: bold;
+            /*font-size: 150%;*/
+        }
+
         #side {
             padding-top: 16px;
             margin-top: 65px;
@@ -72,6 +83,20 @@
             color: white;
         }
 
+        header#side > nav.navbar > ul > li > a{
+            color: white;
+        }
+
+        header#side > nav.navbar > ul > li:hover {
+            color: red;
+        }
+
+        header#side > nav.navbar > ul > li > a:hover {
+            color: red;
+            font-weight: bold;
+            font-size: 150%;
+        }
+
         .home {
             margin: auto;
             padding: 0;
@@ -79,6 +104,7 @@
             align-items: center;
             flex-wrap: wrap;
             gap: 1.5rem;
+            border: 2px solid black;
         }
 
         section > :nth-child(1) {
@@ -127,10 +153,12 @@
     <img alt="Logo" src="assets/favicon.png">
     <nav>
         <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Contact</li>
-            <li>About Us</li>
+            <li><i class="fa-solid fa-house"></i><a href="#"> Home</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href="#"> About</a></li>
+            <li><i class="fa-solid fa-pen"></i><a href="#"> Skill</a></li>
+            <li><i class="fa-solid fa-clipboard"></i><a href="#"> Project</a></li>
+            <li><i class="fa-solid fa-earth-asia"></i><a href="#"> Service</a></li>
+            <li><i class="fa-solid fa-address-book"></i><a href="#"> Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -138,10 +166,12 @@
 <header id="side">
     <nav class="navbar">
         <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Contact Us</li>
-            <li>About US</li>
+            <li><i class="fa-solid fa-house"></i><a href="#"><a> </a>Home</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href="#"> About</a></li>
+            <li><i class="fa-solid fa-pen"></i><a href="#">Skill</a></li>
+            <li><i class="fa-solid fa-clipboard"></i><a href="#">Project</a></li>
+            <li><i class="fa-solid fa-earth-asia"></i><a href="#">Service</a></li>
+            <li><i class="fa-solid fa-address-book"></i><a href="#">Contact</a></li>
         </ul>
     </nav>
 </header>
