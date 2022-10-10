@@ -423,6 +423,12 @@
         }
     });
 
+    $("#OrderItem,#OrderICode,#OrderIName,#OrderIPrice,#OrderIQty,#OrderIOQty").on('keydown', function (event) {
+        if (event.key == "Tab") {
+            event.preventDefault();
+        }
+    });
+
 </script>
 </body>
 </html>
