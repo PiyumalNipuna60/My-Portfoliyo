@@ -297,7 +297,7 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header bg-info">
-                                <h5 class="modal-title " id="exampleModalLabel3">Modify Customer</h5>
+                                <h5 class="modal-title " id="exampleModalLabel3">Load All Customer</h5>
                                 <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
                                         type="button"></button>
                             </div>
@@ -459,7 +459,7 @@
         }
     }
 
-    $("#inputCusId,#inputCusName,#inputCusAddress,#inputCusContact").on('keydown', function (event) {
+    $("#inputCusId,#inputCusName,#inputCusAddress,#inputCusContact,#inputCusId2,#inputCusName2,#inputCusAddress2,#inputCusContact2").on('keydown', function (event) {
         if (event.key == "Tab") {
             event.preventDefault();
         }
@@ -487,6 +487,11 @@
     $("#inputCusContact").on('keydown', function (event) {
         $("#btnSave").focus();
     });
+
+    $("#inputCusId2").on('keydown', function (event) {
+        $("#inputCusName2").focus();
+    });
+
 
 </script>
 
