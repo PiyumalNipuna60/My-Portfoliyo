@@ -387,6 +387,17 @@
         }
     });
 
+    $("#OederOID").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderCustomer").focus();
+        }
+    });
+
+    $("#OrderCustomer").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderCusName").focus();
+        }
+    });
 
 </script>
 </body>
