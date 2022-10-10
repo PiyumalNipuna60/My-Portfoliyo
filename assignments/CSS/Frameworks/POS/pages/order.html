@@ -405,7 +405,11 @@
         }
     });
 
-
+    $("#OrderDate").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderCusID").focus();
+        }
+    });
 
 </script>
 </body>
