@@ -5,6 +5,10 @@
     <title>pos-system-Frameworks/order</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="../bootstraps/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        #OederOID {
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -376,6 +380,14 @@
             $("#orderTable").append(row);
         }
     }
+
+    $("#OederOID,#OrderCustomer,#OrderCusName,#OrderDate,#OrderCusID,#OrderCusSalary,#OrderCusAddress").on('keydown', function (event) {
+        if (event.key == "Tab") {
+            event.preventDefault();
+        }
+    });
+
+
 </script>
 </body>
 </html>
