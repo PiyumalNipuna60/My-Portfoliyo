@@ -459,6 +459,35 @@
         }
     }
 
+    $("#inputCusId,#inputCusName,#inputCusAddress,#inputCusContact").on('keydown', function (event) {
+        if (event.key == "Tab") {
+            event.preventDefault();
+        }
+    });
+
+    $("#inputCusId").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#inputCusName").focus();
+        }
+    })
+
+    $("#inputCusName").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#inputCusAddress").focus();
+        }
+    });
+
+
+    $("#inputCusAddress").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#inputCusContact").focus();
+        }
+    });
+
+    $("#inputCusContact").on('keydown', function (event) {
+        $("#btnSave").focus();
+    });
+
 </script>
 
 </body>
