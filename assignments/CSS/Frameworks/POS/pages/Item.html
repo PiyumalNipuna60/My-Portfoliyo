@@ -226,7 +226,7 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header bg-info">
-                                    <h5 class="modal-title " id="exampleModalLabel2">Add Item</h5>
+                                    <h5 class="modal-title " id="exampleModalLabel2">Modify Item</h5>
                                     <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
                                             type="button"></button>
                                 </div>
@@ -277,7 +277,7 @@
                                 <div class="modal-footer">
                                     <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close
                                     </button>
-                                    <button class="btn btn-primary" type="button">Save changes</button>
+                                    <button class="btn btn-primary" type="button" id="btnSave2">Save changes</button>
                                 </div>
                             </div>
                         </div>
@@ -455,7 +455,12 @@
         }
     }
 
-    $("#");
+
+    $("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#inputItemName2,#inputItemQts2,#inputItemPrice2").on('keydown', function (event) {
+        if (event.key == 'Tab') {
+            event.preventDefault();
+        }
+    });
 </script>
 </body>
 </html>
