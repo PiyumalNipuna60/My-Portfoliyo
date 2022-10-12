@@ -55,6 +55,11 @@ $("#inputCusAddress").on('keydown', function (event) {
     }
 });
 
+$("#inputCusContact").on('keydown', function (event) {
+    if (event.key=="Enter"){
+        $("#cusBtnSave").focus();
+    }
+});
 
 
 
