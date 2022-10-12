@@ -18,7 +18,17 @@ $("#cusBtnSave").click(function () {
     getAllCustomer();
 });
 
+function getAllCustomer() {
+    $("#tblCustomer").empty();
 
+    for (var customers of customer) {
+        console.log(customers);
+
+        var row = `<tr><td>${customers.id}</td><td>${customers.name}</td><td>${customers.address}</td><td>${customers.contact}</td></tr>`;
+
+        $("#tblCustomer").append(row);
+    }
+}
 
 
 
