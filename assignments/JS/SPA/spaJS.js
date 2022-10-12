@@ -61,7 +61,11 @@ $("#inputCusContact").on('keydown', function (event) {
     }
 });
 
-
+$("#inputCusId2").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#inputCusName2").focus();
+    }
+});
 
 
 
