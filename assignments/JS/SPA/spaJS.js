@@ -36,6 +36,11 @@ $("#inputCusId,#inputCusName,#inputCusAddress,#inputCusContact,#inputCusId2,#inp
     }
 });
 
+$("#inputCusId").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#inputCusName").focus();
+    }
+})
 
 
 
