@@ -49,6 +49,12 @@ $("#inputCusName").on('keydown', function (event) {
 });
 
 
+$("#inputCusAddress").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#inputCusContact").focus();
+    }
+});
+
 
 
 
