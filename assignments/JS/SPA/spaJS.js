@@ -30,6 +30,11 @@ function getAllCustomer() {
     }
 }
 
+$("#inputCusId,#inputCusName,#inputCusAddress,#inputCusContact,#inputCusId2,#inputCusName2,#inputCusAddress2,#inputCusContact2").on('keydown', function (event) {
+    if (event.key == "Tab") {
+        event.preventDefault();
+    }
+});
 
 
 
