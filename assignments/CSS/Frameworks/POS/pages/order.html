@@ -254,7 +254,7 @@
                 </div>
 
                 <div class="position-relative">
-                    <button class="btn btn-danger mb-2 rounded-pill" style="margin-left: 64%; width: 32%" type="button">
+                    <button class="btn btn-danger mb-2 rounded-pill" style="margin-left: 64%; width: 32%" type="button" id="btnPurchase">
                         Purchase
                     </button>
                 </div>
@@ -467,7 +467,11 @@
         }
     });
 
-
+    $("#OrderCash,#OrderDiscount,#OrderBalance,#btnPurchase").on('keydown', function (event) {
+        if (event.key == "Tab") {
+            event.preventDefault();
+        }
+    });
 
 
 
