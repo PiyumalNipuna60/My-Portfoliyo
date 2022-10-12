@@ -12,6 +12,7 @@
 }
 
 .swiper-slide:hover {
+    position: relative;
     background-position: center;
     background-size: cover;
     width: 27rem;
