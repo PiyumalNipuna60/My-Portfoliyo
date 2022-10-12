@@ -79,3 +79,8 @@ $("#inputCusAddress2").on('keydown', function (event) {
     }
 });
 
+$("#inputCusContact2").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#cusBtnSave2").focus();
+    }
+});
