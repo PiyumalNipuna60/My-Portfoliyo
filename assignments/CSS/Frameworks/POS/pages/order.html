@@ -425,7 +425,7 @@
 
     /* -----------*/
 
-    $("#OrderItem,#OrderICode,#OrderIName,#OrderIPrice,#OrderIQty,#OrderIOQty").on('keydown', function (event) {
+    $("#OrderItem,#OrderICode,#OrderIName,#OrderIPrice,#OrderIQty,#OrderIOQty,#btnAddOrder").on('keydown', function (event) {
         if (event.key == "Tab") {
             event.preventDefault();
         }
@@ -460,6 +460,15 @@
             $("#OrderIOQty").focus();
         }
     });
+
+    $("#OrderIOQty").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#btnAddOrder").focus();
+        }
+    });
+
+
+
 
 
 </script>
