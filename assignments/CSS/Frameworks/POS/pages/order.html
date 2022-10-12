@@ -443,6 +443,11 @@
         }
     });
 
+    $("#OrderIName").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderIPrice").focus();
+        }
+    });
 </script>
 </body>
 </html>
