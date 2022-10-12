@@ -42,6 +42,11 @@ $("#inputCusId").on('keydown', function (event) {
     }
 })
 
+$("#inputCusName").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#inputCusAddress").focus();
+    }
+});
 
 
 
