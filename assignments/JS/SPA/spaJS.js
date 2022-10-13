@@ -117,3 +117,9 @@ function loadTable() {
     }
 }
 
+$("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#inputItemName2,#inputItemQts2,#inputItemPrice2").on('keydown', function (event) {
+    if (event.key == 'Tab') {
+        event.preventDefault();
+    }
+});
+
