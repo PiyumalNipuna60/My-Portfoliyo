@@ -575,7 +575,7 @@
 
 
 
-    /*----------search ------------*/
+    /*----------search (eliye ekata)------------*/
 
     $("#btnSearchCus").on("click",function () {
         SearchCusFunction();
@@ -599,11 +599,37 @@
         }
     }
 
-
     function setTextfieldValues(id, name, address, contact) {
         $("#inputId").val(id);
         $("#inputName").val(name);
         $("#inputContact").val(contact);
+    }
+
+
+    /*----------search (in search ekata)------------*/
+    $("#btnSearch2").on("click",function () {
+        SearchCusFunction2();
+    });
+
+
+
+    function SearchCusFunction2(){
+        let typedId = $("#inputCusId2").val();
+        let customer = searchCustomer(typedId);
+        if (customer != null) {
+            setTextfieldValues2(customer.id, customer.name, customer.address, customer.contact);
+        } else {
+            alert("There is no cusotmer available for that " + typedId);
+            setTextfieldValues2("", "", "", "");
+        }
+    }
+
+
+    function setTextfieldValues2(id, name, address, contact) {
+        $("#inputCusId2").val(id);
+        $("#inputCusName2").val(name);
+        $("#inputCusAddress2").val(address);
+        $("#inputCusContact2").val(contact);
     }
 
 
@@ -619,7 +645,7 @@
 
    /*-----------Delete Customer----------------*/
     $("#btnDelete2").on("click",function () {
-        let deleteID = $("#txtCustomerID").val();
+        let deleteID = $("#inputCusId2").val();
 
         let option = confirm("Do you really want to delete customer id :" + deleteID);
         if (option){
@@ -635,8 +661,9 @@
     function deleteCustomer(customerID) {
         let customer = searchCustomer(customerID);
         if (customer != null) {
-            let indexNumber = customers.indexOf(customer);
-            customers.splice(indexNumber, 1);
+            let indexNumber = customer.indexOf(customer);
+            customer.splice(indexNumber, 1);
+            getAllCustomer();
             loadAllCustomers();
             return true;
         } else {
