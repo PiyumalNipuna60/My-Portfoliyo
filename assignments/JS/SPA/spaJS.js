@@ -149,4 +149,10 @@ $("#inputItemPrice").on('keydown',function (event) {
 
 /*----------------*/
 
+$("#inputItemCode2").on('keydown',function (event) {
+    if (event.key=="Enter"){
+        $("#inputItemName2").focus();
+    }
+});
+
 
