@@ -19,7 +19,7 @@ $("#cusBtnSave").click(function () {
 });
 
 function getAllCustomer() {
-    $("#tblCustomer").empty();
+    // $("#tblCustomer").empty();
 
     for (var customers of customer) {
         console.log(customers);
@@ -84,3 +84,28 @@ $("#inputCusContact2").on('keydown', function (event) {
         $("#cusBtnSave2").focus();
     }
 });
+
+
+
+
+/*=============Item---------------*/
+
+var item = [];
+$("#btnSave").click(function () {
+    let itemCode = $("#inputItemCode").val();
+    let itemName = $("#inputItemName").val();
+    let itemQty = $("#inputItemQts").val();
+    let itemPrice = $("#inputItemPrice").val();
+
+    var itemObject = {
+        code: itemCode,
+        name: itemName,
+        qty: itemQty,
+        price: itemPrice
+    }
+
+    item.push(itemObject);
+    loadTable();
+});
+
+
