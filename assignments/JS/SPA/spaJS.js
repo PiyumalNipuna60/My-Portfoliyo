@@ -109,7 +109,7 @@ $("#inputCusName2").on('keydown', function (event) {
 
 $("#inputCusAddress2").on('keydown', function (event) {
     if (event.key == "Enter" && check(cusAddressRegEx, $("#inputCusAddress"))) {
-        focusText($("#inputCusContact"));
+        focusText($("#inputCusContact2"));
     }
 });
 

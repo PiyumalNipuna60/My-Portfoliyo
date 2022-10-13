@@ -320,45 +320,40 @@
                                         <th>Customer Salary</th>
                                     </tr>
                                     </thead>
-                                    <tbdoy>
-                                        <tr>
-                                            <td>C001</td>
-                                            <td>Dasun</td>
-                                            <td>0754585658</td>
-                                            <td>200000</td>
-                                        </tr>
-                                        <tr>
-                                            <td>C002</td>
+                                    <tbody id="tblAllCustomer2">
+
+<!--                                        <tr>
+                                            <td>C00-002</td>
                                             <td>piyumal</td>
                                             <td>0745845785</td>
                                             <td>100000</td>
                                         </tr>
                                         <tr>
-                                            <td>C003</td>
+                                            <td>C00-003</td>
                                             <td>Niuna</td>
                                             <td>0767554309</td>
                                             <td>30000</td>
                                         </tr>
                                         <tr>
-                                            <td>C004</td>
+                                            <td>C00-004</td>
                                             <td>sadun</td>
                                             <td>0710425254</td>
                                             <td>200000</td>
                                         </tr>
                                         <tr>
-                                            <td>C005</td>
+                                            <td>C00-005</td>
                                             <td>tharaka</td>
                                             <td>0714525458</td>
                                             <td>100000</td>
                                         </tr>
                                         <tr>
-                                            <td>C006</td>
+                                            <td>C00-006</td>
                                             <td>Malith</td>
                                             <td>0742545854</td>
                                             <td>30000</td>
-                                        </tr>
+                                        </tr>-->
 
-                                    </tbdoy>
+                                    </tbody>
                                 </table>
 
                             </div>
@@ -370,7 +365,7 @@
                         </div>
                     </div>
                 </div>
-                <!--//////////////&ndash;&gt;-->
+
             </div>
 
             </div>
@@ -389,42 +384,42 @@
             </tr>
             </thead>
             <tbody id="tblCustomer">
-            <tr>
-                <td>C001</td>
+<!--            <tr>
+                <td>C00-001</td>
                 <td>Dasun</td>
                 <td>0754585658</td>
                 <td>200000</td>
             </tr>
             <tr>
-                <td>C002</td>
+                <td>C00-002</td>
                 <td>piyumal</td>
                 <td>0745845785</td>
                 <td>100000</td>
             </tr>
             <tr>
-                <td>C003</td>
+                <td>C00-003</td>
                 <td>Niuna</td>
                 <td>0767554309</td>
                 <td>30000</td>
             </tr>
             <tr>
-                <td>C004</td>
+                <td>C00-004</td>
                 <td>sadun</td>
                 <td>0710425254</td>
                 <td>200000</td>
             </tr>
             <tr>
-                <td>C005</td>
+                <td>C00-005</td>
                 <td>tharaka</td>
                 <td>0714525458</td>
                 <td>100000</td>
             </tr>
             <tr>
-                <td>C006</td>
+                <td>C00-006</td>
                 <td>Malith</td>
                 <td>0742545854</td>
                 <td>30000</td>
-            </tr>
+            </tr>-->
             </tbody>
         </table>
     </section>
@@ -455,10 +450,11 @@
         customer.push(customerObject);
         console.log(customer);
         getAllCustomer();
+        loadAllCustomers();
         clearAllTexts();
     });
 
-    getPreviousCustomersFromTable();
+/*    getPreviousCustomersFromTable();
     function getPreviousCustomersFromTable() {
         // tabel customer
 
@@ -472,6 +468,19 @@
 
         console.log(customerObject2)
         customer.push()
+    }*/
+
+    /*------------gel All Customer--------------*/
+    loadAllCustomers();
+    function loadAllCustomers() {
+        // $("#tblAllCustomer2").empty();
+
+        for (var customers of customer) {
+            var row = `<tr><td>${customers.id}</td><td>${customers.name}</td><td>${customers.address}</td><td>${customers.contact}</td></tr>`;
+
+            //then add it to the table body of customer table
+            $("#tblAllCustomer2").append(row);
+        }
     }
 
     function getAllCustomer() {
@@ -485,6 +494,8 @@
             $("#tblCustomer").append(row);
         }
     }
+    /*--------------------------*/
+
 
     $("#inputCusId,#inputCusName,#inputCusAddress,#inputCusContact,#inputCusId2,#inputCusName2,#inputCusAddress2,#inputCusContact2").on('keydown', function (event) {
         if (event.key == "Tab") {
@@ -562,6 +573,9 @@
     });
 
 
+
+    /*----------search ------------*/
+
     // inputId,inputName,inputContact,btnSearchCus
     $("#btnSearchCus").on("click",function () {
         // let customerID = $("#inputId").val();
@@ -577,13 +591,43 @@
 
     });
 
+    $("#inputId").on('keyup', function (event) {
+        if (event.code == "Enter") {
+            let typedId = $("#inputId").val();
+            let customer = searchCustomer(typedId);
+            if (customer != null) {
+                setTextfieldValues(customer.id, customer.name, customer.address, customer.contact);
+            } else {
+                alert("There is no cusotmer available for that " + typedId);
+                setTextfieldValues("", "", "", "");
+            }
+        }
+    });
+
+
+    function setTextfieldValues(id, name, address, contact) {
+        $("#inputId").val(id);
+        $("#inputName").val(name);
+        $("#inputContact").val(contact);
+    }
+
+
+    function searchCustomer(cusID) {
+        for (let customers of customer) {
+            if (customers.id == cusID) {
+                return customers;
+            }
+        }
+        return null;
+    }
+
 
 
 
 /*=========validation part================*/
 
     $("#inputCusId").focus();
-    $("#inputCusId").focus();
+    $("#inputCusId2").focus();
 
     // customer reguler expressions
     const cusIDRegEx = /^(C00-)[0-9]{1,3}$/;
@@ -664,21 +708,7 @@
         txtField.focus();
     }
 
-    // function setButtonState(value){
-    //     if (value>0){
-    //         $("#btnSave").attr('disabled',true);
-    //     }else{
-    //         $("#btnSave").attr('disabled',false);
-    //     }
-    // }
-    //
-    // function setButtonState2(value){
-    //     if (value>0){
-    //         $("#btnSave2").attr('disabled',true);
-    //     }else{
-    //         $("#btnSave2").attr('disabled',false);
-    //     }
-    // }
+
     function clearAllTexts() {
         $("#inputCusId").focus();
         $("#inputCusId,#inputCusName,#inputCusAddress,#inputCusContact").val("");
