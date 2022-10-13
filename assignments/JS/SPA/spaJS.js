@@ -129,3 +129,9 @@ $("#inputItemCode").on('keydown',function (event) {
     }
 });
 
+$("#inputItemName").on('keydown',function (event) {
+    if (event.key=="Enter"){
+        $("#inputItemQts").focus();
+    }
+});
+
