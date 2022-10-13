@@ -287,7 +287,7 @@
                                     Close
                                 </button>
                                 <button class="btn btn-primary" id="btnSave2" type="button">Save changes</button>
-                                <button class="btn btn-primary" id="btnDelete2" type="button">Delete Customer</button>
+                                <button class="btn btn-warning" id="btnDelete2" type="button">Delete Customer</button>
                             </div>
                         </div>
                     </div>
@@ -578,17 +578,17 @@
     /*----------search ------------*/
 
     $("#btnSearchCus").on("click",function () {
-        SerchCusFuntion();
+        SearchCusFunction();
     });
 
     $("#inputId").on('keyup', function (event) {
         if (event.code == "Enter") {
-            SerchCusFuntion();
+            SearchCusFunction();
         }
     });
 
 
-    function SerchCusFuntion(){
+    function SearchCusFunction(){
         let typedId = $("#inputId").val();
         let customer = searchCustomer(typedId);
         if (customer != null) {
@@ -616,6 +616,35 @@
         return null;
     }
 
+
+   /*-----------Delete Customer----------------*/
+    $("#btnDelete2").on("click",function () {
+        let deleteID = $("#txtCustomerID").val();
+
+        let option = confirm("Do you really want to delete customer id :" + deleteID);
+        if (option){
+            if (deleteCustomer(deleteID)) {
+                alert("Customer Successfully Deleted..");
+                setTextfieldValues("", "", "", "");
+            } else {
+                alert("No such customer to delete. please check the id");
+            }
+        }
+    });
+
+    function deleteCustomer(customerID) {
+        let customer = searchCustomer(customerID);
+        if (customer != null) {
+            let indexNumber = customers.indexOf(customer);
+            customers.splice(indexNumber, 1);
+            loadAllCustomers();
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    // btnDelete2
 
 
 
@@ -709,6 +738,11 @@
         $("#inputCusId,#inputCusName,#inputCusAddress,#inputCusContact").val("");
         checkValidity();
     }
+
+
+
+
+
 
 
 
