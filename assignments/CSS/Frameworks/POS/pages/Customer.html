@@ -474,7 +474,7 @@
     /*------------gel All Customer--------------*/
     loadAllCustomers();
     function loadAllCustomers() {
-        // $("#tblAllCustomer2").empty();
+        $("#tblAllCustomer2").empty();
 
         for (var customers of customer) {
             var row = `<tr><td>${customers.id}</td><td>${customers.name}</td><td>${customers.address}</td><td>${customers.contact}</td></tr>`;
@@ -485,7 +485,7 @@
     }
 
     function getAllCustomer() {
-        // $("#tblCustomer").empty();
+        $("#tblCustomer").empty();
 
         for (var customers of customer) {
             console.log(customers);
@@ -651,7 +651,7 @@
         if (option){
             if (deleteCustomer(deleteID)) {
                 alert("Customer Successfully Deleted..");
-                setTextfieldValues("", "", "", "");
+                setTextfieldValues2("", "", "", "");
             } else {
                 alert("No such customer to delete. please check the id");
             }
@@ -659,9 +659,9 @@
     });
 
     function deleteCustomer(customerID) {
-        let customer = searchCustomer(customerID);
-        if (customer != null) {
-            let indexNumber = customer.indexOf(customer);
+        let customers = searchCustomer(customerID);
+        if (customers != null) {
+            let indexNumber = customer.indexOf(customers);
             customer.splice(indexNumber, 1);
             getAllCustomer();
             loadAllCustomers();
