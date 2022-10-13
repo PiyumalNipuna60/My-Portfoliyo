@@ -123,3 +123,9 @@ $("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#
     }
 });
 
+$("#inputItemCode").on('keydown',function (event) {
+    if (event.key=="Enter"){
+        $("#inputItemName").focus();
+    }
+});
+
