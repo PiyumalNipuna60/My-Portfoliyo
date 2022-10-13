@@ -135,3 +135,9 @@ $("#inputItemName").on('keydown',function (event) {
     }
 });
 
+$("#inputItemQts").on('keydown',function (event) {
+    if (event.key=="Enter"){
+        $("#inputItemPrice").focus();
+    }
+});
+
