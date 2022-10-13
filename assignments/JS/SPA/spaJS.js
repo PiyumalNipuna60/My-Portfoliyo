@@ -141,3 +141,12 @@ $("#inputItemQts").on('keydown',function (event) {
     }
 });
 
+$("#inputItemPrice").on('keydown',function (event) {
+    if (event.key=="Enter"){
+        $("#btnSave").focus();
+    }
+});
+
+/*----------------*/
+
+
