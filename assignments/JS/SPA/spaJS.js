@@ -155,4 +155,10 @@ $("#inputItemCode2").on('keydown',function (event) {
     }
 });
 
+$("#inputItemName2").on('keydown',function (event) {
+    if (event.key=="Enter"){
+        $("#inputItemQts2").focus();
+    }
+});
+
 
