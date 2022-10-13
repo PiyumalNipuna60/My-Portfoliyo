@@ -439,6 +439,8 @@
 <script>
     var customer = [];
     $("#btnSave").click(function () {
+
+
         let customerID = $("#inputCusId").val();
         let customerName = $("#inputCusName").val();
         let customerAddress = $("#inputCusAddress").val();
@@ -453,6 +455,7 @@
         customer.push(customerObject);
         console.log(customer);
         getAllCustomer();
+        clearAllTexts();
     });
 
     getPreviousCustomersFromTable();
@@ -489,54 +492,75 @@
         }
     });
 
+
     $("#inputCusId").on('keydown', function (event) {
-        if (event.key == "Enter") {
+        if (event.key == "Enter" && check(cusIDRegEx, $("#inputCusId"))) {
             $("#inputCusName").focus();
+        } else {
+            focusText($("#inputCusId"));
         }
-    })
+    });
+
 
     $("#inputCusName").on('keydown', function (event) {
-        if (event.key == "Enter") {
-            $("#inputCusAddress").focus();
+        if (event.key == "Enter" && check(cusNameRegEx, $("#inputCusName"))) {
+            focusText($("#inputCusAddress"));
         }
     });
 
 
     $("#inputCusAddress").on('keydown', function (event) {
-        if (event.key == "Enter") {
-            $("#inputCusContact").focus();
+        if (event.key == "Enter" && check(cusAddressRegEx, $("#inputCusAddress"))) {
+            focusText($("#inputCusContact"));
         }
     });
+
 
     $("#inputCusContact").on('keydown', function (event) {
-        if (event.key=="Enter"){
+        if (event.key == "Enter" && check(cusSalaryRegEx, $("#inputCusContact"))) {
             $("#btnSave").focus();
+            let res = confirm("Do you want to add this customer.?");
+            if (res) {
+                clearAllTexts();
+            }
         }
     });
+
+    /*--------------------*/
 
     $("#inputCusId2").on('keydown', function (event) {
-        if (event.key == "Enter") {
+        if (event.key == "Enter" && check(cusIDRegEx, $("#inputCusId2"))) {
             $("#inputCusName2").focus();
+        } else {
+            focusText($("#inputCusId2"));
         }
     });
+
 
     $("#inputCusName2").on('keydown', function (event) {
-        if (event.key == "Enter") {
-            $("#inputCusAddress2").focus();
+        if (event.key == "Enter" && check(cusNameRegEx, $("#inputCusName2"))) {
+            focusText($("#inputCusAddress2"));
         }
     });
+
 
     $("#inputCusAddress2").on('keydown', function (event) {
-        if (event.key == "Enter") {
-            $("#inputCusContact2").focus();
+        if (event.key == "Enter" && check(cusAddressRegEx, $("#inputCusAddress"))) {
+            focusText($("#inputCusContact"));
         }
     });
 
+
     $("#inputCusContact2").on('keydown', function (event) {
-        if (event.key == "Enter") {
+        if (event.key == "Enter" && check(cusSalaryRegEx, $("#inputCusContact2"))) {
             $("#btnSave2").focus();
+            let res = confirm("Do you want to add this customer.?");
+            if (res) {
+                clearAllTexts();
+            }
         }
     });
+
 
     // inputId,inputName,inputContact,btnSearchCus
     $("#btnSearchCus").on("click",function () {
@@ -558,7 +582,8 @@
 
 /*=========validation part================*/
 
-    $("#txtCustomerID").focus();
+    $("#inputCusId").focus();
+    $("#inputCusId").focus();
 
     // customer reguler expressions
     const cusIDRegEx = /^(C00-)[0-9]{1,3}$/;
@@ -602,7 +627,7 @@
             }
         }
         setButtonState(errorCount);
-        setButtonState2(errorCount);
+
     }
 
     function check(regex, txtField) {
@@ -639,26 +664,27 @@
         txtField.focus();
     }
 
-    function setButtonState(value){
-        if (value>0){
-            $("#btnSave").attr('disabled',true);
-        }else{
-            $("#btnSave").attr('disabled',false);
-        }
-    }
-
-    function setButtonState2(value){
-        if (value>0){
-            $("#btnSave2").attr('disabled',true);
-        }else{
-            $("#btnSave2").attr('disabled',false);
-        }
-    }
+    // function setButtonState(value){
+    //     if (value>0){
+    //         $("#btnSave").attr('disabled',true);
+    //     }else{
+    //         $("#btnSave").attr('disabled',false);
+    //     }
+    // }
+    //
+    // function setButtonState2(value){
+    //     if (value>0){
+    //         $("#btnSave2").attr('disabled',true);
+    //     }else{
+    //         $("#btnSave2").attr('disabled',false);
+    //     }
+    // }
     function clearAllTexts() {
-        $("#txtCustomerID").focus();
-        $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").val("");
+        $("#inputCusId").focus();
+        $("#inputCusId,#inputCusName,#inputCusAddress,#inputCusContact").val("");
         checkValidity();
     }
+
 
 
 </script>
