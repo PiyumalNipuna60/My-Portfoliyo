@@ -287,6 +287,7 @@
                                     Close
                                 </button>
                                 <button class="btn btn-primary" id="btnSave2" type="button">Save changes</button>
+                                <button class="btn btn-primary" id="btnDelete2" type="button">Delete Customer</button>
                             </div>
                         </div>
                     </div>
@@ -576,33 +577,27 @@
 
     /*----------search ------------*/
 
-    // inputId,inputName,inputContact,btnSearchCus
     $("#btnSearchCus").on("click",function () {
-        // let customerID = $("#inputId").val();
-        // var i=0;
-        // while(i<customer.length){
-        //     i++;
-        //     console.log(customer.length);
-        //     // let id[] = $children(":eq(0)").text();
-        // }
-
-       /* console.log(customerID);*/
-        console.log(customer);
-
+        SerchCusFuntion();
     });
 
     $("#inputId").on('keyup', function (event) {
         if (event.code == "Enter") {
-            let typedId = $("#inputId").val();
-            let customer = searchCustomer(typedId);
-            if (customer != null) {
-                setTextfieldValues(customer.id, customer.name, customer.address, customer.contact);
-            } else {
-                alert("There is no cusotmer available for that " + typedId);
-                setTextfieldValues("", "", "", "");
-            }
+            SerchCusFuntion();
         }
     });
+
+
+    function SerchCusFuntion(){
+        let typedId = $("#inputId").val();
+        let customer = searchCustomer(typedId);
+        if (customer != null) {
+            setTextfieldValues(customer.id, customer.name, customer.address, customer.contact);
+        } else {
+            alert("There is no cusotmer available for that " + typedId);
+            setTextfieldValues("", "", "", "");
+        }
+    }
 
 
     function setTextfieldValues(id, name, address, contact) {
