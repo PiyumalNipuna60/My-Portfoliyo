@@ -198,66 +198,71 @@
 
             <section class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4 col-xxl-4 pt-4 mb-3 mx-auto">
 
-                <div class="mb-2">
-                    <button type="button" class="btn" style="width: 75%; background-color: #06B618;"
-                            data-bs-toggle="modal" data-bs-target="#cusExampleModal">Add Customer
+                <div id="btnCusAdd" class="mb-2">
+                    <button class="btn" data-bs-target="#exampleModal" data-bs-toggle="modal"
+                            style="width: 75%; height: 3rem; background-color: #06B618; box-shadow: 0 7px 8px 0 rgba(0 ,0 ,0, 0.5), 0 7px 35px 0 rgba(0, 0, 0,0.32);" type="button">Add Customer
                     </button>
                     <!--///////////////-->
 
                     <!-- Button trigger modal -->
 
                     <!-- Modal -->
-                    <div class="modal fade text-black" id="cusExampleModal" tabindex="-1" aria-labelledby="cusExampleModalLabel"
-                         aria-hidden="true">
+                    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal"
+                         tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header bg-info">
-                                    <h5 class="modal-title " id="cusExampleModalLabel">Add Customer</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
+                                    <h5 class="modal-title " id="exampleModalLabel">Add Customer</h5>
+                                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                            type="button"></button>
                                 </div>
                                 <div class="modal-body">
 
                                     <form class="mx-auto m-lg-2">
                                         <div class="row mb-2 mt-2">
-                                            <label for="inputCusId" class="col-sm-3 col-form-label fw-bold">Cus: ID
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusId">Cus: ID
                                                 :</label>
                                             <div class="col-sm-9">
-                                                <input type="email" class="form-control" id="inputCusId"
-                                                       placeholder="C001">
+                                                <input class="form-control" id="inputCusId" placeholder="C001"
+                                                       type="email">
+                                                <span class="control-error" id="lblCusID"></span>
                                             </div>
                                         </div>
                                         <div class="row mb-2">
-                                            <label for="inputCusName"
-                                                   class="col-sm-3 col-form-label fw-bold">Name:</label>
+                                            <label class="col-sm-3 col-form-label fw-bold"
+                                                   for="inputCusName">Name:</label>
                                             <div class="col-sm-9">
-                                                <input type="email" class="form-control" id="inputCusName"
-                                                       placeholder="ex: Piyumal">
+                                                <input class="form-control" id="inputCusName" placeholder="ex: Piyumal"
+                                                       type="email">
+                                                <span class="control-error" id="lblCusName"></span>
                                             </div>
                                         </div>
                                         <div class="row mb-2">
-                                            <label for="inputCusAddress" class="col-sm-3 col-form-label fw-bold">Address
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusAddress">Address
                                                 :</label>
                                             <div class="col-sm-9">
-                                                <input type="email" class="form-control" id="inputCusAddress"
-                                                       placeholder="ex: galle">
+                                                <input class="form-control" id="inputCusAddress" placeholder="ex: galle"
+                                                       type="email">
+                                                <span class="control-error" id="lblCusAddress"></span>
                                             </div>
                                         </div>
                                         <div class="row mb-3">
-                                            <label for="inputCusContact" class="col-sm-3 col-form-label fw-bold">Contact
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusContact">Contact
                                                 :</label>
                                             <div class="col-sm-9">
-                                                <input type="email" class="form-control" id="inputCusContact"
-                                                       placeholder="ex: 0767554903">
+                                                <input class="form-control" id="inputCusContact"
+                                                       placeholder="ex: 0767554903"
+                                                       type="email">
+                                                <span class="control-error" id="lblCuSalary"></span>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" id="cusBtnClose"
-                                            data-bs-dismiss="modal">Close
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose"
+                                            type="button">Close
                                     </button>
-                                    <button type="button" class="btn btn-primary" id="cusBtnSave">Save changes</button>
+                                    <button class="btn btn-primary" id="btnSave" type="button">Save changes</button>
                                 </div>
                             </div>
                         </div>
@@ -266,68 +271,75 @@
                     <!-- //////////////-->
                 </div>
 
-                <div class="mb-2">
-                    <button type="button" class="btn" style="width: 75%; background-color: #06B618;"
-                            data-bs-toggle="modal" data-bs-target="#cusExampleModal2">Modify Customer
+                <div id="btnCusModify" class="mb-2" style="padding-top: 3%;">
+                    <button class="btn" data-bs-target="#exampleModal2" data-bs-toggle="modal"
+                            style="width: 75%; height: 3rem; background-color: #06B618; box-shadow: 0 7px 8px 0 rgba(0 ,0 ,0, 0.5), 0 7px 35px 0 rgba(0, 0, 0,0.32);" type="button">Modify Customer
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade text-black" id="cusExampleModal2" tabindex="-1" aria-labelledby="cusExampleModalLabel"
-                         aria-hidden="true">
+                    <div aria-hidden="true" aria-labelledby="exampleModalLabel2" class="modal fade" id="exampleModal2"
+                         tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header bg-info">
-                                    <h5 class="modal-title " id="cusExampleModalLabel2">Modify Customer</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
+                                    <h5 class="modal-title " id="exampleModalLabel2">Modify Customer</h5>
+                                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                            type="button"></button>
                                 </div>
                                 <div class=" modal-body">
 
                                     <form class="mx-auto m-lg-2">
                                         <div class="row mb-2 mt-2">
-                                            <label for="inputCusId2" class="col-sm-3 col-form-label fw-bold">Cus: ID
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusId2">Cus: ID
                                                 :</label>
                                             <div class="col-sm-9">
-                                                <input type="email" class="form-control" id="inputCusId2"
-                                                       placeholder="ex: C001">
+                                                <input class="form-control" id="inputCusId2" placeholder="ex: C001"
+                                                       type="email">
+                                                <span class="control-error" id="lblCusID2"></span>
                                             </div>
                                         </div>
                                         <div class="row mb-2">
-                                            <label for="inputCusName2"
-                                                   class="col-sm-3 col-form-label fw-bold">Name:</label>
+                                            <label class="col-sm-3 col-form-label fw-bold"
+                                                   for="inputCusName2">Name:</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="inputCusName2"
-                                                       placeholder="ex: Piyumal">
+                                                <input class="form-control" id="inputCusName2" placeholder="ex: Piyumal"
+                                                       type="text">
+                                                <span class="control-error" id="lblCusName2"></span>
                                             </div>
                                         </div>
                                         <div class="row mb-2">
-                                            <label for="inputCusAddress2" class="col-sm-3 col-form-label fw-bold">Address
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusAddress2">Address
                                                 :</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="inputCusAddress2"
-                                                       placeholder="ex: galle">
+                                                <input class="form-control" id="inputCusAddress2" placeholder="ex: galle"
+                                                       type="text">
+                                                <span class="control-error" id="lblCusAddress2"></span>
                                             </div>
                                         </div>
                                         <div class="row mb-3">
-                                            <label for="inputCusContact2" class="col-sm-3 col-form-label fw-bold">Contact
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusContact2">Contact
                                                 :</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="inputCusContact2"
-                                                       placeholder="ex: 0767554903">
+                                                <input class="form-control" id="inputCusContact2"
+                                                       placeholder="ex: 0767554903"
+                                                       type="text">
+                                                <span class="control-error" id="lblCusContact2"></span>
                                             </div>
                                         </div>
                                     </form>
 
                                 </div>
                                 <div>
-                                    <button type="button" class="btn btn-secondary bg-danger" id="btnSearch2"
-                                            style="margin-left: 2rem;margin-bottom: 1rem;">Search
+                                    <button class="btn btn-secondary bg-danger" id="btnSearch2"
+                                            style="margin-left: 2rem;margin-bottom: 1rem;"
+                                            type="button">Search
                                     </button>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cusBtnClose2">Close
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose2" type="button">
+                                        Close
                                     </button>
-                                    <button type="button" class="btn btn-primary" id="cusBtnSave2">Save changes</button>
+                                    <button class="btn btn-primary" id="btnSave2" type="button">Save changes</button>
                                 </div>
                             </div>
                         </div>
@@ -335,20 +347,20 @@
                     <!--//////////////&ndash;&gt;-->
                 </div>
 
-                <div class="mb-2">
-                    <button type="button" class="btn" style="width: 75%; background-color: #06B618;"
-                            data-bs-toggle="modal" data-bs-target="#cusExampleModal3">Load All Customer
+                <div id="btnCusLoadAll" class="mb-2" style="padding-top: 3%;">
+                    <button class="btn" data-bs-target="#exampleModal3" data-bs-toggle="modal"
+                            style="width: 75%; height: 3rem; background-color: #06B618; box-shadow: 0 7px 8px 0 rgba(0 ,0 ,0, 0.5), 0 7px 35px 0 rgba(0, 0, 0,0.32);" type="button">Load All Customer
                     </button>
 
                     <!-- Modal -->
-                    <div class="modal fade text-black" id="cusExampleModal3" tabindex="-1" aria-labelledby="cusExampleModalLabel3"
-                         aria-hidden="true">
+                    <div aria-hidden="true" aria-labelledby="exampleModalLabel3" class="modal fade" id="exampleModal3"
+                         tabindex="-1">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header bg-info">
-                                    <h5 class="modal-title " id="cusExampleModalLabel3">Modify Customer</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
+                                    <h5 class="modal-title " id="exampleModalLabel3">Load All Customer</h5>
+                                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                            type="button"></button>
                                 </div>
                                 <div class=" modal-body">
 
@@ -404,7 +416,8 @@
 
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cusBtnClose3">Close
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose3" type="button">
+                                        Close
                                     </button>
                                 </div>
                             </div>
@@ -571,10 +584,10 @@
                                         </form>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" id="btnClose"
+                                        <button type="button" class="btn btn-secondary" id="btnItemClose"
                                                 data-bs-dismiss="modal">Close
                                         </button>
-                                        <button type="button" class="btn btn-primary" id="btnSave">Save changes</button>
+                                        <button type="button" class="btn btn-primary" id="btnItemSave">Save changes</button>
                                     </div>
                                 </div>
                             </div>
@@ -721,7 +734,7 @@
 
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose3">Close
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btnItemClose3">Close
                                         </button>
                                     </div>
                                 </div>
