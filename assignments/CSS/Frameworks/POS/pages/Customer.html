@@ -242,6 +242,7 @@
                                         <div class="col-sm-9">
                                             <input class="form-control" id="inputCusId2" placeholder="ex: C001"
                                                    type="email">
+                                            <span class="control-error" id="lblCusID2"></span>
                                         </div>
                                     </div>
                                     <div class="row mb-2">
@@ -250,6 +251,7 @@
                                         <div class="col-sm-9">
                                             <input class="form-control" id="inputCusName2" placeholder="ex: Piyumal"
                                                    type="text">
+                                            <span class="control-error" id="lblCusName2"></span>
                                         </div>
                                     </div>
                                     <div class="row mb-2">
@@ -258,6 +260,7 @@
                                         <div class="col-sm-9">
                                             <input class="form-control" id="inputCusAddress2" placeholder="ex: galle"
                                                    type="text">
+                                            <span class="control-error" id="lblCusAddress2"></span>
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -267,6 +270,7 @@
                                             <input class="form-control" id="inputCusContact2"
                                                    placeholder="ex: 0767554903"
                                                    type="text">
+                                            <span class="control-error" id="lblCusContact2"></span>
                                         </div>
                                     </div>
                                 </form>
@@ -562,11 +566,21 @@
     const cusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
     const cusContactRegEx = /^[0-9]{10}[.]?[0-9]{1,2}$/;
 
+    const cusIDRegEx2 = /^(C00-)[0-9]{1,3}$/;
+    const cusNameRegEx2 = /^[A-z ]{5,20}$/;
+    const cusAddressRegEx2 = /^[0-9/A-z. ,]{7,}$/;
+    const cusContactRegEx2 = /^[0-9]{10}[.]?[0-9]{1,2}$/;
+
     let customerValidations = [];
     customerValidations.push({reg: cusIDRegEx, field: $('#inputCusId'),error:'Customer ID Pattern is Wrong : C00-001'});
-    customerValidations.push({reg: cusNameRegEx, field: $('#inputCusName'),error:'Customer Name Pattern is Wrong : A-z 5-20'});
-    customerValidations.push({reg: cusAddressRegEx, field: $('#inputCusAddress'),error:'Customer Address Pattern is Wrong : A-z 0-9 ,/'});
+    customerValidations.push({reg: cusNameRegEx, field: $('#inputCusName'),error:'Customer Name Pattern is Wrong : Ex : Nipuna'});
+    customerValidations.push({reg: cusAddressRegEx, field: $('#inputCusAddress'),error:'Customer Address Pattern is Wrong : Ex : Galle 01'});
     customerValidations.push({reg: cusContactRegEx, field: $('#inputCusContact'),error:'Customer Contact Pattern is Wrong : 0782545156'});
+
+    customerValidations.push({reg: cusIDRegEx2, field: $('#inputCusId2'),error:'Customer ID Pattern is Wrong : C00-001'});
+    customerValidations.push({reg: cusNameRegEx2, field: $('#inputCusName2'),error:'Customer Name Pattern is Wrong : Ex : Nipuna'});
+    customerValidations.push({reg: cusAddressRegEx2, field: $('#inputCusAddress2'),error:'Customer Address Pattern is Wrong : Ex : Galle 01'});
+    customerValidations.push({reg: cusContactRegEx2, field: $('#inputCusContact2'),error:'Customer Contact Pattern is Wrong : 0782545156'});
 
 
     $("#inputCusId,#inputCusName,#inputCusAddress,#inputCusContact,#inputCusId2,#inputCusName2,#inputCusAddress2,#inputCusContact2").on('keyup', function (event) {
@@ -588,6 +602,7 @@
             }
         }
         setButtonState(errorCount);
+        setButtonState2(errorCount);
     }
 
     function check(regex, txtField) {
@@ -628,10 +643,17 @@
         if (value>0){
             $("#btnSave").attr('disabled',true);
         }else{
-            $("#btnSave2").attr('disabled',false);
+            $("#btnSave").attr('disabled',false);
         }
     }
 
+    function setButtonState2(value){
+        if (value>0){
+            $("#btnSave2").attr('disabled',true);
+        }else{
+            $("#btnSave2").attr('disabled',false);
+        }
+    }
     function clearAllTexts() {
         $("#txtCustomerID").focus();
         $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").val("");
