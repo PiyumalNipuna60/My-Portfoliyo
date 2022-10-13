@@ -108,4 +108,12 @@ $("#btnSave").click(function () {
     loadTable();
 });
 
+function loadTable() {
+    $("#tblItem").empty();
+
+    for (var items of item) {
+        var row = `<tr><td>${items.code}</td><td>${items.name}</td><td>${items.qty}</td><td>${items.price}</td></tr>`;
+        $("#tblItem").append(row);
+    }
+}
 
