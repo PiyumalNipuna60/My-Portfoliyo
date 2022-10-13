@@ -167,3 +167,8 @@ $("#inputItemQts2").on('keydown',function (event) {
     }
 });
 
+$("#inputItemPrice2").on('keydown',function (event) {
+    if (event.key=="Enter"){
+        $("#btnSave2").focus();
+    }
+});
