@@ -161,4 +161,9 @@ $("#inputItemName2").on('keydown',function (event) {
     }
 });
 
+$("#inputItemQts2").on('keydown',function (event) {
+    if (event.key=="Enter"){
+        $("#inputItemPrice2").focus();
+    }
+});
 
