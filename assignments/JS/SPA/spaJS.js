@@ -374,6 +374,7 @@ function clearAllTexts() {
 
 var item = [];
 $("#btnItemSave").click(function () {
+
     let itemCode = $("#inputItemCode").val();
     let itemName = $("#inputItemName").val();
     let itemQty = $("#inputItemQts").val();
@@ -457,8 +458,6 @@ $("#inputItemPrice").on('keydown', function (event) {
 });
 
 
-
-
 /*----------------*/
 
 $("#inputItemCode2").on('keydown', function (event) {
@@ -469,25 +468,29 @@ $("#inputItemCode2").on('keydown', function (event) {
     }
 });
 
-
-
-$("#inputItemName2").on('keydown',function (event) {
-    if (event.key=="Enter"){
-        $("#inputItemQts2").focus();
+$("#inputItemName2").on('keydown', function (event) {
+    if (event.key == "Enter" && check(itemNameRegEx2, $("#inputItemName2"))) {
+        focusText($("#inputItemQts2"));
     }
 });
 
-$("#inputItemQts2").on('keydown',function (event) {
-    if (event.key=="Enter"){
-        $("#inputItemPrice2").focus();
+$("#inputItemQts2").on('keydown', function (event) {
+    if (event.key == "Enter" && check(itemQTYRegEx2, $("#inputItemQts2"))) {
+        focusText($("#inputItemPrice2"));
     }
 });
 
-$("#inputItemPrice2").on('keydown',function (event) {
-    if (event.key=="Enter"){
-        $("#btnSave2").focus();
+$("#inputItemPrice2").on('keydown', function (event) {
+    if (event.key == "Enter" && check(itemPriceRegEx2, $("#inputItemPrice2"))) {
+        $("#ItemSaveChange").focus();
+        let res = confirm("Do you want to add this Item.?");
+        if (res) {
+            clearAllTexts();
+        }
     }
 });
+
+
 
 /*--------------------------*/
 
@@ -621,14 +624,14 @@ $("#inputItemCode2").focus();
 
 // customer reguler expressions
 const itemIDRegEx = /^(I00-)[0-9]{1,3}$/;
-const itemNameRegEx = /^[A-z ]{5,20}$/;
+const itemNameRegEx = /^[A-z ]{3,20}$/;
 const itemQTYRegEx = /^[0-9]{1,4}$/;
-const itemPriceRegEx = /^[0-9]{10}[.]?[0-9]{1,2}$/;
+const itemPriceRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
 
 const itemIDRegEx2 = /^(I00-)[0-9]{1,3}$/;
-const itemNameRegEx2 = /^[A-z ]{5,20}$/;
+const itemNameRegEx2 = /^[A-z ]{3,20}$/;
 const itemQTYRegEx2 = /^[0-9]{1,4}$/;
-const itemPriceRegEx2 = /^[0-9]{10}[.]?[0-9]{1,2}$/;
+const itemPriceRegEx2 = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
 
 
 let itemValidations = [];
