@@ -457,13 +457,19 @@ $("#inputItemPrice").on('keydown', function (event) {
 });
 
 
+
+
 /*----------------*/
 
-$("#inputItemCode2").on('keydown',function (event) {
-    if (event.key=="Enter"){
+$("#inputItemCode2").on('keydown', function (event) {
+    if (event.key == "Enter" && check(itemIDRegEx2, $("#inputItemCode2"))) {
         $("#inputItemName2").focus();
+    } else {
+        focusText($("#inputItemCode2"));
     }
 });
+
+
 
 $("#inputItemName2").on('keydown',function (event) {
     if (event.key=="Enter"){
