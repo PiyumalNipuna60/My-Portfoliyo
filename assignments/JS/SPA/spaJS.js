@@ -952,3 +952,86 @@ function deleteOrder(OrderID) {
         return false;
     }
 }
+
+
+/*=========validation part================*/
+
+$("#OederOID").focus();
+
+// customer reguler expressions
+const orderOIDIDRegEx = /^(O00-)[0-9]{1,3}$/;
+
+const orderCusIDRegEx = /^(C00-)[0-9]{1,3}$/;
+const orderCusNameRegEx = /^[A-z ]{3,20}$/;
+const orderCusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
+const orderCusContactRegEx = /^[0-9]{10}[.]?[0-9]{1,2}$/;
+
+const orderItemIDRegEx = /^(I00-)[0-9]{1,3}$/;
+const orderItemNameRegEx = /^[A-z ]{3,20}$/;
+const orderIQTYRegEx = /^[0-9]{1,4}$/;
+const orderIPriceRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
+const orderIOQTYRegEx = /^[0-9]{1,4}$/;
+const orderTotalRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
+
+const orderSubTotalRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
+const orderCashRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
+const orderDiscountRegEx = /^[0-9]{1,2}%$/;
+const orderBalanceRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
+
+
+
+let orderValidations = [];
+
+
+
+$("#OederOID,#OrderDate,#OrderCusID,#OrderCusName,#OrderCusAddress,#OrderCusSalary,#OrderICode,#OrderIName,#OrderIQty,#OrderIPrice,#OrderIOQty,#OrderTotal,#OrderTotal,#OrderSubTotal,#OrderCash,#OrderDiscount,#OrderBalance").on('keyup', function (event) {
+    checkOrderValidity();
+});
+
+$("#OederOID,#OrderDate,#OrderCusID,#OrderCusName,#OrderCusAddress,#OrderCusSalary,#OrderICode,#OrderIName,#OrderIQty,#OrderIPrice,#OrderIOQty,#OrderTotal,#OrderTotal,#OrderSubTotal,#OrderCash,#OrderDiscount,#OrderBalance").on('blur', function (event) {
+    checkOrderValidity();
+});
+
+function checkOrderValidity() {
+    let errorCount = 0;
+    for (let validation of orderValidations) {
+        if (checkOrder(validation.reg, validation.field)) {
+            textOrderSuccess(validation.field, "");
+        } else {
+            errorCount = errorCount + 1;
+            setOrderTextError(validation.field, validation.error);
+        }
+    }
+    setButtonState(errorCount);
+}
+
+function checkOrder(regex, txtField) {
+    let inputValue = txtField.val();
+    return regex.test(inputValue) ? true : false;
+}
+
+function setOrderTextError(txtField, error) {
+    if (txtField.val().length <= 0) {
+        defaultOrderText(txtField, "");
+    } else {
+        txtField.css('border', '2px solid red');
+        txtField.parent().children('span').text(error);
+        txtField.parent().children('span').css('font-size', '10px');
+        txtField.parent().children('span').css('color', 'red');
+    }
+}
+
+function textOrderSuccess(txtField, error) {
+    if (txtField.val().length <= 0) {
+        defaultOrderText(txtField, "");
+    } else {
+        txtField.css('border', '2px solid green');
+        txtField.parent().children('span').text(error);
+    }
+}
+
+function defaultOrderText(txtField, error) {
+    txtField.css("border", "1px solid #ced4da");
+    txtField.parent().children('span').text(error);
+}
+
