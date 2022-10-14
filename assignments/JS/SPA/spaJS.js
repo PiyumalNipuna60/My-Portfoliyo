@@ -373,7 +373,7 @@ function clearAllTexts() {
 /*=============Item---------------*/
 
 var item = [];
-$("#btnSave").click(function () {
+$("#btnItemSave").click(function () {
     let itemCode = $("#inputItemCode").val();
     let itemName = $("#inputItemName").val();
     let itemQty = $("#inputItemQts").val();
@@ -387,23 +387,37 @@ $("#btnSave").click(function () {
     }
 
     item.push(itemObject);
-    loadTable();
+    getAllItem();
+    loadAllItem();
+    clearAllItemTexts();
 });
 
-function loadTable() {
+
+/*------------gel All Customer--------------*/
+loadAllItem();
+function loadAllItem() {
+    $("#tblAllItem").empty();
+
+    for (var items of item) {
+        var row = `<tr><td>${items.code}</td><td>${items.name}</td><td>${items.qty}</td><td>${items.price}</td></tr>`;
+
+        //then add it to the table body of customer table
+        $("#tblAllItem").append(row);
+    }
+}
+
+function getAllItem() {
     $("#tblItem").empty();
 
     for (var items of item) {
         var row = `<tr><td>${items.code}</td><td>${items.name}</td><td>${items.qty}</td><td>${items.price}</td></tr>`;
+
         $("#tblItem").append(row);
     }
 }
 
-$("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#inputItemName2,#inputItemQts2,#inputItemPrice2").on('keydown', function (event) {
-    if (event.key == 'Tab') {
-        event.preventDefault();
-    }
-});
+
+/*--------------------------*/
 
 $("#inputItemCode").on('keydown',function (event) {
     if (event.key=="Enter"){
