@@ -284,7 +284,7 @@ const cusContactRegEx = /^[0-9]{10}[.]?[0-9]{1,2}$/;
 const cusIDRegEx2 = /^(C00-)[0-9]{1,3}$/;
 const cusNameRegEx2 = /^[A-z ]{5,20}$/;
 const cusAddressRegEx2 = /^[0-9/A-z. ,]{7,}$/;
-const cusContactRegEx2 = /^[0-9]{10}[.]?[0-9]{1,2}$/;
+const cusContactRegEx2 = /^[0-9]{10}$/;
 
 let customerValidations = [];
 customerValidations.push({reg: cusIDRegEx, field: $('#inputCusId'),error:'Customer ID Pattern is Wrong : C00-001'});
@@ -680,3 +680,10 @@ function defaultItemText(txtField,error) {
     txtField.css("border", "1px solid #ced4da");
     txtField.parent().children('span').text(error);
 }
+
+function clearAllItemTexts() {
+    $("#inputItemCode").focus();
+    $("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice").val("");
+    checkValidity();
+}
+
