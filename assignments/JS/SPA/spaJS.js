@@ -745,7 +745,7 @@ $("#btnOrderAddItem").click(function () {
     order.push(orderObject);
     console.log(order)
     getLoadOrder();
-
+    clearAllOrderTexts();
 });
 
 
@@ -910,7 +910,7 @@ function setTextfieldValuesOrder(Oid, date, id, cus_name,address,contact,ItemCod
 
 function searchOrder(cusID) {
     for (let orders of order) {
-        if (orders.id == cusID) {
+        if (orders.Oid == cusID) {
             return orders;
         }
     }
@@ -918,3 +918,8 @@ function searchOrder(cusID) {
 }
 
 /*---------------------*/
+function clearAllOrderTexts() {
+    $("#OederOID").focus();
+    $("#OederOID,#OrderDate,#OrderCusID,#OrderCusName,#OrderCusAddress,#OrderCusSalary,#OrderICode,#OrderIName,#OrderIQty,#OrderIPrice,#OrderIOQty,#OrderTotal").val("");
+    checkValidity();
+}
