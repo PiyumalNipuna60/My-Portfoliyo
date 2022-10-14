@@ -370,7 +370,7 @@ function clearAllTexts() {
 
 
 
-/*=============Item---------------*/
+/*=====================================================Item----------------------------------------------------------------------*/
 
 var item = [];
 $("#btnItemSave").click(function () {
@@ -703,3 +703,159 @@ function clearAllItemTexts() {
     checkValidity();
 }
 
+
+
+
+/*=====================================================Order----------------------------------------------------------------------*/
+
+var order = [];
+$("#btnOrderAddItem").click(function () {
+    let OId=$("#OederOID").val();
+    let date=$("#OrderDate").val();
+
+    let customerID = $("#OrderCusID").val();
+    let customerName = $("#OrderCusName").val();
+    let customerAddress = $("#OrderCusAddress").val();
+    let customerSalary = $("#OrderCusSalary").val();
+
+    let orderICode = $("#OrderICode").val();
+    let orderName = $("#OrderIName").val();
+    let orderQty = $("#OrderIQty").val();
+    let orderPrice = $("#OrderIPrice").val();
+    let orderOnQty = $("#OrderIOQty").val();
+
+    var orderObject = {
+
+        Oid:OId,
+        date:date,
+
+        id: customerID,
+        cus_name: customerName,
+        address: customerAddress,
+        contact: customerSalary,
+
+        Itemcode: orderICode,
+        Item_name: orderName,
+        qty: orderQty,
+        price: orderPrice,
+        orderQty: orderOnQty,
+        total: (orderPrice * orderOnQty)
+    }
+
+    order.push(orderObject);
+    console.log(order)
+    getLoadOrder();
+});
+
+
+
+
+$("#OederOID,#OrderCustomer,#OrderCusName,#OrderDate,#OrderCusID,#OrderCusSalary,#OrderCusAddress").on('keydown', function (event) {
+    if (event.key == "Tab") {
+        event.preventDefault();
+    }
+});
+
+$("#OederOID").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#OrderCustomer").focus();
+    }
+});
+
+$("#OrderCustomer").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#OrderCusName").focus();
+    }
+});
+
+$("#OrderCusName").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#OrderDate").focus();
+    }
+});
+
+$("#OrderDate").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#OrderCusID").focus();
+    }
+});
+
+$("#OrderCusID").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#OrderCusSalary").focus();
+    }
+});
+
+$("#OrderCusSalary").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#OrderCusAddress").focus();
+    }
+});
+
+/* -----------*/
+
+$("#OrderItem,#OrderICode,#OrderIName,#OrderIPrice,#OrderIQty,#OrderIOQty,#btnAddOrder").on('keydown', function (event) {
+    if (event.key == "Tab") {
+        event.preventDefault();
+    }
+});
+
+$("#OrderItem").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#OrderICode").focus();
+    }
+});
+
+$("#OrderICode").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#OrderIName").focus();
+    }
+});
+
+$("#OrderIName").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#OrderIPrice").focus();
+    }
+});
+
+$("#OrderIPrice").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#OrderIQty").focus();
+    }
+});
+
+$("#OrderIQty").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#OrderIOQty").focus();
+    }
+});
+
+$("#OrderIOQty").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#btnAddOrder").focus();
+    }
+});
+
+$("#OrderCash,#OrderDiscount,#OrderBalance,#btnPurchase").on('keydown', function (event) {
+    if (event.key == "Tab") {
+        event.preventDefault();
+    }
+});
+
+$("#OrderCash").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#OrderDiscount").focus();
+    }
+});
+
+$("#OrderDiscount").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#OrderBalance").focus();
+    }
+});
+
+$("#OrderBalance").on('keydown', function (event) {
+    if (event.key == "Enter") {
+        $("#btnPurchase").focus();
+    }
+});
