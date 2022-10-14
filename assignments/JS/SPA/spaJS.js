@@ -637,3 +637,46 @@ $("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#
 $("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#inputItemName2,#inputItemQts2,#inputItemPrice2").on('blur', function (event) {
     checkItemValidity();
 });
+
+function checkItemValidity() {
+    let errorCount = 0;
+    for (let validation of itemValidations) {
+        if (checkItem(validation.reg, validation.field)) {
+            textItemSuccess(validation.field, "");
+        } else {
+            errorCount = errorCount + 1;
+            setItemTextError(validation.field, validation.error);
+        }
+    }
+    setButtonState(errorCount);
+}
+
+function checkItem(regex, txtField) {
+    let inputValue = txtField.val();
+    return regex.test(inputValue) ? true : false;
+}
+
+function setItemTextError(txtField,error) {
+    if (txtField.val().length <= 0) {
+        defaultItemText(txtField,"");
+    } else {
+        txtField.css('border', '2px solid red');
+        txtField.parent().children('span').text(error);
+        txtField.parent().children('span').css('font-size','10px');
+        txtField.parent().children('span').css('color','red');
+    }
+}
+
+function textItemSuccess(txtField,error) {
+    if (txtField.val().length <= 0) {
+        defaultText(txtField,"");
+    } else {
+        txtField.css('border', '2px solid green');
+        txtField.parent().children('span').text(error);
+    }
+}
+
+function defaultItemText(txtField,error) {
+    txtField.css("border", "1px solid #ced4da");
+    txtField.parent().children('span').text(error);
+}
