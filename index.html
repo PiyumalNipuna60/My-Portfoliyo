@@ -20,38 +20,14 @@
 
 </head>
 
-<style>
-    body>div{
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background: red;
-    }
-
-    div>div{
-        width: 500px;
-        height: 200px;
-        border: 2px solid white;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        background: url("assets/image/pic/loader.gif");
-        background-size: cover;
-        background-position: center;
-
-    }
-</style>
-
 <body>
-<div id="loader">
-    <div>
+<section id="loader">
+    <div class="scan">
+        <div class="qrcode"></div>
+        <h3>Loading...</h3>
+        <div class="border"></div>
     </div>
-</div>
+</section>
 
 <header>
 
