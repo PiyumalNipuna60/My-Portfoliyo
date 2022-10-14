@@ -748,6 +748,19 @@ $("#btnOrderAddItem").click(function () {
 });
 
 
+/*------------gel All Customer--------------*/
+
+function getLoadOrder() {
+    for (var orders of order) {
+        console.log(order);
+
+        var row = `<tr><td>${orders.id}</td><td>${orders.Oid}</td><td>${orders.date}</td><td>${orders.Itemcode}</td><td>${orders.Item_name}</td><td>${orders.price}</td><td>${orders.orderQty}</td><td>${orders.total}</td></tr>`;
+        $("#orderTable").append(row);
+    }
+}
+
+/*--------------------------*/
+
 
 
 $("#OederOID,#OrderCustomer,#OrderCusName,#OrderDate,#OrderCusID,#OrderCusSalary,#OrderCusAddress").on('keydown', function (event) {
