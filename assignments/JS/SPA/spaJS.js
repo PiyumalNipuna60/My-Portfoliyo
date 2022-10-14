@@ -417,7 +417,14 @@ function getAllItem() {
 }
 
 
-/*--------------------------*/
+/*------------Enter key Js--------------*/
+
+$("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#inputItemName2,#inputItemQts2,#inputItemPrice2").on('keydown', function (event) {
+    if (event.key == "Tab") {
+        event.preventDefault();
+    }
+});
+
 
 $("#inputItemCode").on('keydown',function (event) {
     if (event.key=="Enter"){
@@ -439,7 +446,7 @@ $("#inputItemQts").on('keydown',function (event) {
 
 $("#inputItemPrice").on('keydown',function (event) {
     if (event.key=="Enter"){
-        $("#btnSave").focus();
+        $("#btnItemSave").focus();
     }
 });
 
@@ -468,3 +475,44 @@ $("#inputItemPrice2").on('keydown',function (event) {
         $("#btnSave2").focus();
     }
 });
+
+/*--------------------------*/
+
+
+/*----------search (eliye ekata)------------*/
+
+$("#btnSearchItem").on("click",function () {
+    SearchItemFunction();
+});
+
+$("#inputCode").on('keyup', function (event) {
+    if (event.code == "Enter") {
+        SearchItemFunction();
+    }
+});
+
+function SearchItemFunction(){
+    let typedId = $("#inputCode").val();
+    let Item = searchItem(typedId);
+    if (Item != null) {
+        setItemTextfieldValues(Item.code, Item.name, Item.qty, Item.price);
+    } else {
+        alert("There is no cusotmer available for that " + typedId);
+        setItemTextfieldValues("", "", "", "");
+    }
+}
+
+function setItemTextfieldValues(code, name, qty, price) {
+    $("#inputCode").val(code);
+    $("#inputItemSerName").val(name);
+    $("#inputItemSerPrice").val(price);
+}
+
+function searchItem(cusID) {
+    for (let items of item) {
+        if (items.code == cusID) {
+            return items;
+        }
+    }
+    return null;
+}
