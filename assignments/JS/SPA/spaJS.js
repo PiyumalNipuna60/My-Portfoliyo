@@ -542,3 +542,32 @@ function setItemTextfieldValues2(code, name, qty, price) {
     $("#inputItemQts2").val(qty);
     $("#inputItemPrice2").val(price);
 }
+
+btnItemDelete
+/*-----------Delete Customer----------------*/
+$("#btnItemDelete").on("click",function () {
+    let deleteID = $("#inputItemCode2").val();
+
+    let option = confirm("Do you really want to delete customer id :" + deleteID);
+    if (option){
+        if (deleteItem(deleteID)) {
+            alert("Customer Successfully Deleted..");
+            setItemTextfieldValues2("", "", "", "");
+        } else {
+            alert("No such customer to delete. please check the id");
+        }
+    }
+});
+
+function deleteItem(ItemID) {
+    let Item = searchItem(ItemID);
+    if (Item != null) {
+        let indexNumber = item.indexOf(Item);
+        item.splice(indexNumber, 1);
+        getAllItem();
+        loadAllItem();
+        return true;
+    } else {
+        return false;
+    }
+}
