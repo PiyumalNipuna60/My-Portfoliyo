@@ -600,3 +600,40 @@ function updateItem(ItemId) {
         return false;
     }
 }
+
+/*=========validation part================*/
+
+$("#inputItemCode").focus();
+$("#inputItemCode2").focus();
+
+// customer reguler expressions
+const itemIDRegEx = /^(I00-)[0-9]{1,3}$/;
+const itemNameRegEx = /^[A-z ]{5,20}$/;
+const itemQTYRegEx = /^[0-9]{1,4}$/;
+const itemPriceRegEx = /^[0-9]{10}[.]?[0-9]{1,2}$/;
+
+const itemIDRegEx2 = /^(I00-)[0-9]{1,3}$/;
+const itemNameRegEx2 = /^[A-z ]{5,20}$/;
+const itemQTYRegEx2 = /^[0-9]{1,4}$/;
+const itemPriceRegEx2 = /^[0-9]{10}[.]?[0-9]{1,2}$/;
+
+
+let itemValidations = [];
+itemValidations.push({reg: itemIDRegEx, field: $('#inputItemCode'),error:'Customer ID Pattern is Wrong : I00-001'});
+itemValidations.push({reg: itemNameRegEx, field: $('#inputItemName'),error:'Customer Name Pattern is Wrong : Ex : Soya'});
+itemValidations.push({reg: itemQTYRegEx, field: $('#inputItemQts'),error:'Customer Address Pattern is Wrong : Ex : 01'});
+itemValidations.push({reg: itemPriceRegEx, field: $('#inputItemPrice'),error:'Customer Contact Pattern is Wrong : 2500'});
+
+itemValidations.push({reg: itemIDRegEx2, field: $('#inputItemCode2'),error:'Customer ID Pattern is Wrong : I00-001'});
+itemValidations.push({reg: itemNameRegEx2, field: $('#inputItemName2'),error:'Customer Name Pattern is Wrong : Ex : Soya'});
+itemValidations.push({reg: itemQTYRegEx2, field: $('#inputItemQts2'),error:'Customer Address Pattern is Wrong : Ex : 01'});
+itemValidations.push({reg: itemPriceRegEx2, field: $('#inputItemPrice2'),error:'Customer Contact Pattern is Wrong : 2500'});
+
+
+$("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#inputItemName2,#inputItemQts2,#inputItemPrice2").on('keyup', function (event) {
+    checkItemValidity();
+});
+
+$("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#inputItemName2,#inputItemQts2,#inputItemPrice2").on('blur', function (event) {
+    checkItemValidity();
+});
