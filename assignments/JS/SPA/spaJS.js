@@ -426,11 +426,14 @@ $("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#
 });
 
 
-$("#inputItemCode").on('keydown',function (event) {
-    if (event.key=="Enter"){
+$("#inputItemCode").on('keydown', function (event) {
+    if (event.key == "Enter" && check(cusIDRegEx, $("#inputItemCode"))) {
         $("#inputItemName").focus();
+    } else {
+        focusText($("#inputItemCode"));
     }
 });
+
 
 $("#inputItemName").on('keydown',function (event) {
     if (event.key=="Enter"){
