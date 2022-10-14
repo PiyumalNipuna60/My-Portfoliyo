@@ -81,7 +81,7 @@
         }
     </style>
 </head>
-<body class="text-white-50 bg-dark">
+<body class="text-white-50 ">
 
 <header>
     <nav class="navbar navbar-expand-lg  bg-primary">
@@ -228,334 +228,324 @@
     </section>
 </main>
 
-<main class="bg-white" id="Customer" style="color: black; overflow-x: hidden;">
-    <section >
-        <br>
-        <section class="row justify-content-center">
-            <section class="col-11 col-sm-11 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto" style="">
-                <div class=" border rounded border-dark ">
-                    <nav class="border rounded bg-info">
-                        <h1 class="text-white fs-3">Search Customer</h1>
-                    </nav>
+<main class="bg-white" id="Customer" style="overflow-x: hidden;">
+    <br>
+    <section class="row justify-content-center">
+        <section class="col-11 col-sm-11 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto" style="">
+            <div class=" border rounded border-dark ">
+                <nav class="border rounded bg-info">
+                    <h1 class="text-white fs-3">Search Customer</h1>
+                </nav>
 
-                    <form class="mx-auto m-lg-2">
-                        <div class="row mb-2 mt-2">
-                            <label class="col-sm-3 col-form-label fw-bold" for="inputId">Id :</label>
-                            <div class="col-sm-9">
-                                <input class="form-control" id="inputIdCus" placeholder="ex: C001" type="email">
-                            </div>
+                <form class="mx-auto m-lg-2">
+                    <div class="row mb-2 mt-2">
+                        <label class="col-sm-3 col-form-label fw-bold" for="inputId">Id :</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="inputSerIdCus" placeholder="ex: C001" type="email">
                         </div>
-                        <div class="row mb-2">
-                            <label class="col-sm-3 col-form-label fw-bold" for="inputName">Name :</label>
-                            <div class="col-sm-9">
-                                <input class="form-control" id="inputNameCus" placeholder="ex: Piyumal" type="email">
-                            </div>
+                    </div>
+                    <div class="row mb-2">
+                        <label class="col-sm-3 col-form-label fw-bold" for="inputName">Name :</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="inputSerNameCus" placeholder="ex: Piyumal" type="email">
                         </div>
-                        <div class="row mb-3">
-                            <label class="col-sm-3 col-form-label fw-bold" for="inputContact">Contact :</label>
-                            <div class="col-sm-9">
-                                <input class="form-control" id="inputContactCus" placeholder="ex: 0767554903"
-                                       type="email">
-                            </div>
-                        </div>
-
-                        <div class="position-relative">
-                            <button class="btn btn-primary mb-2" style="margin-left: 64%; width: 32%" type="button">
-                                Search
-                            </button>
-                        </div>
-
-                    </form>
-                </div>
-            </section>
-
-            <section class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4 col-xxl-4 pt-4 mb-3 mx-auto">
-
-                <div id="btnCusAdd" class="mb-2">
-                    <button class="btn" data-bs-target="#exampleModal" data-bs-toggle="modal"
-                            style="width: 75%; height: 3rem; background-color: #06B618; box-shadow: 0 7px 8px 0 rgba(0 ,0 ,0, 0.5), 0 7px 35px 0 rgba(0, 0, 0,0.32);" type="button">Add Customer
-                    </button>
-                    <!--///////////////-->
-
-                    <!-- Button trigger modal -->
-
-                    <!-- Modal -->
-                    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal"
-                         tabindex="-1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header bg-info">
-                                    <h5 class="modal-title " id="exampleModalLabel">Add Customer</h5>
-                                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
-                                            type="button"></button>
-                                </div>
-                                <div class="modal-body">
-
-                                    <form class="mx-auto m-lg-2">
-                                        <div class="row mb-2 mt-2">
-                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusId">Cus: ID
-                                                :</label>
-                                            <div class="col-sm-9">
-                                                <input class="form-control" id="inputCusId" placeholder="C001"
-                                                       type="email">
-                                                <span class="control-error" id="lblCusID"></span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-2">
-                                            <label class="col-sm-3 col-form-label fw-bold"
-                                                   for="inputCusName">Name:</label>
-                                            <div class="col-sm-9">
-                                                <input class="form-control" id="inputCusName" placeholder="ex: Piyumal"
-                                                       type="email">
-                                                <span class="control-error" id="lblCusName"></span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-2">
-                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusAddress">Address
-                                                :</label>
-                                            <div class="col-sm-9">
-                                                <input class="form-control" id="inputCusAddress" placeholder="ex: galle"
-                                                       type="email">
-                                                <span class="control-error" id="lblCusAddress"></span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusContact">Contact
-                                                :</label>
-                                            <div class="col-sm-9">
-                                                <input class="form-control" id="inputCusContact"
-                                                       placeholder="ex: 0767554903"
-                                                       type="email">
-                                                <span class="control-error" id="lblCuSalary"></span>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose"
-                                            type="button">Close
-                                    </button>
-                                    <button class="btn btn-primary" id="btnSave" type="button">Save changes</button>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label fw-bold" for="inputContact">Contact :</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="inputSerContactCus" placeholder="ex: 0767554903" type="email">
                         </div>
                     </div>
 
-                    <!-- //////////////-->
-                </div>
-
-                <div id="btnCusModify" class="mb-2" style="padding-top: 3%;">
-                    <button class="btn" data-bs-target="#exampleModal2" data-bs-toggle="modal"
-                            style="width: 75%; height: 3rem; background-color: #06B618; box-shadow: 0 7px 8px 0 rgba(0 ,0 ,0, 0.5), 0 7px 35px 0 rgba(0, 0, 0,0.32);" type="button">Modify Customer
-                    </button>
-
-                    <!-- Modal -->
-                    <div aria-hidden="true" aria-labelledby="exampleModalLabel2" class="modal fade" id="exampleModal2"
-                         tabindex="-1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header bg-info">
-                                    <h5 class="modal-title " id="exampleModalLabel2">Modify Customer</h5>
-                                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
-                                            type="button"></button>
-                                </div>
-                                <div class=" modal-body">
-
-                                    <form class="mx-auto m-lg-2">
-                                        <div class="row mb-2 mt-2">
-                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusId2">Cus: ID
-                                                :</label>
-                                            <div class="col-sm-9">
-                                                <input class="form-control" id="inputCusId2" placeholder="ex: C001"
-                                                       type="email">
-                                                <span class="control-error" id="lblCusID2"></span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-2">
-                                            <label class="col-sm-3 col-form-label fw-bold"
-                                                   for="inputCusName2">Name:</label>
-                                            <div class="col-sm-9">
-                                                <input class="form-control" id="inputCusName2" placeholder="ex: Piyumal"
-                                                       type="text">
-                                                <span class="control-error" id="lblCusName2"></span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-2">
-                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusAddress2">Address
-                                                :</label>
-                                            <div class="col-sm-9">
-                                                <input class="form-control" id="inputCusAddress2" placeholder="ex: galle"
-                                                       type="text">
-                                                <span class="control-error" id="lblCusAddress2"></span>
-                                            </div>
-                                        </div>
-                                        <div class="row mb-3">
-                                            <label class="col-sm-3 col-form-label fw-bold" for="inputCusContact2">Contact
-                                                :</label>
-                                            <div class="col-sm-9">
-                                                <input class="form-control" id="inputCusContact2"
-                                                       placeholder="ex: 0767554903"
-                                                       type="text">
-                                                <span class="control-error" id="lblCusContact2"></span>
-                                            </div>
-                                        </div>
-                                    </form>
-
-                                </div>
-                                <div>
-                                    <button class="btn btn-secondary bg-danger" id="btnSearch2"
-                                            style="margin-left: 2rem;margin-bottom: 1rem;"
-                                            type="button">Search
-                                    </button>
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose2" type="button">
-                                        Close
-                                    </button>
-                                    <button class="btn btn-primary" id="btnSave2" type="button">Save changes</button>
-                                    <button class="btn btn-warning" id="btnCustomerDelete" type="button">Delete Customer</button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="position-relative">
+                        <button class="btn btn-primary mb-2" style="margin-left: 64%; width: 32%" type="button" id="btnSearchCus">Search
+                        </button>
                     </div>
-                    <!--//////////////&ndash;&gt;-->
-                </div>
 
-                <div id="btnCusLoadAll" class="mb-2" style="padding-top: 3%;">
-                    <button class="btn" data-bs-target="#exampleModal3" data-bs-toggle="modal"
-                            style="width: 75%; height: 3rem; background-color: #06B618; box-shadow: 0 7px 8px 0 rgba(0 ,0 ,0, 0.5), 0 7px 35px 0 rgba(0, 0, 0,0.32);" type="button">Load All Customer
-                    </button>
-
-                    <!-- Modal -->
-                    <div aria-hidden="true" aria-labelledby="exampleModalLabel3" class="modal fade" id="exampleModal3"
-                         tabindex="-1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header bg-info">
-                                    <h5 class="modal-title " id="exampleModalLabel3">Load All Customer</h5>
-                                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
-                                            type="button"></button>
-                                </div>
-                                <div class=" modal-body">
-
-                                    <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
-                                        <thead class="bg-danger text-white">
-                                        <tr>
-                                            <th>Customer ID</th>
-                                            <th>Customer Name</th>
-                                            <th>Customer Contact</th>
-                                            <th>Customer Salary</th>
-                                        </tr>
-                                        </thead>
-                                        <tbdoy>
-                                            <tr>
-                                                <td>C001</td>
-                                                <td>Dasun</td>
-                                                <td>0754585658</td>
-                                                <td>200000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>C002</td>
-                                                <td>piyumal</td>
-                                                <td>0745845785</td>
-                                                <td>100000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>C003</td>
-                                                <td>Niuna</td>
-                                                <td>0767554309</td>
-                                                <td>30000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>C004</td>
-                                                <td>sadun</td>
-                                                <td>0710425254</td>
-                                                <td>200000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>C005</td>
-                                                <td>tharaka</td>
-                                                <td>0714525458</td>
-                                                <td>100000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>C006</td>
-                                                <td>Malith</td>
-                                                <td>0742545854</td>
-                                                <td>30000</td>
-                                            </tr>
-
-                                        </tbdoy>
-                                    </table>
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose3" type="button">
-                                        Close
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--//////////////&ndash;&gt;-->
-                </div>
-
-                </div>
-            </section>
+                </form>
+            </div>
         </section>
 
-        <section class="pt-4 col-11 mx-auto">
+        <section class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4 col-xxl-4 pt-4 mb-3 mx-auto">
 
-            <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
-                <thead class="bg-danger text-white">
-                <tr>
-                    <th>Customer ID</th>
-                    <th>Customer Name</th>
-                    <th>Customer Contact</th>
-                    <th>Customer Salary</th>
-                </tr>
-                </thead>
-                <tbody id="tblCustomer">
-                <tr>
-                    <td>C001</td>
-                    <td>Dasun</td>
-                    <td>0754585658</td>
-                    <td>200000</td>
-                </tr>
-                <tr>
-                    <td>C002</td>
-                    <td>piyumal</td>
-                    <td>0745845785</td>
-                    <td>100000</td>
-                </tr>
-                <tr>
-                    <td>C003</td>
-                    <td>Niuna</td>
-                    <td>0767554309</td>
-                    <td>30000</td>
-                </tr>
-                <tr>
-                    <td>C004</td>
-                    <td>sadun</td>
-                    <td>0710425254</td>
-                    <td>200000</td>
-                </tr>
-                <tr>
-                    <td>C005</td>
-                    <td>tharaka</td>
-                    <td>0714525458</td>
-                    <td>100000</td>
-                </tr>
-                <tr>
-                    <td>C006</td>
-                    <td>Malith</td>
-                    <td>0742545854</td>
-                    <td>30000</td>
-                </tr>
-                </tbody>
-            </table>
+            <div id="btnCusAdd" class="mb-2">
+                <button class="btn" data-bs-target="#exampleModal" data-bs-toggle="modal"
+                        style="width: 75%; height: 3rem; background-color: #06B618; box-shadow: 0 7px 8px 0 rgba(0 ,0 ,0, 0.5), 0 7px 35px 0 rgba(0, 0, 0,0.32);" type="button">Add Customer
+                </button>
+                <!--///////////////-->
+
+                <!-- Button trigger modal -->
+
+                <!-- Modal -->
+                <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal"
+                     tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-info">
+                                <h5 class="modal-title " id="exampleModalLabel">Add Customer</h5>
+                                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                        type="button"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <form class="mx-auto m-lg-2">
+                                    <div class="row mb-2 mt-2">
+                                        <label class="col-sm-3 col-form-label fw-bold" for="inputCusId">Cus: ID
+                                            :</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="inputCusId" placeholder="C001"
+                                                   type="email">
+                                            <span class="control-error" id="lblCusID"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <label class="col-sm-3 col-form-label fw-bold"
+                                               for="inputCusName">Name:</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="inputCusName" placeholder="ex: Piyumal"
+                                                   type="email">
+                                            <span class="control-error" id="lblCusName"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <label class="col-sm-3 col-form-label fw-bold" for="inputCusAddress">Address
+                                            :</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="inputCusAddress" placeholder="ex: galle"
+                                                   type="email">
+                                            <span class="control-error" id="lblCusAddress"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-sm-3 col-form-label fw-bold" for="inputCusContact">Contact
+                                            :</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="inputCusContact"
+                                                   placeholder="ex: 0767554903"
+                                                   type="email">
+                                            <span class="control-error" id="lblCuSalary"></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose"
+                                        type="button">Close
+                                </button>
+                                <button class="btn btn-primary" id="btnSave" type="button">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- //////////////-->
+            </div>
+
+            <div id="btnCusModify" class="mb-2" style="padding-top: 3%;">
+                <button class="btn" data-bs-target="#exampleModal2" data-bs-toggle="modal"
+                        style="width: 75%; height: 3rem; background-color: #06B618; box-shadow: 0 7px 8px 0 rgba(0 ,0 ,0, 0.5), 0 7px 35px 0 rgba(0, 0, 0,0.32);" type="button">Modify Customer
+                </button>
+
+                <!-- Modal -->
+                <div aria-hidden="true" aria-labelledby="exampleModalLabel2" class="modal fade" id="exampleModal2"
+                     tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-info">
+                                <h5 class="modal-title " id="exampleModalLabel2">Modify Customer</h5>
+                                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                        type="button"></button>
+                            </div>
+                            <div class=" modal-body">
+
+                                <form class="mx-auto m-lg-2">
+                                    <div class="row mb-2 mt-2">
+                                        <label class="col-sm-3 col-form-label fw-bold" for="inputCusId2">Cus: ID
+                                            :</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="inputCusId2" placeholder="ex: C001"
+                                                   type="email">
+                                            <span class="control-error" id="lblCusID2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <label class="col-sm-3 col-form-label fw-bold"
+                                               for="inputCusName2">Name:</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="inputCusName2" placeholder="ex: Piyumal"
+                                                   type="text">
+                                            <span class="control-error" id="lblCusName2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <label class="col-sm-3 col-form-label fw-bold" for="inputCusAddress2">Address
+                                            :</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="inputCusAddress2" placeholder="ex: galle"
+                                                   type="text">
+                                            <span class="control-error" id="lblCusAddress2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-sm-3 col-form-label fw-bold" for="inputCusContact2">Contact
+                                            :</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="inputCusContact2"
+                                                   placeholder="ex: 0767554903"
+                                                   type="text">
+                                            <span class="control-error" id="lblCusContact2"></span>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div>
+                                <button class="btn btn-secondary bg-danger" id="btnSearch2"
+                                        style="margin-left: 2rem;margin-bottom: 1rem;"
+                                        type="button">Search
+                                </button>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose2" type="button">
+                                    Close
+                                </button>
+                                <button class="btn btn-primary" id="btnModify2" type="button">Save changes</button>
+                                <button class="btn btn-warning" id="btnDelete2" type="button">Delete Customer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//////////////&ndash;&gt;-->
+            </div>
+
+            <div id="btnCusLoadAll" class="mb-2" style="padding-top: 3%;">
+                <button class="btn" data-bs-target="#exampleModal3" data-bs-toggle="modal"
+                        style="width: 75%; height: 3rem; background-color: #06B618; box-shadow: 0 7px 8px 0 rgba(0 ,0 ,0, 0.5), 0 7px 35px 0 rgba(0, 0, 0,0.32);" type="button">Load All Customer
+                </button>
+
+                <!-- Modal -->
+                <div aria-hidden="true" aria-labelledby="exampleModalLabel3" class="modal fade" id="exampleModal3"
+                     tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-info">
+                                <h5 class="modal-title " id="exampleModalLabel3">Load All Customer</h5>
+                                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                        type="button"></button>
+                            </div>
+                            <div class=" modal-body">
+
+                                <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
+                                    <thead class="bg-danger text-white">
+                                    <tr>
+                                        <th>Customer ID</th>
+                                        <th>Customer Name</th>
+                                        <th>Customer Contact</th>
+                                        <th>Customer Salary</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="tblAllCustomer2">
+
+                                    <!--                                        <tr>
+                                                                                <td>C00-002</td>
+                                                                                <td>piyumal</td>
+                                                                                <td>0745845785</td>
+                                                                                <td>100000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>C00-003</td>
+                                                                                <td>Niuna</td>
+                                                                                <td>0767554309</td>
+                                                                                <td>30000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>C00-004</td>
+                                                                                <td>sadun</td>
+                                                                                <td>0710425254</td>
+                                                                                <td>200000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>C00-005</td>
+                                                                                <td>tharaka</td>
+                                                                                <td>0714525458</td>
+                                                                                <td>100000</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>C00-006</td>
+                                                                                <td>Malith</td>
+                                                                                <td>0742545854</td>
+                                                                                <td>30000</td>
+                                                                            </tr>-->
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose3" type="button">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
         </section>
+    </section>
 
+    <section class="pt-4 col-11 mx-auto">
+        <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
+
+            <thead class="bg-danger text-white">
+            <tr>
+                <th>Customer ID</th>
+                <th>Customer Name</th>
+                <th>Customer Address</th>
+                <th>Customer Contact</th>
+            </tr>
+            </thead>
+            <tbody id="tblCustomer">
+            <!--            <tr>
+                            <td>C00-001</td>
+                            <td>Dasun</td>
+                            <td>0754585658</td>
+                            <td>200000</td>
+                        </tr>
+                        <tr>
+                            <td>C00-002</td>
+                            <td>piyumal</td>
+                            <td>0745845785</td>
+                            <td>100000</td>
+                        </tr>
+                        <tr>
+                            <td>C00-003</td>
+                            <td>Niuna</td>
+                            <td>0767554309</td>
+                            <td>30000</td>
+                        </tr>
+                        <tr>
+                            <td>C00-004</td>
+                            <td>sadun</td>
+                            <td>0710425254</td>
+                            <td>200000</td>
+                        </tr>
+                        <tr>
+                            <td>C00-005</td>
+                            <td>tharaka</td>
+                            <td>0714525458</td>
+                            <td>100000</td>
+                        </tr>
+                        <tr>
+                            <td>C00-006</td>
+                            <td>Malith</td>
+                            <td>0742545854</td>
+                            <td>30000</td>
+                        </tr>-->
+            </tbody>
+        </table>
     </section>
 </main>
 
