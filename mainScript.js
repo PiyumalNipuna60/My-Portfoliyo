@@ -3,8 +3,12 @@
 $(window).on('load', function () {
     console.log("Window on load");
 
-    $("#loader").css('url','gif-image.gif');
     $("#loader").fadeOut(1000);
+});
+
+
+$(document).ready(function () {
+    console.log("Document is ready");
 });
 
 
