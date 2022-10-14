@@ -920,6 +920,35 @@ function searchOrder(cusID) {
 /*---------------------*/
 function clearAllOrderTexts() {
     $("#OederOID").focus();
-    $("#OederOID,#OrderDate,#OrderCusID,#OrderCusName,#OrderCusAddress,#OrderCusSalary,#OrderICode,#OrderIName,#OrderIQty,#OrderIPrice,#OrderIOQty,#OrderTotal").val("");
+    $("#OederOID,#OrderDate,#OrderCusID,#OrderCusName,#OrderCusAddress,#OrderCusSalary,#OrderICode,#OrderIName,#OrderIQty,#OrderIPrice,#OrderIOQty,#OrderTotal,#OrderTotal,#OrderSubTotal,#OrderCash,#OrderDiscount,#OrderBalance").val("");
     checkValidity();
+}
+
+/*-----------Delete Order----------------*/
+$("#btnPurchase").on("click", function () {
+    let deleteID = $("#OederOID").val();
+
+    let option = confirm("Do you really want to delete Order id :" + deleteID);
+    if (option) {
+        if (deleteOrder(deleteID)) {
+            alert("Order Successfully Deleted..");
+            setTextfieldValuesOrder("", "", "", "");
+        } else {
+            alert("No such Order to delete. please check the id");
+        }
+    }
+    console.log("hy")
+});
+
+function deleteOrder(OrderID) {
+    let orders = searchOrder(OrderID);
+    if (orders != null) {
+        let indexNumber = order.indexOf(orders);
+        order.splice(indexNumber, 1);
+        getLoadOrder();
+        clearAllOrderTexts();
+        return true;
+    } else {
+        return false;
+    }
 }
