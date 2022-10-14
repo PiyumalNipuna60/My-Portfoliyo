@@ -497,7 +497,7 @@ function SearchItemFunction(){
     if (Item != null) {
         setItemTextfieldValues(Item.code, Item.name, Item.qty, Item.price);
     } else {
-        alert("There is no cusotmer available for that " + typedId);
+        alert("There is no Item available for that " + typedId);
         setItemTextfieldValues("", "", "", "");
     }
 }
@@ -530,7 +530,7 @@ function SearchItemFunction2(){
     if (Item != null) {
         setItemTextfieldValues2(Item.code, Item.name, Item.qty, Item.price);
     } else {
-        alert("There is no cusotmer available for that " + typedId);
+        alert("There is no Item available for that " + typedId);
         setItemTextfieldValues2("", "", "", "");
     }
 }
@@ -543,18 +543,17 @@ function setItemTextfieldValues2(code, name, qty, price) {
     $("#inputItemPrice2").val(price);
 }
 
-btnItemDelete
 /*-----------Delete Customer----------------*/
 $("#btnItemDelete").on("click",function () {
     let deleteID = $("#inputItemCode2").val();
 
-    let option = confirm("Do you really want to delete customer id :" + deleteID);
+    let option = confirm("Do you really want to delete Item id :" + deleteID);
     if (option){
         if (deleteItem(deleteID)) {
-            alert("Customer Successfully Deleted..");
+            alert("Item Successfully Deleted..");
             setItemTextfieldValues2("", "", "", "");
         } else {
-            alert("No such customer to delete. please check the id");
+            alert("No such Item to delete. please check the id");
         }
     }
 });
@@ -564,6 +563,36 @@ function deleteItem(ItemID) {
     if (Item != null) {
         let indexNumber = item.indexOf(Item);
         item.splice(indexNumber, 1);
+        getAllItem();
+        loadAllItem();
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+/*-----------Update Customer----------------*/
+
+$("#ItemSaveChange").on("click",function () {
+    let ItemCode = $("#inputItemCode2").val();
+    let response = updateItem(ItemCode);
+    if (response) {
+        alert("Item Updated Successfully");
+        setItemTextfieldValues2("", "", "", "");
+    } else {
+        alert("Update Failed..!");
+
+    }
+});
+
+function updateItem(ItemId) {
+    let Items = searchItem(ItemId);
+    if (Items != null) {
+        Items.code = $("#inputItemCode2").val();
+        Items.name = $("#inputItemName2").val();
+        Items.qty = $("#inputItemQts2").val();
+        Items.price = $("#inputItemPrice2").val();
         getAllItem();
         loadAllItem();
         return true;
