@@ -734,7 +734,7 @@ $("#btnOrderAddItem").click(function () {
         address: customerAddress,
         contact: customerSalary,
 
-        Itemcode: orderICode,
+        ItemCode: orderICode,
         Item_name: orderName,
         qty: orderQty,
         price: orderPrice,
@@ -745,16 +745,18 @@ $("#btnOrderAddItem").click(function () {
     order.push(orderObject);
     console.log(order)
     getLoadOrder();
+
 });
 
 
-/*------------gel All Customer--------------*/
+/*------------gel All Order--------------*/
 
 function getLoadOrder() {
+    $("#orderTable").empty();
     for (var orders of order) {
         console.log(order);
 
-        var row = `<tr><td>${orders.id}</td><td>${orders.Oid}</td><td>${orders.date}</td><td>${orders.Itemcode}</td><td>${orders.Item_name}</td><td>${orders.price}</td><td>${orders.orderQty}</td><td>${orders.total}</td></tr>`;
+        var row = `<tr><td>${orders.Oid}</td><td>${orders.id}</td><td>${orders.date}</td><td>${orders.ItemCode}</td><td>${orders.Item_name}</td><td>${orders.price}</td><td>${orders.orderQty}</td><td>${orders.total}</td></tr>`;
         $("#orderTable").append(row);
     }
 }
@@ -845,7 +847,7 @@ $("#OrderIQty").on('keydown', function (event) {
 
 $("#OrderIOQty").on('keydown', function (event) {
     if (event.key == "Enter") {
-        $("#btnAddOrder").focus();
+        $("#btnOrderAddItem").focus();
     }
 });
 
@@ -872,3 +874,47 @@ $("#OrderBalance").on('keydown', function (event) {
         $("#btnPurchase").focus();
     }
 });
+
+
+/*----------search ()------------*/
+$("#btnSerOrder").on("click",function () {
+    SearchOrderFunction2();
+});
+
+function SearchOrderFunction2(){
+    let typedId = $("#OederOID").val();
+    let order = searchOrder(typedId);
+    if (order != null) {
+        setTextfieldValuesOrder(order.Oid, order.date, order.id, order.cus_name,order.address,order.contact,order.ItemCode,order.Item_name,order.qty,order.price,order.orderQty,order.total);
+    } else {
+        alert("There is no Order available for that " + typedId);
+        setTextfieldValuesOrder("", "", "", "");
+    }
+}
+
+function setTextfieldValuesOrder(Oid, date, id, cus_name,address,contact,ItemCode,Item_name,qty,price,orderQty,total) {
+    $("#OederOID").val(Oid);
+    $("#OrderDate").val(date);
+    $("#OrderCusID").val(id);
+    $("#OrderCusName").val(cus_name);
+    $("#OrderCusAddress").val(address);
+    $("#OrderCusSalary").val(contact);
+    $("#OrderICode").val(ItemCode);
+    $("#OrderIName").val(Item_name);
+    $("#OrderIQty").val(qty);
+    $("#OrderIPrice").val(price);
+    $("#OrderIOQty").val(orderQty);
+    $("#OrderTotal").val(total);
+}
+
+
+function searchOrder(cusID) {
+    for (let orders of order) {
+        if (orders.id == cusID) {
+            return orders;
+        }
+    }
+    return null;
+}
+
+/*---------------------*/

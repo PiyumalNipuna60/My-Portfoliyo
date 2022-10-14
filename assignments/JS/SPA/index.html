@@ -895,12 +895,7 @@
                                 </div>
                             </div>
                             <div class="row mb-2">
-                                <label class="col-6 col-form-label fw-bold" for="OrderCustomer">Customer :</label>
-                                <div class="col-5" style="margin-left: -8%;">
-                                    <input class="form-control" id="OrderCustomer" placeholder="ex:type"
-                                           style="width: 168%;"
-                                           type="email">
-                                </div>
+                                <button class="btn btn-warning" id="btnSerOrder" type="button">Search</button>
                             </div>
                             <div class="row mb-3">
                                 <label class="col-6 col-form-label fw-bold" for="OrderCusName">Cus: Name :</label>
@@ -1028,7 +1023,7 @@
                 <div class="col border rounded border-dark ">
                     <div class="row" style="margin-left: 3%">
                         <h1 class="text-primary  col-4" style="font-size: 200%">Total :</h1>
-                        <h1 class="text-primary   col-4" style="font-size: 175%">000.00Rs/=</h1>
+                        <h1 class="text-primary   col-4" style="font-size: 175%" id="OrderTotal">000.00Rs/=</h1>
                     </div>
                     <div class="row" style="margin-left: 3%">
                         <h1 class="text-danger col-4" style="font-size: 175%">SubTotal :</h1>
@@ -1082,8 +1077,8 @@
             <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
                 <thead class="bg-danger text-white">
                 <tr>
-                    <th>Customer Id</th>
                     <th>Order Id</th>
+                    <th>Customer Id</th>
                     <th>Order Date</th>
                     <th>Item Code</th>
                     <th>Item Name</th>
