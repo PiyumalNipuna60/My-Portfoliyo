@@ -516,3 +516,29 @@ function searchItem(cusID) {
     }
     return null;
 }
+
+/*----------search (in search ekata)------------*/
+$("#btnItemSearch").on("click",function () {
+    SearchItemFunction2();
+});
+
+
+
+function SearchItemFunction2(){
+    let typedId = $("#inputItemCode2").val();
+    let Item = searchItem(typedId);
+    if (Item != null) {
+        setItemTextfieldValues2(Item.code, Item.name, Item.qty, Item.price);
+    } else {
+        alert("There is no cusotmer available for that " + typedId);
+        setItemTextfieldValues2("", "", "", "");
+    }
+}
+
+
+function setItemTextfieldValues2(code, name, qty, price) {
+    $("#inputItemCode2").val(code);
+    $("#inputItemName2").val(name);
+    $("#inputItemQts2").val(qty);
+    $("#inputItemPrice2").val(price);
+}
