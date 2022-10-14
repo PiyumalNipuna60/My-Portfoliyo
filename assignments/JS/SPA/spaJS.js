@@ -427,31 +427,35 @@ $("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#
 
 
 $("#inputItemCode").on('keydown', function (event) {
-    if (event.key == "Enter" && check(cusIDRegEx, $("#inputItemCode"))) {
+    if (event.key == "Enter" && check(itemIDRegEx, $("#inputItemCode"))) {
         $("#inputItemName").focus();
     } else {
         focusText($("#inputItemCode"));
     }
 });
 
-
-$("#inputItemName").on('keydown',function (event) {
-    if (event.key=="Enter"){
-        $("#inputItemQts").focus();
+$("#inputItemName").on('keydown', function (event) {
+    if (event.key == "Enter" && check(itemNameRegEx, $("#inputItemName"))) {
+        focusText($("#inputItemQts"));
     }
 });
 
-$("#inputItemQts").on('keydown',function (event) {
-    if (event.key=="Enter"){
-        $("#inputItemPrice").focus();
+$("#inputItemQts").on('keydown', function (event) {
+    if (event.key == "Enter" && check(itemQTYRegEx, $("#inputItemQts"))) {
+        focusText($("#inputItemPrice"));
     }
 });
 
-$("#inputItemPrice").on('keydown',function (event) {
-    if (event.key=="Enter"){
+$("#inputItemPrice").on('keydown', function (event) {
+    if (event.key == "Enter" && check(itemPriceRegEx, $("#inputItemPrice"))) {
         $("#btnItemSave").focus();
+        let res = confirm("Do you want to add this Item.?");
+        if (res) {
+            clearAllItemTexts();
+        }
     }
 });
+
 
 /*----------------*/
 
