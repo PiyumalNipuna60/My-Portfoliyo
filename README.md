@@ -19,6 +19,6 @@ GitHub URL :- https://github.com/PiyumalNipuna60 <br>
 
 Site Map URL :- https://www.gloomaps.com/Kp7m3vkhgb
 
-Wire-frame URL:- https://drive.google.com/file/d/1niPR7IKUiX2D7qRt5cy6Hyh2CtenK9Al/view?usp=sharing
+Wire-frame URL:- https://drive.google.com/file/d/1zf4qxF2kUqKRK7qsQT9aeOUINffouvap/view?usp=sharing
 
 Mock-up URL :- https://www.figma.com/file/uxAqZuvXgZdfOoaxgJ2055/Untitled?node-id=3%3A292
