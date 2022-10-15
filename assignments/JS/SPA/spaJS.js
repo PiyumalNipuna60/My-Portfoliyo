@@ -772,7 +772,7 @@ $("#OederOID,#OrderCustomer,#OrderCusName,#OrderDate,#OrderCusID,#OrderCusSalary
 });
 
 $("#OederOID").on('keydown', function (event) {
-    if (event.key == "Enter" && check(cusIDRegEx, $("#OederOID"))) {
+    if (event.key == "Enter" && check(orderOIDIDRegEx, $("#OederOID"))) {
         $("#OrderCusName").focus();
     } else {
         focusText($("#OederOID"));
@@ -780,29 +780,28 @@ $("#OederOID").on('keydown', function (event) {
 });
 
 $("#OrderCusName").on('keydown', function (event) {
-    if (event.key == "Enter" && check(cusNameRegEx, $("#OrderCusName"))) {
+    if (event.key == "Enter" && check(orderCusNameRegEx, $("#OrderCusName"))) {
         focusText($("#OrderDate"));
     }
 });
 
 $("#OrderDate").on('keydown', function (event) {
-    if (event.key == "Enter" && check(cusNameRegEx, $("#OrderDate"))) {
+    if (event.key == "Enter") {
         focusText($("#OrderCusID"));
     }
 });
 
 $("#OrderCusID").on('keydown', function (event) {
-    if (event.key == "Enter" && check(cusNameRegEx, $("#OrderCusID"))) {
+    if (event.key == "Enter" && check(orderCusIDRegEx, $("#OrderCusID"))) {
         focusText($("#OrderCusSalary"));
     }
 });
 
 $("#OrderCusSalary").on('keydown', function (event) {
-    if (event.key == "Enter" && check(cusNameRegEx, $("#OrderCusSalary"))) {
+    if (event.key == "Enter" && check(orderCusContactRegEx, $("#OrderCusSalary"))) {
         focusText($("#OrderCusAddress"));
     }
 });
-
 
 /* -----------*/
 
@@ -813,72 +812,48 @@ $("#OrderItem,#OrderICode,#OrderIName,#OrderIPrice,#OrderIQty,#OrderIOQty,#btnAd
 });
 
 $("#OrderItem").on('keydown', function (event) {
-    if (event.key == "Enter" && check(cusIDRegEx, $("#OrderItem"))) {
+    if (event.key == "Enter") {
         $("#OrderICode").focus();
-    } else {
-        focusText($("#OrderItem"));
     }
 });
 
 $("#OrderICode").on('keydown', function (event) {
-    if (event.key == "Enter" && check(cusNameRegEx, $("#OrderICode"))) {
+    if (event.key == "Enter" && check(orderItemCodeRegEx, $("#OrderICode"))) {
         focusText($("#OrderIName"));
     }
 });
 
 $("#OrderIName").on('keydown', function (event) {
-    if (event.key == "Enter" && check(cusNameRegEx, $("#OrderIName"))) {
+    if (event.key == "Enter" && check(orderItemNameRegEx, $("#OrderIName"))) {
         focusText($("#OrderIPrice"));
     }
 });
 
-
-
-
-
-
-
-
 $("#OrderIPrice").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#OrderIQty").focus();
+    if (event.key == "Enter" && check(orderIPriceRegEx, $("#OrderIPrice"))) {
+        focusText($("#OrderIQty"));
     }
 });
 
 $("#OrderIQty").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#OrderIOQty").focus();
+    if (event.key == "Enter" && check(orderIQTYRegEx, $("#OrderIQty"))) {
+        focusText($("#OrderIOQty"));
     }
 });
+
+// $("#OrderIOQty").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(orderIOQTYRegEx, $("#OrderIOQty"))) {
+//         // focusText($("#btnOrderAddItem"));
+//     }
+// });
+
 
 $("#OrderIOQty").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#btnOrderAddItem").focus();
-    }
-});
+    let OQty = $("#OrderIOQty").val();
+    let OPrice = $("#OrderIPrice").val();
+    let OTotal=(OQty*OPrice);
 
-$("#OrderCash,#OrderDiscount,#OrderBalance,#btnPurchase").on('keydown', function (event) {
-    if (event.key == "Tab") {
-        event.preventDefault();
-    }
-});
-
-$("#OrderCash").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#OrderDiscount").focus();
-    }
-});
-
-$("#OrderDiscount").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#OrderBalance").focus();
-    }
-});
-
-$("#OrderBalance").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#btnPurchase").focus();
-    }
+    $('#OrderTotal').val(OTotal);
 });
 
 
