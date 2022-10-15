@@ -772,28 +772,26 @@ $("#OederOID,#OrderCustomer,#OrderCusName,#OrderDate,#OrderCusID,#OrderCusSalary
 });
 
 $("#OederOID").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#OrderCustomer").focus();
-    }
-});
-
-$("#OrderCustomer").on('keydown', function (event) {
-    if (event.key == "Enter") {
+    if (event.key == "Enter" && check(cusIDRegEx, $("#OederOID"))) {
         $("#OrderCusName").focus();
+    } else {
+        focusText($("#OederOID"));
     }
 });
 
 $("#OrderCusName").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#OrderDate").focus();
+    if (event.key == "Enter" && check(cusNameRegEx, $("#OrderCusName"))) {
+        focusText($("#OrderDate"));
     }
 });
 
 $("#OrderDate").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#OrderCusID").focus();
+    if (event.key == "Enter" && check(cusNameRegEx, $("#OrderDate"))) {
+        focusText($("#OrderCusID"));
     }
 });
+
+
 
 $("#OrderCusID").on('keydown', function (event) {
     if (event.key == "Enter") {
