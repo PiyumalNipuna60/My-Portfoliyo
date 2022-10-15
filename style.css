@@ -1168,57 +1168,57 @@ main > section:nth-child(6) > section:nth-child(2) > section:first-child > artic
     justify-content: space-between;
 }
 
-#Pdiv1 {
-    left: 175px;
-    position: relative;
-    top: 22px;
-}
+/*#Pdiv1 {*/
+/*    left: 175px;*/
+/*    position: relative;*/
+/*    top: 22px;*/
+/*}*/
 
-#Pdiv1 > h3 {
-    left: 124px;
-    position: relative;
-    top: -9px;
-    font-size: 129%;
-}
+/*#Pdiv1 > h3 {*/
+/*    left: 124px;*/
+/*    position: relative;*/
+/*    top: -9px;*/
+/*    font-size: 129%;*/
+/*}*/
 
-#Pdiv2 {
-    left: 108px;
-    position: relative;
-    top: -6px;
-}
+/*#Pdiv2 {*/
+/*    left: 108px;*/
+/*    position: relative;*/
+/*    top: -6px;*/
+/*}*/
 
-#Pdiv2 > h3 {
-    left: 153px;
-    position: relative;
-    top: -23px;
-    font-size: 200%;
-}
+/*#Pdiv2 > h3 {*/
+/*    left: 153px;*/
+/*    position: relative;*/
+/*    top: -23px;*/
+/*    font-size: 200%;*/
+/*}*/
 
-#Pdiv3 {
-    left: 37px;
-    position: relative;
-    top: 22px;
-}
+/*#Pdiv3 {*/
+/*    left: 37px;*/
+/*    position: relative;*/
+/*    top: 22px;*/
+/*}*/
 
-#Pdiv3 > h3 {
-    left: 124px;
-    position: relative;
-    top: -11px;
-    font-size: 129%;
-}
+/*#Pdiv3 > h3 {*/
+/*    left: 124px;*/
+/*    position: relative;*/
+/*    top: -11px;*/
+/*    font-size: 129%;*/
+/*}*/
 
-#Pdiv4 {
-    left: -100px;
-    position: relative;
-    top: 54px;
-}
+/*#Pdiv4 {*/
+/*    left: -100px;*/
+/*    position: relative;*/
+/*    top: 54px;*/
+/*}*/
 
-#Pdiv4 > h3 {
-    left: 83px;
-    position: relative;
-    top: -48px;
-    font-size: 120%;
-}
+/*#Pdiv4 > h3 {*/
+/*    left: 83px;*/
+/*    position: relative;*/
+/*    top: -48px;*/
+/*    font-size: 120%;*/
+/*}*/
 
 /*///////////nav css////////*/
 main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > hr {
@@ -3045,7 +3045,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         justify-content: space-between;
     }
 
-    #Pdiv1 {
+ /*   #Pdiv1 {
         left: 44px;
         position: relative;
         top: 73px;
@@ -3117,7 +3117,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     #Pdiv4 > img {
         width: 110%;
         height: 38vh;
-    }
+    }*/
 
     /*///////////nav css////////*/
     main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > hr {
@@ -4913,7 +4913,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         justify-content: space-between;
     }
 
-    #Pdiv1 {
+/*    #Pdiv1 {
         left: 44px;
         position: relative;
         top: 73px;
@@ -4985,7 +4985,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     #Pdiv4 > img {
         width: 110%;
         height: 38vh;
-    }
+    }*/
 
     /*///////////nav css////////*/
     main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > hr {
@@ -6821,7 +6821,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         justify-content: space-between;
     }
 
-    #Pdiv1 {
+/*    #Pdiv1 {
         left: 44px;
         position: relative;
         top: 73px;
@@ -6893,7 +6893,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     #Pdiv4 > img {
         width: 110%;
         height: 38vh;
-    }
+    }*/
 
     /*///////////nav css////////*/
     main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > hr {

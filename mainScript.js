@@ -12,4 +12,14 @@ $(document).ready(function () {
 });
 
 
+// ===============header====================
+
+
+// $("#idHome").on('click',function () {
+//         $("#Home1").fadeOut(1000);
+// });
+
+
+
+
 // ===============Assigment====================

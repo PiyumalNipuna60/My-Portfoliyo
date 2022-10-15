@@ -17,6 +17,8 @@
     <link href="assets/JS/swiper.min.css" rel="stylesheet">
     <link href="assets/JS/style.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleSwiper.css">
+    styleSwiper
 
 </head>
 
@@ -34,12 +36,12 @@
     <img alt="NP_icon" height="3%" src="assets/image/NP.png" width="3%">
     <nav>
         <ul>
-            <li><i class="fa-solid fa-house"></i><a href="#Home1">Home</a></li>
+            <li id="idHome"><i class="fa-solid fa-house"></i><a href="#Home1">Home</a></li>
             <li><i class="fa-solid fa-address-card"></i><a href="#About">About</a></li>
-            <li><i class="fa-solid fa-pen"></i><a href="#">Skill</a></li>
-            <li><i class="fa-solid fa-clipboard"></i><a href="#">Project</a></li>
-            <li><i class="fa-solid fa-earth-asia"></i><a href="#">Service</a></li>
-            <li><i class="fa-solid fa-address-book"></i><a href="#">Contact</a></li>
+            <li><i class="fa-solid fa-pen"></i><a href="#Skill">Skill</a></li>
+            <li><i class="fa-solid fa-clipboard"></i><a href="#Project">Project</a></li>
+            <li><i class="fa-solid fa-earth-asia"></i><a href="#ServicePage">Service</a></li>
+            <li><i class="fa-solid fa-address-book"></i><a href="#Contact">Contact</a></li>
         </ul>
 
     </nav>
@@ -626,7 +628,8 @@ environment.
             <section>
                 <h1 id="P1">Project</h1>
                 <hr align="left" size="3px" style="border-bottom-color: darkred" width=75>
-                <article>
+                <br>
+              <!--  <article>
                     <div id="Pdiv1" >
                         <img alt="Game" height="500" src="assets/image/pic/Tips-For-an-Indie-Game-Developer.png"
                              width="300">
@@ -642,14 +645,47 @@ environment.
                     <div id="Pdiv3" >
                         <img alt="Java" height="500" src="assets/image/pic/934be2865cf79d85cac19f8beb67bf27.gif"
                              width="300">
-                        <h3>Java</h3>
+                        <h3>Web</h3>
                     </div>
 
-                    <div id="Pdiv4" >
+                    <div id="Pdiv4">
                         <img alt="Assignment" height="400" src="assets/image/pic/200.gif" width="250">
                         <h3>Assignment</h3>
                     </div>
-                </article>
+                </article>-->
+
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <a class="swiper-slide" href="#Game" style="background-image:url(assets/image/pic/Tips-For-an-Indie-Game-Developer.png)"
+                           target="_blank">
+                            <div class="info">
+                                <h5>Game<br> <span>.............</span></h5>
+                            </div>
+                        </a>
+
+                        <a class="swiper-slide" href="assignments/JS/SPA/index.html" style="background-image:url(assets/image/pic/benefits-of-being-a-web-developer.jpg)"
+                           target="_blank">
+                            <div class="info">
+                                <h5>Web<br> <span>.............</span></h5>
+                            </div>
+                        </a>
+
+                        <a class="swiper-slide" href="#AllProject" style="background-image:url(assets/image/pic/934be2865cf79d85cac19f8beb67bf27.gif)"
+                           target="_blank">
+                            <div class="info">
+                                <h5>Java<br> <span>.............</span></h5>
+                            </div>
+                        </a>
+                        <a class="swiper-slide" href="#Achievements" style="background-image:url(assets/image/pic/200.gif)"
+                           target="_blank">
+                            <div class="info">
+                                <h5>Assignment<br> <span>..............</span></h5>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
             </section>
             <!--<section>
                 <div>
@@ -1046,6 +1082,9 @@ environment.
                     </div>
 
                 </section>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                </div>
             </section>
 
           <!--  <section>
@@ -1230,6 +1269,24 @@ Nipuna
 
 <script src="assets/JS/jquery-3.6.1.min.js"></script>
 <script src="mainScript.js"></script>
+
+<script>
+
+
+
+
+    // $("#Pdiv1").on('mousemove', function () {
+    //     console.log("hyy")
+    //     $("#Pdiv1").children(':eq(0)').css('width',' 65%');
+    //     $("#Pdiv1").children(':eq(0)').css('height','69vh');
+    //     $("#Pdiv1").css('top','27px');
+    //
+    //     $("#Pdiv2").children(':eq(0)').css('width',' 79%');
+    //     $("#Pdiv2").children(':eq(0)').css('height','42vh');
+    //     $("#Pdiv2").css('top','70px');
+    //     $("#Pdiv2").css('left','-27px');
+    // });
+</script>
 
 </body>
 </html>

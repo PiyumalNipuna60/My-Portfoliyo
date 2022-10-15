@@ -1,0 +1,122 @@
+.swiper-container {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 30rem;
+    height: 30rem;
+}
+
+.swiper-slide:hover {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 33rem;
+    height: 33rem;
+    border: 2px solid red;
+}
+
+.info h5 {
+    margin: 0;
+    padding-top: 10px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.685);
+    font-size: 20px;
+    font-weight: bold;
+    color: #F8F7F3;
+}
+
+.info span {
+    font-size: 15px;
+    color: #2ED573;
+    font-weight: bold;
+}
+
+
+@media all and (min-width: 1024px) and (max-width: 1440px){
+    .swiper-container {
+        width: 100%;
+        padding-top: 39px;
+        padding-bottom: 40px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 27rem;
+        height: 27rem;
+    }
+
+    .swiper-slide:hover {
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        width: 30rem;
+        height: 30rem;
+        border: 2px solid red;
+    }
+}
+
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+    .swiper-container {
+        width: 100%;
+        padding-top: 39px;
+        padding-bottom: 40px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 27rem;
+        height: 27rem;
+    }
+
+    .swiper-slide:hover {
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        width: 30rem;
+        height: 30rem;
+        border: 2px solid red;
+    }
+}
+
+
+@media all and (min-width: 425px) and (max-width: 768px){
+    .swiper-container {
+        width: 100%;
+        padding-top: 39px;
+        padding-bottom: 40px;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 27rem;
+        height: 27rem;
+    }
+
+    .swiper-slide:hover {
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        width: 30rem;
+        height: 30rem;
+        border: 2px solid red;
+    }
+
+}
+
+
+@media all and (max-width: 425px){
+
+}
