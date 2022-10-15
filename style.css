@@ -1653,6 +1653,8 @@ main > section:nth-child(10) > section:nth-child(2) > section:first-child > sect
     position: relative;
     top: 70px;
     display: flex;
+    padding-right: 50px;
+    padding-left: 46px;
 }
 
 main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(1) {
@@ -1675,22 +1677,26 @@ main > section:nth-child(10) > section:nth-child(2) > section:first-child > sect
 
 main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > img {
     height: 82%;
-    width: 93%;
+    width: 86%;
+    border: 3px solid blue;
+    border-radius: 53px;
+    box-shadow: 9px 5px 2px #6900ff;
 }
 
-main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(2) > img {
-    height: 82%;
-    width: 93%;
+main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div>img:hover {
+    height: 92%;
+    width: 94%;
+    border-radius: 53px;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 6px 3px 2px red;
+    border: 2px solid red;
 }
 
-main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(3) > img {
-    height: 82%;
-    width: 93%;
-}
 
 main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > h3 {
     position: relative;
-    left: 172px;
+    left: 130px;
     font-size: 127%;
 }
 
@@ -3543,6 +3549,8 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         position: relative;
         top: 70px;
         display: flex;
+        padding-right: 50px;
+        padding-left: 46px;
     }
 
     main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(1) {
@@ -3565,22 +3573,25 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > img {
         height: 82%;
-        width: 93%;
+        width: 86%;
+        border: 3px solid blue;
+        border-radius: 53px;
+        box-shadow: 9px 5px 2px #6900ff;
     }
 
-    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(2) > img {
-        height: 82%;
-        width: 93%;
-    }
-
-    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(3) > img {
-        height: 82%;
-        width: 93%;
+    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div>img:hover {
+        height: 92%;
+        width: 94%;
+        border-radius: 53px;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 6px 3px 2px red;
+        border: 2px solid red;
     }
 
     main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > h3 {
         position: relative;
-        left: 172px;
+        left: 109px;
         font-size: 127%;
     }
 
@@ -5426,6 +5437,8 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         position: relative;
         top: 70px;
         display: flex;
+        padding-right: 50px;
+        padding-left: 46px;
     }
 
     main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(1) {
@@ -5444,26 +5457,31 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         position: relative;
         width: 77%;
         height: 454px;
+
     }
 
     main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > img {
         height: 82%;
         width: 93%;
+        width: 86%;
+        border: 3px solid blue;
+        border-radius: 53px;
+        box-shadow: 9px 5px 2px #6900ff;
     }
 
-    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(2) > img {
-        height: 82%;
-        width: 93%;
-    }
-
-    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(3) > img {
-        height: 82%;
-        width: 93%;
+    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div>img:hover {
+        height: 92%;
+        width: 94%;
+        border-radius: 53px;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 6px 3px 2px red;
+        border: 2px solid red;
     }
 
     main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > h3 {
         position: relative;
-        left: 172px;
+        left: 63px;
         font-size: 127%;
     }
 
@@ -7327,9 +7345,19 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         position: relative;
         top: 4%;
         display: flex;
-        width: 96%;
-        left: 2%;
+        padding-right: 50px;
+        padding-left: 46px;
     }
+
+    /*main > section:nth-child(10) > section:nth-child(2) > section:first-child > section >div> div:hover {*/
+    /*    position: relative;*/
+    /*    top: 4%;*/
+    /*    padding-right: 45px;*/
+    /*    padding-left: 45px;*/
+    /*    width: 90%;*/
+    /*    height: 650px;*/
+    /*}*/
+
 
     main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(1) {
         position: relative;
@@ -7337,9 +7365,18 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         height: 454px;
     }
 
+    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div>img:hover {
+        height: 92%;
+        width: 94%;
+        border-radius: 53px;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 6px 3px 2px red;
+        border: 2px solid red;
+    }
+
     main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(2) {
         position: relative;
-        width: 77%;
         height: 454px;
     }
 
@@ -7352,17 +7389,12 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > img {
         height: 82%;
         width: 93%;
+        width: 86%;
+        border: 3px solid blue;
+        border-radius: 53px;
+        box-shadow: 9px 5px 2px #6900ff;
     }
 
-    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(2) > img {
-        height: 82%;
-        width: 93%;
-    }
-
-    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(3) > img {
-        height: 82%;
-        width: 93%;
-    }
 
     main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > h3 {
         position: relative;
