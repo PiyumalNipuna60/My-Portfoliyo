@@ -114,7 +114,7 @@ main > section {
 
 
 body > main > section:nth-child(1) {
-    /*background-color: green;*/
+    background-color: green;
     position: relative;
     bottom: 25px;
     height: 99vh;
@@ -156,10 +156,10 @@ main > section:nth-child(4) {
 
 main > section:nth-child(5) {
     background-color: greenyellow;
-    /*background-repeat: no-repeat, repeat;*/
-    /*background-image: url(assets/image/pic/SL-043021-42650-28.jpg);*/
-    /*background-size: 100% 100%;*/
-    /* background-size: auto;*/
+    background-repeat: no-repeat, repeat;
+    background-image: url(assets/image/pic/SL_042620_30310_36.jpg);
+    background-size: 100% 100%;
+     /*background-size: auto;*/
     position: relative;
     top: -126px;
     height: 99vh;
@@ -169,7 +169,7 @@ main > section:nth-child(5) {
 main > section:nth-child(6) {
     /*background-color: yellow;*/
     background-repeat: no-repeat, repeat;
-    background-image: url("assets/image/pic/SL_042620_30310_36.jpg");
+    background-image: url("assets/image/pic/piyush_26_feb_12.jpg");
     background-size: 100% 100%;
     position: relative;
     top: -143px;
@@ -219,9 +219,9 @@ main > section:nth-child(10) {
 
 main > section:nth-child(11) {
     /*background-color: #d9b7b7;*/
-    /*background-repeat: no-repeat, repeat;*/
-    /*background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");*/
-    /*background-size: 100% 100%;*/
+    background-repeat: no-repeat, repeat;
+    background-image: url("assets/image/pic/17973908.jpg");
+    background-size: 100% 100%;
     position: relative;
     top: -230px;
     height: 94vh
