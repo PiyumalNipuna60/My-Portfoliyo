@@ -3888,7 +3888,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-repeat: no-repeat, repeat;
         background-image: url(assets/image/pic/light-blue-color-gradient-web-icon-template-round-circle-shape-background-light-blue-color-gradient-web-icon-template-round-circle-170460407.jpg);
         background-size: 127% 115%;
-        background-position: 95px;
+        background-position: -1px;
         /* background-size: auto; */
         position: relative;
         bottom: 22px;
@@ -5784,7 +5784,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-repeat: no-repeat, repeat;
         background-image: url(assets/image/pic/light-blue-color-gradient-web-icon-template-round-circle-shape-background-light-blue-color-gradient-web-icon-template-round-circle-170460407.jpg);
         background-size: 127% 115%;
-        background-position: 95px;
+        background-position: -1px;
         /* background-size: auto; */
         position: relative;
         bottom: 22px;
