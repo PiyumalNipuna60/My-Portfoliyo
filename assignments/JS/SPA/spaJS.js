@@ -981,6 +981,18 @@ const orderBalanceRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
 
 
 let orderValidations = [];
+orderValidations.push({reg: orderOIDIDRegEx, field: $('#OederOID'),error:'Order ID Pattern is Wrong : O00-001'});
+orderValidations.push({reg: orderCusIDRegEx, field: $('#OrderCusID'),error:'Customer ID Pattern is Wrong : C00-001'});
+orderValidations.push({reg: orderCusNameRegEx, field: $('#OrderCusName'),error:'Customer Name Pattern is Wrong : Ex : Nipuna'});
+orderValidations.push({reg: orderCusAddressRegEx, field: $('#OrderCusAddress'),error:'Customer Address Pattern is Wrong : Ex : Galle 01'});
+orderValidations.push({reg: orderCusContactRegEx, field: $('#OrderCusSalary'),error:'Customer Contact Pattern is Wrong : 0782545156'});
+orderValidations.push({reg: orderItemIDRegEx, field: $('#OrderICode'),error:'Order ID Pattern is Wrong : O00-001'});
+
+
+orderValidations.push({reg: cusIDRegEx2, field: $('#inputCusId2'),error:'Customer ID Pattern is Wrong : C00-001'});
+orderValidations.push({reg: cusNameRegEx2, field: $('#inputCusName2'),error:'Customer Name Pattern is Wrong : Ex : Nipuna'});
+orderValidations.push({reg: cusAddressRegEx2, field: $('#inputCusAddress2'),error:'Customer Address Pattern is Wrong : Ex : Galle 01'});
+orderValidations.push({reg: cusContactRegEx2, field: $('#inputCusContact2'),error:'Customer Contact Pattern is Wrong : 0782545156'});
 
 
 
