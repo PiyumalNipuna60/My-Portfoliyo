@@ -370,674 +370,674 @@
 
 
 
-/*=====================================================Item----------------------------------------------------------------------*/
-
-var item = [];
-$("#btnItemSave").click(function () {
-
-    let itemCode = $("#inputItemCode").val();
-    let itemName = $("#inputItemName").val();
-    let itemQty = $("#inputItemQts").val();
-    let itemPrice = $("#inputItemPrice").val();
-
-    var itemObject = {
-        code: itemCode,
-        name: itemName,
-        qty: itemQty,
-        price: itemPrice
-    }
-
-    item.push(itemObject);
-    getAllItem();
-    loadAllItem();
-    clearAllItemTexts();
-});
-
-
-/*------------gel All Customer--------------*/
-loadAllItem();
-function loadAllItem() {
-    $("#tblAllItem").empty();
-
-    for (var items of item) {
-        var row = `<tr><td>${items.code}</td><td>${items.name}</td><td>${items.qty}</td><td>${items.price}</td></tr>`;
-
-        //then add it to the table body of customer table
-        $("#tblAllItem").append(row);
-    }
-}
-
-function getAllItem() {
-    $("#tblItem").empty();
-
-    for (var items of item) {
-        var row = `<tr><td>${items.code}</td><td>${items.name}</td><td>${items.qty}</td><td>${items.price}</td></tr>`;
-
-        $("#tblItem").append(row);
-    }
-}
-
-
-/*------------Enter key Js--------------*/
-
-$("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#inputItemName2,#inputItemQts2,#inputItemPrice2").on('keydown', function (event) {
-    if (event.key == "Tab") {
-        event.preventDefault();
-    }
-});
-
-
-$("#inputItemCode").on('keydown', function (event) {
-    if (event.key == "Enter" && check(itemIDRegEx, $("#inputItemCode"))) {
-        $("#inputItemName").focus();
-    } else {
-        focusText($("#inputItemCode"));
-    }
-});
-
-$("#inputItemName").on('keydown', function (event) {
-    if (event.key == "Enter" && check(itemNameRegEx, $("#inputItemName"))) {
-        focusText($("#inputItemQts"));
-    }
-});
-
-$("#inputItemQts").on('keydown', function (event) {
-    if (event.key == "Enter" && check(itemQTYRegEx, $("#inputItemQts"))) {
-        focusText($("#inputItemPrice"));
-    }
-});
-
-$("#inputItemPrice").on('keydown', function (event) {
-    if (event.key == "Enter" && check(itemPriceRegEx, $("#inputItemPrice"))) {
-        $("#btnItemSave").focus();
-        let res = confirm("Do you want to add this Item.?");
-        if (res) {
-            clearAllItemTexts();
-        }
-    }
-});
-
-
-/*----------------*/
-
-$("#inputItemCode2").on('keydown', function (event) {
-    if (event.key == "Enter" && check(itemIDRegEx2, $("#inputItemCode2"))) {
-        $("#inputItemName2").focus();
-    } else {
-        focusText($("#inputItemCode2"));
-    }
-});
-
-$("#inputItemName2").on('keydown', function (event) {
-    if (event.key == "Enter" && check(itemNameRegEx2, $("#inputItemName2"))) {
-        focusText($("#inputItemQts2"));
-    }
-});
-
-$("#inputItemQts2").on('keydown', function (event) {
-    if (event.key == "Enter" && check(itemQTYRegEx2, $("#inputItemQts2"))) {
-        focusText($("#inputItemPrice2"));
-    }
-});
-
-$("#inputItemPrice2").on('keydown', function (event) {
-    if (event.key == "Enter" && check(itemPriceRegEx2, $("#inputItemPrice2"))) {
-        $("#ItemSaveChange").focus();
-        let res = confirm("Do you want to add this Item.?");
-        if (res) {
-            clearAllTexts();
-        }
-    }
-});
-
-
-
-/*--------------------------*/
-
-
-/*----------search (eliye ekata)------------*/
-
-$("#btnSearchItem").on("click",function () {
-    SearchItemFunction();
-});
-
-$("#inputCode").on('keyup', function (event) {
-    if (event.code == "Enter") {
-        SearchItemFunction();
-    }
-});
-
-function SearchItemFunction(){
-    let typedId = $("#inputCode").val();
-    let Item = searchItem(typedId);
-    if (Item != null) {
-        setItemTextfieldValues(Item.code, Item.name, Item.qty, Item.price);
-    } else {
-        alert("There is no Item available for that " + typedId);
-        setItemTextfieldValues("", "", "", "");
-    }
-}
-
-function setItemTextfieldValues(code, name, qty, price) {
-    $("#inputCode").val(code);
-    $("#inputItemSerName").val(name);
-    $("#inputItemSerPrice").val(price);
-}
-
-function searchItem(cusID) {
-    for (let items of item) {
-        if (items.code == cusID) {
-            return items;
-        }
-    }
-    return null;
-}
-
-/*----------search (in search ekata)------------*/
-$("#btnItemSearch").on("click",function () {
-    SearchItemFunction2();
-});
-
-
-
-function SearchItemFunction2(){
-    let typedId = $("#inputItemCode2").val();
-    let Item = searchItem(typedId);
-    if (Item != null) {
-        setItemTextfieldValues2(Item.code, Item.name, Item.qty, Item.price);
-    } else {
-        alert("There is no Item available for that " + typedId);
-        setItemTextfieldValues2("", "", "", "");
-    }
-}
-
-
-function setItemTextfieldValues2(code, name, qty, price) {
-    $("#inputItemCode2").val(code);
-    $("#inputItemName2").val(name);
-    $("#inputItemQts2").val(qty);
-    $("#inputItemPrice2").val(price);
-}
-
-/*-----------Delete Customer----------------*/
-$("#btnItemDelete").on("click",function () {
-    let deleteID = $("#inputItemCode2").val();
-
-    let option = confirm("Do you really want to delete Item id :" + deleteID);
-    if (option){
-        if (deleteItem(deleteID)) {
-            alert("Item Successfully Deleted..");
-            setItemTextfieldValues2("", "", "", "");
-        } else {
-            alert("No such Item to delete. please check the id");
-        }
-    }
-});
-
-function deleteItem(ItemID) {
-    let Item = searchItem(ItemID);
-    if (Item != null) {
-        let indexNumber = item.indexOf(Item);
-        item.splice(indexNumber, 1);
-        getAllItem();
-        loadAllItem();
-        return true;
-    } else {
-        return false;
-    }
-}
-
-
-/*-----------Update Customer----------------*/
-
-$("#ItemSaveChange").on("click",function () {
-    let ItemCode = $("#inputItemCode2").val();
-    let response = updateItem(ItemCode);
-    if (response) {
-        alert("Item Updated Successfully");
-        setItemTextfieldValues2("", "", "", "");
-    } else {
-        alert("Update Failed..!");
-
-    }
-});
-
-function updateItem(ItemId) {
-    let Items = searchItem(ItemId);
-    if (Items != null) {
-        Items.code = $("#inputItemCode2").val();
-        Items.name = $("#inputItemName2").val();
-        Items.qty = $("#inputItemQts2").val();
-        Items.price = $("#inputItemPrice2").val();
-        getAllItem();
-        loadAllItem();
-        return true;
-    } else {
-        return false;
-    }
-}
-
-/*=========validation part================*/
-
-$("#inputItemCode").focus();
-$("#inputItemCode2").focus();
-
-// customer reguler expressions
-const itemIDRegEx = /^(I00-)[0-9]{1,3}$/;
-const itemNameRegEx = /^[A-z ]{3,20}$/;
-const itemQTYRegEx = /^[0-9]{1,4}$/;
-const itemPriceRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
-
-const itemIDRegEx2 = /^(I00-)[0-9]{1,3}$/;
-const itemNameRegEx2 = /^[A-z ]{3,20}$/;
-const itemQTYRegEx2 = /^[0-9]{1,4}$/;
-const itemPriceRegEx2 = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
-
-
-let itemValidations = [];
-itemValidations.push({reg: itemIDRegEx, field: $('#inputItemCode'),error:'Customer ID Pattern is Wrong : I00-001'});
-itemValidations.push({reg: itemNameRegEx, field: $('#inputItemName'),error:'Customer Name Pattern is Wrong : Ex : Soya'});
-itemValidations.push({reg: itemQTYRegEx, field: $('#inputItemQts'),error:'Customer Address Pattern is Wrong : Ex : 01'});
-itemValidations.push({reg: itemPriceRegEx, field: $('#inputItemPrice'),error:'Customer Contact Pattern is Wrong : 2500'});
-
-itemValidations.push({reg: itemIDRegEx2, field: $('#inputItemCode2'),error:'Customer ID Pattern is Wrong : I00-001'});
-itemValidations.push({reg: itemNameRegEx2, field: $('#inputItemName2'),error:'Customer Name Pattern is Wrong : Ex : Soya'});
-itemValidations.push({reg: itemQTYRegEx2, field: $('#inputItemQts2'),error:'Customer Address Pattern is Wrong : Ex : 01'});
-itemValidations.push({reg: itemPriceRegEx2, field: $('#inputItemPrice2'),error:'Customer Contact Pattern is Wrong : 2500'});
-
-
-$("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#inputItemName2,#inputItemQts2,#inputItemPrice2").on('keyup', function (event) {
-    checkItemValidity();
-});
-
-$("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#inputItemName2,#inputItemQts2,#inputItemPrice2").on('blur', function (event) {
-    checkItemValidity();
-});
-
-function checkItemValidity() {
-    let errorCount = 0;
-    for (let validation of itemValidations) {
-        if (checkItem(validation.reg, validation.field)) {
-            textItemSuccess(validation.field, "");
-        } else {
-            errorCount = errorCount + 1;
-            setItemTextError(validation.field, validation.error);
-        }
-    }
-    setButtonState(errorCount);
-}
-
-function checkItem(regex, txtField) {
-    let inputValue = txtField.val();
-    return regex.test(inputValue) ? true : false;
-}
-
-function setItemTextError(txtField,error) {
-    if (txtField.val().length <= 0) {
-        defaultItemText(txtField,"");
-    } else {
-        txtField.css('border', '2px solid red');
-        txtField.parent().children('span').text(error);
-        txtField.parent().children('span').css('font-size','10px');
-        txtField.parent().children('span').css('color','red');
-    }
-}
-
-function textItemSuccess(txtField,error) {
-    if (txtField.val().length <= 0) {
-        defaultText(txtField,"");
-    } else {
-        txtField.css('border', '2px solid green');
-        txtField.parent().children('span').text(error);
-    }
-}
-
-function defaultItemText(txtField,error) {
-    txtField.css("border", "1px solid #ced4da");
-    txtField.parent().children('span').text(error);
-}
-
-function clearAllItemTexts() {
-    $("#inputItemCode").focus();
-    $("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice").val("");
-    checkValidity();
-}
-
-
-
-
-/*=====================================================Order----------------------------------------------------------------------*/
-
-var order = [];
-$("#btnOrderAddItem").click(function () {
-    let OId=$("#OederOID").val();
-    let date=$("#OrderDate").val();
-
-    let customerID = $("#OrderCusID").val();
-    let customerName = $("#OrderCusName").val();
-    let customerAddress = $("#OrderCusAddress").val();
-    let customerSalary = $("#OrderCusSalary").val();
-
-    let orderICode = $("#OrderICode").val();
-    let orderName = $("#OrderIName").val();
-    let orderQty = $("#OrderIQty").val();
-    let orderPrice = $("#OrderIPrice").val();
-    let orderOnQty = $("#OrderIOQty").val();
-
-    var orderObject = {
-
-        Oid:OId,
-        date:date,
-
-        id: customerID,
-        cus_name: customerName,
-        address: customerAddress,
-        contact: customerSalary,
-
-        ItemCode: orderICode,
-        Item_name: orderName,
-        qty: orderQty,
-        price: orderPrice,
-        orderQty: orderOnQty,
-        total: (orderPrice * orderOnQty)
-    }
-
-    order.push(orderObject);
-    console.log(order)
-    getLoadOrder();
-    clearAllOrderTexts();
-});
-
-
-/*------------gel All Order--------------*/
-
-function getLoadOrder() {
-    $("#orderTable").empty();
-    for (var orders of order) {
-        console.log(order);
-
-        var row = `<tr><td>${orders.Oid}</td><td>${orders.id}</td><td>${orders.date}</td><td>${orders.ItemCode}</td><td>${orders.Item_name}</td><td>${orders.price}</td><td>${orders.orderQty}</td><td>${orders.total}</td></tr>`;
-        $("#orderTable").append(row);
-    }
-}
-
-/*--------------------------*/
-
-
-
-$("#OederOID,#OrderCustomer,#OrderCusName,#OrderDate,#OrderCusID,#OrderCusSalary,#OrderCusAddress").on('keydown', function (event) {
-    if (event.key == "Tab") {
-        event.preventDefault();
-    }
-});
-
-$("#OederOID").on('keydown', function (event) {
-    if (event.key == "Enter" && check(orderOIDIDRegEx, $("#OederOID"))) {
-        $("#OrderCusName").focus();
-    } else {
-        focusText($("#OederOID"));
-    }
-});
-
-$("#OrderCusName").on('keydown', function (event) {
-    if (event.key == "Enter" && check(orderCusNameRegEx, $("#OrderCusName"))) {
-        focusText($("#OrderDate"));
-    }
-});
-
-$("#OrderDate").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        focusText($("#OrderCusID"));
-    }
-});
-
-$("#OrderCusID").on('keydown', function (event) {
-    if (event.key == "Enter" && check(orderCusIDRegEx, $("#OrderCusID"))) {
-        focusText($("#OrderCusSalary"));
-    }
-});
-
-$("#OrderCusSalary").on('keydown', function (event) {
-    if (event.key == "Enter" && check(orderCusContactRegEx, $("#OrderCusSalary"))) {
-        focusText($("#OrderCusAddress"));
-    }
-});
-
-/* -----------*/
-
-$("#OrderItem,#OrderICode,#OrderIName,#OrderIPrice,#OrderIQty,#OrderIOQty,#btnAddOrder").on('keydown', function (event) {
-    if (event.key == "Tab") {
-        event.preventDefault();
-    }
-});
-
-$("#OrderItem").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#OrderICode").focus();
-    }
-});
-
-$("#OrderICode").on('keydown', function (event) {
-    if (event.key == "Enter" && check(orderItemCodeRegEx, $("#OrderICode"))) {
-        focusText($("#OrderIName"));
-    }
-});
-
-$("#OrderIName").on('keydown', function (event) {
-    if (event.key == "Enter" && check(orderItemNameRegEx, $("#OrderIName"))) {
-        focusText($("#OrderIPrice"));
-    }
-});
-
-$("#OrderIPrice").on('keydown', function (event) {
-    if (event.key == "Enter" && check(orderIPriceRegEx, $("#OrderIPrice"))) {
-        focusText($("#OrderIQty"));
-    }
-});
-
-$("#OrderIQty").on('keydown', function (event) {
-    if (event.key == "Enter" && check(orderIQTYRegEx, $("#OrderIQty"))) {
-        focusText($("#OrderIOQty"));
-    }
-});
-
-// $("#OrderIOQty").on('keydown', function (event) {
-//     if (event.key == "Enter" && check(orderIOQTYRegEx, $("#OrderIOQty"))) {
-//         // focusText($("#btnOrderAddItem"));
+// /*=====================================================Item----------------------------------------------------------------------*/
+//
+// var item = [];
+// $("#btnItemSave").click(function () {
+//
+//     let itemCode = $("#inputItemCode").val();
+//     let itemName = $("#inputItemName").val();
+//     let itemQty = $("#inputItemQts").val();
+//     let itemPrice = $("#inputItemPrice").val();
+//
+//     var itemObject = {
+//         code: itemCode,
+//         name: itemName,
+//         qty: itemQty,
+//         price: itemPrice
+//     }
+//
+//     item.push(itemObject);
+//     getAllItem();
+//     loadAllItem();
+//     clearAllItemTexts();
+// });
+//
+//
+// /*------------gel All Customer--------------*/
+// loadAllItem();
+// function loadAllItem() {
+//     $("#tblAllItem").empty();
+//
+//     for (var items of item) {
+//         var row = `<tr><td>${items.code}</td><td>${items.name}</td><td>${items.qty}</td><td>${items.price}</td></tr>`;
+//
+//         //then add it to the table body of customer table
+//         $("#tblAllItem").append(row);
+//     }
+// }
+//
+// function getAllItem() {
+//     $("#tblItem").empty();
+//
+//     for (var items of item) {
+//         var row = `<tr><td>${items.code}</td><td>${items.name}</td><td>${items.qty}</td><td>${items.price}</td></tr>`;
+//
+//         $("#tblItem").append(row);
+//     }
+// }
+//
+//
+// /*------------Enter key Js--------------*/
+//
+// $("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#inputItemName2,#inputItemQts2,#inputItemPrice2").on('keydown', function (event) {
+//     if (event.key == "Tab") {
+//         event.preventDefault();
 //     }
 // });
+//
+//
+// $("#inputItemCode").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(itemIDRegEx, $("#inputItemCode"))) {
+//         $("#inputItemName").focus();
+//     } else {
+//         focusText($("#inputItemCode"));
+//     }
+// });
+//
+// $("#inputItemName").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(itemNameRegEx, $("#inputItemName"))) {
+//         focusText($("#inputItemQts"));
+//     }
+// });
+//
+// $("#inputItemQts").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(itemQTYRegEx, $("#inputItemQts"))) {
+//         focusText($("#inputItemPrice"));
+//     }
+// });
+//
+// $("#inputItemPrice").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(itemPriceRegEx, $("#inputItemPrice"))) {
+//         $("#btnItemSave").focus();
+//         let res = confirm("Do you want to add this Item.?");
+//         if (res) {
+//             clearAllItemTexts();
+//         }
+//     }
+// });
+//
+//
+// /*----------------*/
+//
+// $("#inputItemCode2").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(itemIDRegEx2, $("#inputItemCode2"))) {
+//         $("#inputItemName2").focus();
+//     } else {
+//         focusText($("#inputItemCode2"));
+//     }
+// });
+//
+// $("#inputItemName2").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(itemNameRegEx2, $("#inputItemName2"))) {
+//         focusText($("#inputItemQts2"));
+//     }
+// });
+//
+// $("#inputItemQts2").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(itemQTYRegEx2, $("#inputItemQts2"))) {
+//         focusText($("#inputItemPrice2"));
+//     }
+// });
+//
+// $("#inputItemPrice2").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(itemPriceRegEx2, $("#inputItemPrice2"))) {
+//         $("#ItemSaveChange").focus();
+//         let res = confirm("Do you want to add this Item.?");
+//         if (res) {
+//             clearAllTexts();
+//         }
+//     }
+// });
+//
+//
+//
+// /*--------------------------*/
+//
+//
+// /*----------search (eliye ekata)------------*/
+//
+// $("#btnSearchItem").on("click",function () {
+//     SearchItemFunction();
+// });
+//
+// $("#inputCode").on('keyup', function (event) {
+//     if (event.code == "Enter") {
+//         SearchItemFunction();
+//     }
+// });
+//
+// function SearchItemFunction(){
+//     let typedId = $("#inputCode").val();
+//     let Item = searchItem(typedId);
+//     if (Item != null) {
+//         setItemTextfieldValues(Item.code, Item.name, Item.qty, Item.price);
+//     } else {
+//         alert("There is no Item available for that " + typedId);
+//         setItemTextfieldValues("", "", "", "");
+//     }
+// }
+//
+// function setItemTextfieldValues(code, name, qty, price) {
+//     $("#inputCode").val(code);
+//     $("#inputItemSerName").val(name);
+//     $("#inputItemSerPrice").val(price);
+// }
+//
+// function searchItem(cusID) {
+//     for (let items of item) {
+//         if (items.code == cusID) {
+//             return items;
+//         }
+//     }
+//     return null;
+// }
+//
+// /*----------search (in search ekata)------------*/
+// $("#btnItemSearch").on("click",function () {
+//     SearchItemFunction2();
+// });
+//
+//
+//
+// function SearchItemFunction2(){
+//     let typedId = $("#inputItemCode2").val();
+//     let Item = searchItem(typedId);
+//     if (Item != null) {
+//         setItemTextfieldValues2(Item.code, Item.name, Item.qty, Item.price);
+//     } else {
+//         alert("There is no Item available for that " + typedId);
+//         setItemTextfieldValues2("", "", "", "");
+//     }
+// }
+//
+//
+// function setItemTextfieldValues2(code, name, qty, price) {
+//     $("#inputItemCode2").val(code);
+//     $("#inputItemName2").val(name);
+//     $("#inputItemQts2").val(qty);
+//     $("#inputItemPrice2").val(price);
+// }
+//
+// /*-----------Delete Customer----------------*/
+// $("#btnItemDelete").on("click",function () {
+//     let deleteID = $("#inputItemCode2").val();
+//
+//     let option = confirm("Do you really want to delete Item id :" + deleteID);
+//     if (option){
+//         if (deleteItem(deleteID)) {
+//             alert("Item Successfully Deleted..");
+//             setItemTextfieldValues2("", "", "", "");
+//         } else {
+//             alert("No such Item to delete. please check the id");
+//         }
+//     }
+// });
+//
+// function deleteItem(ItemID) {
+//     let Item = searchItem(ItemID);
+//     if (Item != null) {
+//         let indexNumber = item.indexOf(Item);
+//         item.splice(indexNumber, 1);
+//         getAllItem();
+//         loadAllItem();
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+//
+//
+// /*-----------Update Customer----------------*/
+//
+// $("#ItemSaveChange").on("click",function () {
+//     let ItemCode = $("#inputItemCode2").val();
+//     let response = updateItem(ItemCode);
+//     if (response) {
+//         alert("Item Updated Successfully");
+//         setItemTextfieldValues2("", "", "", "");
+//     } else {
+//         alert("Update Failed..!");
+//
+//     }
+// });
+//
+// function updateItem(ItemId) {
+//     let Items = searchItem(ItemId);
+//     if (Items != null) {
+//         Items.code = $("#inputItemCode2").val();
+//         Items.name = $("#inputItemName2").val();
+//         Items.qty = $("#inputItemQts2").val();
+//         Items.price = $("#inputItemPrice2").val();
+//         getAllItem();
+//         loadAllItem();
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+//
+// /*=========validation part================*/
+//
+// $("#inputItemCode").focus();
+// $("#inputItemCode2").focus();
+//
+// // customer reguler expressions
+// const itemIDRegEx = /^(I00-)[0-9]{1,3}$/;
+// const itemNameRegEx = /^[A-z ]{3,20}$/;
+// const itemQTYRegEx = /^[0-9]{1,4}$/;
+// const itemPriceRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
+//
+// const itemIDRegEx2 = /^(I00-)[0-9]{1,3}$/;
+// const itemNameRegEx2 = /^[A-z ]{3,20}$/;
+// const itemQTYRegEx2 = /^[0-9]{1,4}$/;
+// const itemPriceRegEx2 = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
+//
+//
+// let itemValidations = [];
+// itemValidations.push({reg: itemIDRegEx, field: $('#inputItemCode'),error:'Customer ID Pattern is Wrong : I00-001'});
+// itemValidations.push({reg: itemNameRegEx, field: $('#inputItemName'),error:'Customer Name Pattern is Wrong : Ex : Soya'});
+// itemValidations.push({reg: itemQTYRegEx, field: $('#inputItemQts'),error:'Customer Address Pattern is Wrong : Ex : 01'});
+// itemValidations.push({reg: itemPriceRegEx, field: $('#inputItemPrice'),error:'Customer Contact Pattern is Wrong : 2500'});
+//
+// itemValidations.push({reg: itemIDRegEx2, field: $('#inputItemCode2'),error:'Customer ID Pattern is Wrong : I00-001'});
+// itemValidations.push({reg: itemNameRegEx2, field: $('#inputItemName2'),error:'Customer Name Pattern is Wrong : Ex : Soya'});
+// itemValidations.push({reg: itemQTYRegEx2, field: $('#inputItemQts2'),error:'Customer Address Pattern is Wrong : Ex : 01'});
+// itemValidations.push({reg: itemPriceRegEx2, field: $('#inputItemPrice2'),error:'Customer Contact Pattern is Wrong : 2500'});
+//
+//
+// $("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#inputItemName2,#inputItemQts2,#inputItemPrice2").on('keyup', function (event) {
+//     checkItemValidity();
+// });
+//
+// $("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#inputItemName2,#inputItemQts2,#inputItemPrice2").on('blur', function (event) {
+//     checkItemValidity();
+// });
+//
+// function checkItemValidity() {
+//     let errorCount = 0;
+//     for (let validation of itemValidations) {
+//         if (checkItem(validation.reg, validation.field)) {
+//             textItemSuccess(validation.field, "");
+//         } else {
+//             errorCount = errorCount + 1;
+//             setItemTextError(validation.field, validation.error);
+//         }
+//     }
+//     setButtonState(errorCount);
+// }
+//
+// function checkItem(regex, txtField) {
+//     let inputValue = txtField.val();
+//     return regex.test(inputValue) ? true : false;
+// }
+//
+// function setItemTextError(txtField,error) {
+//     if (txtField.val().length <= 0) {
+//         defaultItemText(txtField,"");
+//     } else {
+//         txtField.css('border', '2px solid red');
+//         txtField.parent().children('span').text(error);
+//         txtField.parent().children('span').css('font-size','10px');
+//         txtField.parent().children('span').css('color','red');
+//     }
+// }
+//
+// function textItemSuccess(txtField,error) {
+//     if (txtField.val().length <= 0) {
+//         defaultText(txtField,"");
+//     } else {
+//         txtField.css('border', '2px solid green');
+//         txtField.parent().children('span').text(error);
+//     }
+// }
+//
+// function defaultItemText(txtField,error) {
+//     txtField.css("border", "1px solid #ced4da");
+//     txtField.parent().children('span').text(error);
+// }
+//
+// function clearAllItemTexts() {
+//     $("#inputItemCode").focus();
+//     $("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice").val("");
+//     checkValidity();
+// }
 
 
-$("#OrderIOQty").on('keydown', function (event) {
-    let OQty = $("#OrderIOQty").val();
-    let OPrice = $("#OrderIPrice").val();
-    let OTotal=(OQty*OPrice);
-
-    $('#OrderTotal').val(OTotal);
-});
 
 
-/*----------search ()------------*/
-$("#btnSerOrder").on("click",function () {
-    SearchOrderFunction2();
-});
-
-function SearchOrderFunction2(){
-    let typedId = $("#OederOID").val();
-    let order = searchOrder(typedId);
-    if (order != null) {
-        setTextfieldValuesOrder(order.Oid, order.date, order.id, order.cus_name,order.address,order.contact,order.ItemCode,order.Item_name,order.qty,order.price,order.orderQty,order.total);
-    } else {
-        alert("There is no Order available for that " + typedId);
-        setTextfieldValuesOrder("", "", "", "");
-    }
-}
-
-function setTextfieldValuesOrder(Oid, date, id, cus_name,address,contact,ItemCode,Item_name,qty,price,orderQty,total) {
-    $("#OederOID").val(Oid);
-    $("#OrderDate").val(date);
-    $("#OrderCusID").val(id);
-    $("#OrderCusName").val(cus_name);
-    $("#OrderCusAddress").val(address);
-    $("#OrderCusSalary").val(contact);
-    $("#OrderICode").val(ItemCode);
-    $("#OrderIName").val(Item_name);
-    $("#OrderIQty").val(qty);
-    $("#OrderIPrice").val(price);
-    $("#OrderIOQty").val(orderQty);
-    $("#OrderTotal").val(total);
-}
-
-
-function searchOrder(cusID) {
-    for (let orders of order) {
-        if (orders.Oid == cusID) {
-            return orders;
-        }
-    }
-    return null;
-}
-
-/*---------------------*/
-function clearAllOrderTexts() {
-    $("#OederOID").focus();
-    $("#OederOID,#OrderDate,#OrderCusID,#OrderCusName,#OrderCusAddress,#OrderCusSalary,#OrderICode,#OrderIName,#OrderIQty,#OrderIPrice,#OrderIOQty,#OrderTotal,#OrderTotal,#OrderSubTotal,#OrderCash,#OrderDiscount,#OrderBalance").val("");
-    checkValidity();
-}
-
-/*-----------Delete Order----------------*/
-$("#btnPurchase").on("click", function () {
-    let deleteID = $("#OederOID").val();
-
-    let option = confirm("Do you really want to delete Order id :" + deleteID);
-    if (option) {
-        if (deleteOrder(deleteID)) {
-            alert("Order Successfully Deleted..");
-            setTextfieldValuesOrder("", "", "", "");
-        } else {
-            alert("No such Order to delete. please check the id");
-        }
-    }
-    console.log("hy")
-});
-
-function deleteOrder(OrderID) {
-    let orders = searchOrder(OrderID);
-    if (orders != null) {
-        let indexNumber = order.indexOf(orders);
-        order.splice(indexNumber, 1);
-        getLoadOrder();
-        clearAllOrderTexts();
-        return true;
-    } else {
-        return false;
-    }
-}
-
-
-/*=========validation part================*/
-
-$("#OederOID").focus();
-
-// customer reguler expressions
-const orderOIDIDRegEx = /^(O00-)[0-9]{1,3}$/;
-
-const orderCusIDRegEx = /^(C00-)[0-9]{1,3}$/;
-const orderCusNameRegEx = /^[A-z ]{3,20}$/;
-const orderCusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
-const orderCusContactRegEx = /^[0-9]{10}[.]?[0-9]{1,2}$/;
-
-const orderItemCodeRegEx = /^(I00-)[0-9]{1,3}$/;
-const orderItemNameRegEx = /^[A-z ]{3,20}$/;
-const orderIQTYRegEx = /^[0-9]{1,4}$/;
-const orderIPriceRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
-const orderIOQTYRegEx = /^[0-9]{1,4}$/;
-const orderTotalRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
-
-const orderSubTotalRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
-const orderCashRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
-const orderDiscountRegEx = /^[0-9]{1,2}$/;
-const orderBalanceRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
-
-
-
-let orderValidations = [];
-orderValidations.push({reg: orderOIDIDRegEx, field: $('#OederOID'),error:'Order ID Pattern is Wrong : O00-001'});
-orderValidations.push({reg: orderCusIDRegEx, field: $('#OrderCusID'),error:'Customer ID Pattern is Wrong : C00-001'});
-orderValidations.push({reg: orderCusNameRegEx, field: $('#OrderCusName'),error:'Customer Name Pattern is Wrong : Ex : Nipuna'});
-orderValidations.push({reg: orderCusAddressRegEx, field: $('#OrderCusAddress'),error:'Customer Address Pattern is Wrong : Ex : Galle 01'});
-orderValidations.push({reg: orderCusContactRegEx, field: $('#OrderCusSalary'),error:'Customer Contact Pattern is Wrong : 0782545156'});
-orderValidations.push({reg: orderItemCodeRegEx, field: $('#OrderICode'),error:'Order ItemCode Pattern is Wrong : I00-001'});
-orderValidations.push({reg: orderItemNameRegEx, field: $('#OrderIName'),error:'Order Item Name  is Wrong : Ex : Soya'});
-orderValidations.push({reg: orderIQTYRegEx, field: $('#OrderIQty'),error:'Order Item Qty is Wrong : Ex : 01'});
-orderValidations.push({reg: orderIPriceRegEx, field: $('#OrderIPrice'),error:'Order Item Price is Wrong : Ex : 1000'});
-orderValidations.push({reg: orderIOQTYRegEx, field: $('#OrderIOQty'),error:'Order Item Qty is Wrong : Ex : 01'});
-orderValidations.push({reg: orderTotalRegEx, field: $('#OrderTotal'),error:'Order Item Price is Wrong : Ex : 1000'});
-orderValidations.push({reg: orderSubTotalRegEx, field: $('#OrderSubTotal'),error:'Order Item Price is Wrong : Ex : 1000'});
-
-orderValidations.push({reg: orderCashRegEx, field: $('#OrderCash'),error:'Order Item Price is Wrong : Ex : 1000'});
-orderValidations.push({reg: orderDiscountRegEx, field: $('#OrderDiscount'),error:'Order Item Price is Wrong : Ex : 1000'});
-orderValidations.push({reg: orderBalanceRegEx, field: $('#OrderBalance'),error:'Order Item Price is Wrong : Ex : 1000'});
-
-
-
-
-$("#OederOID,#OrderDate,#OrderCusID,#OrderCusName,#OrderCusAddress,#OrderCusSalary,#OrderICode,#OrderIName,#OrderIQty,#OrderIPrice,#OrderIOQty,#OrderTotal,#OrderTotal,#OrderSubTotal,#OrderCash,#OrderDiscount,#OrderBalance").on('keyup', function (event) {
-    checkOrderValidity();
-});
-
-$("#OederOID,#OrderDate,#OrderCusID,#OrderCusName,#OrderCusAddress,#OrderCusSalary,#OrderICode,#OrderIName,#OrderIQty,#OrderIPrice,#OrderIOQty,#OrderTotal,#OrderTotal,#OrderSubTotal,#OrderCash,#OrderDiscount,#OrderBalance").on('blur', function (event) {
-    checkOrderValidity();
-});
-
-function checkOrderValidity() {
-    let errorCount = 0;
-    for (let validation of orderValidations) {
-        if (checkOrder(validation.reg, validation.field)) {
-            textOrderSuccess(validation.field, "");
-        } else {
-            errorCount = errorCount + 1;
-            setOrderTextError(validation.field, validation.error);
-        }
-    }
-}
-
-function checkOrder(regex, txtField) {
-    let inputValue = txtField.val();
-    return regex.test(inputValue) ? true : false;
-}
-
-function setOrderTextError(txtField, error) {
-    if (txtField.val().length <= 0) {
-        defaultOrderText(txtField, "");
-    } else {
-        txtField.css('border', '2px solid red');
-        txtField.parent().children('span').text(error);
-        txtField.parent().children('span').css('font-size', '10px');
-        txtField.parent().children('span').css('color', 'red');
-    }
-}
-
-function textOrderSuccess(txtField, error) {
-    if (txtField.val().length <= 0) {
-        defaultOrderText(txtField, "");
-    } else {
-        txtField.css('border', '2px solid green');
-        txtField.parent().children('span').text(error);
-    }
-}
-
-function defaultOrderText(txtField, error) {
-    txtField.css("border", "1px solid #ced4da");
-    txtField.parent().children('span').text(error);
-}
-
-$("#btnCalculate").on("click", function () {
-    let total = $("#OrderTotal").val();
-    let discount = $("#OrderDiscount").val();
-    let cash=$("#OrderCash").val();
-    let subTotal=total-((total/100)*discount);
-    let balance=(cash-subTotal);
-    $('#OrderSubTotal').val(subTotal);
-    $('#OrderBalance').val(balance);
-});
+// /*=====================================================Order----------------------------------------------------------------------*/
+//
+// var order = [];
+// $("#btnOrderAddItem").click(function () {
+//     let OId=$("#OederOID").val();
+//     let date=$("#OrderDate").val();
+//
+//     let customerID = $("#OrderCusID").val();
+//     let customerName = $("#OrderCusName").val();
+//     let customerAddress = $("#OrderCusAddress").val();
+//     let customerSalary = $("#OrderCusSalary").val();
+//
+//     let orderICode = $("#OrderICode").val();
+//     let orderName = $("#OrderIName").val();
+//     let orderQty = $("#OrderIQty").val();
+//     let orderPrice = $("#OrderIPrice").val();
+//     let orderOnQty = $("#OrderIOQty").val();
+//
+//     var orderObject = {
+//
+//         Oid:OId,
+//         date:date,
+//
+//         id: customerID,
+//         cus_name: customerName,
+//         address: customerAddress,
+//         contact: customerSalary,
+//
+//         ItemCode: orderICode,
+//         Item_name: orderName,
+//         qty: orderQty,
+//         price: orderPrice,
+//         orderQty: orderOnQty,
+//         total: (orderPrice * orderOnQty)
+//     }
+//
+//     order.push(orderObject);
+//     console.log(order)
+//     getLoadOrder();
+//     clearAllOrderTexts();
+// });
+//
+//
+// /*------------gel All Order--------------*/
+//
+// function getLoadOrder() {
+//     $("#orderTable").empty();
+//     for (var orders of order) {
+//         console.log(order);
+//
+//         var row = `<tr><td>${orders.Oid}</td><td>${orders.id}</td><td>${orders.date}</td><td>${orders.ItemCode}</td><td>${orders.Item_name}</td><td>${orders.price}</td><td>${orders.orderQty}</td><td>${orders.total}</td></tr>`;
+//         $("#orderTable").append(row);
+//     }
+// }
+//
+// /*--------------------------*/
+//
+//
+//
+// $("#OederOID,#OrderCustomer,#OrderCusName,#OrderDate,#OrderCusID,#OrderCusSalary,#OrderCusAddress").on('keydown', function (event) {
+//     if (event.key == "Tab") {
+//         event.preventDefault();
+//     }
+// });
+//
+// $("#OederOID").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(orderOIDIDRegEx, $("#OederOID"))) {
+//         $("#OrderCusName").focus();
+//     } else {
+//         focusText($("#OederOID"));
+//     }
+// });
+//
+// $("#OrderCusName").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(orderCusNameRegEx, $("#OrderCusName"))) {
+//         focusText($("#OrderDate"));
+//     }
+// });
+//
+// $("#OrderDate").on('keydown', function (event) {
+//     if (event.key == "Enter") {
+//         focusText($("#OrderCusID"));
+//     }
+// });
+//
+// $("#OrderCusID").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(orderCusIDRegEx, $("#OrderCusID"))) {
+//         focusText($("#OrderCusSalary"));
+//     }
+// });
+//
+// $("#OrderCusSalary").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(orderCusContactRegEx, $("#OrderCusSalary"))) {
+//         focusText($("#OrderCusAddress"));
+//     }
+// });
+//
+// /* -----------*/
+//
+// $("#OrderItem,#OrderICode,#OrderIName,#OrderIPrice,#OrderIQty,#OrderIOQty,#btnAddOrder").on('keydown', function (event) {
+//     if (event.key == "Tab") {
+//         event.preventDefault();
+//     }
+// });
+//
+// $("#OrderItem").on('keydown', function (event) {
+//     if (event.key == "Enter") {
+//         $("#OrderICode").focus();
+//     }
+// });
+//
+// $("#OrderICode").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(orderItemCodeRegEx, $("#OrderICode"))) {
+//         focusText($("#OrderIName"));
+//     }
+// });
+//
+// $("#OrderIName").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(orderItemNameRegEx, $("#OrderIName"))) {
+//         focusText($("#OrderIPrice"));
+//     }
+// });
+//
+// $("#OrderIPrice").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(orderIPriceRegEx, $("#OrderIPrice"))) {
+//         focusText($("#OrderIQty"));
+//     }
+// });
+//
+// $("#OrderIQty").on('keydown', function (event) {
+//     if (event.key == "Enter" && check(orderIQTYRegEx, $("#OrderIQty"))) {
+//         focusText($("#OrderIOQty"));
+//     }
+// });
+//
+// // $("#OrderIOQty").on('keydown', function (event) {
+// //     if (event.key == "Enter" && check(orderIOQTYRegEx, $("#OrderIOQty"))) {
+// //         // focusText($("#btnOrderAddItem"));
+// //     }
+// // });
+//
+//
+// $("#OrderIOQty").on('keydown', function (event) {
+//     let OQty = $("#OrderIOQty").val();
+//     let OPrice = $("#OrderIPrice").val();
+//     let OTotal=(OQty*OPrice);
+//
+//     $('#OrderTotal').val(OTotal);
+// });
+//
+//
+// /*----------search ()------------*/
+// $("#btnSerOrder").on("click",function () {
+//     SearchOrderFunction2();
+// });
+//
+// function SearchOrderFunction2(){
+//     let typedId = $("#OederOID").val();
+//     let order = searchOrder(typedId);
+//     if (order != null) {
+//         setTextfieldValuesOrder(order.Oid, order.date, order.id, order.cus_name,order.address,order.contact,order.ItemCode,order.Item_name,order.qty,order.price,order.orderQty,order.total);
+//     } else {
+//         alert("There is no Order available for that " + typedId);
+//         setTextfieldValuesOrder("", "", "", "");
+//     }
+// }
+//
+// function setTextfieldValuesOrder(Oid, date, id, cus_name,address,contact,ItemCode,Item_name,qty,price,orderQty,total) {
+//     $("#OederOID").val(Oid);
+//     $("#OrderDate").val(date);
+//     $("#OrderCusID").val(id);
+//     $("#OrderCusName").val(cus_name);
+//     $("#OrderCusAddress").val(address);
+//     $("#OrderCusSalary").val(contact);
+//     $("#OrderICode").val(ItemCode);
+//     $("#OrderIName").val(Item_name);
+//     $("#OrderIQty").val(qty);
+//     $("#OrderIPrice").val(price);
+//     $("#OrderIOQty").val(orderQty);
+//     $("#OrderTotal").val(total);
+// }
+//
+//
+// function searchOrder(cusID) {
+//     for (let orders of order) {
+//         if (orders.Oid == cusID) {
+//             return orders;
+//         }
+//     }
+//     return null;
+// }
+//
+// /*---------------------*/
+// function clearAllOrderTexts() {
+//     $("#OederOID").focus();
+//     $("#OederOID,#OrderDate,#OrderCusID,#OrderCusName,#OrderCusAddress,#OrderCusSalary,#OrderICode,#OrderIName,#OrderIQty,#OrderIPrice,#OrderIOQty,#OrderTotal,#OrderTotal,#OrderSubTotal,#OrderCash,#OrderDiscount,#OrderBalance").val("");
+//     checkValidity();
+// }
+//
+// /*-----------Delete Order----------------*/
+// $("#btnPurchase").on("click", function () {
+//     let deleteID = $("#OederOID").val();
+//
+//     let option = confirm("Do you really want to delete Order id :" + deleteID);
+//     if (option) {
+//         if (deleteOrder(deleteID)) {
+//             alert("Order Successfully Deleted..");
+//             setTextfieldValuesOrder("", "", "", "");
+//         } else {
+//             alert("No such Order to delete. please check the id");
+//         }
+//     }
+//     console.log("hy")
+// });
+//
+// function deleteOrder(OrderID) {
+//     let orders = searchOrder(OrderID);
+//     if (orders != null) {
+//         let indexNumber = order.indexOf(orders);
+//         order.splice(indexNumber, 1);
+//         getLoadOrder();
+//         clearAllOrderTexts();
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+//
+//
+// /*=========validation part================*/
+//
+// $("#OederOID").focus();
+//
+// // customer reguler expressions
+// const orderOIDIDRegEx = /^(O00-)[0-9]{1,3}$/;
+//
+// const orderCusIDRegEx = /^(C00-)[0-9]{1,3}$/;
+// const orderCusNameRegEx = /^[A-z ]{3,20}$/;
+// const orderCusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
+// const orderCusContactRegEx = /^[0-9]{10}[.]?[0-9]{1,2}$/;
+//
+// const orderItemCodeRegEx = /^(I00-)[0-9]{1,3}$/;
+// const orderItemNameRegEx = /^[A-z ]{3,20}$/;
+// const orderIQTYRegEx = /^[0-9]{1,4}$/;
+// const orderIPriceRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
+// const orderIOQTYRegEx = /^[0-9]{1,4}$/;
+// const orderTotalRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
+//
+// const orderSubTotalRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
+// const orderCashRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
+// const orderDiscountRegEx = /^[0-9]{1,2}$/;
+// const orderBalanceRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
+//
+//
+//
+// let orderValidations = [];
+// orderValidations.push({reg: orderOIDIDRegEx, field: $('#OederOID'),error:'Order ID Pattern is Wrong : O00-001'});
+// orderValidations.push({reg: orderCusIDRegEx, field: $('#OrderCusID'),error:'Customer ID Pattern is Wrong : C00-001'});
+// orderValidations.push({reg: orderCusNameRegEx, field: $('#OrderCusName'),error:'Customer Name Pattern is Wrong : Ex : Nipuna'});
+// orderValidations.push({reg: orderCusAddressRegEx, field: $('#OrderCusAddress'),error:'Customer Address Pattern is Wrong : Ex : Galle 01'});
+// orderValidations.push({reg: orderCusContactRegEx, field: $('#OrderCusSalary'),error:'Customer Contact Pattern is Wrong : 0782545156'});
+// orderValidations.push({reg: orderItemCodeRegEx, field: $('#OrderICode'),error:'Order ItemCode Pattern is Wrong : I00-001'});
+// orderValidations.push({reg: orderItemNameRegEx, field: $('#OrderIName'),error:'Order Item Name  is Wrong : Ex : Soya'});
+// orderValidations.push({reg: orderIQTYRegEx, field: $('#OrderIQty'),error:'Order Item Qty is Wrong : Ex : 01'});
+// orderValidations.push({reg: orderIPriceRegEx, field: $('#OrderIPrice'),error:'Order Item Price is Wrong : Ex : 1000'});
+// orderValidations.push({reg: orderIOQTYRegEx, field: $('#OrderIOQty'),error:'Order Item Qty is Wrong : Ex : 01'});
+// orderValidations.push({reg: orderTotalRegEx, field: $('#OrderTotal'),error:'Order Item Price is Wrong : Ex : 1000'});
+// orderValidations.push({reg: orderSubTotalRegEx, field: $('#OrderSubTotal'),error:'Order Item Price is Wrong : Ex : 1000'});
+//
+// orderValidations.push({reg: orderCashRegEx, field: $('#OrderCash'),error:'Order Item Price is Wrong : Ex : 1000'});
+// orderValidations.push({reg: orderDiscountRegEx, field: $('#OrderDiscount'),error:'Order Item Price is Wrong : Ex : 1000'});
+// orderValidations.push({reg: orderBalanceRegEx, field: $('#OrderBalance'),error:'Order Item Price is Wrong : Ex : 1000'});
+//
+//
+//
+//
+// $("#OederOID,#OrderDate,#OrderCusID,#OrderCusName,#OrderCusAddress,#OrderCusSalary,#OrderICode,#OrderIName,#OrderIQty,#OrderIPrice,#OrderIOQty,#OrderTotal,#OrderTotal,#OrderSubTotal,#OrderCash,#OrderDiscount,#OrderBalance").on('keyup', function (event) {
+//     checkOrderValidity();
+// });
+//
+// $("#OederOID,#OrderDate,#OrderCusID,#OrderCusName,#OrderCusAddress,#OrderCusSalary,#OrderICode,#OrderIName,#OrderIQty,#OrderIPrice,#OrderIOQty,#OrderTotal,#OrderTotal,#OrderSubTotal,#OrderCash,#OrderDiscount,#OrderBalance").on('blur', function (event) {
+//     checkOrderValidity();
+// });
+//
+// function checkOrderValidity() {
+//     let errorCount = 0;
+//     for (let validation of orderValidations) {
+//         if (checkOrder(validation.reg, validation.field)) {
+//             textOrderSuccess(validation.field, "");
+//         } else {
+//             errorCount = errorCount + 1;
+//             setOrderTextError(validation.field, validation.error);
+//         }
+//     }
+// }
+//
+// function checkOrder(regex, txtField) {
+//     let inputValue = txtField.val();
+//     return regex.test(inputValue) ? true : false;
+// }
+//
+// function setOrderTextError(txtField, error) {
+//     if (txtField.val().length <= 0) {
+//         defaultOrderText(txtField, "");
+//     } else {
+//         txtField.css('border', '2px solid red');
+//         txtField.parent().children('span').text(error);
+//         txtField.parent().children('span').css('font-size', '10px');
+//         txtField.parent().children('span').css('color', 'red');
+//     }
+// }
+//
+// function textOrderSuccess(txtField, error) {
+//     if (txtField.val().length <= 0) {
+//         defaultOrderText(txtField, "");
+//     } else {
+//         txtField.css('border', '2px solid green');
+//         txtField.parent().children('span').text(error);
+//     }
+// }
+//
+// function defaultOrderText(txtField, error) {
+//     txtField.css("border", "1px solid #ced4da");
+//     txtField.parent().children('span').text(error);
+// }
+//
+// $("#btnCalculate").on("click", function () {
+//     let total = $("#OrderTotal").val();
+//     let discount = $("#OrderDiscount").val();
+//     let cash=$("#OrderCash").val();
+//     let subTotal=total-((total/100)*discount);
+//     let balance=(cash-subTotal);
+//     $('#OrderSubTotal').val(subTotal);
+//     $('#OrderBalance').val(balance);
+// });
