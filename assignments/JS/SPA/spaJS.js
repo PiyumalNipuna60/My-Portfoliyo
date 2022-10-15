@@ -966,7 +966,7 @@ const orderCusNameRegEx = /^[A-z ]{3,20}$/;
 const orderCusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
 const orderCusContactRegEx = /^[0-9]{10}[.]?[0-9]{1,2}$/;
 
-const orderItemIDRegEx = /^(I00-)[0-9]{1,3}$/;
+const orderItemCodeRegEx = /^(I00-)[0-9]{1,3}$/;
 const orderItemNameRegEx = /^[A-z ]{3,20}$/;
 const orderIQTYRegEx = /^[0-9]{1,4}$/;
 const orderIPriceRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
@@ -986,13 +986,18 @@ orderValidations.push({reg: orderCusIDRegEx, field: $('#OrderCusID'),error:'Cust
 orderValidations.push({reg: orderCusNameRegEx, field: $('#OrderCusName'),error:'Customer Name Pattern is Wrong : Ex : Nipuna'});
 orderValidations.push({reg: orderCusAddressRegEx, field: $('#OrderCusAddress'),error:'Customer Address Pattern is Wrong : Ex : Galle 01'});
 orderValidations.push({reg: orderCusContactRegEx, field: $('#OrderCusSalary'),error:'Customer Contact Pattern is Wrong : 0782545156'});
-orderValidations.push({reg: orderItemIDRegEx, field: $('#OrderICode'),error:'Order ID Pattern is Wrong : O00-001'});
+orderValidations.push({reg: orderItemCodeRegEx, field: $('#OrderICode'),error:'Order ItemCode Pattern is Wrong : I00-001'});
+orderValidations.push({reg: orderItemNameRegEx, field: $('#OrderIName'),error:'Order Item Name  is Wrong : Ex : Soya'});
+orderValidations.push({reg: orderIQTYRegEx, field: $('#OrderIQty'),error:'Order Item Qty is Wrong : Ex : 01'});
+orderValidations.push({reg: orderIPriceRegEx, field: $('#OrderIPrice'),error:'Order Item Price is Wrong : Ex : 1000'});
+orderValidations.push({reg: orderIOQTYRegEx, field: $('#OrderIOQty'),error:'Order Item Qty is Wrong : Ex : 01'});
+orderValidations.push({reg: orderTotalRegEx, field: $('#OrderTotal'),error:'Order Item Price is Wrong : Ex : 1000'});
+orderValidations.push({reg: orderSubTotalRegEx, field: $('#OrderSubTotal'),error:'Order Item Price is Wrong : Ex : 1000'});
 
+orderValidations.push({reg: orderCashRegEx, field: $('#OrderCash'),error:'Order Item Price is Wrong : Ex : 1000'});
+orderValidations.push({reg: orderDiscountRegEx, field: $('#OrderDiscount'),error:'Order Item Price is Wrong : Ex : 1000'});
+orderValidations.push({reg: orderBalanceRegEx, field: $('#OrderBalance'),error:'Order Item Price is Wrong : Ex : 1000'});
 
-orderValidations.push({reg: cusIDRegEx2, field: $('#inputCusId2'),error:'Customer ID Pattern is Wrong : C00-001'});
-orderValidations.push({reg: cusNameRegEx2, field: $('#inputCusName2'),error:'Customer Name Pattern is Wrong : Ex : Nipuna'});
-orderValidations.push({reg: cusAddressRegEx2, field: $('#inputCusAddress2'),error:'Customer Address Pattern is Wrong : Ex : Galle 01'});
-orderValidations.push({reg: cusContactRegEx2, field: $('#inputCusContact2'),error:'Customer Contact Pattern is Wrong : 0782545156'});
 
 
 

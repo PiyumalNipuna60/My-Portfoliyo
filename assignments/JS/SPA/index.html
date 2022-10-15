@@ -892,6 +892,7 @@
                                 <div class="col-5" style="margin-left: -8%;">
                                     <input class="form-control" id="OederOID" placeholder="ex:O001" style="width: 168%;"
                                            type="Id">
+                                    <span class="control-error"></span>
                                 </div>
                             </div>
                             <div class="row mb-2">
@@ -903,6 +904,7 @@
                                     <input class="form-control" id="OrderCusName" placeholder="ex:Piyumal"
                                            style="width: 168%;"
                                            type="email">
+                                    <span class="control-error"></span>
                                 </div>
                             </div>
                         </div>
@@ -913,6 +915,7 @@
                                     <input class="form-control" id="OrderDate" placeholder="ex:0000/00/00"
                                            style="width: 175%;"
                                            type="Id">
+                                    <span class="control-error"></span>
                                 </div>
                             </div>
                             <div class="row mb-2">
@@ -921,6 +924,7 @@
                                     <input class="form-control" id="OrderCusID" placeholder="ex:C001"
                                            style="width: 175%;"
                                            type="email">
+                                    <span class="control-error"></span>
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -929,6 +933,7 @@
                                     <input class="form-control" id="OrderCusSalary" placeholder="ex:0767554903"
                                            style="width: 175%;"
                                            type="email">
+                                    <span class="control-error"></span>
                                 </div>
                             </div>
                         </div>
@@ -938,6 +943,7 @@
                                 <input class="form-control" id="OrderCusAddress" placeholder="ex: Galle"
                                        style="width: 175%;"
                                        type="email">
+                                <span class="control-error"></span>
                             </div>
                         </div>
 
@@ -961,6 +967,7 @@
                                     <input class="form-control" id="OrderItem" placeholder="ex: type"
                                            style="width: 168%;"
                                            type="Id">
+                                    <span class="control-error"></span>
                                 </div>
                             </div>
                             <div class="row mb-2">
@@ -969,6 +976,7 @@
                                     <input class="form-control" id="OrderIName" placeholder="ex: soya"
                                            style="width: 168%;"
                                            type="email">
+                                    <span class="control-error"></span>
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -976,6 +984,7 @@
                                 <div class="col-5" style="margin-left: -8%;">
                                     <input class="form-control" id="OrderIQty" placeholder="ex: 0" style="width: 168%;"
                                            type="email">
+                                    <span class="control-error"></span>
                                 </div>
                             </div>
                         </div>
@@ -986,6 +995,7 @@
                                     <input class="form-control" id="OrderICode" placeholder="ex: I001"
                                            style="width: 155%;"
                                            type="Id">
+                                    <span class="control-error"></span>
                                 </div>
                             </div>
                             <div class="row mb-2">
@@ -994,6 +1004,7 @@
                                     <input class="form-control" id="OrderIPrice" placeholder="ex: 0.00"
                                            style="width: 155%;"
                                            type="email">
+                                    <span class="control-error"></span>
                                 </div>
                             </div>
                             <div class="row mb-3">
@@ -1001,6 +1012,7 @@
                                 <div class="col-6" style="margin-left: -8%;">
                                     <input class="form-control" id="OrderIOQty" placeholder="ex:0" style="width: 155%;"
                                            type="email">
+                                    <span class="control-error"></span>
                                 </div>
                             </div>
                         </div>
@@ -1024,10 +1036,12 @@
                     <div class="row" style="margin-left: 3%">
                         <h1 class="text-primary  col-4" style="font-size: 200%">Total :</h1>
                         <input class="text-primary   col-4" style="font-size: 120%" id="OrderTotal" placeholder="000.00Rs/=">
+                        <span class="control-error"></span>
                     </div>
                     <div class="row" style="margin-left: 3%">
                         <h1 class="text-danger col-4" style="font-size: 175%">SubTotal :</h1>
                         <input class="text-danger  col-4" style="font-size: 120%;height: 120%; margin-top: 1px;" id="OrderSubTotal" placeholder="000.00Rs/=">
+                        <span class="control-error"></span>
                     </div>
                     <hr style="border: 2px solid black; background-color: black; width: 80%; margin-left: 2rem">
                     <div class="row">
@@ -1037,6 +1051,7 @@
                                 <input class="form-control rounded-pill" id="OrderCash" placeholder="000.00"
                                        style="width: 155%;"
                                        type="email">
+                                <span class="control-error" ></span>
                             </div>
                         </div>
 
@@ -1046,6 +1061,7 @@
                                 <input class="form-control rounded-pill" id="OrderDiscount" placeholder="00"
                                        style="width: 155%;"
                                        type="email">
+                                <span class="control-error"></span>
                             </div>
                         </div>
 
@@ -1057,6 +1073,7 @@
                             <input class="form-control rounded-pill" id="OrderBalance" placeholder="000.00Rs/="
                                    style="width: 155%;"
                                    type="email">
+                            <span class="control-error" ></span>
                         </div>
                     </div>
 
@@ -1142,6 +1159,14 @@
 <script src="bootstraps/js/bootstrap.min.js"></script>
 <script src="asset/js/jquery-3.6.1.min.js"></script>
 <script src="spaJS.js"></script>
+
+<!--<script src="controllers/CustomerController.js"></script>-->
+<!--<script src="controllers/ItemrController.js"></script>-->
+<!--<script src="controllers/OrderController.js"></script>-->
+<!--<script src="controllers/HomeController.js"></script>-->
+<!--<script src="db/db.js"></script>-->
+
+
 <script>
 
     $(document).ready(function () {
