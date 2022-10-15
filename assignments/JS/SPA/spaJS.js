@@ -813,16 +813,25 @@ $("#OrderItem,#OrderICode,#OrderIName,#OrderIPrice,#OrderIQty,#OrderIOQty,#btnAd
 });
 
 $("#OrderItem").on('keydown', function (event) {
-    if (event.key == "Enter") {
+    if (event.key == "Enter" && check(cusIDRegEx, $("#OrderItem"))) {
         $("#OrderICode").focus();
+    } else {
+        focusText($("#OrderItem"));
     }
 });
 
 $("#OrderICode").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#OrderIName").focus();
+    if (event.key == "Enter" && check(cusNameRegEx, $("#OrderICode"))) {
+        focusText($("#OrderIName"));
     }
 });
+
+
+
+
+
+
+
 
 $("#OrderIName").on('keydown', function (event) {
     if (event.key == "Enter") {
