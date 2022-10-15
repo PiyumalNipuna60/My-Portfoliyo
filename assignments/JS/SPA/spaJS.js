@@ -791,13 +791,18 @@ $("#OrderDate").on('keydown', function (event) {
     }
 });
 
-
-
 $("#OrderCusID").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#OrderCusSalary").focus();
+    if (event.key == "Enter" && check(cusNameRegEx, $("#OrderCusID"))) {
+        focusText($("#OrderCusSalary"));
     }
 });
+
+
+
+
+
+
+
 
 $("#OrderCusSalary").on('keydown', function (event) {
     if (event.key == "Enter") {
