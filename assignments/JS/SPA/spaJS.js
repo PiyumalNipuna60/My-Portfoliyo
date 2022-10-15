@@ -826,18 +826,18 @@ $("#OrderICode").on('keydown', function (event) {
     }
 });
 
-
-
-
-
-
-
-
 $("#OrderIName").on('keydown', function (event) {
-    if (event.key == "Enter") {
-        $("#OrderIPrice").focus();
+    if (event.key == "Enter" && check(cusNameRegEx, $("#OrderIName"))) {
+        focusText($("#OrderIPrice"));
     }
 });
+
+
+
+
+
+
+
 
 $("#OrderIPrice").on('keydown', function (event) {
     if (event.key == "Enter") {
