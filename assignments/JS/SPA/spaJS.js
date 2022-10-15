@@ -975,7 +975,7 @@ const orderTotalRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
 
 const orderSubTotalRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
 const orderCashRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
-const orderDiscountRegEx = /^[0-9]{1,2}%$/;
+const orderDiscountRegEx = /^[0-9]{1,2}$/;
 const orderBalanceRegEx = /^[0-9]{1,10}[.]?[0-9]{1,2}$/;
 
 
@@ -1019,7 +1019,6 @@ function checkOrderValidity() {
             setOrderTextError(validation.field, validation.error);
         }
     }
-    setButtonState(errorCount);
 }
 
 function checkOrder(regex, txtField) {
@@ -1052,3 +1051,12 @@ function defaultOrderText(txtField, error) {
     txtField.parent().children('span').text(error);
 }
 
+$("#btnCalculate").on("click", function () {
+    let total = $("#OrderTotal").val();
+    let discount = $("#OrderDiscount").val();
+    let cash=$("#OrderCash").val();
+    let subTotal=total-((total/100)*discount);
+    let balance=(cash-subTotal);
+    $('#OrderSubTotal').val(subTotal);
+    $('#OrderBalance').val(balance);
+});
