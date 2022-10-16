@@ -70,9 +70,7 @@ section#loader {
 .border{
     position: absolute;
     inset: 0;
-    background: url("assets/image/pic/loader.gif");
     background-size: 400px;
-    background-repeat: no-repeat;
     animation: animationText 0.5s linear infinite;
 }
 
@@ -115,13 +113,13 @@ main > section {
 
 body > main > section:nth-child(1) {
     /*background-color: green;*/
-    background-repeat: no-repeat, repeat;
-    background-image: url(assets/image/pic/istockphoto-1321114918-612x612.jpg);
-    background-size: 127% 115%;
-    background-position: 95px;
+    background-repeat: no-repeat;
+    /*background-image: url(assets/image/pic/istockphoto-1321114918-612x612.jpg);*/
+    background-size: 127% 85%;
+    background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url("assets/image/pic/ServicesMain.jpg");
     position: relative;
     bottom: 25px;
-    height: 99vh;
+    height: 97vh;
 }
 
 body > main > section:nth-child(2) {
@@ -315,12 +313,11 @@ main > section:first-child > section:first-child > article > aside {
 }
 
 main > section:first-child > section > aside > img {
-    width: 37%;
+    width: 39%;
     height: 39%;
     /* padding-top: 20px; */
     position: relative;
     bottom: -24px;
-    left: -30px;
 }
 
 body > main > section:first-child > section:nth-child(1) > article > h1 {
@@ -337,20 +334,59 @@ body > main > section:first-child > section:first-child > article > h2 {
     padding-left: 30px;
 }
 
-main > section:nth-child(1) > section:nth-child(1) > article > img {
-    width: 28%;
-    height: 10%;
+.slide-left{
+font-size: 5rem;
+    font-weight: bold;
+    font-style: italic;
     position: relative;
-    left: 98px;
+    left:80px;
+    top: 40px;
+    margin: auto;
+    color: white;
+    font-variant: all-petite-caps;
+
 }
 
-main > section:nth-child(1) > section:nth-child(1) > article > p {
-    font-size: 22px;
-    position: relative;
-    left: 125px;
-    top: -72px;
-    z-index: 1;
+.slide-left{
+    animation: slideleft 2s linear forwards;
 }
+
+
+.slide-left2{
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    position: relative;
+    left: 50px;
+    top: 40px;
+    margin: auto;
+    color: #0d6efd;
+}
+
+.slide-left2{
+    animation: slideleft 4s linear forwards;
+}
+
+@keyframes slideleft {
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+
+}
+
+
+/*main > section:nth-child(1) > section:nth-child(1) > article > p {*/
+/*    font-size: 22px;*/
+/*    position: relative;*/
+/*    left: 125px;*/
+/*    top: -72px;*/
+/*    z-index: 1;*/
+/*}*/
 
 main > section:nth-child(1) > section:nth-child(1) > article > button {
     font-size: 28px;
@@ -358,7 +394,7 @@ main > section:nth-child(1) > section:nth-child(1) > article > button {
     background-color: red;
     position: relative;
     left: 198px;
-    top: -37px;
+    top: 70px;
     color: #edebe9;
     border-radius: 16px;
     z-index: 2;
@@ -2069,9 +2105,9 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     body > main > section:nth-child(1) {
         /*background-color: green;*/
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/istockphoto-1321114918-612x612.jpg);
-        background-size: 127% 115%;
-        background-position: 95px;
+        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url("assets/image/pic/ServicesMain.jpg");
+        background-size: 115% 85%;
+        background-position: center;
         position: relative;
         bottom: 25px;
         height: 99vh;
@@ -2286,19 +2322,47 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         padding-left: 30px;
     }
 
-    main > section:nth-child(1) > section:nth-child(1) > article > img {
-        width: 28%;
-        height: 10%;
+    .slide-left{
+        font-size: 5rem;
+        font-weight: bold;
+        font-style: italic;
         position: relative;
-        left: 98px;
+        left: 50px;
+        top: 40px;
+        margin: auto;
+        color: white;
+        font-variant: all-petite-caps;
     }
 
-    main > section:nth-child(1) > section:nth-child(1) > article > p {
-        font-size: 22px;
+    .slide-left{
+        animation: slideleft 2s linear forwards;
+    }
+
+
+    .slide-left2{
+        font-size: 2rem;
+        font-weight: bold;
+        font-style: italic;
         position: relative;
-        left: 125px;
-        top: -72px;
-        z-index: 1;
+        left: 50px;
+        top: 40px;
+        margin: auto;
+        color: #0d6efd;
+    }
+
+    .slide-left2{
+        animation: slideleft 4s linear forwards;
+    }
+
+    @keyframes slideleft {
+        0%{
+            transform: translate(100px);
+            opacity: 0;
+        }
+        100%{
+            transform: translate(0px);
+            opacity: 1;
+        }
     }
 
     main > section:nth-child(1) > section:nth-child(1) > article > button {
@@ -2307,7 +2371,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-color: red;
         position: relative;
         left: 198px;
-        top: -37px;
+        top: 70px;
         color: #edebe9;
         border-radius: 16px;
         z-index: 2;
@@ -2350,13 +2414,13 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         width: 81%;
     }
 
-    main > section:nth-child(1) > section:nth-child(2) > div > section > p {
-        position: relative;
-        top: 44px;
-        left: -159px;
-        width: 81%;
-        color: #40036e;
-    }
+    /*main > section:nth-child(1) > section:nth-child(2) > div > section > p {*/
+    /*    position: relative;*/
+    /*    top: 44px;*/
+    /*    left: -159px;*/
+    /*    width: 81%;*/
+    /*    color: #40036e;*/
+    /*}*/
 
     main > section:nth-child(1) > section:nth-child(2) > div > aside {
         right: -1031px;
@@ -3999,9 +4063,9 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     body > main > section:nth-child(1) {
         /*background-color: green;*/
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/istockphoto-1321114918-612x612.jpg);
-        background-size: 127% 115%;
-        background-position: 95px;
+        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url("assets/image/pic/ServicesMain.jpg");
+        background-size: 115% 100%;
+        background-position: center;
         position: relative;
         bottom: 25px;
         height: 86vh;
@@ -4218,19 +4282,48 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         padding-left: 30px;
     }
 
-    main > section:nth-child(1) > section:nth-child(1) > article > img {
-        width: 28%;
-        height: 10%;
+    .slide-left{
+        font-size: 3rem;
+        font-weight: bold;
+        font-style: italic;
         position: relative;
-        left: 98px;
+        left: 50px;
+        top: 32px;
+        margin: auto;
+        color: white;
+        font-variant: all-petite-caps;
     }
 
-    main > section:nth-child(1) > section:nth-child(1) > article > p {
-        font-size: 22px;
+    .slide-left{
+        animation: slideleft 2s linear forwards;
+    }
+
+
+    .slide-left2{
+        font-size: 18px;
+        font-weight: bold;
+        font-style: italic;
         position: relative;
-        left: 125px;
-        top: -59px;
-        z-index: 1;
+        left: 50px;
+        top: 38px;
+        margin: auto;
+        color: #0d6efd;
+    }
+
+    .slide-left2{
+        animation: slideleft 4s linear forwards;
+    }
+
+    @keyframes slideleft {
+        0%{
+            transform: translate(100px);
+            opacity: 0;
+        }
+        100%{
+            transform: translate(0px);
+            opacity: 1;
+        }
+
     }
 
     main > section:nth-child(1) > section:nth-child(1) > article > button {
@@ -4238,8 +4331,8 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         border-color: #a79897;
         background-color: red;
         position: relative;
-        left: 198px;
-        top: -37px;
+        left: 139px;
+        top: 102px;
         color: #edebe9;
         border-radius: 16px;
         z-index: 2;
@@ -4282,13 +4375,13 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         width: 81%;
     }
 
-    main > section:nth-child(1) > section:nth-child(2) > div > section > p {
-        position: relative;
-        top: 44px;
-        left: -159px;
-        width: 81%;
-        color: #40036e;
-    }
+    /*main > section:nth-child(1) > section:nth-child(2) > div > section > p {*/
+    /*    position: relative;*/
+    /*    top: 44px;*/
+    /*    left: -159px;*/
+    /*    width: 81%;*/
+    /*    color: #40036e;*/
+    /*}*/
 
     main > section:nth-child(1) > section:nth-child(2) > div > aside {
         right: -1031px;
@@ -5955,9 +6048,10 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     body > main > section:nth-child(1) {
         /*background-color: green;*/
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/istockphoto-1321114918-612x612.jpg);
-        background-size: 127% 115%;
-        background-position: 95px;
+        /*background-image: url(assets/image/pic/istockphoto-1321114918-612x612.jpg);*/
+        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url("assets/image/pic/ServicesMain.jpg");
+        background-size: 115% 100%;
+        background-position: center;
         position: relative;
         bottom: 4px;
         height: 71vh;
@@ -6165,7 +6259,6 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         font-size: 238%;
         text-shadow: 2px 2px red;
         position: relative;
-        left: 13px;
         top: 40px;
     }
 
@@ -6179,29 +6272,57 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         bottom: 22%;
     }
 
-    main > section:nth-child(1) > section:nth-child(1) > article > img {
-        width: 28%;
-        height: 10%;
-        position: absolute;
-        left: 12%;
-        top: 30%;
+    .slide-left{
+        font-size: 2rem;
+        font-weight: bold;
+        font-style: italic;
+        position: relative;
+        left: 50px;
+        top: 47px;
+        margin: auto;
+        color: white;
+        font-variant: all-petite-caps;
     }
 
-    main > section:nth-child(1) > section:nth-child(1) > article > p {
-        font-size: 113%;
-        position: absolute;
-        left: 14%;
-        top: 37%;
-        z-index: 1;
+    .slide-left{
+        animation: slideleft 2s linear forwards;
+    }
+
+
+    .slide-left2{
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        position: relative;
+        left: 50px;
+        top: 51px;
+        margin: auto;
+        color: #0d6efd;
+    }
+
+    .slide-left2{
+        animation: slideleft 4s linear forwards;
+    }
+
+    @keyframes slideleft {
+        0%{
+            transform: translate(100px);
+            opacity: 0;
+        }
+        100%{
+            transform: translate(0px);
+            opacity: 1;
+        }
+
     }
 
     main > section:nth-child(1) > section:nth-child(1) > article > button {
-        font-size: 116%;
+        font-size: 28px;
         border-color: #a79897;
         background-color: red;
-        position: absolute;
-        left: 23%;
-        top: 47%;
+        position: relative;
+        left: 139px;
+        top: 102px;
         color: #edebe9;
         border-radius: 16px;
         z-index: 2;
@@ -6244,13 +6365,13 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         width: 81%;
     }
 
-    main > section:nth-child(1) > section:nth-child(2) > div > section > p {
-        position: relative;
-        top: 44px;
-        left: -159px;
-        width: 81%;
-        color: #40036e;
-    }
+    /*main > section:nth-child(1) > section:nth-child(2) > div > section > p {*/
+    /*    position: relative;*/
+    /*    top: 44px;*/
+    /*    left: -159px;*/
+    /*    width: 81%;*/
+    /*    color: #40036e;*/
+    /*}*/
 
     main > section:nth-child(1) > section:nth-child(2) > div > aside {
         right: -1031px;
