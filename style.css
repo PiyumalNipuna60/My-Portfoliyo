@@ -895,73 +895,136 @@ main > section:nth-child(4) > section > section > article {
     background-color: green;
 }
 
-
-/*///////////nav css////////*/
-main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > hr {
-    color: #0a0909;
-    height: 2px;
-    background-color: black;
-}
-
-main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div {
-    position: absolute;
-    top: 491px;
-    width: 100%;
-}
-
-main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
+.sec4 {
     position: relative;
+    width: 700px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.line {
+    display: inline-block;
+    position: absolute;
+    border-left: 3px solid #3A86FF;
+    height: 413px;
+    width: 0px;
+    left: 1px;
+    right: 0;
     top: 80px;
+    margin: auto;
+    animation-name: line-animate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
 
-main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > section {
-    /* background-color: #ff4334; */
-    position: relative;
-    top: 44px;
-    left: 208px;
-    width: 81%;
-}
-
-main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > section > p {
-    position: relative;
-    top: 44px;
-    left: -159px;
-    width: 81%;
-    color: #40036e;
-}
-
-main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside {
-    right: -1031px;
-    position: relative;
-    top: 0px;
-    width: 93px;
-    height: 100%;
-}
-
-main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
-    width: 93px;
-    height: 100%;
+.edu-details {
     position: absolute;
-    left: 307px;
+    display: inline-block;
+    width: 304px;
+    height: 185px;
+    background: dimgray;
+    border-radius: 55px;
+    border: 2px solid yellow;
+    box-shadow: 9px 1px 14px red;
 }
 
-main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
-    width: 93px;
-    height: 100%;
-    position: absolute;
-    left: 54px;;
-    top: -8px;
-    font-size: 118%;
+.sec4 > div:nth-child(2) {
+    left: 0;
+    top: 0;
 }
 
-main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
-    width: 93px;
-    height: 100%;
-    position: absolute;
-    left: 54px;
-    top: -3px;
-    font-size: 103%;
+.sec4 > div:nth-child(3) {
+    right: 0;
+    top: 153px;
 }
+
+.sec4 > div:nth-child(4) {
+    left: 0;
+    top: 259px;
+}
+
+.sec4 > div:nth-child(5) {
+    right: 0;
+    top: 389px;
+    margin-left: 7px;
+}
+
+.Ep1{
+    margin-left: 26px;
+    font-size: 20px;
+}
+
+.edu-details a {
+    text-decoration: none;
+    color: #eae3e3;
+    font-size: 16px;
+    margin-left: 7px;
+}
+
+.edu-details > p:nth-child(3) {
+    color: #BBBBBB;
+    font-size: 16px;
+    margin-left: 7px;
+}
+
+.edu-details > p:nth-child(4) {
+    color: #3A86FF;
+    font-size: 16px;
+    margin-left: 7px;
+}
+
+.edu section >section> div:nth-child(6) {
+    position: absolute;
+    background-color: #3A86FF;
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 104px;
+    margin: auto;
+}
+
+.edu section >section> div:nth-child(7) {
+    position: absolute;
+    background-color: #3A86FF;
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 220px;
+    margin: auto;
+}
+
+.edu section >section> div:nth-child(8) {
+    position: absolute;
+    background-color: #3A86FF;
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 333px;
+    margin: auto;
+}
+
+.edu section >section> div:nth-child(9) {
+    position: absolute;
+    background-color: #3A86FF;
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 465px;
+    margin: auto;
+}
+
+
 
 
 /*========================================== Skill ==========================================================*/
@@ -2774,72 +2837,133 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-color: green;
     }
 
-
-    /*///////////nav css////////*/
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > hr {
-        color: #0a0909;
-        height: 2px;
-        background-color: black;
-    }
-
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div {
-        position: absolute;
-        top: 487px;
-        width: 100%;
-    }
-
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
+    .sec4 {
         position: relative;
+        width: 700px;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .line {
+        display: inline-block;
+        position: absolute;
+        border-left: 3px solid #3A86FF;
+        height: 413px;
+        width: 0px;
+        left: 1px;
+        right: 0;
         top: 80px;
+        margin: auto;
+        animation-name: line-animate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
     }
 
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > section {
-        /* background-color: #ff4334; */
-        position: relative;
-        top: 44px;
-        left: 208px;
-        width: 81%;
-    }
-
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > section > p {
-        position: relative;
-        top: 44px;
-        left: -159px;
-        width: 81%;
-        color: #40036e;
-    }
-
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside {
-        right: -1031px;
-        position: relative;
-        top: 0px;
-        width: 93px;
-        height: 100%;
-    }
-
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
-        width: 93px;
-        height: 100%;
+    .edu-details {
         position: absolute;
-        left: 307px;
+        display: inline-block;
+        width: 304px;
+        height: 185px;
+        background: dimgray;
+        border-radius: 55px;
+        border: 2px solid yellow;
+        box-shadow: 9px 1px 14px red;
     }
 
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
-        width: 93px;
-        height: 100%;
-        position: absolute;
-        left: 54px;;
-        top: -8px;
-        font-size: 118%;
+    .sec4 > div:nth-child(2) {
+        left: 0;
+        top: 0;
     }
 
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
-        width: 93px;
-        height: 100%;
+    .sec4 > div:nth-child(3) {
+        right: 0;
+        top: 153px;
+    }
+
+    .sec4 > div:nth-child(4) {
+        left: 0;
+        top: 259px;
+    }
+
+    .sec4 > div:nth-child(5) {
+        right: 0;
+        top: 389px;
+        margin-left: 7px;
+    }
+
+    .Ep1{
+        margin-left: 26px;
+        font-size: 20px;
+    }
+
+    .edu-details a {
+        text-decoration: none;
+        color: #eae3e3;
+        font-size: 16px;
+        margin-left: 7px;
+    }
+
+    .edu-details > p:nth-child(3) {
+        color: #BBBBBB;
+        font-size: 16px;
+        margin-left: 7px;
+    }
+
+    .edu-details > p:nth-child(4) {
+        color: #3A86FF;
+        font-size: 16px;
+        margin-left: 7px;
+    }
+
+    .edu section >section> div:nth-child(6) {
         position: absolute;
-        left: 54px;
-        top: -3px;
-        font-size: 103%;
+        background-color: #3A86FF;
+        height: 28px;
+        width: 28px;
+        border-radius: 100%;
+        left: 0;
+        right: 0;
+        top: 104px;
+        margin: auto;
+    }
+
+    .edu section >section> div:nth-child(7) {
+        position: absolute;
+        background-color: #3A86FF;
+        height: 28px;
+        width: 28px;
+        border-radius: 100%;
+        left: 0;
+        right: 0;
+        top: 220px;
+        margin: auto;
+    }
+
+    .edu section >section> div:nth-child(8) {
+        position: absolute;
+        background-color: #3A86FF;
+        height: 28px;
+        width: 28px;
+        border-radius: 100%;
+        left: 0;
+        right: 0;
+        top: 333px;
+        margin: auto;
+    }
+
+    .edu section >section> div:nth-child(9) {
+        position: absolute;
+        background-color: #3A86FF;
+        height: 28px;
+        width: 28px;
+        border-radius: 100%;
+        left: 0;
+        right: 0;
+        top: 465px;
+        margin: auto;
     }
 
 
@@ -4642,74 +4766,134 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-color: green;
     }
 
-
-    /*///////////nav css////////*/
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > hr {
-        color: #0a0909;
-        height: 2px;
-        background-color: black;
-    }
-
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div {
-        position: absolute;
-        top: 423px;
-        width: 100%;
-    }
-
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
+    .sec4 {
         position: relative;
-        top: 80px;
+        width: 700px;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > section {
-        /* background-color: #ff4334; */
-        position: relative;
-        top: 44px;
-        left: 208px;
-        width: 81%;
-    }
-
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > section > p {
-        position: relative;
-        top: 44px;
-        left: -159px;
-        width: 81%;
-        color: #40036e;
-    }
-
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside {
-        right: -1031px;
-        position: relative;
-        top: 0px;
-        width: 93px;
-        height: 100%;
-    }
-
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
-        width: 93px;
-        height: 100%;
+    .line {
+        display: inline-block;
         position: absolute;
-        left: 307px;
+        border-left: 3px solid #3A86FF;
+        height: 413px;
+        width: 0px;
+        left: 1px;
+        right: 0;
+        top: 40px;
+        margin: auto;
+        animation-name: line-animate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
     }
 
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
-        width: 93px;
-        height: 100%;
+    .edu-details {
         position: absolute;
-        left: 54px;;
-        top: -8px;
-        font-size: 118%;
+        display: inline-block;
+        width: 302px;
+        height: 180px;
+        background: dimgray;
+        border-radius: 55px;
+        border: 2px solid yellow;
+        box-shadow: 9px 1px 14px red;
     }
 
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
-        width: 93px;
-        height: 100%;
+    .sec4 > div:nth-child(2) {
+        left: 0;
+        top: 0;
+    }
+
+    .sec4 > div:nth-child(3) {
+        right: 0;
+        top: 128px;
+    }
+
+    .sec4 > div:nth-child(4) {
+        left: 0;
+        top: 259px;
+    }
+
+    .sec4 > div:nth-child(5) {
+        right: 0;
+        top: 349px;
+        margin-left: 7px;
+    }
+
+    .Ep1{
+        margin-left: 26px;
+        font-size: 20px;
+    }
+
+    .edu-details a {
+        text-decoration: none;
+        color: #eae3e3;
+        font-size: 16px;
+        margin-left: 7px;
+    }
+
+    .edu-details > p:nth-child(3) {
+        color: #BBBBBB;
+        font-size: 16px;
+        margin-left: 7px;
+    }
+
+    .edu-details > p:nth-child(4) {
+        color: #3A86FF;
+        font-size: 16px;
+        margin-left: 7px;
+    }
+
+    .edu section >section> div:nth-child(6) {
         position: absolute;
-        left: 54px;
-        top: -3px;
-        font-size: 103%;
+        background-color: #3A86FF;
+        height: 28px;
+        width: 28px;
+        border-radius: 100%;
+        left: 0;
+        right: 0;
+        top: 82px;
+        margin: auto;
     }
 
+    .edu section >section> div:nth-child(7) {
+        position: absolute;
+        background-color: #3A86FF;
+        height: 28px;
+        width: 28px;
+        border-radius: 100%;
+        left: 0;
+        right: 0;
+        top: 211px;
+        margin: auto;
+    }
+
+    .edu section >section> div:nth-child(8) {
+        position: absolute;
+        background-color: #3A86FF;
+        height: 28px;
+        width: 28px;
+        border-radius: 100%;
+        left: 0;
+        right: 0;
+        top: 333px;
+        margin: auto;
+    }
+
+    .edu section >section> div:nth-child(9) {
+        position: absolute;
+        background-color: #3A86FF;
+        height: 28px;
+        width: 28px;
+        border-radius: 100%;
+        left: 0;
+        right: 0;
+        top: 432px;
+        margin: auto;
+    }
 
     /*========================================== Skill ==========================================================*/
     #S1 {
@@ -6550,72 +6734,133 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         background-color: green;
     }
 
-
-    /*///////////nav css////////*/
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > hr {
-        color: #0a0909;
-        height: 2px;
-        background-color: black;
-    }
-
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div {
-        position: absolute;
-        top: 423px;
-        width: 100%;
-    }
-
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > hr:nth-child(1) {
+    .sec4 {
         position: relative;
-        top: 80px;
+        width: 700px;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > section {
-        /* background-color: #ff4334; */
-        position: relative;
-        top: 44px;
-        left: 208px;
-        width: 81%;
-    }
-
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > section > p {
-        position: relative;
-        top: 44px;
-        left: -159px;
-        width: 81%;
-        color: #40036e;
-    }
-
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside {
-        right: -1031px;
-        position: relative;
-        top: 0px;
-        width: 93px;
-        height: 100%;
-    }
-
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) {
-        width: 93px;
-        height: 100%;
+    .line {
+        display: inline-block;
         position: absolute;
-        left: 307px;
+        border-left: 3px solid #3A86FF;
+        height: 413px;
+        width: 0px;
+        left: 1px;
+        right: 0;
+        top: 35px;
+        margin: auto;
+        animation-name: line-animate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
     }
 
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(1) > p {
-        width: 93px;
-        height: 100%;
+    .edu-details {
         position: absolute;
-        left: 54px;;
-        top: -8px;
-        font-size: 118%;
+        display: inline-block;
+        width: 281px;
+        height: 160px;
+        background: dimgray;
+        border-radius: 55px;
+        border: 2px solid yellow;
+        box-shadow: 9px 1px 14px red;
     }
 
-    main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div > aside > a:nth-child(2) > p {
-        width: 93px;
-        height: 100%;
+    .sec4 > div:nth-child(2) {
+        left: 0;
+        top:11px;
+    }
+
+    .sec4 > div:nth-child(3) {
+        right: 0;
+        top: 121px;
+    }
+
+    .sec4 > div:nth-child(4) {
+        left: 0;
+        top: 259px;
+    }
+
+    .sec4 > div:nth-child(5) {
+        right: 0;
+        top: 364px;
+        margin-left: 7px;
+    }
+
+    .Ep1{
+        margin-left: 26px;
+        font-size: 20px;
+    }
+
+    .edu-details a {
+        text-decoration: none;
+        color: #eae3e3;
+        font-size: 16px;
+        margin-left: 7px;
+    }
+
+    .edu-details > p:nth-child(3) {
+        color: #BBBBBB;
+        font-size: 16px;
+        margin-left: 7px;
+    }
+
+    .edu-details > p:nth-child(4) {
+        color: #3A86FF;
+        font-size: 16px;
+        margin-left: 7px;
+    }
+
+    .edu section >section> div:nth-child(6) {
         position: absolute;
-        left: 54px;
-        top: -3px;
-        font-size: 103%;
+        background-color: #3A86FF;
+        height: 28px;
+        width: 28px;
+        border-radius: 100%;
+        left: 0;
+        right: 0;
+        top: 89px;
+        margin: auto;
+    }
+
+    .edu section >section> div:nth-child(7) {
+        position: absolute;
+        background-color: #3A86FF;
+        height: 28px;
+        width: 28px;
+        border-radius: 100%;
+        left: 0;
+        right: 0;
+        top: 193px;
+        margin: auto;
+    }
+
+    .edu section >section> div:nth-child(8) {
+        position: absolute;
+        background-color: #3A86FF;
+        height: 28px;
+        width: 28px;
+        border-radius: 100%;
+        left: 0;
+        right: 0;
+        top: 325px;
+        margin: auto;
+    }
+
+    .edu section >section> div:nth-child(9) {
+        position: absolute;
+        background-color: #3A86FF;
+        height: 28px;
+        width: 28px;
+        border-radius: 100%;
+        left: 0;
+        right: 0;
+        top: 433px;
+        margin: auto;
     }
 
 
