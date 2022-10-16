@@ -16,6 +16,13 @@ $("#btnItemSave").click(function () {
     }
 
     item.push(itemObject);
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Item has been saved',
+        showConfirmButton: false,
+        timer: 1500
+    })
     getAllItem();
     loadAllItem();
     clearAllItemTexts();
@@ -194,7 +201,25 @@ $("#btnItemDelete").on("click",function () {
     let option = confirm("Do you really want to delete Item id :" + deleteID);
     if (option){
         if (deleteItem(deleteID)) {
-            alert("Item Successfully Deleted..");
+            // alert("Item Successfully Deleted..");
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                        'Deleted!',
+                        'Your file has been deleted.',
+                        'success'
+                    )
+                }
+            })
+
             setItemTextfieldValues2("", "", "", "");
         } else {
             alert("No such Item to delete. please check the id");
@@ -222,7 +247,14 @@ $("#ItemSaveChange").on("click",function () {
     let ItemCode = $("#inputItemCode2").val();
     let response = updateItem(ItemCode);
     if (response) {
-        alert("Item Updated Successfully");
+        // alert("Item Updated Successfully");
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Item has been Updates',
+            showConfirmButton: false,
+            timer: 1500
+        })
         setItemTextfieldValues2("", "", "", "");
     } else {
         alert("Update Failed..!");

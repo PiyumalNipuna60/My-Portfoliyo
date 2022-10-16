@@ -1,6 +1,6 @@
 /*=====================================================Order----------------------------------------------------------------------*/
 
-var order = [];
+// var order = [];
 $("#btnOrderAddItem").click(function () {
     let OId=$("#OederOID").val();
     let date=$("#OrderDate").val();
@@ -36,6 +36,13 @@ $("#btnOrderAddItem").click(function () {
 
     order.push(orderObject);
     console.log(order)
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Order has been saved',
+        showConfirmButton: false,
+        timer: 1500
+    })
     getLoadOrder();
     clearAllOrderTexts();
 });
@@ -204,7 +211,24 @@ $("#btnPurchase").on("click", function () {
     let option = confirm("Do you really want to delete Order id :" + deleteID);
     if (option) {
         if (deleteOrder(deleteID)) {
-            alert("Order Successfully Deleted..");
+            // alert("Order Successfully Deleted..");
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                        'Deleted!',
+                        'Your file has been deleted.',
+                        'success'
+                    )
+                }
+            })
             setTextfieldValuesOrder("", "", "", "");
         } else {
             alert("No such Order to delete. please check the id");

@@ -17,6 +17,13 @@ $("#btnSave").click(function () {
     }
     customer.push(customerObject);
     console.log(customer);
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Customer has been saved',
+        showConfirmButton: false,
+        timer: 1500
+    })
     getAllCustomer();
     loadAllCustomers();
     clearAllTexts();
@@ -217,7 +224,24 @@ $("#btnDelete2").on("click",function () {
     let option = confirm("Do you really want to delete customer id :" + deleteID);
     if (option){
         if (deleteCustomer(deleteID)) {
-            alert("Customer Successfully Deleted..");
+            // alert("Customer Successfully Deleted..");
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                        'Deleted!',
+                        'Your file has been deleted.',
+                        'success'
+                    )
+                }
+            })
             setTextfieldValues2("", "", "", "");
         } else {
             alert("No such customer to delete. please check the id");
@@ -238,11 +262,22 @@ function deleteCustomer(customerID) {
     }
 }
 
+
+/*-----------Update Customer----------------*/
+
+
 $("#btnModify2").on("click",function () {
     let customerID = $("#inputCusId2").val();
     let response = updateCustomer(customerID);
     if (response) {
-        alert("Customer Updated Successfully");
+        // alert("Customer Updated Successfully");
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Customer has been Updates',
+            showConfirmButton: false,
+            timer: 1500
+        })
         setTextfieldValues2("", "", "", "");
     } else {
         alert("Update Failed..!");
