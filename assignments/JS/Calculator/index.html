@@ -36,32 +36,32 @@
             <div>
                 <button class="button" id="clear" name="clearButton" type="button" value="">CE</button>
                 <button class="button" name="root2" type="button" value="">√x</button>
-                <button class="button" name="percentButton" type="button" value="">%</button>
-                <button class="button operator" name="divide" type="button" value="">÷</button>
+                <button class="button" id="puserntage" name="percentButton" type="button" value="">%</button>
+                <button class="button number" id="bd" name="divide" type="button" value="">÷</button>
             </div>
             <div>
-                <button class="button number" name="seven" type="button" value="">7</button>
-                <button class="button number" name="eight" type="button" value="">8</button>
-                <button class="button number" name="nine" type="button" value="">9</button>
-                <button class="button operator" name="multiply" type="button" value="">×</button>
+                <button class="button number" id="7" name="seven" type="button" value="">7</button>
+                <button class="button number" id="8" name="eight" type="button" value="">8</button>
+                <button class="button number" id="9" name="nine" type="button" value="">9</button>
+                <button class="button number" id="gun" name="multiply" type="button" value="">×</button>
             </div>
             <div>
-                <button class="button number" name="four" type="button" value="">4</button>
-                <button class="button number" name="five" type="button" value="">5</button>
-                <button class="button number" name="six" type="button" value="">6</button>
-                <button class="button operator" name="subtract" type="button" value="">−</button>
+                <button class="button number" id="4" name="four" type="button" value="">4</button>
+                <button class="button number" id="5" name="five" type="button" value="">5</button>
+                <button class="button number" id="6" name="six" type="button" value="">6</button>
+                <button class="button number" id="maines" name="subtract" type="button" value="">−</button>
             </div>
             <div>
-                <button class="button number" name="one" type="button" value="">1</button>
-                <button class="button number" name="two" type="button" value="">2</button>
-                <button class="button number" name="three" type="button" value="">3</button>
-                <button class="button operator" name="add" type="button" value="">+</button>
+                <button class="button number" id="1" name="one" type="button" value="">1</button>
+                <button class="button number" id="2" name="two" type="button" value="">2</button>
+                <button class="button number" id="3" name="three" type="button" value="">3</button>
+                <button class="button number" id="plus" name="add" type="button" value="">+</button>
             </div>
             <div>
-                <button class="button number" name="zero" type="button" value="">0</button>
-                <button class="button number" name="decimal" type="button" value="">.</button>
-                <button class="button number" name="negateButton" type="button" value="">+/-</button>
-                <button class="button operator" id="equalTo" name="calculate" type="button" value="">=</button>
+                <button class="button number" id="0" name="zero" type="button" value="">0</button>
+                <button class="button number" id="dot" name="decimal" type="button" value="">.</button>
+                <button class="button number" id="x" name="negateButton" type="button" value="">+/-</button>
+                <button class="button number" id="equalTo" name="calculate" type="button" value="">=</button>
             </div>
         </form>
 
@@ -74,31 +74,77 @@
 
 <script>
 
-    let buttons = document.querySelectorAll('.number');
-    let result = document.querySelector('#result');
-    let clear = document.querySelector('#clear');
-    let equalTo = document.querySelector('#equalTo');
+    // let buttons = document.querySelectorAll('.number');
+    // let operator = document.querySelector('#operator');
+    // let clear = document.querySelector('#clear');
+    // let equalTo = document.querySelector('#equalTo');
 
     // result.addEventListener()
 
     let value = "";
 
+    //
+    // $(buttons).click(function () {
+    //     let text = this.innerHTML;
+    //     value += text;
+    //     $('#display').val(value);
+    //     console.log(value);
+    // });
+    //
+    // $(operator).click(function () {
+    //     let text = this.val();
+    //     value += text;
+    //     $('#display').val(value);
+    //     console.log(value);
+    // });
+    //
+    //
+    // clear.addEventListener('click', function () {
+    //     result.innerHTML = "";
+    //     value = "";
+    //     $('#display').val(value);
+    //     console.log(value);
+    // });
 
-    $(buttons).click(function () {
-        let text = this.innerHTML;
-        value += text;
-        $('#display').val(value);
-        console.log(value);
+    let buttons = document.querySelectorAll('.number');
+    let result = document.querySelector('#display');
+    let clear = document.querySelector('#clearButton');
+    let history = document.querySelector('#history');
+    let equalTo = document.querySelector('#equalTo');
+    // let backSpace = document.querySelector('#backSpace');
+
+    let value = "";
+
+    buttons.forEach((num, index) => {
+        num.addEventListener('click', function () {
+            let text = this.innerHTML;
+            value += text;
+            result.innerHTML = value;
+        });
     });
 
+    /*equal to button action*/
+    equalTo.addEventListener('click', function () {
+        if (result.innerHTML !== "") {
+            history.innerHTML = result.innerHTML;
+            result.innerHTML = eval(result.innerHTML);
+            value = eval(result.innerHTML);
+        } else {
+            alert('please enter any Number');
+        }
+    });
+
+    /*clear all number*/
     clear.addEventListener('click', function () {
         result.innerHTML = "";
         value = "";
-        $('#display').val(value);
-        console.log(value);
     });
 
-
+    /*delete single number*/
+    backSpace.addEventListener('click', function () {
+        result.innerHTML = result.innerHTML.substring(0, result.innerHTML.length - 1);
+        value = result.innerHTML;
+    });
 
 
 </script>

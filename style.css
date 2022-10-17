@@ -1922,7 +1922,7 @@ main > section:nth-child(11) > section:nth-child(2) > section:first-child > sect
 #Location {
     border: 2px solid black;
     position: relative;
-    top: 31px;
+    top: 90px;
     height: 29vh;
     width: 95%;
     left: 31px;
@@ -2351,7 +2351,8 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     }
 
     .slide-left2{
-        animation: slideleft 4s linear forwards;
+        /*animation: slideleft 4s linear forwards;*/
+        animation: infinite 4s linear forwards;
     }
 
     @keyframes slideleft {
@@ -3062,8 +3063,10 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         width: 12%;
         height: 59%;
         border-radius: 13px;
+        border: 2px solid black;
         color: #edebe9;
     }
+
 
     #sDiv1 > div > img {
         position: relative;
