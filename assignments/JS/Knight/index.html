@@ -7,7 +7,21 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
+
+        }
+
+        #mainSec{
+            border: 1px solid #533554;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            width: 1400px;
+            height: 686px;
             background-color: rgba(0, 0, 0, 0.93);
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px, rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
         }
 
         #container {
@@ -80,32 +94,36 @@
 </head>
 <body>
 
+<main id="mainSec">
 
-
-<section class="container-fluid">
-    <section class="row mt-5">
-        <div class="col-12">
-            <h1 class="text-center text-white">Knight-Rider</h1>
-        </div>
-    </section>
-    <section class="row mt-5">
-        <section class="col-12" id="container">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+    <section class="container-fluid">
+        <section class="row mt-5">
+            <div class="col-12">
+                <h1 class="text-center text-white">Knight-Rider</h1>
+            </div>
+        </section>
+        <section class="row mt-5">
+            <section class="col-12" id="container">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </section>
+        <section class="row justify-content-center mt-5">
+            <div class="col-3 d-flex justify-content-around">
+                <button class="button-29" id="btnStart" role="button">Start</button>
+                <button class="button-29" id="btnEnd" role="button">End</button>
+            </div>
         </section>
     </section>
-    <section class="row justify-content-center mt-5">
-        <div class="col-3 d-flex justify-content-around">
-            <button class="button-29" id="btnStart" role="button">Start</button>
-            <button class="button-29" id="btnEnd" role="button">End</button>
-        </div>
-    </section>
-</section>
+
+</main>
+
+
 
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script>
