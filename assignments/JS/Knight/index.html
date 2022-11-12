@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <title>Knight-Rider</title>
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body{
+        body {
             background-color: rgba(0, 0, 0, 0.93);
         }
-        #container{
+
+        #container {
             display: flex;
             height: 70px;
         }
-        #container>div{
+
+        #container > div {
             width: 90%;
             height: 150%;
-            border:1px solid white;
+            border: 1px solid white;
         }
 
         button {
@@ -59,16 +61,16 @@
         }
 
         .button-29:focus {
-            box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+            box-shadow: #FF0000 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #FF0000 0 -3px 0 inset;
         }
 
         .button-29:hover {
-            box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+            box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #FF0000 0 -3px 0 inset;
             transform: translateY(-2px);
         }
 
         .button-29:active {
-            box-shadow: #3c4fe0 0 3px 7px inset;
+            box-shadow: #FF0000 0 3px 7px inset;
             transform: translateY(2px);
         }
 
@@ -78,6 +80,8 @@
 </head>
 <body>
 
+
+
 <section class="container-fluid">
     <section class="row mt-5">
         <div class="col-12">
@@ -85,7 +89,7 @@
         </div>
     </section>
     <section class="row mt-5">
-        <section id="container" class="col-12">
+        <section class="col-12" id="container">
             <div></div>
             <div></div>
             <div></div>
@@ -103,5 +107,61 @@
     </section>
 </section>
 
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script>
+
+    var initArray = [];
+    var leftColors = ['white', 'white', 'white', 'white', 'white', 'white', '#d3c5c5', '#be7474', '#cd4a4a', '#b83030', '#c52525', '#dc1e1e'];
+    var rightColors = ['white', 'white', 'white', 'white', 'white', 'white', '#dc1e1e', '#c52525', '#b83030', '#cd4a4a', '#be7474', '#d3c5c5'];
+
+    // renderKnightRider();
+
+    function animateRight() {
+        let firstValue = initArray.shift();
+        initArray.push(firstValue);
+    }
+
+    function animateLeft() {
+        let lastColor = initArray.pop();
+        initArray.unshift(lastColor);
+    }
+
+    var count = 0;
+
+    function animate() {
+        count++;
+        if (count <= leftColors.length) {
+            initArray = leftColors;
+            animateLeft();
+        } else {
+            if (count >= (leftColors.length * 2)) {
+                count = 0;
+            }
+            initArray = rightColors;
+            animateRight();
+        }
+    }
+
+
+    function renderKnightRider() {
+        $("#container").empty();
+        for (let i = 0; i < (initArray.length) / 2; i++) {
+            $("#container").append(`<div style="background-color: ${initArray[i]}"></div>`)
+        }
+        animate();
+    }
+
+    var id;
+    $("#btnStart").click(function () {
+        clearInterval(id);
+        id=setInterval(renderKnightRider, 100);
+    });
+
+    $("#btnEnd").click(function () {
+        clearInterval(id);
+    });
+
+
+</script>
 </body>
 </html>
