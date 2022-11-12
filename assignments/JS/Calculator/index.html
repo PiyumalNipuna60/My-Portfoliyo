@@ -1,117 +1,160 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>calculator</title>
+    <title>JavaScript Calculator</title>
+
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="bootstraps/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../../assets/fonts/css/all.min.css" rel="stylesheet">
-    <link href="asset/style/style.css" rel="stylesheet">
-
+    <!--link Bootstrap Framework-->
+    <link href="assets/styles/bootstrap-5.2.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/styles/fonts/css/all.min.css" rel="stylesheet">
+    <script src="assets/styles/jQuery/jquery-3.6.1.min.js"></script>
     <style>
+        #back{
+            border: 2px solid red;
+            background-color: white;
 
+        }
+
+        #sec1 {
+            width: 20%;
+            height: 32%;
+            position: absolute;
+            left: 9%;
+            margin: auto;
+            background-repeat: no-repeat, repeat;
+            background-image: url(asset/image/8c1def6c5ac57eb9e6624d87eb2ce818.gif);
+        }
+
+        #sec2 {
+            width: 20%;
+            height: 32%;
+            position: absolute;
+            right: 10%;
+            bottom: 11rem;
+            margin: auto;
+            background-repeat: no-repeat, repeat;
+            background-image: url(asset/image/animated-thank-you-image-0078.gif);
+        }
+
+        @media all and (max-width: 768px){
+            #sec1 {
+                display: none;
+            }
+
+            #sec2 {
+               display: none;
+            }
+        }
     </style>
+
 </head>
-<body>
+<body class="bg-secondary">
 
-<section>
-    <aside>
-        <img src="asset/image/8c1def6c5ac57eb9e6624d87eb2ce818.gif">
-    </aside>
-    <aside>
-        <img src="asset/image/animated-thank-you-image-0078.gif">
-    </aside>
-    <div class="calculator">
+<div class="container-fluid ">
+    <div class="container d-flex flex-grow-1 flex-column mt-5">
+        <div class="container d-flex flex-grow-1 justify-content-center mt-5 " id="back">
+            <div id="sec1"></div>
+            <div id="sec2"></div>
+            <div class="col-12 col-md-5 col-lg-5 p-3 mt-3 rounded-3 m-4 " style="background-color: #34495e">
+                <div class="row mt-1 d-flex justify-content-around">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="col-12 col-md-12 col-lg-12 bg-white rounded-2" style="height: 70px" type="text">
+                            <p id="history">0</p>
+                            <p class="d-flex justify-content-center" id="result">0</p>
+                        </div>
+                    </div>
 
-        <form action="/" id="calculator" name="calculator">
-            <div>
-                <input aria-label="answer display" class="window" id="display" name="display" type="text" value=" ">
-            </div>
-            <div>
-                <button class="button" name="memory_clearButton" type="button">mc</button>
-                <button class="button" name="memory_recallButton" type="button">mr</button>
-                <button class="button" name="memory_minusButton" type="button">m-</button>
-                <button class="button" name="memory_plusButton" type="button">m+</button>
-            </div>
-            <div>
-                <button class="button" id="clear" name="clearButton" type="button" value="">CE</button>
-                <button class="button" name="root2" type="button" value="">√x</button>
-                <button class="button" id="puserntage" name="percentButton" type="button" value="">%</button>
-                <button class="button number" id="bd" name="divide" type="button" value="">÷</button>
-            </div>
-            <div>
-                <button class="button number" id="7" name="seven" type="button" value="">7</button>
-                <button class="button number" id="8" name="eight" type="button" value="">8</button>
-                <button class="button number" id="9" name="nine" type="button" value="">9</button>
-                <button class="button number" id="gun" name="multiply" type="button" value="">×</button>
-            </div>
-            <div>
-                <button class="button number" id="4" name="four" type="button" value="">4</button>
-                <button class="button number" id="5" name="five" type="button" value="">5</button>
-                <button class="button number" id="6" name="six" type="button" value="">6</button>
-                <button class="button number" id="maines" name="subtract" type="button" value="">−</button>
-            </div>
-            <div>
-                <button class="button number" id="1" name="one" type="button" value="">1</button>
-                <button class="button number" id="2" name="two" type="button" value="">2</button>
-                <button class="button number" id="3" name="three" type="button" value="">3</button>
-                <button class="button number" id="plus" name="add" type="button" value="">+</button>
-            </div>
-            <div>
-                <button class="button number" id="0" name="zero" type="button" value="">0</button>
-                <button class="button number" id="dot" name="decimal" type="button" value="">.</button>
-                <button class="button number" id="x" name="negateButton" type="button" value="">+/-</button>
-                <button class="button number" id="equalTo" name="calculate" type="button" value="">=</button>
-            </div>
-        </form>
+                    <div class="row gap-3 justify-content-around mt-3 ">
+                        <div class="row col-6 col-md-6 col-lg-6 ">
+                            <button class="btn btn-danger btn-lg" id="clear" type="button">C</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3">
+                            <button class="btn btn-dark btn-lg" id="backSpace" type="button"><i class="fa-solid fa-delete-left"></i>
+                            </button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">/</button>
+                        </div>
+                    </div>
 
+                    <div class="row gap-3 justify-content-around mt-3">
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">7</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">8</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">9</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">*</button>
+                        </div>
+                    </div>
+
+
+                    <div class="row gap-3 justify-content-around mt-3">
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">4</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">5</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">6</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">-</button>
+                        </div>
+                    </div>
+
+                    <div class="row gap-3 justify-content-around mt-3">
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">1</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">2</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">3</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">+</button>
+                        </div>
+                    </div>
+
+                    <div class="row gap-3 justify-content-around mt-3">
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">0</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">00</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">.</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-primary btn-lg" id="equalTo" type="button">=</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
-</section>
-
-
-<script src="bootstraps/js/bootstrap.min.js"></script>
-<script src="asset/js/jquery-3.6.1.min.js"></script>
+</div>
 
 <script>
 
-    // let buttons = document.querySelectorAll('.number');
-    // let operator = document.querySelector('#operator');
-    // let clear = document.querySelector('#clear');
-    // let equalTo = document.querySelector('#equalTo');
-
-    // result.addEventListener()
-
-    let value = "";
-
-    //
-    // $(buttons).click(function () {
-    //     let text = this.innerHTML;
-    //     value += text;
-    //     $('#display').val(value);
-    //     console.log(value);
-    // });
-    //
-    // $(operator).click(function () {
-    //     let text = this.val();
-    //     value += text;
-    //     $('#display').val(value);
-    //     console.log(value);
-    // });
-    //
-    //
-    // clear.addEventListener('click', function () {
-    //     result.innerHTML = "";
-    //     value = "";
-    //     $('#display').val(value);
-    //     console.log(value);
-    // });
-
-    let buttons = document.querySelectorAll('.number');
-    let result = document.querySelector('#display');
-    let clear = document.querySelector('#clearButton');
+    let buttons = document.querySelectorAll('.num');
+    let result = document.querySelector('#result');
+    let clear = document.querySelector('#clear');
     let history = document.querySelector('#history');
     let equalTo = document.querySelector('#equalTo');
-    // let backSpace = document.querySelector('#backSpace');
+    let backSpace = document.querySelector('#backSpace');
+
 
     let value = "";
 
@@ -148,5 +191,7 @@
 
 
 </script>
+
+
 </body>
 </html>
