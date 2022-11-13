@@ -116,7 +116,7 @@ body > main > section:nth-child(1) {
     background-repeat: no-repeat;
     /*background-image: url(assets/image/pic/istockphoto-1321114918-612x612.jpg);*/
     background-size: 127% 85%;
-    background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url("assets/image/pic/ServicesMain.jpg");
+    background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url("assets/image/pic/wallpaper/ServicesMain.jpg");
     position: relative;
     bottom: 25px;
     height: 97vh;
@@ -125,7 +125,7 @@ body > main > section:nth-child(1) {
 body > main > section:nth-child(2) {
     /* background-color: red; */
     background-repeat: no-repeat, repeat;
-    background-image: url(assets/image/pic/light-blue-color-gradient-web-icon-template-round-circle-shape-background-light-blue-color-gradient-web-icon-template-round-circle-170460407.jpg);
+    background-image: url(assets/image/pic/wallpaper/light-blue-color-gradient-web-icon-template-round-circle-shape-background-light-blue-color-gradient-web-icon-template-round-circle-170460407.jpg);
     background-size: 127% 115%;
     background-position: 95px;
     /* background-size: auto; */
@@ -137,7 +137,7 @@ main > section:nth-child(3) {
     /* background-color: #6900ff; */
     /* width: 97vw; */
     background-repeat: no-repeat, repeat;
-    background-image: url(assets/image/pic/pngtree-background-pattern-with-icon-symbol-picture-image_1154242.jpg);
+    background-image: url(assets/image/pic/wallpaper/pngtree-background-pattern-with-icon-symbol-picture-image_1154242.jpg);
     background-size: 100% 100%;
     /*background-size: auto;*/
     height: 100vh;
@@ -150,7 +150,7 @@ main > section:nth-child(4) {
     position: relative;
     top: -113px;
     height: 92vh;
-    background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif);
+    background-image: url(assets/image/pic/wallpaper/image_processing20220115-31097-164ehmx.gif);
     background-size: 100% 100%;
      background-size: auto;
 
@@ -159,7 +159,7 @@ main > section:nth-child(4) {
 main > section:nth-child(5) {
     background-color: greenyellow;
     background-repeat: no-repeat, repeat;
-    background-image: url(assets/image/pic/SL_042620_30310_36.jpg);
+    background-image: url(assets/image/pic/wallpaper/SL_042620_30310_36.jpg);
     background-size: 100% 100%;
      /*background-size: auto;*/
     position: relative;
@@ -171,7 +171,7 @@ main > section:nth-child(5) {
 main > section:nth-child(6) {
     /*background-color: yellow;*/
     background-repeat: no-repeat, repeat;
-    background-image: url("assets/image/pic/piyush_26_feb_12.jpg");
+    background-image: url("assets/image/pic/wallpaper/piyush_26_feb_12.jpg");
     background-size: 100% 100%;
     position: relative;
     top: -143px;
@@ -181,7 +181,7 @@ main > section:nth-child(6) {
 main > section:nth-child(7) {
     /*background-color: #d9b7b7;*/
     background-repeat: no-repeat, repeat;
-    background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");
+    background-image: url("assets/image/pic/wallpaper/image_processing20220115-31097-164ehmx.gif");
     background-size: 100% 100%;
     position: relative;
     top: -168px;
@@ -201,7 +201,7 @@ main > section:nth-child(8) {
 main > section:nth-child(9) {
     background-color: #eed3d3;
     background-repeat: no-repeat, repeat;
-    background-image: url(assets/image/pic/rm222batch3-mind-06.jpg);
+    background-image: url(assets/image/pic/wallpaper/rm222batch3-mind-06.jpg);
     background-size: 100% 100%;
     position: relative;
     /*background-blend-mode: soft-light;*/
@@ -212,7 +212,7 @@ main > section:nth-child(9) {
 main > section:nth-child(10) {
     /*background-color: #eed3d3;*/
     background-repeat: no-repeat, repeat;
-    background-image: url("assets/image/pic/1000_F_516673003_xTie90l3hBaIvV9eNOy2ErB1X8bVWeOy.jpg");
+    background-image: url("assets/image/pic/wallpaper/1000_F_516673003_xTie90l3hBaIvV9eNOy2ErB1X8bVWeOy.jpg");
     background-size: 102% 100%;
     background-position-x: -25px;
     position: relative;
@@ -223,7 +223,7 @@ main > section:nth-child(10) {
 main > section:nth-child(11) {
     /*background-color: #d9b7b7;*/
     background-repeat: no-repeat, repeat;
-    background-image: url("assets/image/pic/17973908.jpg");
+    background-image: url("assets/image/pic/wallpaper/17973908.jpg");
     background-size: 100% 100%;
     position: relative;
     top: -230px;
@@ -240,7 +240,7 @@ body > header {
     z-index: 91;
     /*background-color: #40036e;*/
     background-repeat: no-repeat, repeat;
-    background-image: url("assets/image/pic/44.jpg");
+    background-image: url("assets/image/pic/wallpaper/44.jpg");
     background-size: 112% 81%;
 }
 
@@ -2105,7 +2105,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     body > main > section:nth-child(1) {
         /*background-color: green;*/
         background-repeat: no-repeat, repeat;
-        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url("assets/image/pic/ServicesMain.jpg");
+        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url("assets/image/pic/wallpaper/ServicesMain.jpg");
         background-size: 115% 85%;
         background-position: center;
         position: relative;
@@ -2116,7 +2116,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     body > main > section:nth-child(2) {
         /* background-color: red; */
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/light-blue-color-gradient-web-icon-template-round-circle-shape-background-light-blue-color-gradient-web-icon-template-round-circle-170460407.jpg);
+        background-image: url(assets/image/pic/wallpaper/light-blue-color-gradient-web-icon-template-round-circle-shape-background-light-blue-color-gradient-web-icon-template-round-circle-170460407.jpg);
         background-size: 127% 115%;
         background-position: 95px;
         /* background-size: auto; */
@@ -2128,7 +2128,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         /*background-color: #6900ff; */
         /* width: 97vw; */
     background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/pngtree-background-pattern-with-icon-symbol-picture-image_1154242.jpg);
+        background-image: url(assets/image/pic/wallpaper/pngtree-background-pattern-with-icon-symbol-picture-image_1154242.jpg);
         background-size: 100% 100%;
         /* background-size: auto; */
         height: 100vh;
@@ -2141,7 +2141,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         position: relative;
         top: -127px;
         height: 92vh;
-        background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif);
+        background-image: url(assets/image/pic/wallpaper/image_processing20220115-31097-164ehmx.gif);
         background-size: 100% 100%;
         background-size: auto;
     }
@@ -2149,7 +2149,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(5) {
         background-color: greenyellow;
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/SL_042620_30310_36.jpg);
+        background-image: url(assets/image/pic/wallpaper/SL_042620_30310_36.jpg);
         background-size: 100% 100%;
         position: relative;
         top: -126px;
@@ -2159,7 +2159,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(6) {
         /*background-color: yellow;*/
         background-repeat: no-repeat, repeat;
-        background-image: url("assets/image/pic/piyush_26_feb_12.jpg");
+        background-image: url("assets/image/pic/wallpaper/piyush_26_feb_12.jpg");
         background-size: 100% 100%;
         position: relative;
         top: -143px;
@@ -2169,7 +2169,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(7) {
         /* background-color: #d9b7b7; */
         background-repeat: no-repeat, repeat;
-        background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");
+        background-image: url("assets/image/pic/wallpaper/image_processing20220115-31097-164ehmx.gif");
         background-size: 100% 100%;
         position: relative;
         top: -168px;
@@ -2188,7 +2188,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(9) {
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/rm222batch3-mind-06.jpg);
+        background-image: url(assets/image/pic/wallpaper/rm222batch3-mind-06.jpg);
         background-size: 100% 100%;
         position: relative;
         /*background-blend-mode: soft-light;*/
@@ -2199,7 +2199,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(10) {
         /*background-color: #eed3d3;*/
         background-repeat: no-repeat, repeat;
-        background-image: url("assets/image/pic/1000_F_516673003_xTie90l3hBaIvV9eNOy2ErB1X8bVWeOy.jpg");
+        background-image: url("assets/image/pic/wallpaper/1000_F_516673003_xTie90l3hBaIvV9eNOy2ErB1X8bVWeOy.jpg");
         background-size: 102% 100%;
         background-position-x: -25px;
         position: relative;
@@ -2210,7 +2210,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(11) {
         /*background-color: #d9b7b7;*/
         background-repeat: no-repeat, repeat;
-        background-image: url("assets/image/pic/17973908.jpg");
+        background-image: url("assets/image/pic/wallpaper/17973908.jpg");
         background-size: 100% 100%;
         position: relative;
         top: -230px;
@@ -2228,7 +2228,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         z-index: 91;
         /* background-color: #40036e; */
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/44.jpg);
+        background-image: url(assets/image/pic/wallpaper/44.jpg);
         background-size: 112% 81%;
     }
 
@@ -4066,7 +4066,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     body > main > section:nth-child(1) {
         /*background-color: green;*/
         background-repeat: no-repeat, repeat;
-        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url("assets/image/pic/ServicesMain.jpg");
+        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url("assets/image/pic/wallpaper/ServicesMain.jpg");
         background-size: 115% 100%;
         background-position: center;
         position: relative;
@@ -4077,7 +4077,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     body > main > section:nth-child(2) {
         background-color: red;
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/light-blue-color-gradient-web-icon-template-round-circle-shape-background-light-blue-color-gradient-web-icon-template-round-circle-170460407.jpg);
+        background-image: url(assets/image/pic/wallpaper/light-blue-color-gradient-web-icon-template-round-circle-shape-background-light-blue-color-gradient-web-icon-template-round-circle-170460407.jpg);
         background-size: 127% 115%;
         background-position: -1px;
         /* background-size: auto; */
@@ -4090,7 +4090,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         /* background-color: #6900ff; */
         /* width: 97vw; */
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/pngtree-background-pattern-with-icon-symbol-picture-image_1154242.jpg);
+        background-image: url(assets/image/pic/wallpaper/pngtree-background-pattern-with-icon-symbol-picture-image_1154242.jpg);
         background-size: 100% 100%;
         /* background-size: auto; */
         height: 91vh;
@@ -4103,7 +4103,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         position: relative;
         top: -113px;
         height: 85vh;
-        background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif);
+        background-image: url(assets/image/pic/wallpaper/image_processing20220115-31097-164ehmx.gif);
         background-size: 100% 100%;
         background-size: auto;
     }
@@ -4111,7 +4111,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(5) {
         background-color: greenyellow;
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/SL_042620_30310_36.jpg);
+        background-image: url(assets/image/pic/wallpaper/SL_042620_30310_36.jpg);
         background-size: 100% 100%;
         /* background-size: auto; */
         position: relative;
@@ -4122,7 +4122,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(6) {
         /* background-color: yellow; */
         background-repeat: no-repeat, repeat;
-        background-image: url("assets/image/pic/piyush_26_feb_12.jpg");
+        background-image: url("assets/image/pic/wallpaper/piyush_26_feb_12.jpg");
         background-size: 100% 100%;
         position: relative;
         top: -143px;
@@ -4132,7 +4132,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(7) {
         /*background-color: #d9b7b7;*/
         background-repeat: no-repeat, repeat;
-        background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");
+        background-image: url("assets/image/pic/wallpaper/image_processing20220115-31097-164ehmx.gif");
         background-size: 100% 100%;
         position: relative;
         top: -168px;
@@ -4151,7 +4151,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     main > section:nth-child(9) {
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/rm222batch3-mind-06.jpg);
+        background-image: url(assets/image/pic/wallpaper/rm222batch3-mind-06.jpg);
         background-size: 100% 100%;
         position: relative;
         position: relative;
@@ -4162,7 +4162,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(10) {
         /* background-color: #e3eed3; */
         background-repeat: no-repeat, repeat;
-        background-image: url("assets/image/pic/1000_F_516673003_xTie90l3hBaIvV9eNOy2ErB1X8bVWeOy.jpg");
+        background-image: url("assets/image/pic/wallpaper/1000_F_516673003_xTie90l3hBaIvV9eNOy2ErB1X8bVWeOy.jpg");
         background-size: 102% 100%;
         background-position-x: -25px;
         position: relative;
@@ -4173,7 +4173,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(11) {
         /*background-color: #d9b7b7;*/
         background-repeat: no-repeat, repeat;
-        background-image: url("assets/image/pic/17973908.jpg");
+        background-image: url("assets/image/pic/wallpaper/17973908.jpg");
         background-size: 100% 100%;
         position: relative;
         top: -230px;
@@ -4191,7 +4191,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         z-index: 91;
         /* background-color: #40036e; */
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/44.jpg);
+        background-image: url(assets/image/pic/wallpaper/44.jpg);
         background-size: 134% 99%;
     }
 
@@ -6052,7 +6052,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         /*background-color: green;*/
         background-repeat: no-repeat, repeat;
         /*background-image: url(assets/image/pic/istockphoto-1321114918-612x612.jpg);*/
-        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url("assets/image/pic/ServicesMain.jpg");
+        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url("assets/image/pic/wallpaper/ServicesMain.jpg");
         background-size: 115% 100%;
         background-position: center;
         position: relative;
@@ -6063,7 +6063,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     body > main > section:nth-child(2) {
         background-color: red;
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/light-blue-color-gradient-web-icon-template-round-circle-shape-background-light-blue-color-gradient-web-icon-template-round-circle-170460407.jpg);
+        background-image: url(assets/image/pic/wallpaper/light-blue-color-gradient-web-icon-template-round-circle-shape-background-light-blue-color-gradient-web-icon-template-round-circle-170460407.jpg);
         background-size: 127% 115%;
         background-position: -1px;
         /* background-size: auto; */
@@ -6076,7 +6076,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         /* background-color: #6900ff; */
         /* width: 97vw; */
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/pngtree-background-pattern-with-icon-symbol-picture-image_1154242.jpg);
+        background-image: url(assets/image/pic/wallpaper/pngtree-background-pattern-with-icon-symbol-picture-image_1154242.jpg);
         background-size: 100% 100%;
         /* background-size: auto; */
         height: 91vh;
@@ -6089,7 +6089,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         position: relative;
         top: -113px;
         height: 85vh;
-        background-image: url(assets/image/pic/image_processing20220115-31097-164ehmx.gif);
+        background-image: url(assets/image/pic/wallpaper/image_processing20220115-31097-164ehmx.gif);
         background-size: 100% 100%;
         background-size: auto;
     }
@@ -6097,7 +6097,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(5) {
         background-color: greenyellow;
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/SL_042620_30310_36.jpg);
+        background-image: url(assets/image/pic/wallpaper/SL_042620_30310_36.jpg);
         background-size: 100% 100%;
         /* background-size: auto; */
         position: relative;
@@ -6108,7 +6108,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(6) {
         /* background-color: yellow; */
         background-repeat: no-repeat, repeat;
-        background-image: url("assets/image/pic/piyush_26_feb_12.jpg");
+        background-image: url("assets/image/pic/wallpaper/piyush_26_feb_12.jpg");
         background-size: 100% 100%;
         position: relative;
         top: -143px;
@@ -6118,7 +6118,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(7) {
         /*background-color: #d9b7b7;*/
         background-repeat: no-repeat, repeat;
-        background-image: url("assets/image/pic/image_processing20220115-31097-164ehmx.gif");
+        background-image: url("assets/image/pic/wallpaper/image_processing20220115-31097-164ehmx.gif");
         background-size: 100% 100%;
         position: relative;
         top: -168px;
@@ -6138,7 +6138,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(9) {
         /*background-color: #eed3d3;*/
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/rm222batch3-mind-06.jpg);
+        background-image: url(assets/image/pic/wallpaper/rm222batch3-mind-06.jpg);
         background-size: 100% 100%;
         position: relative;
         top: -196px;
@@ -6148,7 +6148,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(10) {
         /*background-color: #e3eed3;*/
         background-repeat: no-repeat, repeat;
-        background-image: url("assets/image/pic/1000_F_516673003_xTie90l3hBaIvV9eNOy2ErB1X8bVWeOy.jpg");
+        background-image: url("assets/image/pic/wallpaper/1000_F_516673003_xTie90l3hBaIvV9eNOy2ErB1X8bVWeOy.jpg");
         background-size: 102% 100%;
         background-position-x: -25px;
         position: relative;
@@ -6159,7 +6159,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(11) {
         /*background-color: #d9b7b7;*/
         background-repeat: no-repeat, repeat;
-        background-image: url("assets/image/pic/17973908.jpg");
+        background-image: url("assets/image/pic/wallpaper/17973908.jpg");
         background-size: 100% 100%;
         position: relative;
         top: -230px;
@@ -6176,7 +6176,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         z-index: 91;
         /* background-color: #40036e; */
         background-repeat: no-repeat, repeat;
-        background-image: url(assets/image/pic/44.jpg);
+        background-image: url(assets/image/pic/wallpaper/44.jpg);
         background-size: 134% 99%;
     }
 
