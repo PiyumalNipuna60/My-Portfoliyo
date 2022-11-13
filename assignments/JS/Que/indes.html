@@ -6,11 +6,11 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <style>
 
-        body{
+        body {
             background-color: #3A86FF;
         }
 
-        #mainSec{
+        #mainSec {
             border: 1px solid #533554;
             position: absolute;
             left: 0;
@@ -24,7 +24,7 @@
             box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px, rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
         }
 
-        #container {
+        #container{
             height: 80px;
             width: 90vw;
             border-bottom: 2px dashed red;
@@ -32,7 +32,7 @@
             justify-content: flex-end;
         }
 
-        #container > div {
+        #container>div{
             width: 100px;
             height: 70px;
             background-color: red;
@@ -41,9 +41,9 @@
             border: 1px solid #584b4b;
             border-radius: 10px;
             margin-right: 8px;
+            right: 130px;
         }
-
-        #container > div > h1 {
+        #container>div>h1{
             font-size: 25px;
             width: max-content;
             height: max-content;
@@ -52,14 +52,12 @@
             right: 0;
             top: 0;
             bottom: 0;
-            margin: auto;
+            margin:auto;
         }
-
-        main {
+        main{
             position: relative;
         }
-
-        #img {
+        #img{
             height: 110px;
             width: 110px;
             background: url("assets/img/img.png");
@@ -68,8 +66,8 @@
             right: 0;
             background-size: cover;
         }
-    </style>
 
+    </style>
 </head>
 <body>
 
@@ -79,12 +77,12 @@
         <section class="row mt-3">
             <section class="col-4">
                 <div class="mb-3">
-                    <label class="form-label">Name</label>
-                    <input class="form-control" id="txtName" type="text">
+                    <label  class="form-label">Name</label>
+                    <input type="text" class="form-control" id="txtName">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Color</label>
-                    <input class="form-control" id="txtColor" type="color">
+                    <input type="color" class="form-control" id="txtColor" >
                 </div>
                 <div>
                     <button class="btn btn-danger" id="btnAdd">Add to Que</button>
@@ -93,7 +91,7 @@
         </section>
 
         <main>
-            <section class="mt-5" id="container">
+            <section id="container" class="mt-5">
 
             </section>
             <section id="img">
@@ -105,5 +103,35 @@
 
 </main>
 
+
+
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script>
+
+    var queData = {
+        person: [
+            {name: "Kamal", color: 'red'},
+            {name: "Sadun", color: 'green'},
+            {name: "Kavidu", color: 'yellow'},
+            {name: "Pasidu", color: 'blue'},
+            {name: "Nipuna", color: '#3dd5f3'}
+        ],
+        nextPerson: function () {
+            var lastPerson =this.person.pop();
+            this.person.unshift(lastPerson);
+        }
+    }
+
+    function runQue() {
+        $("#container").empty();
+        for (var i = 0; i < queData.person.length; i++) {
+            $("#container").append(`<div style="background-color : ${queData.person[i].color}"><h1>${queData.person[i].name}</h1></div>`)
+        }
+        queData.nextPerson();
+    }
+
+    setInterval(runQue,200);
+
+</script>
 </body>
 </html>
