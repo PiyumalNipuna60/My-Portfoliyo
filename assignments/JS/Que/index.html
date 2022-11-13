@@ -30,18 +30,29 @@
             border-bottom: 2px dashed red;
             display: flex;
             justify-content: flex-end;
+            top: 74px;
+            position: relative;
         }
 
         #container > div {
-            width: 100px;
+            width: 116px;
             height: 70px;
             background-color: red;
             color: white;
             position: relative;
             border: 1px solid #584b4b;
             border-radius: 10px;
-            margin-right: 8px;
-            right: 130px;
+            margin-right: -101px;
+            right: 236px;
+        }
+
+        #container > img {
+            width: 130px;
+            height: 150px;
+            position: relative;
+            right: 104px;
+            top: -158px;
+
         }
 
         #container > div > h1 {
@@ -65,7 +76,7 @@
             width: 110px;
             background: url("assets/img/img.png");
             position: absolute;
-            top: -13px;
+            top: 44px;
             right: 0;
             background-size: cover;
         }
@@ -95,7 +106,6 @@
 
         <main>
             <section class="mt-5" id="container">
-
             </section>
             <section id="img">
 
@@ -112,11 +122,11 @@
 
     var queData = {
         person: [
-            {name: "Kamal", color: 'red'},
-            {name: "Sadun", color: 'green'},
-            {name: "Kavidu", color: 'yellow'},
-            {name: "Pasidu", color: 'blue'},
-            {name: "Nipuna", color: '#3dd5f3'}
+            {image: "src=assets/img/man.gif", name: "Kamal", color: 'red'},
+            {image: "src=assets/img/man.gif", name: "Sadun", color: 'green'},
+            {image: "src=assets/img/man.gif", name: "Kavidu", color: 'yellow'},
+            {image: "src=assets/img/man.gif", name: "Pasidu", color: 'blue'},
+            {image: "src=assets/img/man.gif", name: "Nipuna", color: '#3dd5f3'}
         ],
         nextPerson: function () {
             var lastPerson = this.person.pop();
@@ -127,7 +137,7 @@
     function runQue() {
         $("#container").empty();
         for (var i = 0; i < queData.person.length; i++) {
-            $("#container").append(`<div style="background-color : ${queData.person[i].color}"><h1>${queData.person[i].name}</h1></div>`)
+            $("#container").append(`<img src="assets/img/man.gif"><div style="background-color : ${queData.person[i].color}"><h1>${queData.person[i].name}</h1></div>`)
         }
         queData.nextPerson();
     }
