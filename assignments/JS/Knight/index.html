@@ -31,7 +31,7 @@
 
         #container > div {
             width: 90%;
-            height: 150%;
+            height: 100%;
             border: 1px solid white;
         }
 
@@ -128,8 +128,13 @@
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script>
 
+    let audio1 = new Audio();
+    audio1.src="assets/audio/knightRiderSound.mp3";
+    audio1.play();
+
+
     var initArray = [];
-    var leftColors = ['white', 'white', 'white', 'white', 'white', 'white', '#d3c5c5', '#be7474', '#cd4a4a', '#b83030', '#c52525', '#dc1e1e'];
+    var leftColors = ['white', 'white', 'white', 'white', 'white', 'white', '#d3c5c5', '#be7474', '#"cd4a4a"', '#b83030', '#c52525', '#dc1e1e'];
     var rightColors = ['white', 'white', 'white', 'white', 'white', 'white', '#dc1e1e', '#c52525', '#b83030', '#cd4a4a', '#be7474', '#d3c5c5'];
 
     // renderKnightRider();
@@ -172,11 +177,13 @@
     var id;
     $("#btnStart").click(function () {
         clearInterval(id);
-        id=setInterval(renderKnightRider, 100);
+        id=setInterval(renderKnightRider, 50);
+        audio1.play();
     });
 
     $("#btnEnd").click(function () {
         clearInterval(id);
+        audio1.pause();
     });
 
 
