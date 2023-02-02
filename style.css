@@ -39,7 +39,7 @@ section#loader {
 }
 
 @keyframes animate2 {
-    0%,100% {
+    0%, 100% {
         height: 20px;
     }
     50% {
@@ -59,7 +59,7 @@ section#loader {
 }
 
 @keyframes animateLine {
-    0%{
+    0% {
         top: 20px;
     }
     50% {
@@ -67,7 +67,7 @@ section#loader {
     }
 }
 
-.border{
+.border {
     position: absolute;
     inset: 0;
     background-size: 400px;
@@ -85,10 +85,10 @@ section#loader {
 }
 
 @keyframes animationText {
-    0%,100%{
+    0%, 100% {
         opacity: 0;
     }
-    50%{
+    50% {
         opacity: 1;
     }
 }
@@ -116,7 +116,7 @@ body > main > section:nth-child(1) {
     background-repeat: no-repeat;
     /*background-image: url(assets/image/pic/istockphoto-1321114918-612x612.jpg);*/
     background-size: 127% 85%;
-    background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url("assets/image/pic/wallpaper/ServicesMain.jpg");
+    background-image: linear-gradient(rgba(5, 0, 136, 0.5), rgba(5, 0, 136, 0.5)), url("assets/image/pic/wallpaper/ServicesMain.jpg");
     position: relative;
     bottom: 25px;
     height: 97vh;
@@ -152,7 +152,7 @@ main > section:nth-child(4) {
     height: 92vh;
     background-image: url(assets/image/pic/wallpaper/image_processing20220115-31097-164ehmx.gif);
     background-size: 100% 100%;
-     background-size: auto;
+    background-size: auto;
 
 }
 
@@ -161,7 +161,7 @@ main > section:nth-child(5) {
     background-repeat: no-repeat, repeat;
     background-image: url(assets/image/pic/wallpaper/SL_042620_30310_36.jpg);
     background-size: 100% 100%;
-     /*background-size: auto;*/
+    /*background-size: auto;*/
     position: relative;
     top: -126px;
     height: 99vh;
@@ -334,12 +334,12 @@ body > main > section:first-child > section:first-child > article > h2 {
     padding-left: 30px;
 }
 
-.slide-left{
-font-size: 5rem;
+.slide-left {
+    font-size: 5rem;
     font-weight: bold;
     font-style: italic;
     position: relative;
-    left:80px;
+    left: 80px;
     top: 40px;
     margin: auto;
     color: white;
@@ -347,12 +347,12 @@ font-size: 5rem;
 
 }
 
-.slide-left{
+.slide-left {
     animation: slideleft 2s linear forwards;
 }
 
 
-.slide-left2{
+.slide-left2 {
     font-size: 2rem;
     font-weight: bold;
     font-style: italic;
@@ -363,92 +363,16 @@ font-size: 5rem;
     color: #0d6efd;
 }
 
-.slide-left2{
+.slide-left2 {
     animation: slideleft 4s linear forwards;
 }
 
 @keyframes slideleft {
-    0%{
+    0% {
         transform: translate(100px);
         opacity: 0;
     }
-    100%{
-        transform: translate(0px);
-        opacity: 1;
-    }
-
-}
-
-/*================================================*/
-
-
-.home_ani{
-    animation: bounce 4s alternate;
-}
-.home_ani1{
-    animation: bounce 4.2s alternate;
-}
-.home_ani2{
-    animation: bounce 4.4s alternate;
-}
-
-.home_ani2{
-    animation: bounce 4.6s alternate;
-}
-.home_ani3{
-    animation: bounce 4.8s alternate;
-}
-.home_ani4{
-    animation: bounce 5s alternate;
-}
-
-@keyframes bounce{
-    0%{
-        transform: translateY(0px);
-    }
-    40%{
-        transform: translateY(-30px);
-    }
-    50%{
-        transform: translateY(0px);
-    }
-    60%{
-        transform: translateY(-15px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-
-}
-
-
-
-.home_ani5{
-    animation: home_ani5 4s linear;
-}
-
-@keyframes home_ani5 {
-    0%{
-        transform: translate(100px);
-        opacity: 0;
-    }
-    100%{
-        transform: translate(0px);
-        opacity: 1;
-    }
-
-}
-
-.home_ani6{
-    animation: home_ani6 4s linear;
-}
-
-@keyframes home_ani6 {
-    0%{
-        transform: translate(100px);
-        opacity: 0;
-    }
-    100%{
+    100% {
         transform: translate(0px);
         opacity: 1;
     }
@@ -546,6 +470,88 @@ main > section:nth-child(1) > section:nth-child(2) > div > aside > a:nth-child(2
     top: -3px;
     font-size: 103%;
 }
+
+/*=======================Animation=========================*/
+
+
+#home_ani {
+    animation: bounce 4s alternate;
+}
+
+#home_ani1 {
+    animation: bounce 4.2s alternate;
+}
+
+#home_ani2 {
+    animation: bounce 4.4s alternate;
+}
+
+#home_ani3 {
+    animation: bounce 4.6s alternate;
+}
+
+#home_ani4 {
+    animation: bounce 4.8s alternate;
+}
+
+#home_ani4 {
+    animation: bounce 5s alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+#home_ani5 {
+    animation: home_ani6 4s linear;
+}
+
+#home_ani6 {
+    animation: home_ani6 4s linear;
+}
+
+@keyframes home_ani6 {
+    0% {
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+
+.homeHover2:hover {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: -15px;
+    filter: blur(0.1px);
+    box-shadow: 0 0 40px rgba(255, 77, 65,0.2),
+    0 0 40px rgba(255, 77, 65,0.4),
+    0 0 40px rgba(255, 77, 65,0.6),
+    0 0 40px rgba(255, 77, 65,0.8),
+    0 0 40px rgba(255, 77, 65,0.1)
+
+}
+
+
+
 
 
 /*========================================== about ==========================================*/
@@ -1056,7 +1062,7 @@ main > section:nth-child(4) > section > section > article {
     margin-left: 7px;
 }
 
-.Ep1{
+.Ep1 {
     margin-left: 26px;
     font-size: 20px;
 }
@@ -1080,7 +1086,7 @@ main > section:nth-child(4) > section > section > article {
     margin-left: 7px;
 }
 
-.edu section >section> div:nth-child(6) {
+.edu section > section > div:nth-child(6) {
     position: absolute;
     background-color: #3A86FF;
     height: 28px;
@@ -1092,7 +1098,7 @@ main > section:nth-child(4) > section > section > article {
     margin: auto;
 }
 
-.edu section >section> div:nth-child(7) {
+.edu section > section > div:nth-child(7) {
     position: absolute;
     background-color: #3A86FF;
     height: 28px;
@@ -1104,7 +1110,7 @@ main > section:nth-child(4) > section > section > article {
     margin: auto;
 }
 
-.edu section >section> div:nth-child(8) {
+.edu section > section > div:nth-child(8) {
     position: absolute;
     background-color: #3A86FF;
     height: 28px;
@@ -1116,7 +1122,7 @@ main > section:nth-child(4) > section > section > article {
     margin: auto;
 }
 
-.edu section >section> div:nth-child(9) {
+.edu section > section > div:nth-child(9) {
     position: absolute;
     background-color: #3A86FF;
     height: 28px;
@@ -1127,8 +1133,6 @@ main > section:nth-child(4) > section > section > article {
     top: 465px;
     margin: auto;
 }
-
-
 
 
 /*========================================== Skill ==========================================================*/
@@ -1760,7 +1764,7 @@ main > section:nth-child(8) > section:nth-child(2) > section:nth-child(2) > div 
 
 
 /*========================================== Assignment ==========================================================*/
-main > section:nth-child(9) > article{
+main > section:nth-child(9) > article {
     margin-left: 63px;
     margin-top: -61px;
     padding-left: 58px;
@@ -1773,7 +1777,7 @@ main > section:nth-child(9) > article{
     left: -62px;
 }
 
-body > main > section#Achievements > article>hr {
+body > main > section#Achievements > article > hr {
     margin-left: -59px;
     margin-top: 28px;
     padding-left: 56px;
@@ -1850,7 +1854,7 @@ main > section:nth-child(10) > section:nth-child(2) > section:first-child > sect
     box-shadow: 9px 5px 2px #6900ff;
 }
 
-main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div>img:hover {
+main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > img:hover {
     height: 92%;
     width: 94%;
     border-radius: 53px;
@@ -1997,44 +2001,44 @@ main > section:nth-child(11) > section:nth-child(2) > section:first-child > sect
     /* right: 0;*/
 }
 
-.location{
+.location {
     width: 100%;
     position: relative;
     top: -9%;
 }
 
 .location > iframe {
-width: 100%;
-height: 29vh;
+    width: 100%;
+    height: 29vh;
 }
 
 #txtName {
-width: 59%;
-border-radius: 6px;
-position: relative;
-left: 22px;
+    width: 59%;
+    border-radius: 6px;
+    position: relative;
+    left: 22px;
 }
 
 #txtEmail {
-width: 59%;
-border-radius: 6px;
-position: relative;
-left: 22px;
+    width: 59%;
+    border-radius: 6px;
+    position: relative;
+    left: 22px;
 }
 
 #txtSubject {
-width: 59%;
-border-radius: 6px;
-position: relative;
-left: 14px;
+    width: 59%;
+    border-radius: 6px;
+    position: relative;
+    left: 14px;
 }
 
 #txtMassage {
-width: 59%;
-border-radius: 6px;
-position: relative;
-left: 9px;
-border: 2px solid;
+    width: 59%;
+    border-radius: 6px;
+    position: relative;
+    left: 9px;
+    border: 2px solid;
 }
 
 
@@ -2137,20 +2141,6 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*=============================================================================================================*/
 /*=============================================================================================================*/
 
@@ -2173,7 +2163,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     body > main > section:nth-child(1) {
         /*background-color: green;*/
         background-repeat: no-repeat, repeat;
-        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url("assets/image/pic/wallpaper/ServicesMain.jpg");
+        background-image: linear-gradient(rgba(5, 0, 136, 0.5), rgba(5, 0, 136, 0.5)), url("assets/image/pic/wallpaper/ServicesMain.jpg");
         background-size: 115% 85%;
         background-position: center;
         position: relative;
@@ -2195,7 +2185,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     main > section:nth-child(3) {
         /*background-color: #6900ff; */
         /* width: 97vw; */
-    background-repeat: no-repeat, repeat;
+        background-repeat: no-repeat, repeat;
         background-image: url(assets/image/pic/wallpaper/pngtree-background-pattern-with-icon-symbol-picture-image_1154242.jpg);
         background-size: 100% 100%;
         /* background-size: auto; */
@@ -2390,7 +2380,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         padding-left: 30px;
     }
 
-    .slide-left{
+    .slide-left {
         font-size: 5rem;
         font-weight: bold;
         font-style: italic;
@@ -2402,12 +2392,12 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         font-variant: all-petite-caps;
     }
 
-    .slide-left{
+    .slide-left {
         animation: slideleft 2s linear forwards;
     }
 
 
-    .slide-left2{
+    .slide-left2 {
         font-size: 2rem;
         font-weight: bold;
         font-style: italic;
@@ -2418,17 +2408,17 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         color: #0d6efd;
     }
 
-    .slide-left2{
+    .slide-left2 {
         /*animation: slideleft 4s linear forwards;*/
         animation: infinite 4s linear forwards;
     }
 
     @keyframes slideleft {
-        0%{
+        0% {
             transform: translate(100px);
             opacity: 0;
         }
-        100%{
+        100% {
             transform: translate(0px);
             opacity: 1;
         }
@@ -2490,7 +2480,6 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     /*    width: 81%;*/
     /*    color: #40036e;*/
     /*}*/
-
     main > section:nth-child(1) > section:nth-child(2) > div > aside {
         right: -1031px;
         position: relative;
@@ -3027,7 +3016,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         margin-left: 7px;
     }
 
-    .Ep1{
+    .Ep1 {
         margin-left: 26px;
         font-size: 20px;
     }
@@ -3051,7 +3040,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         margin-left: 7px;
     }
 
-    .edu section >section> div:nth-child(6) {
+    .edu section > section > div:nth-child(6) {
         position: absolute;
         background-color: #3A86FF;
         height: 28px;
@@ -3063,7 +3052,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         margin: auto;
     }
 
-    .edu section >section> div:nth-child(7) {
+    .edu section > section > div:nth-child(7) {
         position: absolute;
         background-color: #3A86FF;
         height: 28px;
@@ -3075,7 +3064,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         margin: auto;
     }
 
-    .edu section >section> div:nth-child(8) {
+    .edu section > section > div:nth-child(8) {
         position: absolute;
         background-color: #3A86FF;
         height: 28px;
@@ -3087,7 +3076,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         margin: auto;
     }
 
-    .edu section >section> div:nth-child(9) {
+    .edu section > section > div:nth-child(9) {
         position: absolute;
         background-color: #3A86FF;
         height: 28px;
@@ -3304,80 +3293,79 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         justify-content: space-between;
     }
 
- /*   #Pdiv1 {
-        left: 44px;
-        position: relative;
-        top: 73px;
-    }
+    /*   #Pdiv1 {
+           left: 44px;
+           position: relative;
+           top: 73px;
+       }
 
-    #Pdiv1 > h3 {
-        left: 76px;
-        position: relative;
-        top: -9px;
-        font-size: 140%;
+       #Pdiv1 > h3 {
+           left: 76px;
+           position: relative;
+           top: -9px;
+           font-size: 140%;
 
-    }
+       }
 
-    #Pdiv1 > img{
-        width: 79%;
-        height: 42vh;
-    }
+       #Pdiv1 > img{
+           width: 79%;
+           height: 42vh;
+       }
 
-    #Pdiv2 {
-        left: 17px;
-        position: relative;
-        top: 27px;
-    }
+       #Pdiv2 {
+           left: 17px;
+           position: relative;
+           top: 27px;
+       }
 
-    #Pdiv2 > h3 {
-        left: 104px;
-        position: relative;
-        top: -23px;
-        font-size: 238%;
-    }
+       #Pdiv2 > h3 {
+           left: 104px;
+           position: relative;
+           top: -23px;
+           font-size: 238%;
+       }
 
-    #Pdiv2 > img{
-        width: 98%;
-        height: 57vh;
-    }
+       #Pdiv2 > img{
+           width: 98%;
+           height: 57vh;
+       }
 
 
-    #Pdiv3 {
-        left: 37px;
-        position: relative;
-        top: 72px;
-    }
+       #Pdiv3 {
+           left: 37px;
+           position: relative;
+           top: 72px;
+       }
 
-    #Pdiv3 > h3 {
-        left: 71px;
-        position: relative;
-        top: -11px;
-        font-size: 140%;
-    }
+       #Pdiv3 > h3 {
+           left: 71px;
+           position: relative;
+           top: -11px;
+           font-size: 140%;
+       }
 
-    #Pdiv3 > img{
-        width: 71%;
-        height: 43vh;
-    }
+       #Pdiv3 > img{
+           width: 71%;
+           height: 43vh;
+       }
 
-    #Pdiv4 {
-        left: -56px;
-        position: relative;
-        top: 79px;
-    }
+       #Pdiv4 {
+           left: -56px;
+           position: relative;
+           top: 79px;
+       }
 
-    #Pdiv4 > h3 {
-        left: 41px;
-        position: relative;
-        top: -48px;
-        font-size: 120%;
-    }
+       #Pdiv4 > h3 {
+           left: 41px;
+           position: relative;
+           top: -48px;
+           font-size: 120%;
+       }
 
-    #Pdiv4 > img {
-        width: 110%;
-        height: 38vh;
-    }*/
-
+       #Pdiv4 > img {
+           width: 110%;
+           height: 38vh;
+       }*/
     /*///////////nav css////////*/
     main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > hr {
         color: #0a0909;
@@ -3749,7 +3737,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
 
     /*========================================== Assignment ==========================================================*/
-    main > section:nth-child(9) > article{
+    main > section:nth-child(9) > article {
         margin-left: 63px;
         margin-top: -61px;
         padding-left: 58px;
@@ -3762,7 +3750,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         left: -62px;
     }
 
-    body > main > section#Achievements > article>hr {
+    body > main > section#Achievements > article > hr {
         margin-left: -59px;
         margin-top: 28px;
         padding-left: 58px;
@@ -3838,7 +3826,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         box-shadow: 9px 5px 2px #6900ff;
     }
 
-    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div>img:hover {
+    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > img:hover {
         height: 92%;
         width: 94%;
         border-radius: 53px;
@@ -4111,8 +4099,6 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 }
 
 
-
-
 /*=============================================================================================================*/
 /*=============================================================================================================*/
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -4134,7 +4120,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     body > main > section:nth-child(1) {
         /*background-color: green;*/
         background-repeat: no-repeat, repeat;
-        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url("assets/image/pic/wallpaper/ServicesMain.jpg");
+        background-image: linear-gradient(rgba(5, 0, 136, 0.5), rgba(5, 0, 136, 0.5)), url("assets/image/pic/wallpaper/ServicesMain.jpg");
         background-size: 115% 100%;
         background-position: center;
         position: relative;
@@ -4353,7 +4339,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         padding-left: 30px;
     }
 
-    .slide-left{
+    .slide-left {
         font-size: 3rem;
         font-weight: bold;
         font-style: italic;
@@ -4365,12 +4351,12 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         font-variant: all-petite-caps;
     }
 
-    .slide-left{
+    .slide-left {
         animation: slideleft 2s linear forwards;
     }
 
 
-    .slide-left2{
+    .slide-left2 {
         font-size: 18px;
         font-weight: bold;
         font-style: italic;
@@ -4381,16 +4367,16 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         color: #0d6efd;
     }
 
-    .slide-left2{
+    .slide-left2 {
         animation: slideleft 4s linear forwards;
     }
 
     @keyframes slideleft {
-        0%{
+        0% {
             transform: translate(100px);
             opacity: 0;
         }
-        100%{
+        100% {
             transform: translate(0px);
             opacity: 1;
         }
@@ -4453,7 +4439,6 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     /*    width: 81%;*/
     /*    color: #40036e;*/
     /*}*/
-
     main > section:nth-child(1) > section:nth-child(2) > div > aside {
         right: -1031px;
         position: relative;
@@ -4987,7 +4972,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         margin-left: 7px;
     }
 
-    .Ep1{
+    .Ep1 {
         margin-left: 26px;
         font-size: 20px;
     }
@@ -5011,7 +4996,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         margin-left: 7px;
     }
 
-    .edu section >section> div:nth-child(6) {
+    .edu section > section > div:nth-child(6) {
         position: absolute;
         background-color: #3A86FF;
         height: 28px;
@@ -5023,7 +5008,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         margin: auto;
     }
 
-    .edu section >section> div:nth-child(7) {
+    .edu section > section > div:nth-child(7) {
         position: absolute;
         background-color: #3A86FF;
         height: 28px;
@@ -5035,7 +5020,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         margin: auto;
     }
 
-    .edu section >section> div:nth-child(8) {
+    .edu section > section > div:nth-child(8) {
         position: absolute;
         background-color: #3A86FF;
         height: 28px;
@@ -5047,7 +5032,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         margin: auto;
     }
 
-    .edu section >section> div:nth-child(9) {
+    .edu section > section > div:nth-child(9) {
         position: absolute;
         background-color: #3A86FF;
         height: 28px;
@@ -5261,80 +5246,79 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         justify-content: space-between;
     }
 
-/*    #Pdiv1 {
-        left: 44px;
-        position: relative;
-        top: 73px;
-    }
+    /*    #Pdiv1 {
+            left: 44px;
+            position: relative;
+            top: 73px;
+        }
 
-    #Pdiv1 > h3 {
-        left: 76px;
-        position: relative;
-        top: -9px;
-        font-size: 140%;
+        #Pdiv1 > h3 {
+            left: 76px;
+            position: relative;
+            top: -9px;
+            font-size: 140%;
 
-    }
+        }
 
-    #Pdiv1 > img{
-        width: 79%;
-        height: 42vh;
-    }
+        #Pdiv1 > img{
+            width: 79%;
+            height: 42vh;
+        }
 
-    #Pdiv2 {
-        left: 17px;
-        position: relative;
-        top: 27px;
-    }
+        #Pdiv2 {
+            left: 17px;
+            position: relative;
+            top: 27px;
+        }
 
-    #Pdiv2 > h3 {
-        left: 104px;
-        position: relative;
-        top: -23px;
-        font-size: 238%;
-    }
+        #Pdiv2 > h3 {
+            left: 104px;
+            position: relative;
+            top: -23px;
+            font-size: 238%;
+        }
 
-    #Pdiv2 > img{
-        width: 98%;
-        height: 57vh;
-    }
+        #Pdiv2 > img{
+            width: 98%;
+            height: 57vh;
+        }
 
 
-    #Pdiv3 {
-        left: 37px;
-        position: relative;
-        top: 72px;
-    }
+        #Pdiv3 {
+            left: 37px;
+            position: relative;
+            top: 72px;
+        }
 
-    #Pdiv3 > h3 {
-        left: 71px;
-        position: relative;
-        top: -11px;
-        font-size: 140%;
-    }
+        #Pdiv3 > h3 {
+            left: 71px;
+            position: relative;
+            top: -11px;
+            font-size: 140%;
+        }
 
-    #Pdiv3 > img{
-        width: 71%;
-        height: 43vh;
-    }
+        #Pdiv3 > img{
+            width: 71%;
+            height: 43vh;
+        }
 
-    #Pdiv4 {
-        left: -56px;
-        position: relative;
-        top: 79px;
-    }
+        #Pdiv4 {
+            left: -56px;
+            position: relative;
+            top: 79px;
+        }
 
-    #Pdiv4 > h3 {
-        left: 41px;
-        position: relative;
-        top: -48px;
-        font-size: 120%;
-    }
+        #Pdiv4 > h3 {
+            left: 41px;
+            position: relative;
+            top: -48px;
+            font-size: 120%;
+        }
 
-    #Pdiv4 > img {
-        width: 110%;
-        height: 38vh;
-    }*/
-
+        #Pdiv4 > img {
+            width: 110%;
+            height: 38vh;
+        }*/
     /*///////////nav css////////*/
     main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > hr {
         color: #0a0909;
@@ -5726,7 +5710,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
 
     /*========================================== Assignment ==========================================================*/
-    main > section:nth-child(9) > article{
+    main > section:nth-child(9) > article {
         margin-left: 63px;
         margin-top: -61px;
         padding-left: 58px;
@@ -5739,7 +5723,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         left: -62px;
     }
 
-    body > main > section#Achievements > article>hr {
+    body > main > section#Achievements > article > hr {
         margin-left: -59px;
         margin-top: 28px;
         padding-left: 58px;
@@ -5817,7 +5801,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         box-shadow: 9px 5px 2px #6900ff;
     }
 
-    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div>img:hover {
+    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > img:hover {
         height: 92%;
         width: 94%;
         border-radius: 53px;
@@ -6090,14 +6074,6 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 }
 
 
-
-
-
-
-
-
-
-
 /*=============================================================================================================*/
 /*=============================================================================================================*/
 @media all and (min-width: 425px) and (max-width: 768px) {
@@ -6120,7 +6096,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         /*background-color: green;*/
         background-repeat: no-repeat, repeat;
         /*background-image: url(assets/image/pic/istockphoto-1321114918-612x612.jpg);*/
-        background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url("assets/image/pic/wallpaper/ServicesMain.jpg");
+        background-image: linear-gradient(rgba(5, 0, 136, 0.5), rgba(5, 0, 136, 0.5)), url("assets/image/pic/wallpaper/ServicesMain.jpg");
         background-size: 115% 100%;
         background-position: center;
         position: relative;
@@ -6343,7 +6319,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         bottom: 22%;
     }
 
-    .slide-left{
+    .slide-left {
         font-size: 2rem;
         font-weight: bold;
         font-style: italic;
@@ -6355,12 +6331,12 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         font-variant: all-petite-caps;
     }
 
-    .slide-left{
+    .slide-left {
         animation: slideleft 2s linear forwards;
     }
 
 
-    .slide-left2{
+    .slide-left2 {
         font-size: 16px;
         font-weight: bold;
         font-style: italic;
@@ -6371,16 +6347,16 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         color: #0d6efd;
     }
 
-    .slide-left2{
+    .slide-left2 {
         animation: slideleft 4s linear forwards;
     }
 
     @keyframes slideleft {
-        0%{
+        0% {
             transform: translate(100px);
             opacity: 0;
         }
-        100%{
+        100% {
             transform: translate(0px);
             opacity: 1;
         }
@@ -6443,7 +6419,6 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     /*    width: 81%;*/
     /*    color: #40036e;*/
     /*}*/
-
     main > section:nth-child(1) > section:nth-child(2) > div > aside {
         right: -1031px;
         position: relative;
@@ -6552,6 +6527,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         left: 630px;
         top: -111px;
     }
+
     body > main > section:nth-child(2) > section > section:nth-child(1) > section:nth-child(2) {
         /* background-color: yellow; */
         position: absolute;
@@ -6964,7 +6940,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
     .sec4 > div:nth-child(2) {
         left: 0;
-        top:11px;
+        top: 11px;
     }
 
     .sec4 > div:nth-child(3) {
@@ -6983,7 +6959,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         margin-left: 7px;
     }
 
-    .Ep1{
+    .Ep1 {
         margin-left: 26px;
         font-size: 20px;
     }
@@ -7007,7 +6983,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         margin-left: 7px;
     }
 
-    .edu section >section> div:nth-child(6) {
+    .edu section > section > div:nth-child(6) {
         position: absolute;
         background-color: #3A86FF;
         height: 28px;
@@ -7019,7 +6995,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         margin: auto;
     }
 
-    .edu section >section> div:nth-child(7) {
+    .edu section > section > div:nth-child(7) {
         position: absolute;
         background-color: #3A86FF;
         height: 28px;
@@ -7031,7 +7007,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         margin: auto;
     }
 
-    .edu section >section> div:nth-child(8) {
+    .edu section > section > div:nth-child(8) {
         position: absolute;
         background-color: #3A86FF;
         height: 28px;
@@ -7043,7 +7019,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         margin: auto;
     }
 
-    .edu section >section> div:nth-child(9) {
+    .edu section > section > div:nth-child(9) {
         position: absolute;
         background-color: #3A86FF;
         height: 28px;
@@ -7258,80 +7234,79 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         justify-content: space-between;
     }
 
-/*    #Pdiv1 {
-        left: 44px;
-        position: relative;
-        top: 73px;
-    }
+    /*    #Pdiv1 {
+            left: 44px;
+            position: relative;
+            top: 73px;
+        }
 
-    #Pdiv1 > h3 {
-        left: 76px;
-        position: relative;
-        top: -9px;
-        font-size: 140%;
+        #Pdiv1 > h3 {
+            left: 76px;
+            position: relative;
+            top: -9px;
+            font-size: 140%;
 
-    }
+        }
 
-    #Pdiv1 > img{
-        width: 79%;
-        height: 42vh;
-    }
+        #Pdiv1 > img{
+            width: 79%;
+            height: 42vh;
+        }
 
-    #Pdiv2 {
-        left: 17px;
-        position: relative;
-        top: 27px;
-    }
+        #Pdiv2 {
+            left: 17px;
+            position: relative;
+            top: 27px;
+        }
 
-    #Pdiv2 > h3 {
-        left: 104px;
-        position: relative;
-        top: -23px;
-        font-size: 238%;
-    }
+        #Pdiv2 > h3 {
+            left: 104px;
+            position: relative;
+            top: -23px;
+            font-size: 238%;
+        }
 
-    #Pdiv2 > img{
-        width: 98%;
-        height: 57vh;
-    }
+        #Pdiv2 > img{
+            width: 98%;
+            height: 57vh;
+        }
 
 
-    #Pdiv3 {
-        left: 37px;
-        position: relative;
-        top: 72px;
-    }
+        #Pdiv3 {
+            left: 37px;
+            position: relative;
+            top: 72px;
+        }
 
-    #Pdiv3 > h3 {
-        left: 71px;
-        position: relative;
-        top: -11px;
-        font-size: 140%;
-    }
+        #Pdiv3 > h3 {
+            left: 71px;
+            position: relative;
+            top: -11px;
+            font-size: 140%;
+        }
 
-    #Pdiv3 > img{
-        width: 71%;
-        height: 43vh;
-    }
+        #Pdiv3 > img{
+            width: 71%;
+            height: 43vh;
+        }
 
-    #Pdiv4 {
-        left: -56px;
-        position: relative;
-        top: 79px;
-    }
+        #Pdiv4 {
+            left: -56px;
+            position: relative;
+            top: 79px;
+        }
 
-    #Pdiv4 > h3 {
-        left: 41px;
-        position: relative;
-        top: -48px;
-        font-size: 120%;
-    }
+        #Pdiv4 > h3 {
+            left: 41px;
+            position: relative;
+            top: -48px;
+            font-size: 120%;
+        }
 
-    #Pdiv4 > img {
-        width: 110%;
-        height: 38vh;
-    }*/
-
+        #Pdiv4 > img {
+            width: 110%;
+            height: 38vh;
+        }*/
     /*///////////nav css////////*/
     main > section:nth-child(6) > section:nth-child(2) > section:nth-child(2) > div > hr {
         color: #0a0909;
@@ -7723,7 +7698,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 
 
     /*========================================== Assignment ==========================================================*/
-    main > section:nth-child(9) > article{
+    main > section:nth-child(9) > article {
         margin-left: 63px;
         margin-top: -61px;
         padding-left: 58px;
@@ -7736,7 +7711,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         left: -62px;
     }
 
-    body > main > section#Achievements > article>hr {
+    body > main > section#Achievements > article > hr {
         margin-left: -59px;
         margin-top: 28px;
         padding-left: 58px;
@@ -7794,15 +7769,13 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
     /*    width: 90%;*/
     /*    height: 650px;*/
     /*}*/
-
-
     main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div:nth-child(1) {
         position: relative;
         width: 77%;
         height: 454px;
     }
 
-    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div>img:hover {
+    main > section:nth-child(10) > section:nth-child(2) > section:first-child > section > div > div > img:hover {
         height: 92%;
         width: 94%;
         border-radius: 53px;
@@ -7966,7 +7939,7 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         height: 29vh;
         width: 90%;
         left: 4%;
-    /* right: 0;*/
+        /* right: 0;*/
     }
 
     #txtName {
@@ -8010,36 +7983,36 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
         height: 45%;
         top: 969%;
         width: 100%;
-        }
+    }
 
-        footer > fieldset > aside > img {
-            width: 19%;
-            height: 274px;
-            border-radius: 53%;
-            padding-left: 15px;
-            padding-top: 9px;
-        }
+    footer > fieldset > aside > img {
+        width: 19%;
+        height: 274px;
+        border-radius: 53%;
+        padding-left: 15px;
+        padding-top: 9px;
+    }
 
-        footer > fieldset > article > pre {
-            font-size: 452%;
-            position: absolute;
-            top: 7%;
-            left: 27%;
-            font-style: oblique;
-            font-family: revert;
-        }
+    footer > fieldset > article > pre {
+        font-size: 452%;
+        position: absolute;
+        top: 7%;
+        left: 27%;
+        font-style: oblique;
+        font-family: revert;
+    }
 
-        footer > fieldset > article > p {
-            font-size: 230%;
-            position: absolute;
-            top: 62%;
-            left: 27%;
-            font-style: italic;
-            font-family: emoji;
-        }
+    footer > fieldset > article > p {
+        font-size: 230%;
+        position: absolute;
+        top: 62%;
+        left: 27%;
+        font-style: italic;
+        font-family: emoji;
+    }
 
 
-        /*///////////nav css////////*/
+    /*///////////nav css////////*/
     body > footer > fieldset > section > div {
         position: absolute;
         top: -10%;
@@ -8098,11 +8071,9 @@ body > footer > fieldset > section > div > aside > a:nth-child(2) > p {
 }
 
 
-
-
 /*=============================================================================================================*/
 /*=============================================================================================================*/
-@media all and (max-width: 425px){
+@media all and (max-width: 425px) {
 
 }
 
