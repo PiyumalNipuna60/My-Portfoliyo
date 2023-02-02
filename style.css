@@ -379,14 +379,82 @@ font-size: 5rem;
 
 }
 
+/*================================================*/
 
-/*main > section:nth-child(1) > section:nth-child(1) > article > p {*/
-/*    font-size: 22px;*/
-/*    position: relative;*/
-/*    left: 125px;*/
-/*    top: -72px;*/
-/*    z-index: 1;*/
-/*}*/
+
+.home_ani{
+    animation: bounce 4s alternate;
+}
+.home_ani1{
+    animation: bounce 4.2s alternate;
+}
+.home_ani2{
+    animation: bounce 4.4s alternate;
+}
+
+.home_ani2{
+    animation: bounce 4.6s alternate;
+}
+.home_ani3{
+    animation: bounce 4.8s alternate;
+}
+.home_ani4{
+    animation: bounce 5s alternate;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0px);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+}
+
+
+
+.home_ani5{
+    animation: home_ani5 4s linear;
+}
+
+@keyframes home_ani5 {
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+
+}
+
+.home_ani6{
+    animation: home_ani6 4s linear;
+}
+
+@keyframes home_ani6 {
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+
+}
+
 
 main > section:nth-child(1) > section:nth-child(1) > article > button {
     font-size: 28px;

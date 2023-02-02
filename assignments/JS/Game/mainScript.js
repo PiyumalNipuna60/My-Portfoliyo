@@ -1,3 +1,20 @@
+// $(window).on('load', function () {
+//     console.log("Window on load");
+//
+//     $("#loader").fadeOut(100);
+// });
+//
+//
+// $(document).ready(function () {
+//     console.log("Document is ready");
+//     $("#loader");
+// });
+
+////////////////////////////////////////////////////////////////////
+
+
+
+
 const ASSETS = {
     COLOR: {
         TAR: ["#959298", "#9c9a9d"],
@@ -214,6 +231,7 @@ class Audio {
     }
 
     load(src, key, callback) {
+
         let _self = this;
         let request = new XMLHttpRequest();
         request.open("GET", src, true);
@@ -466,7 +484,7 @@ function update(step) {
 
         home.style.display = "block";
         road.style.opacity = 0.4;
-        text.innerText = "INSERT COIN";
+        text.innerText = "WIN GAME";
 
         highscores.push(lap.innerText);
         highscores.sort();
@@ -644,7 +662,7 @@ function reset() {
 
     for (let line of lines) line.curve = line.y = 0;
 
-    text.innerText = "INSERT COIN";
+    text.innerText = "START GAME";
     text.classList.add("blink");
 
     road.style.opacity = 0.4;
