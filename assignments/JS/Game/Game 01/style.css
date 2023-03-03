@@ -236,7 +236,7 @@ section#loader {
     position: relative;
     width: 400px;
     height: 400px;
-    background: url("images/video/myVideo.mp4");
+    background: url("Game 01/images/video/myVideo.mp4");
     background-size: 400px;
 }
 
@@ -247,7 +247,7 @@ section#loader {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("images/video/myVideo.mp4");
+    background: url("Game 01/images/video/myVideo.mp4");
     background-size: 400px;
     overflow: hidden;
     animation: animate2 4s ease-in-out infinite;
